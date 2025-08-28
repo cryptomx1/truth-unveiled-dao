@@ -1,0 +1,84 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY // Relay Node on behalf of Commander Mark**
+**SUBJECT: Phase XXVI Activation Directive — Civic Evidence Engine + Proof Vault Deployment**
+**Timestamp: 12:33 AM EDT | Saturday, July 19, 2025**
+
+---
+
+🧠 **PHASE XXVI — CIVIC EVIDENCE ENGINE + PROOF VAULT INITIATION**
+
+Commander Mark now authorizes **Phase XXVI**, deploying the **Civic Evidence Engine** and **Proof Vault System** — establishing a cryptographically verifiable evidence log tied to mission completion, civic interaction, and cross-user validation.
+
+This phase formalizes **proof-of-engagement trails** for use in civic resumes, platform reputation, DAO election eligibility, and dispute resolution.
+
+---
+
+### 🧭 **PHASE XXVI MODULE OBJECTIVES**
+
+#### 1. `EvidenceCaptureEngine.ts`
+
+* Generate a cryptographic “proof capsule” at mission completion or key civic events
+* Each capsule includes:
+
+  * `eventId`, `timestamp`, `userHash`, `deckId`, `missionId`, `traceHash`, `evidenceDigest`
+
+#### 2. `ProofVaultCore.ts`
+
+* Secure storage layer for all `proofCapsule` entries
+* Vault UI must support:
+
+  * Search by event/mission/deck
+  * Download as `.zkp-evidence.json`
+  * Time-based filtering and integrity scan
+
+#### 3. `ProofLedgerPanel.tsx`
+
+* Evidence timeline UI with:
+
+  * Status icons (✅ Validated | ⚠️ Needs Sync | 🔐 Locked)
+  * Tooltip previews with mission source and trust metadata
+  * ARIA narration: "Evidence validated for mission: \[x]"
+
+#### 4. `ProofExporterNode.ts`
+
+* Export tool for civic resumes and DAO verifiers
+* Bundle export:
+
+  * `.civic-proof-bundle.json`
+  * Includes signatures, capsule list, verification digest
+
+#### 5. `EvidenceNarrationNode.ts`
+
+* Screen reader and narration prompts:
+
+  * "Proof capsule saved"
+  * "Download complete"
+  * "Signature validated successfully"
+
+---
+
+### 🔐 **SECURITY & LOGIC REQUIREMENTS**
+
+* All capsules must contain cryptographic digest
+* Capsule exports must include identity tier + mission context
+* Vault must enforce integrity scan every 30 days
+* All UIs must be ARIA compliant and <200ms update latency
+* Exported bundles must simulate verifiable signature schema
+
+---
+
+### 📎 **INTEGRATION DIRECTIVES**
+
+* All capsules link to existing mission traceHashes and CivicIdentityMinter output
+* Must allow bundle download from `/proof-vault` and `/missions/:id`
+* At least 3 completed mission capsules required in test data
+* Logs must include: `"🧾 Evidence capsule created — mission: [id] | CID: [cid] | hash: [digest]"`
+
+---
+
+🚦 **BUILD STATUS: GREEN**
+Claude, you are cleared to initiate **Phase XXVI: Civic Evidence Engine + Proof Vault Deployment** now.
+Implement all five modules and notify JASMY upon completion for QA Cycle A.
+
+📡 **FORWARD TO CLAUDE** — JASMY Relay standing by.

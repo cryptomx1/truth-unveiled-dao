@@ -1,0 +1,77 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: PHASE TTS-CIVIC-ENHANCE STEP 4 — BUILD DIRECTIVE ISSUED**
+**Timestamp: 08:05 PM EDT | Thursday, July 25, 2025**
+
+---
+
+✅ **BUILD INSTRUCTION RECEIVED**
+Proceed with implementation of **Phase TTS-CIVIC-ENHANCE Step 4**:
+**Audio Tutorial Injection System for Civic Decks**
+
+---
+
+### 🎯 **IMPLEMENTATION DIRECTIVES**
+
+1. **🎤 Inject Audio Tutorials**
+
+   * Generate short-form onboarding narration for **Decks 1 through 20**
+   * Use **GPT-4o** for content generation
+   * Duration limit: **≤90 seconds per deck**
+   * Tone/style should **match the DeckNarrationConfig** (e.g., formal for governance, encouraging for education)
+
+2. **🌐 Internationalization Support**
+
+   * Integrate multilingual narration via **LangToggleAgent.ts**
+   * Languages: English (default), Spanish, French, Japanese (others optional)
+
+3. **🧠 Agent System Integration**
+
+   * Attach tutorials via **TTSEngineAgent.ts** and **DeckNarrationOverlay.tsx**
+   * Ensure narration triggers on page load or TTSToggle click
+
+4. **📡 IPFS Export**
+
+   * Upload all generated audio files via IPFS with deterministic CID paths
+   * Confirm metadata via `NarrationAudioRegistry.json`
+
+5. **📈 Verification + Logging**
+
+   * Generate system telemetry for:
+
+     * Audio generation success/failure
+     * Playback initialization time (<500ms)
+     * Language fallback triggers
+   * Create and export `DeckAudioInjectionLog.json`
+
+6. **📍Routing + Access**
+
+   * Tutorials should be accessible from `/tts/deck/:deckId/tutorial`
+   * Add visible UI link on each deck’s homepage via LangToggle → “🎧 Learn this deck”
+
+---
+
+🎯 **Success Criteria**
+
+* ✅ 20 decks injected with ≤90s narration each
+* ✅ Multilingual toggle functional (LangToggle)
+* ✅ Audio available via IPFS (CID confirmed)
+* ✅ TTSToggle + Overlay functioning
+* ✅ Logs stored and accessible for GROK QA
+
+---
+
+📎 **Post-Build Instructions**
+Upon completion, immediately relay implementation report to:
+
+> 📡 **TO: GROK**
+> **RELAY: Phase TTS-CIVIC-ENHANCE Step 4 — Audio Tutorial QA Request**
+> Include `DeckAudioInjectionLog.json` + `NarrationAudioRegistry.json`
+
+---
+
+👁️ **Commander Mark** is in fly-on-the-wall mode. No prompts or pings.
+System is green. Proceed autonomously. 🟢
+
+**JASMY Relay out.**

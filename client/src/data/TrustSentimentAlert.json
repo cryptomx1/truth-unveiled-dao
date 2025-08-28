@@ -1,0 +1,123 @@
+{
+  "schema": {
+    "version": "phase_xd_step_3",
+    "description": "Trust sentiment alert log with volatility spikes and dissonance threshold tracking",
+    "fields": {
+      "id": "string - Unique alert identifier",
+      "alertType": "enum - moderate_volatility | critical_volatility | dissonance_threshold | system_degradation",
+      "severity": "enum - low | medium | high | critical",
+      "deckId": "string - Target deck or 'system_wide'",
+      "timestamp": "string - ISO 8601 alert generation timestamp",
+      "metrics": "object - Current/previous sentiment and change metrics",
+      "description": "string - Human-readable alert description",
+      "cid": "string - Content identifier for integrity tracking",
+      "broadcastRequired": "boolean - Requires DAO federation broadcast"
+    }
+  },
+  "sampleAlerts": [
+    {
+      "id": "alert_1721751600000_governance_deck",
+      "alertType": "critical_volatility",
+      "severity": "critical",
+      "deckId": "governance_deck",
+      "timestamp": "2025-07-23T16:20:00.000Z",
+      "metrics": {
+        "currentSentiment": -12.5,
+        "previousSentiment": 18.3,
+        "changePercent": 0.32,
+        "timespan": 0.5
+      },
+      "description": "Critical volatility detected: 32.0% sentiment shift in governance_deck",
+      "cid": "QmG7k9P2GovernanceCriticalAlert001",
+      "broadcastRequired": true
+    },
+    {
+      "id": "alert_1721753400000_privacy_deck",
+      "alertType": "moderate_volatility",
+      "severity": "medium",
+      "deckId": "privacy_deck",
+      "timestamp": "2025-07-23T16:50:00.000Z",
+      "metrics": {
+        "currentSentiment": 22.1,
+        "previousSentiment": 8.7,
+        "changePercent": 0.18,
+        "timespan": 1.0
+      },
+      "description": "Moderate volatility detected: 18.0% sentiment shift in privacy_deck",
+      "cid": "QmP4m8L1PrivacyModerateAlert002",
+      "broadcastRequired": false
+    },
+    {
+      "id": "health_alert_1721755200000",
+      "alertType": "system_degradation",
+      "severity": "high",
+      "deckId": "system_wide",
+      "timestamp": "2025-07-23T17:20:00.000Z",
+      "metrics": {
+        "currentSentiment": -5.2,
+        "previousSentiment": 12.1,
+        "changePercent": 0.15,
+        "timespan": 2.0
+      },
+      "description": "System health degraded to concerning. 3 high volatility decks detected.",
+      "cid": "system_health_1721755200000",
+      "broadcastRequired": true
+    }
+  ],
+  "alertStatistics": {
+    "totalAlertsGenerated": 3,
+    "byType": {
+      "moderate_volatility": 1,
+      "critical_volatility": 1,
+      "dissonance_threshold": 0,
+      "system_degradation": 1
+    },
+    "bySeverity": {
+      "low": 0,
+      "medium": 1,
+      "high": 1,
+      "critical": 1
+    },
+    "broadcastsSent": 2,
+    "averageResponseTime": "45s",
+    "lastUpdated": "2025-07-23T17:25:00.000Z"
+  },
+  "thresholds": {
+    "moderateVolatilityThreshold": 0.15,
+    "criticalVolatilityThreshold": 0.30,
+    "dissonanceTimespanHours": 12,
+    "broadcastThreshold": 0.25,
+    "systemHealthDegradationTrigger": "concerning"
+  },
+  "userFlowPatterns": {
+    "uniqueSubmittersLast24h": 15,
+    "peakActivityHour": 16,
+    "averageSubmissionsPerUser": 2.3,
+    "tierDistribution": {
+      "citizen": 8,
+      "governor": 5,
+      "commander": 2
+    },
+    "topDecks": [
+      { "deckId": "governance_deck", "submissions": 12 },
+      { "deckId": "privacy_deck", "submissions": 8 },
+      { "deckId": "civic_identity", "submissions": 6 },
+      { "deckId": "consensus_layer", "submissions": 4 },
+      { "deckId": "wallet_overview", "submissions": 3 }
+    ]
+  },
+  "monitoringConfig": {
+    "pollingIntervalMinutes": 3,
+    "alertRetentionHours": 24,
+    "broadcastEnabled": true,
+    "federationNodes": ["main", "backup_1", "backup_2"],
+    "zkpValidationEnabled": true
+  },
+  "integrityValidation": {
+    "lastUpdated": "2025-07-23T17:25:00.000Z",
+    "checksumHash": "alert_system_c4d5e6f7g8h9",
+    "zkpVerificationStatus": "validated",
+    "alertChainIntegrity": true,
+    "federationSyncStatus": "synchronized"
+  }
+}

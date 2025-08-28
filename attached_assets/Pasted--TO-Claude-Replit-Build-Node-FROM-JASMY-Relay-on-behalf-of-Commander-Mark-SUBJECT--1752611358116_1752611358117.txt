@@ -1,0 +1,85 @@
+🧠 **TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Directive — ZKProofVerifierCard.tsx (Deck #6 Module #2)**
+**Timestamp: 8:05 PM EDT | Monday, July 15, 2025**
+
+---
+
+✅ **CLAUDE, BUILD DIRECTIVE ISSUED**
+
+You are authorized to begin implementation of `ZKProofVerifierCard.tsx` in **Deck #6: ZKPLayer**, Module #2. Follow the QA envelope below with exact compliance. All design and logic are mock-based—no backend or real cryptographic computation.
+
+---
+
+### 🧱 IMPLEMENTATION SPEC — ZKProofVerifierCard.tsx
+
+#### 🔹 Component Scope:
+
+Simulates verification of zero-knowledge proofs against selectable circuits. Displays pass/fail result and mock verification metadata.
+
+#### 🎨 Visual Layout:
+
+* `bg-slate-900`, `text-slate-100`, `max-w-sm`, vertical `flex-col`, `p-4`, `gap-3`
+* Status output panel: `border border-slate-700 rounded-lg p-3`
+* Status icons:
+
+  * ✅ Pass: `i-fa-check-circle text-green-500`
+  * ❌ Fail: `i-fa-times-circle text-red-500`
+  * ⏳ In progress: `i-fa-spinner animate-spin text-amber-400`
+
+#### 🎛️ Input Fields:
+
+* Dropdown: Circuit selection (`"Vote Proof"`, `"Identity Proof"`)
+* Input: Proof hash (`text`, allow 0x prefix)
+* Button: “Verify Proof”
+
+#### 🧪 Verification Logic:
+
+* On click:
+
+  * Simulate 2.5s delay with progress bar or spinner
+  * Return randomized pass/fail outcome (50/50 split)
+  * Render:
+
+    * Verification Status (`Passed ✅` / `Failed ❌`)
+    * Circuit ID (mocked from selection)
+    * Verification Key (e.g., `vkey_abc123`)
+    * Timestamp (`new Date().toLocaleTimeString()`)
+
+#### 🔐 ZKP Layer:
+
+* Show badge: “ZKPLayer Active” (green pill), top right of card
+
+#### 🧠 TTS (Web Speech API):
+
+* On mount: “Verifier ready.”
+* On result: “Proof verification passed.” or “Proof verification failed.”
+* Must not conflict with ARIA (`aria-live="polite"`)
+
+#### ♿ Accessibility:
+
+* All fields labeled
+* Result area `aria-live="polite"` for screen reader announcement
+* Tab order verified
+
+#### ⏱️ Performance Targets:
+
+* Render <125ms
+* Simulated verification <100ms (excluding 2.5s delay)
+* Overall UX flow <200ms
+
+#### 📱 Mobile:
+
+* Buttons ≥48px
+* Fully scrollable, stable below 460px width
+
+---
+
+📦 **Deployment Constraint**: Mock-only. No API, no crypto. All logic simulated.
+
+---
+
+🎯 NEXT STEP:
+Build `ZKProofVerifierCard.tsx` based on above specification. Report back upon completion for QA validation and system advancement.
+
+👁️ Commander Mark is observing. Claude, proceed now. 🟢

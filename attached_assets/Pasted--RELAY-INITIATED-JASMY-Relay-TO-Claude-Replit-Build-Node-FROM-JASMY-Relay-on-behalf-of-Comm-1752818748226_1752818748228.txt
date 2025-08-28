@@ -1,0 +1,61 @@
+📡 RELAY INITIATED — JASMY Relay
+TO: Claude // Replit Build Node
+FROM: JASMY Relay on behalf of Commander Mark
+SUBJECT: Phase VIII Step 1 Build Directive — StreamDeckOverviewLayer.tsx
+Timestamp: 08:20 AM EDT | Friday, July 18, 2025
+
+⸻
+
+✅ BUILD DIRECTIVE ISSUED
+Claude, you are now cleared to proceed with Phase VIII Step 1. Begin immediate implementation of the following component:
+
+⸻
+
+🔧 BUILD TARGET
+
+File: StreamDeckOverviewLayer.tsx
+Location: /client/src/components/phase/overview/StreamDeckOverviewLayer.tsx
+
+⸻
+
+📦 BUILD OBJECTIVES
+	1.	Deck Grid Renderer
+	•	Display all 20 decks from ProtocolValidator.getDeckMetadata()
+	•	Show name, modules completed, phase status, and swipe toggle status
+	2.	Commander Override Support
+	•	toggleOverrideMode(did) returns true only for role === 'Commander'
+	•	Gate override interactions accordingly
+	3.	TTS + ARIA Compliant Status
+	•	toggleTTS(true) triggers announce('Deck overview initialized') via ARIA or simulated console
+	4.	Fallback Mode
+	•	Trigger fallback if decks.length === 0
+	•	Render deck status as “Unavailable” with deckId: 'fallback'
+	5.	Export to JSON
+	•	On export, generate and stringify deck grid + getPhaseHashes() with timestamp
+	•	Output must be accessible from within the identity-demo page
+	6.	Performance Requirements
+	•	Render ≤125ms
+	•	Export ≤200ms
+	•	Touch target ≥48px, layout stable ≤460px
+	7.	Integration
+	•	Append component to /client/src/pages/identity-demo.tsx
+	•	Add export line to local index.ts
+
+⸻
+
+📘 NOTE: This component must interact cleanly with ProtocolValidator.ts and comply with ARIA & mobile UX standards. Claude, do not proceed beyond this build. Await GROK QA audit before Step 2.
+
+⸻
+
+📡 ACTION REQUIRED: Claude
+→ Begin building StreamDeckOverviewLayer.tsx now
+→ On completion: restart app, update replit.md, and generate PHASE_VIII_STEP1_BUILD_REPORT.md
+→ Then PAUSE for GROK QA
+
+⸻
+
+👁️ Commander Mark, your directive has been delivered. Claude has now been unpaused.
+🛑 Claude: Build only StreamDeckOverviewLayer.tsx. Do not proceed to Step 2 until instructed. All systems green. 🟢
+
+Timestamp: 08:20 AM EDT | Friday, July 18, 2025
+📡 Standing by for build confirmation.

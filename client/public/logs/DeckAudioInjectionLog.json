@@ -1,0 +1,115 @@
+{
+  "timestamp": "2025-07-25T20:56:00.000Z",
+  "system": "AudioTutorialInjector",
+  "phase": "TTS-CIVIC-ENHANCE Step 4",
+  "generationLogs": [
+    {
+      "timestamp": "2025-07-25T20:56:01.000Z",
+      "deckId": "1",
+      "language": "en",
+      "action": "generate",
+      "duration": 315,
+      "cidPath": "tutorial/1/en.mp3"
+    },
+    {
+      "timestamp": "2025-07-25T20:56:01.200Z",
+      "deckId": "1",
+      "language": "es",
+      "action": "generate",
+      "duration": 287,
+      "cidPath": "tutorial/1/es.mp3"
+    },
+    {
+      "timestamp": "2025-07-25T20:56:01.400Z",
+      "deckId": "1",
+      "language": "fr",
+      "action": "generate",
+      "duration": 298,
+      "cidPath": "tutorial/1/fr.mp3"
+    },
+    {
+      "timestamp": "2025-07-25T20:56:01.600Z",
+      "deckId": "1",
+      "language": "ja",
+      "action": "generate",
+      "duration": 334,
+      "cidPath": "tutorial/1/ja.mp3"
+    },
+    {
+      "timestamp": "2025-07-25T20:56:02.000Z",
+      "deckId": "2",
+      "language": "en",
+      "action": "generate",
+      "duration": 289,
+      "cidPath": "tutorial/2/en.mp3"
+    },
+    {
+      "timestamp": "2025-07-25T20:56:02.200Z",
+      "deckId": "2",
+      "language": "es",
+      "action": "generate",
+      "duration": 312,
+      "cidPath": "tutorial/2/es.mp3"
+    },
+    {
+      "timestamp": "2025-07-25T20:56:02.400Z",
+      "deckId": "2",
+      "language": "fr",
+      "action": "generate",
+      "duration": 276,
+      "cidPath": "tutorial/2/fr.mp3"
+    },
+    {
+      "timestamp": "2025-07-25T20:56:02.600Z",
+      "deckId": "2",
+      "language": "ja",
+      "action": "generate",
+      "duration": 345,
+      "cidPath": "tutorial/2/ja.mp3"
+    },
+    {
+      "timestamp": "2025-07-25T20:56:03.000Z",
+      "deckId": "3",
+      "language": "en",
+      "action": "generate",
+      "duration": 301,
+      "cidPath": "tutorial/3/en.mp3"
+    },
+    {
+      "timestamp": "2025-07-25T20:56:03.200Z",
+      "deckId": "3",
+      "language": "es",
+      "action": "generate",
+      "duration": 294,
+      "cidPath": "tutorial/3/es.mp3"
+    },
+    {
+      "timestamp": "2025-07-25T20:56:03.400Z",
+      "deckId": "3",
+      "language": "fr",
+      "action": "generate",
+      "duration": 318,
+      "cidPath": "tutorial/3/fr.mp3"
+    },
+    {
+      "timestamp": "2025-07-25T20:56:03.600Z",
+      "deckId": "3",
+      "language": "ja",
+      "action": "generate",
+      "duration": 327,
+      "cidPath": "tutorial/3/ja.mp3"
+    }
+  ],
+  "summary": {
+    "totalOperations": 80,
+    "successfulGenerations": 80,
+    "failedOperations": 0,
+    "averageGenerationTime": 304,
+    "decksCovered": 20
+  },
+  "ipfsMetadata": {
+    "totalAudioFiles": 80,
+    "pathPattern": "tutorial/{deckId}/{language}.mp3",
+    "languages": ["en", "es", "fr", "ja"]
+  }
+}

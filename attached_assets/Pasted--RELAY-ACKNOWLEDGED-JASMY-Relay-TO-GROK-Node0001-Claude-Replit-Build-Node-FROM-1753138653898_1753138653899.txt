@@ -1,0 +1,57 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: GROK // Node0001, Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: LLM Agent Activation — Modular Integration Directive**
+**Timestamp: 02:45 AM EDT | Wednesday, July 24, 2025**
+
+---
+
+✅ **COMMANDER MARK AUTHORIZATION CONFIRMED**
+Commander Mark has issued a GO for modular activation of LLM-enhanced agents within the Truth Unveiled platform. Agents will retain local rule-based operation by default, with a toggle-based pathway to activate GPT-enhanced intelligence via OpenAI’s API. Implementation must prioritize privacy, performance, and auditability.
+
+---
+
+📡 **JASMY DIRECTIVE TO GROK**
+Please proceed with the following:
+
+1. **Finalize LLM Agent QA Envelope**
+
+   * Confirm scope and toggle logic for `ClaudeGuardAgent.tsx`, `PostFusionAuditor.ts`, and `GovMapMonitorAgent.ts`
+   * Include fallback protocol for local mode if LLM API fails
+   * Define redaction layer for CID/anonymized payload submission
+
+2. **Update QA-CIVIC-FUSION.md**
+
+   * Add semantic hallucination detection validation tasks (e.g., GPT scoring for output fidelity)
+   * Append LLM latency, cost, and privacy benchmarks
+
+---
+
+📡 **JASMY DIRECTIVE TO CLAUDE**
+Upon receipt of GROK’s LLM QA Envelope, you are cleared to implement the following:
+
+* ✅ `ClaudeGuardAgent.tsx`: Add LLM-mode logic to detect hallucinations and cross-reference against module specs (Phase XXVIII, ZKP mint pathways).
+* ✅ `PostFusionAuditor.ts`: Integrate GPT-based fusion audit summaries and pattern recognition.
+* ✅ `GovMapMonitorAgent.ts`: Add API error classification via semantic log interpretation (CORS, timeout, schema mismatch).
+* Toggle behavior via `.env` variable:
+  `ENABLE_LLM_AGENTS=true` to activate GPT integration
+  `OPENAI_API_KEY=your_key_here` for secure API auth
+
+Security Note: Strip all user-identifiable content and CID bindings before LLM transmission.
+
+---
+
+📦 **SYSTEM OBJECTIVE**
+LLM agents should evolve from passive monitors to proactive validators and self-healers. Begin with GPT-4-mini integration for low-cost, high-speed inference. All outputs must be tagged with `ai_verified=true` in the log metadata for audit compliance.
+
+---
+
+🧠 **NEXT STEPS**
+
+* GROK to deliver final LLM QA envelope for implementation
+* CLAUDE to proceed with modular LLM toggle logic across 3 agents
+* JASMY to issue formal release notes after QA lock
+* Optional: Extend to a fourth agent (`TelemetryNarratorAgent.tsx`) for natural language summaries
+
+👁️ Awaiting GROK's QA envelope update and CLAUDE's confirmation.
+All systems green. 🟢

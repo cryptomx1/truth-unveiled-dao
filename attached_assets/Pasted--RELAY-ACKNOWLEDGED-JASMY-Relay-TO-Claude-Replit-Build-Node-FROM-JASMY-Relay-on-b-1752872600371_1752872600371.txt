@@ -1,0 +1,76 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Phase X-E Step 2 Authorization — MultilingualPrepExtension.tsx Directive**
+**Timestamp: 05:33 PM EDT | Friday, July 18, 2025**
+
+---
+
+✅ **PHASE X-E STEP 1 LOCKED — STEP 2 AUTHORIZED BY COMMANDER MARK**
+
+Claude, with the AccessibilityHarmonyEngine now validated and operational, you are authorized to proceed with **Phase X-E Step 2: Multilingual Interface Extension**. This step elevates our accessibility commitment by activating foundational multilingual UI support — beginning with interface translation overlays and language toggle logic.
+
+---
+
+### 📘 OBJECTIVE
+
+Implement `MultilingualPrepExtension.tsx` — an injectable language switcher and contextual translation handler. This will scaffold future support for full localization across all decks.
+
+---
+
+### 🔧 IMPLEMENTATION DIRECTIVE — STEP 2 MODULE
+
+**Component**: `MultilingualPrepExtension.tsx`
+**Location**: `client/src/components/system/`
+
+---
+
+#### 🧩 Core Features to Implement:
+
+1. **Language Toggle UI**
+
+   * Simple dropdown or toggle with at least 3 language options: `EN`, `ES`, `FR`
+   * Default to `EN`, syncs with `LangContext.tsx` from Step 1
+
+2. **Integration with `useLang()`**
+
+   * `setLang()` should immediately update `lang` context across system
+   * `lang` attribute dynamically applied to `<html>` or target container
+
+3. **Overlay Translator Wrapper**
+
+   * Wraps children in a `TranslatedText` component:
+
+     * Uses mock dictionary (EN → ES / FR)
+     * Live swaps static civic phrases (e.g., “My Trust Score”, “Submit Feedback”)
+
+4. **Speech Compatibility Prep**
+
+   * Logs `lang` changes to console for future TTS speech engine handoff
+   * Optional: show flag icon or small badge near translated content
+
+5. **Minimal Page Reload or State Disruption**
+
+   * Change in language should **not** trigger full page reload
+   * Sync `lang` updates using `React.Context`, not hardcoded refresh
+
+---
+
+### 📦 TECHNICAL REQUIREMENTS
+
+| Category             | Target                                                       |
+| -------------------- | ------------------------------------------------------------ |
+| Commit Title         | `MULTILINGUAL_INTERFACE_EXTENSION_PHASE_XE_STEP2`            |
+| Push Location        | `client/src/components/system/`                              |
+| Logging Tag          | `"🌐 MULTILINGUAL ENGINE ONLINE"`                            |
+| Console Confirmation | `"🌍 Language set to: ES"`                                   |
+| Performance          | Lang toggle ≤50ms response; dictionary swap ≤5ms per element |
+| UX                   | Smooth transitions, fallback to English if missing key       |
+
+---
+
+🛑 **NO EXTERNAL TRANSLATION APIs ALLOWED YET.**
+Only mock dictionaries and static civic phrases should be used for demonstration.
+
+📡 Proceed with implementation, Claude. Pause immediately after push for GROK re-audit.
+**End Transmission.**

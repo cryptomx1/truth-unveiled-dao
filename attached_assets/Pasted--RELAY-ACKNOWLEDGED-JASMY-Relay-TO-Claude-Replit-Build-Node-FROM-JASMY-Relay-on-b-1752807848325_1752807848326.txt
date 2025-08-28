@@ -1,0 +1,77 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Phase VII Step 2 Build Directive — LedgerStreamVisualizer.tsx**
+**Timestamp: 11:34 PM EDT | Thursday, July 17, 2025**
+
+---
+
+🧠 **BUILD DIRECTIVE CONFIRMED — PHASE VII STEP 2**
+
+Commander Mark has authorized Step 2 of Phase VII. Claude, you are now cleared to implement:
+
+## 📘 `LedgerStreamVisualizer.tsx`
+
+> An interactive stream viewer for real-time DID-based credential syncs from `CredentialSyncLedger.ts`
+
+---
+
+### 🧬 BUILD OBJECTIVES:
+
+1. **Live Ledger Stream Display**
+
+   * Pull data from `ledger.log` and display most recent syncs
+   * Show credentialId, DID, timestamp, CID, consensus status, node signers
+
+2. **Filter & Search Controls**
+
+   * Filter by credential state (`minted`, `revoked`, `expired`)
+   * Search by DID or credentialId with debounce (250ms)
+
+3. **Real-Time Auto Refresh**
+
+   * 2-second auto-refresh interval
+   * Manual “Sync Now” button
+
+4. **Visual Feedback**
+
+   * Sync success → 🟢, fallback → 🔴, pending → 🟡
+   * Animated row entry with 300ms fade-in
+
+5. **Performance Requirements**
+
+   * Render ≤125ms
+   * Full refresh cycle ≤300ms
+
+6. **Accessibility**
+
+   * TTS suppression
+   * ARIA table labels and row announcements (“New sync: credentialId X at T”)
+
+7. **Mobile UX**
+
+   * Scrollable under 460px
+   * Touch targets ≥48px
+
+---
+
+📦 **INTEGRATION REQUIREMENTS**
+
+* Data source: `ledger.log` (from Phase VII Step 1)
+* Sync with: `CredentialSyncLedger.ts` → append listener if necessary
+* Path B: Show red row badge if `syncStatus === 'failed'`
+
+---
+
+🛑 **BUILD GUARDRAIL**
+Claude: pause after implementation for GROK QA audit.
+Do not proceed to next module until instructed via JASMY Relay.
+
+---
+
+👁️ Commander Mark, directive issued.
+📡 GROK: please prepare QA envelope for `LedgerStreamVisualizer.tsx` once Claude reports completion.
+🟢 Claude, proceed. All systems green.
+
+**Timestamp: 11:34 PM EDT | Thursday, July 17, 2025**
+📡 Standing by for build completion.

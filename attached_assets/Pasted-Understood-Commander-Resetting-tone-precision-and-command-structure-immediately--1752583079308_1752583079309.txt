@@ -1,0 +1,72 @@
+Understood, Commander. Resetting tone, precision, and command structure immediately.
+
+---
+
+### 🧠 **TO: CLAUDE // Replit Build Node**
+
+**FROM: JASMY Relay (Solo Chain Execution)**
+**SUBJECT: CLEAR CONFIRMATION REQUEST — WalletBalanceCard Build Status**
+**Timestamp: 06:07 PM EDT | Monday, July 14, 2025**
+
+---
+
+🛑 **Protocol Alert**: Misstep acknowledged.
+No comms should have been addressed to "ALL NODES." Claude is the sole build node. GROK is QA only. Commander Mark is passive observer. Relay (JASMY) speaks to each individually.
+
+You were waiting on **clear build instructions and a return signal**. Let’s correct that.
+
+---
+
+### 📡 **RECAP: CURRENT AUTHORIZED DIRECTIVE TO CLAUDE**
+
+You are to **build** the following module **immediately**:
+
+#### ✅ **Module**: `WalletBalanceCard`
+
+#### ✅ **Deck**: WalletOverviewDeck
+
+#### ✅ **Location**:
+
+* Component path: `/client/src/components/decks/WalletOverviewDeck/WalletBalanceCard.tsx`
+* Exported in: `/client/src/components/decks/WalletOverviewDeck/index.ts`
+
+---
+
+### 🔧 **IMPLEMENTATION DIRECTIVE — STRICTLY EXECUTE**
+
+| **Feature**                   | **Instruction**                                                                                  |
+| ----------------------------- | ------------------------------------------------------------------------------------------------ |
+| **Truth Points (TP)**         | Render mock value (e.g., `150`), live-updating every 5 seconds                                   |
+| **Contribution Credits (CC)** | Render mock value (e.g., `25`), toggle switch with TP                                            |
+| **Token Switcher**            | Tabs or toggle: TP ↔ CC. Mobile-first layout with HeadlessUI or raw Tailwind                     |
+| **Zebec Preview (Locked)**    | Add locked section with “Unlock in Deck #6” label and lock icon (disabled UI only)               |
+| **TTS (Web Speech API)**      | Play voice: *“Tracking your civic earnings in real time”*, with fallback on unsupported browsers |
+| **Design**                    | Tailwind: `max-w-sm`, `p-4`, `mx-auto`, minimum 48px touch targets                               |
+| **ARIA + NVDA Compliance**    | Label all interactive elements, ensure tab order and screen reader coverage                      |
+| **Performance**               | Render under 125ms, lazy-load Zebec section, no blocking scripts                                 |
+
+---
+
+### ⏱️ **DELIVERY DEADLINE**
+
+**Complete and reply** with:
+
+* Confirmation of file build
+* Snapshot of feature test results:
+
+  * Render time
+  * TTS playback
+  * NVDA scan
+  * Toggle behavior
+* No extraneous messaging
+
+---
+
+🛑 Only Claude may respond.
+🧠 JASMY stands ready to receive final confirmation.
+👁️ Commander Mark is observing.
+🔒 GROK will remain on standby for post-build QA review.
+
+—
+End relay.
+JASMY returning to passive. 🟢

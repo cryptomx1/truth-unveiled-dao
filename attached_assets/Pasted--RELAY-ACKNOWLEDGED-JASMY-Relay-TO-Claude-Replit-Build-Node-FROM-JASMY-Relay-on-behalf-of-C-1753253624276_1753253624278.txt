@@ -1,0 +1,70 @@
+📡 RELAY ACKNOWLEDGED — JASMY Relay
+TO: Claude // Replit Build Node
+FROM: JASMY Relay on behalf of Commander Mark
+SUBJECT: BUILD DIRECTIVE — Phase PRESS-REPLAY Step 4: Ripple Campaign Activation
+Timestamp: 02:01 PM EDT | Thursday, July 25, 2025
+
+⸻
+
+✅ BUILD AUTHORIZATION CONFIRMED
+Claude, you are hereby authorized to begin implementation of Phase PRESS-REPLAY Step 4 per GROK’s recommendation and QA pre-staging. Commander Mark is observing only. No prompts or further approvals required.
+
+⸻
+
+🛠️ BUILD SPECIFICATION: PHASE PRESS-REPLAY STEP 4
+
+Objective:
+Activate the ripple-based civic campaign messaging system using sentiment-weighted triggers and ZIP-code overlays.
+
+Components to Implement:
+	1.	RippleCampaignEngine.ts
+	•	Campaign lifecycle: pending → active → completed
+	•	ZIP-code targeting with population reach simulation
+	•	DAO-connected feedback loop from Deck #10 sentiment analysis
+	•	Real-time performance logs (reach %, engagement %, pushback %)
+	2.	LLMPromptEmitter.ts
+	•	Tone-mapped civic messaging generator (topics: healthcare, taxation, infrastructure, etc.)
+	•	GPT-4o integration with CID/ZKP/DID redaction
+	•	Fallback to static prompt template set
+	3.	DeckWaveMap.json
+	•	Civic engagement ZIP overlays for 5 pilot zones:
+	•	Austin, TX
+	•	Portland, OR
+	•	Burlington, VT
+	•	San Jose, CA
+	•	Ann Arbor, MI
+	4.	PressReplayDashboard.tsx
+	•	3-tab UI: Campaigns, LLM Messaging, ZIP Analytics
+	•	Campaign creation + status tracking
+	•	Sentiment sync display (Deck #10 to campaign trigger)
+	•	LLM prompt preview & manual override
+	5.	NudgeExecutionLog.json
+	•	Records nudge type, route, engagement response, and representative alignment offset
+	•	Used by RewardTriggerAgent + DAO for post-engagement analytics
+
+Integration Targets:
+	•	/press/replay (Route)
+	•	Deck #10: Feedback Governance (Cross-deck Sync)
+	•	AgentInterface → DeckWalkerAgent, LLMPromptEmitter active
+	•	DAO Ledger + CID overlay
+
+ARIA + Performance:
+	•	ARIA-compliant UI narration cues
+	•	Voice toggle for campaign summaries (if TTSEngineAgent linked)
+	•	All operations <500ms
+
+⸻
+
+🔐 IMPLEMENTATION PROTOCOL
+Claude, upon completion:
+	•	Restart app and validate /press/replay
+	•	Confirm ZIP cluster map loads and nudges trigger
+	•	Update replit.md, deployment-result.json, and PressCampaignLog.md
+	•	Pause and await GROK QA
+
+⸻
+
+👁️ Commander Mark is observing passively. No further interaction required.
+Claude, proceed with Phase PRESS-REPLAY Step 4. GROK standing by for QA Cycle G.
+
+📡 RELAY COMPLETE — All systems green. GO. 🟢

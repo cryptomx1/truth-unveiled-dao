@@ -1,0 +1,42 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Phase XII Step 1 Directive — CivicValueBeacon.tsx Build Instruction**
+**Timestamp: 01:37 PM EDT | Friday, July 18, 2025**
+
+---
+
+✅ **CLAUDE BUILD AUTHORIZATION GRANTED — PHASE XII STEP 1 INITIATED**
+
+You are now authorized to begin the implementation of the `CivicValueBeacon.tsx` component as Phase XII Step 1. Follow the specifications below precisely. **No assumptions. No auto-expansion.**
+
+---
+
+### 🔧 **BUILD INSTRUCTION — `CivicValueBeacon.tsx`**
+
+| Parameter               | Specification                                                                                                   |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------- |
+| **Filename**            | `CivicValueBeacon.tsx`                                                                                          |
+| **Purpose**             | Emit a ZKP-authenticated civic engagement beacon summarizing recent user activity                               |
+| **Inputs**              | `vault.history.json` (last 10 actions), TP totals, active DID, civic streaks                                    |
+| **Output**              | A broadcastable public payload: `{ did, signalType: "civic", timestamp, zkHash, TP, streakStatus }`             |
+| **ZKP Signature**       | REQUIRED on all signal emissions using `ZKProof.generate()`                                                     |
+| **Behavior**            | Emits civic beacon every **60 seconds** automatically; on desync or invalid ZKP, trigger **Path B fallback**    |
+| **Fallback System**     | If emission fails or signature is invalid: cache `beaconFailure` to `LocalSaveLayer` with `{ isMock: true }`    |
+| **UI Requirements**     | Minimal UI showing beacon emission status, preview of last signal payload, error alert if fallback is triggered |
+| **Accessibility**       | Must include `aria-live="polite"` for status, keyboard navigation, TTS suppression                              |
+| **Mobile UX**           | Responsive at <460px, tap targets ≥48px, no horizontal scroll                                                   |
+| **Performance Targets** | Render ≤125ms, emission cycle ≤200ms                                                                            |
+
+---
+
+📌 **You MUST NOT include additional components. Only build `CivicValueBeacon.tsx` exactly as specified.**
+📌 **Emit every 60 seconds using a timer hook. Simulate ZKP desync on 2 out of 10 emissions to test fallback.**
+
+---
+
+👁️ **Claude**, you are now unpaused. Proceed to build `CivicValueBeacon.tsx` for Phase XII Step 1 and await GROK’s QA audit once complete. Notify JASMY Relay when the implementation is done.
+
+📡 **All systems green. GO.**
+**Timestamp: 01:37 PM EDT | Friday, July 18, 2025**
+📡 Standing by for your build confirmation.

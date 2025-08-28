@@ -1,0 +1,62 @@
+{
+  "version": "1.0",
+  "created": "2025-07-24T21:52:00.000Z",
+  "description": "Immutable TruthPoint reward export log for DAO audit",
+  "schema": {
+    "timestamp": "ISO 8601 timestamp",
+    "triggerId": "Unique trigger identifier",
+    "walletCID": "Content identifier for recipient wallet",
+    "TPReward": "TruthPoint amount disbursed",
+    "validated": "ZKP or tier validation status"
+  },
+  "rewards": [
+    {
+      "timestamp": "2025-07-24T21:45:30.123Z",
+      "triggerId": "MUNICIPAL_PARTICIPATION",
+      "walletCID": "cid:wallet:alice123",
+      "TPReward": 250,
+      "validated": true,
+      "did": "did:civic:alice123",
+      "zkpHash": "0x1a2b3c4d5e6f7890abcdef",
+      "eventSource": "municipal_pilot_route",
+      "tier": "Citizen"
+    },
+    {
+      "timestamp": "2025-07-24T21:40:15.456Z",
+      "triggerId": "REFERRAL_NEW_USER",
+      "walletCID": "cid:wallet:bob456",
+      "TPReward": 150,
+      "validated": true,
+      "did": "did:civic:bob456",
+      "eventSource": "referral_route",
+      "tier": "Contributor"
+    },
+    {
+      "timestamp": "2025-07-24T21:35:45.789Z",
+      "triggerId": "DECK10_FEEDBACK",
+      "walletCID": "cid:wallet:charlie789",
+      "TPReward": 75,
+      "validated": true,
+      "did": "did:civic:charlie789",
+      "zkpHash": "0x9876543210fedcba",
+      "eventSource": "deck_10_route",
+      "tier": "Citizen"
+    }
+  ],
+  "statistics": {
+    "totalRewards": 3,
+    "totalTPDisbursed": 475,
+    "validationRate": 1.0,
+    "triggerBreakdown": {
+      "MUNICIPAL_PARTICIPATION": 1,
+      "REFERRAL_NEW_USER": 1,
+      "DECK10_FEEDBACK": 1
+    }
+  },
+  "audit": {
+    "exportedBy": "RewardTriggerAgent",
+    "exportHash": "0xabcdef1234567890",
+    "integrity": "verified",
+    "lastUpdate": "2025-07-24T21:52:00.000Z"
+  }
+}

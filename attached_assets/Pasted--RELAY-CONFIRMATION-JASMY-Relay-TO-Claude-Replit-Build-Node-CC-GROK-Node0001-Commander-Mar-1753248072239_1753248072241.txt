@@ -1,0 +1,74 @@
+📡 RELAY CONFIRMATION — JASMY Relay
+TO: Claude // Replit Build Node
+CC: GROK Node0001, Commander Mark
+FROM: JASMY Relay System
+SUBJECT: IMPLEMENTATION DIRECTIVE — PHASE TTS-CIVIC-ENHANCE STEP 1 DEPLOYMENT
+Timestamp: 01:18 PM EDT | Thursday, July 25, 2025
+
+⸻
+
+🟢 DIRECTIVE: IMPLEMENT PHASE TTS-CIVIC-ENHANCE STEP 1
+Commander Mark has authorized full deployment of the Civic Genome TTS Engine System per the QA-approved spec. Proceed immediately with the following deliverables:
+
+⸻
+
+🧠 IMPLEMENTATION OBJECTIVES
+	1.	Create TTSEngineAgent.ts
+	•	Core agent responsible for scanning all decks/modules, maintaining TTS toggles, narration queue, and tone configuration per civic topic.
+	2.	Add TTSToggle.tsx to All Modules
+	•	Toggle per module and deck with hover description: “Narrate this section aloud”
+	•	Include ARIA roles and live region announcement.
+	3.	Generate DeckNarrationConfig.json
+	•	Deck-by-deck tone/speed presets, format:
+
+{
+  "deck1": { "tone": "formal", "speed": "normal" },
+  "deck2": { "tone": "encouraging", "speed": "slow" }
+}
+
+
+	4.	Create TTSDiagnosticReport.json
+	•	Report on:
+	•	Toggle injection coverage
+	•	Audio source routing (OpenAI / fallback)
+	•	Zones with invalid narration metadata
+	•	Latency benchmarks (<500ms target)
+
+⸻
+
+🎙️ INTEGRATION REQUIREMENTS
+	•	Voice Source Hierarchy:
+	1.	OpenAI TTS (preferred, GPT-4o voice)
+	2.	Play.ht (fallback)
+	3.	Browser native (last resort)
+	•	Functional Logic:
+	•	Narration auto-pauses on page switch
+	•	Tone/mood adjusted via DeckNarrationConfig.json
+	•	Privacy compliance: exclude CID/DID/ZIP/ZKP
+	•	Narration queue supports max 3 jobs per deck
+	•	User tone preference may be saved via localStorage
+
+⸻
+
+🔐 CONSTRAINTS AND STANDARDS
+	•	Fully ARIA compliant
+	•	No voice playback unless user-initiated toggle
+	•	Support mobile layout <460px
+	•	All narration events must log to TTSDiagnosticReport.json
+
+⸻
+
+✅ ON SUCCESSFUL BUILD
+
+Upon completion, Claude must:
+	•	Append summary to replit.md
+	•	Update deck module UIs with toggle logic
+	•	Notify GROK for QA Cycle H validation
+	•	Export TTSDiagnosticReport.json to logs directory
+
+⸻
+
+👁️ Claude, execute all steps under PHASE TTS-CIVIC-ENHANCE Step 1 immediately. GROK will validate post-build. All systems green.
+
+📡 RELAY COMPLETE — CLAUDE CLEARED TO BUILD
+🛠 Begin implementation. Report progress upon each deliverable milestone.

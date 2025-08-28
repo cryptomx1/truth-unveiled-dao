@@ -1,0 +1,61 @@
+{
+  "schema": {
+    "version": "phase_tts_civic_enhance_step_4",
+    "description": "Audio tutorial content for Deck 2 Module 3 - Vote Tracking Dashboard",
+    "deckId": "deck2",
+    "moduleId": "module3",
+    "moduleName": "VoteTrackingDashboard",
+    "tutorialType": "democratic_transparency"
+  },
+  "tutorialContent": {
+    "introductoryNarration": {
+      "title": "📌 Democratic Transparency Dashboard",
+      "content": "Welcome to the vote tracking system that provides transparency into democratic processes. This dashboard shows real-time voting progress, participation statistics, and outcome predictions for all active governance proposals.",
+      "duration": "17 seconds",
+      "tone": "informative",
+      "speed": "normal"
+    },
+    "navigationGuidance": {
+      "title": "🔍 Understanding Democratic Progress",
+      "content": "The main view displays active proposals with current vote counts, participation rates, and time remaining. Tier-weighted voting shows how different civic levels contribute to decisions. The analytics section reveals voting patterns and community engagement trends without compromising individual privacy.",
+      "duration": "29 seconds",
+      "tone": "instructional",
+      "speed": "normal"
+    },
+    "privacyNotice": {
+      "title": "🔒 Transparent Yet Private Voting",
+      "content": "Vote tracking provides democratic transparency while protecting individual privacy. Aggregate statistics are public, but individual voting choices remain confidential. The system prevents vote manipulation while enabling community oversight of democratic processes.",
+      "duration": "20 seconds",
+      "tone": "formal",
+      "speed": "normal"
+    },
+    "nextStepsCue": {
+      "title": "➡️ Monitor Democratic Health",
+      "content": "Use this dashboard to stay informed about community decision-making progress. Understanding voting patterns helps you make better-informed civic choices and contributes to the health of democratic governance.",
+      "duration": "17 seconds",
+      "tone": "encouraging",
+      "speed": "normal"
+    }
+  },
+  "accessibilityFeatures": {
+    "ariaLiveRegions": true,
+    "screenReaderCompatible": true,
+    "keyboardNavigation": true,
+    "statisticsNarration": true
+  },
+  "integrationPoints": {
+    "ttsToggleId": "vote-tracking-tts",
+    "parentDeck": "governance_deck",
+    "relatedModules": ["governance_proposal", "civic_analytics"],
+    "prerequisiteModules": ["governance_proposal"]
+  },
+  "metadata": {
+    "createdAt": "2025-07-23T18:07:00.000Z",
+    "lastUpdated": "2025-07-23T18:07:00.000Z",
+    "version": "1.0.0",
+    "authorizedBy": "Commander Mark via JASMY Relay",
+    "qaValidation": "pending_grok_cycle_l",
+    "languageSupport": ["en-US"],
+    "estimatedCompletionTime": "83 seconds"
+  }
+}

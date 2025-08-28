@@ -1,0 +1,315 @@
+{
+  "schema": {
+    "version": "phase_tts_civic_enhance_step_4",
+    "description": "Comprehensive deck configuration database for TTS narration optimization",
+    "purpose": "Configure tone, speed, and voice settings for optimal civic engagement per deck"
+  },
+  "deckConfigurations": {
+    "deck1": {
+      "deckName": "Wallet Overview",
+      "defaultTone": "encouraging",
+      "defaultSpeed": "normal",
+      "voiceProfile": "civic_guide",
+      "modules": {
+        "module1": {
+          "moduleName": "IdentitySummaryCard",
+          "tone": "encouraging",
+          "speed": "normal",
+          "priority": "high"
+        },
+        "module2": {
+          "moduleName": "CivicSwipeCard", 
+          "tone": "informative",
+          "speed": "normal",
+          "priority": "medium"
+        },
+        "module3": {
+          "moduleName": "TreasuryBalanceDisplay",
+          "tone": "informative",
+          "speed": "normal",
+          "priority": "medium"
+        }
+      }
+    },
+    "deck2": {
+      "deckName": "Governance",
+      "defaultTone": "formal",
+      "defaultSpeed": "normal",
+      "voiceProfile": "democratic_facilitator",
+      "modules": {
+        "module1": {
+          "moduleName": "GovernanceProposalInterface",
+          "tone": "formal",
+          "speed": "normal",
+          "priority": "high"
+        },
+        "module2": {
+          "moduleName": "CommunityDiscussionForum",
+          "tone": "encouraging",
+          "speed": "normal",
+          "priority": "high"
+        },
+        "module3": {
+          "moduleName": "VoteTrackingDashboard",
+          "tone": "informative",
+          "speed": "normal",
+          "priority": "medium"
+        }
+      }
+    },
+    "deck3": {
+      "deckName": "Privacy",
+      "defaultTone": "formal",
+      "defaultSpeed": "slow",
+      "voiceProfile": "security_advisor",
+      "modules": {
+        "module1": {
+          "moduleName": "PrivacyControlCenter",
+          "tone": "formal",
+          "speed": "slow",
+          "priority": "high"
+        },
+        "module2": {
+          "moduleName": "DataEncryptionManager",
+          "tone": "formal",
+          "speed": "slow",
+          "priority": "high"
+        },
+        "module3": {
+          "moduleName": "AnonymitySettingsPanel",
+          "tone": "informative",
+          "speed": "normal",
+          "priority": "medium"
+        }
+      }
+    },
+    "deck4": {
+      "deckName": "Civic Identity",
+      "defaultTone": "encouraging",
+      "defaultSpeed": "normal",
+      "voiceProfile": "identity_coach",
+      "modules": {
+        "module1": {
+          "moduleName": "CivicIdentityVerification",
+          "tone": "formal",
+          "speed": "normal",
+          "priority": "high"
+        },
+        "module2": {
+          "moduleName": "ReputationBuilderSystem",
+          "tone": "encouraging",
+          "speed": "normal",
+          "priority": "high"
+        },
+        "module3": {
+          "moduleName": "AchievementTrackerDashboard",
+          "tone": "encouraging",
+          "speed": "normal",
+          "priority": "medium"
+        }
+      }
+    },
+    "deck5": {
+      "deckName": "Consensus Layer",
+      "defaultTone": "calm",
+      "defaultSpeed": "slow",
+      "voiceProfile": "consensus_facilitator",
+      "modules": {
+        "module1": {
+          "moduleName": "ConsensusLayerInterface",
+          "tone": "formal",
+          "speed": "slow",
+          "priority": "high"
+        },
+        "module2": {
+          "moduleName": "DeliberationToolsSuite",
+          "tone": "informative",
+          "speed": "normal",
+          "priority": "high"
+        },
+        "module3": {
+          "moduleName": "AgreementTrackingSystem",
+          "tone": "formal",
+          "speed": "normal",
+          "priority": "medium"
+        }
+      }
+    },
+    "deck6": {
+      "deckName": "Reputation System",
+      "defaultTone": "encouraging",
+      "defaultSpeed": "normal",
+      "voiceProfile": "achievement_mentor"
+    },
+    "deck7": {
+      "deckName": "Treasury Management",
+      "defaultTone": "informative",
+      "defaultSpeed": "normal",
+      "voiceProfile": "financial_advisor"
+    },
+    "deck8": {
+      "deckName": "Audit System",
+      "defaultTone": "formal",
+      "defaultSpeed": "slow",
+      "voiceProfile": "compliance_officer"
+    },
+    "deck9": {
+      "deckName": "Communication Hub",
+      "defaultTone": "encouraging",
+      "defaultSpeed": "normal",
+      "voiceProfile": "community_connector"
+    },
+    "deck10": {
+      "deckName": "Governance Advanced",
+      "defaultTone": "formal",
+      "defaultSpeed": "slow",
+      "voiceProfile": "governance_expert"
+    },
+    "deck11": {
+      "deckName": "Federation Network",
+      "defaultTone": "informative",
+      "defaultSpeed": "normal",
+      "voiceProfile": "federation_coordinator"
+    },
+    "deck12": {
+      "deckName": "Educational Content",
+      "defaultTone": "encouraging",
+      "defaultSpeed": "normal",
+      "voiceProfile": "civic_educator"
+    },
+    "deck13": {
+      "deckName": "Community Building",
+      "defaultTone": "encouraging",
+      "defaultSpeed": "normal",
+      "voiceProfile": "community_builder"
+    },
+    "deck14": {
+      "deckName": "Innovation Lab",
+      "defaultTone": "encouraging",
+      "defaultSpeed": "normal",
+      "voiceProfile": "innovation_guide"
+    },
+    "deck15": {
+      "deckName": "Policy Analysis",
+      "defaultTone": "formal",
+      "defaultSpeed": "slow",
+      "voiceProfile": "policy_analyst"
+    },
+    "deck16": {
+      "deckName": "Civic Education",
+      "defaultTone": "encouraging",
+      "defaultSpeed": "normal",
+      "voiceProfile": "civic_teacher"
+    },
+    "deck17": {
+      "deckName": "Civic Diplomacy",
+      "defaultTone": "formal",
+      "defaultSpeed": "slow",
+      "voiceProfile": "diplomatic_advisor"
+    },
+    "deck18": {
+      "deckName": "Smart Contracts",
+      "defaultTone": "informative",
+      "defaultSpeed": "slow",
+      "voiceProfile": "technical_advisor"
+    },
+    "deck19": {
+      "deckName": "Community Events",
+      "defaultTone": "encouraging",
+      "defaultSpeed": "normal",
+      "voiceProfile": "event_coordinator"
+    },
+    "deck20": {
+      "deckName": "Civic Metrics",
+      "defaultTone": "informative",
+      "defaultSpeed": "normal",
+      "voiceProfile": "data_analyst"
+    }
+  },
+  "voiceProfiles": {
+    "civic_guide": {
+      "description": "Warm, welcoming voice for new user onboarding",
+      "characteristics": ["patient", "clear", "supportive"],
+      "preferredProvider": "openai"
+    },
+    "democratic_facilitator": {
+      "description": "Authoritative but inclusive voice for governance",
+      "characteristics": ["balanced", "fair", "decisive"],
+      "preferredProvider": "openai"
+    },
+    "security_advisor": {
+      "description": "Careful, precise voice for privacy topics",
+      "characteristics": ["cautious", "detailed", "trustworthy"],
+      "preferredProvider": "openai"
+    },
+    "identity_coach": {
+      "description": "Motivational voice for personal civic development",
+      "characteristics": ["inspiring", "personal", "growth-oriented"],
+      "preferredProvider": "openai"
+    },
+    "consensus_facilitator": {
+      "description": "Neutral, calming voice for conflict resolution",
+      "characteristics": ["neutral", "calming", "diplomatic"],
+      "preferredProvider": "openai"
+    },
+    "achievement_mentor": {
+      "description": "Celebrating voice for accomplishments",
+      "characteristics": ["congratulatory", "proud", "motivating"],
+      "preferredProvider": "openai"
+    },
+    "financial_advisor": {
+      "description": "Professional voice for treasury matters",
+      "characteristics": ["professional", "precise", "trustworthy"],
+      "preferredProvider": "openai"
+    },
+    "compliance_officer": {
+      "description": "Methodical voice for audit processes",
+      "characteristics": ["thorough", "systematic", "authoritative"],
+      "preferredProvider": "openai"
+    },
+    "community_connector": {
+      "description": "Friendly voice for social interactions",
+      "characteristics": ["social", "welcoming", "inclusive"],
+      "preferredProvider": "openai"
+    },
+    "civic_educator": {
+      "description": "Teaching voice for educational content",
+      "characteristics": ["educational", "patient", "clear"],
+      "preferredProvider": "openai"
+    }
+  },
+  "culturalAdaptations": {
+    "en-US": {
+      "formalityLevel": "moderate",
+      "speakingPace": "normal",
+      "culturalContext": "individualistic_democratic"
+    },
+    "en-UK": {
+      "formalityLevel": "high",
+      "speakingPace": "slower",
+      "culturalContext": "formal_parliamentary"
+    },
+    "international": {
+      "formalityLevel": "high",
+      "speakingPace": "slower",
+      "culturalContext": "diplomatic_neutral"
+    }
+  },
+  "qualityStandards": {
+    "minimumNarrationQuality": "85%",
+    "claudeGuardValidation": "required",
+    "ariaCompliance": "full",
+    "privacyCompliance": "full",
+    "performanceTarget": "<500ms latency"
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "createdAt": "2025-07-23T18:07:00.000Z",
+    "lastUpdated": "2025-07-23T18:07:00.000Z",
+    "authorizedBy": "Commander Mark via JASMY Relay",
+    "totalDecks": 20,
+    "configuredDecks": 5,
+    "pendingDecks": 15,
+    "qaValidation": "pending_grok_cycle_l"
+  }
+}

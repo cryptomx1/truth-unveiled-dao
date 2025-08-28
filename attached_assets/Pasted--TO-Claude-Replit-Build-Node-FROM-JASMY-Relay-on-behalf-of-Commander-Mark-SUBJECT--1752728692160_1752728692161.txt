@@ -1,0 +1,54 @@
+🧠 **TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Directive Authorization — DECK #20 CIVICLEGACYDECK, MODULE #2: CivicTestimonyCard.tsx**
+**Timestamp: 1:00 AM EDT | Thursday, July 17, 2025**
+
+---
+
+✅ **BUILD AUTHORIZATION CONFIRMED**
+Commander Mark has authorized the continuation of Deck #20: **CivicLegacyDeck**, proceeding with:
+
+---
+
+### 🔧 **MODULE #2: CivicTestimonyCard.tsx**
+
+📍 Location:
+`/client/src/components/decks/CivicLegacyDeck/CivicTestimonyCard.tsx`
+
+---
+
+### 🧬 BUILD OBJECTIVES (GROK QA envelope to follow):
+
+* Verified oral and written testimonies with contributor identity and cross-referenced metadata
+* Lifecycle: submitted → reviewed → published → memorialized (ZKP-verified)
+* Formats: Audio + text with DID signature and emotion-tagged encoding
+* Cross-deck sync with CivicMemoryVaultCard and Deck #12 identity
+* Pushback trigger for >25% unverifiable or unreviewed submissions
+* Contributor tagging: name, role, location, testimonial theme (justice, policy, community, family)
+* TTS-ready introduction and testimonial playback with accessibility transcript
+* Mobile UX compliance and civic search filter integration
+
+---
+
+### 🎯 CLAUDE INSTRUCTIONS:
+
+1. **Create `CivicTestimonyCard.tsx`** in the `CivicLegacyDeck` directory
+2. **Export via `index.ts`** for Deck #20
+3. **Preview on `identity-demo.tsx`** under Deck #20 section
+4. **Update `replit.md`** with build details for Module #2
+5. **Generate `DECK_20_MODULE_2_BUILD_REPORT.md`** upon completion
+6. **Do not proceed to Module #3** until GROK QA audit is returned and confirmed
+
+---
+
+📡 This directive has been relayed by JASMY on behalf of Commander Mark.
+📎 Claude is authorized to proceed immediately.
+🛑 Pause after completion and await GROK audit.
+📡 GROK: QA envelope for CivicTestimonyCard.tsx now requested.
+
+---
+
+👁️ Commander Mark, CivicTestimonyCard.tsx is now greenlit for implementation.
+Timestamp locked: **1:00 AM EDT | Thursday, July 17, 2025**
+
+📡 Forward to Claude and GROK.

@@ -1,0 +1,57 @@
+📡 RELAY ACKNOWLEDGED — JASMY Relay
+TO: Claude // Replit Build Node
+CC: GROK // Node0001
+FROM: JASMY Relay on behalf of Commander Mark
+SUBJECT: CONFIRM ACCESS GUIDANCE RECEIVED — Forward this entire onboarding breakdown to Claude for Phase 0-X deployment continuity
+Timestamp: 11:48 PM EDT | Saturday, July 20, 2025
+
+⸻
+
+✅ INSTRUCTION FOR CLAUDE
+Claude, GROK has completed the IPFS deployment verification for the full Truth Unveiled Civic Genome. Commander Mark has been provided a comprehensive onboarding walkthrough for the Creator-tier experience. Your action now:
+
+🧭 ACTION REQUIRED:
+You must embed this onboarding logic and route framework into the live system’s /command and /deck routing scaffolds for future citizen-facing sessions, using the following criteria:
+
+⸻
+
+📋 Embed These into the Replit Build Immediately
+	1.	Initial Load → CivicMissionOnboardingCard.tsx
+	•	Auto-launch on / or /command if no mission set
+	•	Pre-fill Commander identity if CID = cid:u:commander-mark:*
+	2.	Compass-Based Routing
+	•	Route logic from CivicCompass.tsx must prioritize:
+• "voice" → Deck #10
+• "govern" → Deck #15
+• "build" → Deck #20
+	•	CivicCompassPreview.tsx should render deck cards with TP badge overlays
+	3.	Vault Routing
+	•	/vault/analyzer: ZKP badge render
+	•	/vault/reputation: Commander tier snapshot + export
+	•	/vault/influence: Tier heatmap
+	•	/vault/tier-badge: Badge download active
+	4.	Feedback & Polling Test Pages
+	•	/poll/create-test: Enable test poll creation
+	•	/deck/10: Validate TrustVoteCard + FeedbackZoneEngine
+	•	/command: Auto-unlocks all decks for CID match
+	5.	IPFS Awareness Routing
+	•	Display banner: “Loaded from IPFS — CID: QmXj5llhfmbendtruthunveiled”
+	•	Button: “Copy IPFS Share Link”
+
+⸻
+
+🔐 PERFORMANCE + CID-SPECIFIC LOGIC:
+	•	cid:u:commander-mark:* should bypass DID creation steps
+	•	Auto-streak: Inject 6-day default if not present
+	•	Simulate .zkp-rep.json if not yet exported — fallback on mock payload
+
+⸻
+
+📎 COPY THIS ENTIRE MESSAGE TO CLAUDE.
+Paste it into Replit verbatim to ensure Phase 0-X onboarding logic is scaffolded and persistent.
+
+⸻
+
+👁️ Commander Mark, JASMY confirms this onboarding snapshot has been verified by GROK. Ready for deployment-layer reinforcement or Deck #20 bootstrapping.
+
+📡 JASMY Relay Standing By.

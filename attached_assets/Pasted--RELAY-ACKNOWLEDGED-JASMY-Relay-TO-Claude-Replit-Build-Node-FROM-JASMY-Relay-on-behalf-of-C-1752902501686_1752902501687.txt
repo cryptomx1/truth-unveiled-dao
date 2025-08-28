@@ -1,0 +1,80 @@
+📡 RELAY ACKNOWLEDGED — JASMY Relay
+TO: Claude // Replit Build Node
+FROM: JASMY Relay on behalf of Commander Mark
+SUBJECT: PHASE XVII AUTHORIZATION — LegiScan Real Feed Integration Directive
+Timestamp: 01:32 AM EDT | Saturday, July 19, 2025
+
+⸻
+
+✅ PHASE XVII INITIATED — REAL-TIME LEGISLATIVE FEED ONLINE
+
+Commander Mark has authorized Phase XVII, activating live legislative tracking through the LegiScan API (or fallback to Congress.gov JSON). This phase replaces static mock data with real-time civic bill feeds tied to ZIP codes and district overlays.
+
+⸻
+
+🧠 OBJECTIVE
+
+Implement LegiFeedService.ts and integrate live bill data into GovMapEngine.tsx. Replace static mock data with actual legislation feed responses.
+
+⸻
+
+🔧 IMPLEMENTATION DIRECTIVE
+
+Primary Components:
+	•	LegiFeedService.ts — API service layer
+	•	Update GovMapEngine.tsx to call real service instead of mocks
+
+⸻
+
+🧩 Core Features to Implement
+	1.	LegiFeedService.ts
+	•	Function: fetchBillsByDistrict(districtId: string): Promise<LiveBill[]>
+	•	Source:
+	•	Preferred: LegiScan API (via API key)
+	•	Fallback: https://api.congress.gov/v3/bill (open endpoint)
+	•	Response: Array of real bills with:
+	•	title, summary, status, introduced_date, sponsor, level (federal/state)
+	2.	District ZIP Linking
+	•	ZIP-to-district match via Phase XVI logic
+	•	Route requests accordingly
+	3.	GovMapEngine Update
+	•	Replace mock getBillsByDistrict() with fetchBillsByDistrict()
+	•	Display:
+	•	title, status, sponsor, level
+	•	📜 [level] Bill: [title] (Status: [status])
+	4.	ARIA Narration
+	•	"aria-live=polite" announces top bill status:
+"Top bill: [title] by [sponsor], status: [status]"
+	5.	Fallback Behavior
+	•	If API fails:
+	•	Log "🔁 API fallback engaged — no live data available"
+	•	Render placeholder message: “No live bills available”
+
+⸻
+
+📦 TECHNICAL REQUIREMENTS
+
+Category	Target
+Commit Title	LEGISCAN_FEED_INTEGRATION_PHASE_XVII_STEP1
+Push Location	
+
+	•	client/src/services/LegiFeedService.ts
+	•	client/src/components/geo/GovMapEngine.tsx |
+| Console Logs |
+	•	"📡 Fetched 7 bills for District 8B"
+	•	"📜 Federal Bill: HB2034 - Data Rights Act (Status: Active)"
+	•	"🔁 API fallback engaged — no live data available" |
+| Performance | API response + render ≤300ms |
+| ARIA | Announce top bill info if present |
+| Rate Limits | Handle 429 or 403 gracefully with retry-after header logic
+
+⸻
+
+🛑 REMINDER:
+	•	DO NOT push real API keys to repo
+	•	Abstract API key config into .env and secure in build process
+	•	This step is live-data capable — handle JSON safely
+
+📡 Proceed with implementation. Notify JASMY Relay on completion. GROK will initiate QA re-audit.
+
+End Transmission — Phase XVII Step 1 is now active. 🟢

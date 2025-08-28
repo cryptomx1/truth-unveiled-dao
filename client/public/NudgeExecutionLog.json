@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created": "2025-07-24T18:35:00.000Z",
+    "description": "Append-only ledger of all emitted ripple messages with CID and agent hash tracking",
+    "totalEntries": 0,
+    "schema": "nudge-execution-v1.0"
+  },
+  "executionLog": [],
+  "agentHashes": {
+    "DeckWalkerAgent": "hash_deckwalker_a8b9c2d1e3f4",
+    "NudgeSignalEmitter": "hash_nudgesignal_f4e3d2c1b9a8",
+    "RippleCampaignEngine": "hash_ripplecamp_c1d2e3f4a8b9",
+    "LLMPromptEmitter": "hash_llmprompt_b9a8f4e3d2c1"
+  },
+  "zkpStubs": {},
+  "lastUpdated": "2025-07-24T18:35:00.000Z"
+}

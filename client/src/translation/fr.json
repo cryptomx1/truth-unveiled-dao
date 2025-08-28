@@ -1,0 +1,94 @@
+{
+  "mission.selectPrompt": "Quelle est votre mission aujourd'hui?",
+  "mission.representation": "Représentation",
+  "mission.voice": "Voix",
+  "mission.data": "Données",
+  "mission.description.representation": "Plaider pour les besoins communautaires et les changements de politique",
+  "mission.description.voice": "Partagez votre perspective dans les discussions civiques",
+  "mission.description.data": "Analysez les tendances et contribuez à la transparence",
+  "mission.continue": "Continuer",
+  
+  "tier.citizen": "Citoyen",
+  "tier.moderator": "Modérateur",
+  "tier.governor": "Gouverneur",
+  "tier.label": "Niveau:",
+  
+  "streak.days": "{{count}} Jours",
+  "streak.label": "Série de Confiance:",
+  
+  "nav.onboarding": "Début",
+  "nav.constellation": "Explorer", 
+  "nav.deck": "Jeux",
+  "nav.audit": "Audit",
+  "nav.memory": "Mémoire",
+  
+  "deck.feedback.title": "Tableau de Commentaires",
+  "deck.interface.title": "Interface de Jeux Civiques",
+  "deck.interface.description": "Accédez aux outils spécialisés d'engagement civique.",
+  "deck.audit.title": "Vue d'Audit",
+  "deck.audit.description": "Interface d'audit de niveau avancé - disponible pour les modérateurs et gouverneurs.",
+  
+  "language.toggle": "Changer de Langue",
+  "language.set": "Langue définie à: {{lang}}",
+  "language.fallback": "Langue de secours appliquée: en",
+  
+  "accessibility.initialized": "CivicLayoutShell Initialisé",
+  "accessibility.tier.status": "Niveau: {{tier}} | Série de Confiance: {{days}} Jours | Mission: {{mission}}",
+  
+  "view.current": "Vue actuelle: {{view}}",
+  
+  "system.tts.override": "Remplacement TTS appliqué",
+  "system.tts.killer": "TUEUR TTS D'URGENCE ACTIVÉ - TOUTE PAROLE DÉTRUITE",
+  
+  "button.submit": "Soumettre",
+  "button.cancel": "Annuler",
+  "button.save": "Sauvegarder",
+  "button.refresh": "Actualiser",
+  "button.export": "Exporter",
+  "button.import": "Importer",
+  "button.close": "Fermer",
+  "button.continue": "Continuer",
+  "button.back": "Retour",
+  "button.next": "Suivant",
+  
+  "card.feedback.title": "Commentaires de Confiance",
+  "card.feedback.description": "Validation de confiance communautaire et collecte de commentaires",
+  "card.feedback.submit": "Soumettre des Commentaires",
+  "card.feedback.history": "Voir l'Historique",
+  "card.feedback.explanation": "Les commentaires de confiance affectent les seuils de propositions et la validation",
+  "card.feedback.community": "Les commentaires de la communauté aident à optimiser les mécanismes de prise de décision",
+  
+  "card.governance.title": "Tableau de Bord de Gouvernance",
+  "card.governance.description": "Gestion des propositions civiques et interface de vote",
+  "card.governance.proposals": "Propositions Actives",
+  "card.governance.voting": "Voter Maintenant",
+  "card.governance.results": "Voir les Résultats",
+  
+  "card.identity.title": "Gestion d'Identité",
+  "card.identity.description": "Vérification d'identité décentralisée et gestion des identifiants",
+  "card.identity.verify": "Vérifier l'Identité",
+  "card.identity.credentials": "Gérer les Identifiants",
+  "card.identity.did": "Profil DID",
+  
+  "card.deck.preview": "Aperçu du Jeu",
+  "card.deck.modules": "{{count}} Modules",
+  "card.deck.status": "Statut: {{status}}",
+  "card.deck.explore": "Explorer le Jeu",
+  
+  "session.summary": "Résumé de Session",
+  "action.replay": "Rejouer",
+  "timeline.heading": "Index de Mémoire Civique",
+  
+  "tts.feedback.ready": "Interface de commentaires prête",
+  "tts.governance.ready": "Tableau de bord de gouvernance prêt",
+  "tts.identity.ready": "Interface d'identité prête",
+  "tts.quiz.ready": "Testez votre perspicacité civique",
+  "tts.node.ready": "Nœud de commentaires prêt. {{count}} charges utiles vérifiées",
+  "tts.memory.ready": "Interface de mémoire prête",
+  
+  "aria.feedback.vote": "Soumettre un vote de commentaires",
+  "aria.governance.proposal": "Voir les détails de la proposition",
+  "aria.identity.verify": "Vérifier les identifiants d'identité",
+  "aria.deck.navigate": "Naviguer vers le jeu",
+  "aria.language.select": "Sélectionner la langue de l'interface"
+}

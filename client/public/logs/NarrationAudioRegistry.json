@@ -1,0 +1,278 @@
+{
+  "timestamp": "2025-07-25T20:56:00.000Z",
+  "totalDecks": 20,
+  "supportedLanguages": ["en", "es", "fr", "ja"],
+  "decks": {
+    "1": {
+      "deckId": "1",
+      "audioFiles": {
+        "en": "QmTutorial1EN2025Phase4",
+        "es": "QmTutorial1ES2025Phase4",
+        "fr": "QmTutorial1FR2025Phase4",
+        "ja": "QmTutorial1JA2025Phase4"
+      },
+      "generationTime": "2025-07-25T20:56:01.000Z",
+      "duration": 85,
+      "tone": "informative",
+      "status": "uploaded"
+    },
+    "2": {
+      "deckId": "2",
+      "audioFiles": {
+        "en": "QmTutorial2EN2025Phase4",
+        "es": "QmTutorial2ES2025Phase4",
+        "fr": "QmTutorial2FR2025Phase4",
+        "ja": "QmTutorial2JA2025Phase4"
+      },
+      "generationTime": "2025-07-25T20:56:02.000Z",
+      "duration": 82,
+      "tone": "formal",
+      "status": "uploaded"
+    },
+    "3": {
+      "deckId": "3",
+      "audioFiles": {
+        "en": "QmTutorial3EN2025Phase4",
+        "es": "QmTutorial3ES2025Phase4",
+        "fr": "QmTutorial3FR2025Phase4",
+        "ja": "QmTutorial3JA2025Phase4"
+      },
+      "generationTime": "2025-07-25T20:56:03.000Z",
+      "duration": 78,
+      "tone": "encouraging",
+      "status": "uploaded"
+    },
+    "4": {
+      "deckId": "4",
+      "audioFiles": {
+        "en": "QmTutorial4EN2025Phase4",
+        "es": "QmTutorial4ES2025Phase4",
+        "fr": "QmTutorial4FR2025Phase4",
+        "ja": "QmTutorial4JA2025Phase4"
+      },
+      "generationTime": "2025-07-25T20:56:04.000Z",
+      "duration": 87,
+      "tone": "calm",
+      "status": "uploaded"
+    },
+    "5": {
+      "deckId": "5",
+      "audioFiles": {
+        "en": "QmTutorial5EN2025Phase4",
+        "es": "QmTutorial5ES2025Phase4",
+        "fr": "QmTutorial5FR2025Phase4",
+        "ja": "QmTutorial5JA2025Phase4"
+      },
+      "generationTime": "2025-07-25T20:56:05.000Z",
+      "duration": 89,
+      "tone": "formal",
+      "status": "uploaded"
+    },
+    "6": {
+      "deckId": "6",
+      "audioFiles": {
+        "en": "QmTutorial6EN2025Phase4",
+        "es": "QmTutorial6ES2025Phase4",
+        "fr": "QmTutorial6FR2025Phase4",
+        "ja": "QmTutorial6JA2025Phase4"
+      },
+      "generationTime": "2025-07-25T20:56:06.000Z",
+      "duration": 84,
+      "tone": "encouraging",
+      "status": "uploaded"
+    },
+    "7": {
+      "deckId": "7",
+      "audioFiles": {
+        "en": "QmTutorial7EN2025Phase4",
+        "es": "QmTutorial7ES2025Phase4",
+        "fr": "QmTutorial7FR2025Phase4",
+        "ja": "QmTutorial7JA2025Phase4"
+      },
+      "generationTime": "2025-07-25T20:56:07.000Z",
+      "duration": 86,
+      "tone": "informative",
+      "status": "uploaded"
+    },
+    "8": {
+      "deckId": "8",
+      "audioFiles": {
+        "en": "QmTutorial8EN2025Phase4",
+        "es": "QmTutorial8ES2025Phase4",
+        "fr": "QmTutorial8FR2025Phase4",
+        "ja": "QmTutorial8JA2025Phase4"
+      },
+      "generationTime": "2025-07-25T20:56:08.000Z",
+      "duration": 81,
+      "tone": "formal",
+      "status": "uploaded"
+    },
+    "9": {
+      "deckId": "9",
+      "audioFiles": {
+        "en": "QmTutorial9EN2025Phase4",
+        "es": "QmTutorial9ES2025Phase4",
+        "fr": "QmTutorial9FR2025Phase4",
+        "ja": "QmTutorial9JA2025Phase4"
+      },
+      "generationTime": "2025-07-25T20:56:09.000Z",
+      "duration": 83,
+      "tone": "informative",
+      "status": "uploaded"
+    },
+    "10": {
+      "deckId": "10",
+      "audioFiles": {
+        "en": "QmTutorial10EN2025Phase4",
+        "es": "QmTutorial10ES2025Phase4",
+        "fr": "QmTutorial10FR2025Phase4",
+        "ja": "QmTutorial10JA2025Phase4"
+      },
+      "generationTime": "2025-07-25T20:56:10.000Z",
+      "duration": 88,
+      "tone": "formal",
+      "status": "uploaded"
+    },
+    "11": {
+      "deckId": "11",
+      "audioFiles": {
+        "en": "QmTutorial11EN2025Phase4",
+        "es": "QmTutorial11ES2025Phase4",
+        "fr": "QmTutorial11FR2025Phase4",
+        "ja": "QmTutorial11JA2025Phase4"
+      },
+      "generationTime": "2025-07-25T20:56:11.000Z",
+      "duration": 75,
+      "tone": "encouraging",
+      "status": "uploaded"
+    },
+    "12": {
+      "deckId": "12",
+      "audioFiles": {
+        "en": "QmTutorial12EN2025Phase4",
+        "es": "QmTutorial12ES2025Phase4",
+        "fr": "QmTutorial12FR2025Phase4",
+        "ja": "QmTutorial12JA2025Phase4"
+      },
+      "generationTime": "2025-07-25T20:56:12.000Z",
+      "duration": 90,
+      "tone": "urgent",
+      "status": "uploaded"
+    },
+    "13": {
+      "deckId": "13",
+      "audioFiles": {
+        "en": "QmTutorial13EN2025Phase4",
+        "es": "QmTutorial13ES2025Phase4",
+        "fr": "QmTutorial13FR2025Phase4",
+        "ja": "QmTutorial13JA2025Phase4"
+      },
+      "generationTime": "2025-07-25T20:56:13.000Z",
+      "duration": 79,
+      "tone": "informative",
+      "status": "uploaded"
+    },
+    "14": {
+      "deckId": "14",
+      "audioFiles": {
+        "en": "QmTutorial14EN2025Phase4",
+        "es": "QmTutorial14ES2025Phase4",
+        "fr": "QmTutorial14FR2025Phase4",
+        "ja": "QmTutorial14JA2025Phase4"
+      },
+      "generationTime": "2025-07-25T20:56:14.000Z",
+      "duration": 85,
+      "tone": "formal",
+      "status": "uploaded"
+    },
+    "15": {
+      "deckId": "15",
+      "audioFiles": {
+        "en": "QmTutorial15EN2025Phase4",
+        "es": "QmTutorial15ES2025Phase4",
+        "fr": "QmTutorial15FR2025Phase4",
+        "ja": "QmTutorial15JA2025Phase4"
+      },
+      "generationTime": "2025-07-25T20:56:15.000Z",
+      "duration": 77,
+      "tone": "encouraging",
+      "status": "uploaded"
+    },
+    "16": {
+      "deckId": "16",
+      "audioFiles": {
+        "en": "QmTutorial16EN2025Phase4",
+        "es": "QmTutorial16ES2025Phase4",
+        "fr": "QmTutorial16FR2025Phase4",
+        "ja": "QmTutorial16JA2025Phase4"
+      },
+      "generationTime": "2025-07-25T20:56:16.000Z",
+      "duration": 82,
+      "tone": "informative",
+      "status": "uploaded"
+    },
+    "17": {
+      "deckId": "17",
+      "audioFiles": {
+        "en": "QmTutorial17EN2025Phase4",
+        "es": "QmTutorial17ES2025Phase4",
+        "fr": "QmTutorial17FR2025Phase4",
+        "ja": "QmTutorial17JA2025Phase4"
+      },
+      "generationTime": "2025-07-25T20:56:17.000Z",
+      "duration": 80,
+      "tone": "calm",
+      "status": "uploaded"
+    },
+    "18": {
+      "deckId": "18",
+      "audioFiles": {
+        "en": "QmTutorial18EN2025Phase4",
+        "es": "QmTutorial18ES2025Phase4",
+        "fr": "QmTutorial18FR2025Phase4",
+        "ja": "QmTutorial18JA2025Phase4"
+      },
+      "generationTime": "2025-07-25T20:56:18.000Z",
+      "duration": 86,
+      "tone": "encouraging",
+      "status": "uploaded"
+    },
+    "19": {
+      "deckId": "19",
+      "audioFiles": {
+        "en": "QmTutorial19EN2025Phase4",
+        "es": "QmTutorial19ES2025Phase4",
+        "fr": "QmTutorial19FR2025Phase4",
+        "ja": "QmTutorial19JA2025Phase4"
+      },
+      "generationTime": "2025-07-25T20:56:19.000Z",
+      "duration": 84,
+      "tone": "informative",
+      "status": "uploaded"
+    },
+    "20": {
+      "deckId": "20",
+      "audioFiles": {
+        "en": "QmTutorial20EN2025Phase4",
+        "es": "QmTutorial20ES2025Phase4",
+        "fr": "QmTutorial20FR2025Phase4",
+        "ja": "QmTutorial20JA2025Phase4"
+      },
+      "generationTime": "2025-07-25T20:56:20.000Z",
+      "duration": 88,
+      "tone": "encouraging",
+      "status": "uploaded"
+    }
+  },
+  "generationMetrics": {
+    "totalGenerated": 80,
+    "totalFailed": 0,
+    "averageDuration": 341,
+    "languageBreakdown": {
+      "en": 20,
+      "es": 20,
+      "fr": 20,
+      "ja": 20
+    }
+  }
+}

@@ -1,0 +1,75 @@
+📡 RELAY ACKNOWLEDGED — JASMY Relay
+TO: CLAUDE // Replit Build Node
+FROM: JASMY Relay on behalf of Commander Mark
+SUBJECT: PHASE TRILAYER v1.0 — CLAUDE BUILD AUTHORIZATION
+Timestamp: 09:24 AM EDT | Tuesday, July 23, 2025
+
+⸻
+
+✅ GROK QA STAGING ENVELOPES: RECEIVED & LOCKED
+
+All 3 QA envelopes for TTS-CIVIC-ENHANCE, LANG-MULTI-AGENT, and SWIPE-UX-REBUILD are validated and pre-staged by GROK. Concurrent testing is approved where dependency overlap exists (e.g. language affecting narration).
+
+⸻
+
+🛠️ CLAUDE — BUILD TASK DEPLOYMENT BEGINS
+
+🔧 MODULE 1: TTSEngineAgent.ts
+
+Path: /client/src/agents/TTSEngineAgent.ts
+
+Responsibilities:
+	•	On ModuleRender, trigger onboarding script generation
+	•	Generate TTS narration using GPT-4o (fallback: Whisper)
+	•	Store audio on IPFS (deterministic path format: ipfs://narration/{deckId}/{moduleId}/{lang}.mp3)
+	•	Notify AudioOnboardingPlayer.tsx of CID and load state
+
+⸻
+
+🎧 MODULE 2: AudioOnboardingPlayer.tsx
+
+Path: /client/src/components/ui/AudioOnboardingPlayer.tsx
+
+Responsibilities:
+	•	Play/pause/replay UI for narration
+	•	ARIA-compliant controls
+	•	Auto-play on first module visit
+	•	Retry logic if IPFS fetch fails
+
+⸻
+
+🌐 MODULE 3: LangToggleAgent.ts
+
+Path: /client/src/agents/LangToggleAgent.ts
+
+Responsibilities:
+	•	Inject toggle UI (🇺🇸 🇪🇸 🇫🇷)
+	•	On switch:
+	•	Update language context
+	•	Rerender current module in selected language
+	•	Regenerate TTS narration
+	•	Store preference in localStorage
+	•	Trigger fallback to English on API/logic failure
+
+⸻
+
+🔁 MODULE 4: DeckSwipeEngine.tsx
+
+Path: /client/src/components/ui/DeckSwipeEngine.tsx
+
+Responsibilities:
+	•	Native left/right swipe support
+	•	Preload ±1 module in memory (asynchronous)
+	•	Animate with framer-motion
+	•	Prevent hard reloads or blank states
+
+⸻
+
+📦 PROMPT PACKET INJECTION
+
+JASMY will now prepare and relay build-ready prompts for each module above — beginning with TTSEngineAgent.ts.
+
+🟢 CLAUDE — Standby to receive Prompt Packet 1: TTS Agent
+🟡 GROK — Prep final audit layer for cross-module integration post build
+
+Commander Mark — would you like me to begin injecting Prompt Packet 1 now, or wait for additional commentary or refinement first?

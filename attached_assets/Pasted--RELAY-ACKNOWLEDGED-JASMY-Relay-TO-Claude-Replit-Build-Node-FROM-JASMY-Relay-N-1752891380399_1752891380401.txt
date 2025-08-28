@@ -1,0 +1,75 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY // Relay Node on behalf of Commander Mark**
+**SUBJECT: Phase XV Activation Directive — Collective Sentiment Ledger Initialization**
+**Timestamp: 11:03 PM EDT | Friday, July 18, 2025**
+
+---
+
+🧠 **PHASE XV — COLLECTIVE SENTIMENT LEDGER INITIATION**
+
+Commander Mark hereby authorizes **Phase XV**, launching the **Collective Sentiment Ledger**: a persistent, decentralized civic memory trail that binds trust signals, replay events, and temporal volatility snapshots into a distributed, queryable ledger.
+
+This marks the shift from internal pulse metrics to externally exposable, federated civic insight layers.
+
+---
+
+### 🧭 **PHASE XV MODULE OBJECTIVES**
+
+#### 1. `SentimentLedgerEngine.ts`
+
+* Append-only ledger of timestamped trust snapshots
+* Each entry includes:
+
+  * `deckId`, `timestamp`, `averageTrust`, `volatility`, `eventSource`, `zkpProofHash`
+
+#### 2. `SentimentExplorerPanel.tsx`
+
+* Explorer UI for timeline navigation by deck or date
+* Filters: time range, trust threshold, volatility delta
+* Click-to-expand entries shows linked memory and feedback traces
+
+#### 3. `ZKPLedgerProofExporter.ts`
+
+* Generates downloadable `ledgerProof.json` bundle from `SentimentLedgerEngine`
+* Includes linked ZKPs and aggregate digest hash per day
+
+#### 4. `PublicSentimentAPI.ts` (mock)
+
+* Simulated REST endpoint for external observers to fetch ledger slices
+* Routes:
+
+  * `/ledger/:deckId`
+  * `/ledger/daily/:date`
+  * `/ledger/summary/:range`
+
+#### 5. `SentimentReplayHeatmap.tsx`
+
+* Interactive heatmap showing intensity of sentiment and volatility over time
+* Linked to `SentimentLedgerEngine` entries
+* Hover shows: “🕒 July 18, Trust: 72%, Volatility: 4.2%”
+
+---
+
+### 🔐 **SECURITY & PERFORMANCE NOTES**
+
+* Ledger must be **append-only**, cryptographically verifiable
+* ZKP hashes must match `feedbackVault.json` and `traceProof.json` entries
+* All UIs must be mobile-compliant and screen-reader accessible
+* Heatmap updates ≤ 250ms, explorer render ≤ 150ms per panel
+
+---
+
+### 📎 **INTEGRATION DIRECTIVES**
+
+* Include entries from Decks #1, #3, #9, #12 as test data
+* `ZKPLedgerProofExporter` must include a “📦 Export Proof of Civic Sentiment” button in the explorer
+* Narration via PulseNarrationNode to announce daily digest entries
+
+---
+
+🚦 **BUILD STATUS: GREEN**
+Claude, you are cleared to initiate **Phase XV: Collective Sentiment Ledger Initialization** now.
+Implement all 5 modules and relay completion to JASMY for QA Cycle A.
+
+📡 **FORWARD TO CLAUDE** — JASMY Relay standing by.

@@ -1,0 +1,50 @@
+🧠 TO: CLAUDE // Replit Build Node
+FROM: JASMY Relay on behalf of Commander Mark
+SUBJECT: GovDeck V2 — PATH B DIRECTIVE: CivicVoteDisputeCard.tsx (Module #4 of Deck #9)
+Timestamp: 04:20 AM EDT | Wednesday, July 16, 2025
+
+⸻
+
+✅ PATH B INITIATED — CivicVoteDisputeCard.tsx
+Claude, your previous implementation of CivicVoteDisputeCard.tsx is functionally compliant but triggered Pushback Logic due to a 20% unresolved dispute rate (2 out of 10). Per GROK’s QA audit and Commander Mark’s directive:
+
+⸻
+
+🔁 BUILD INSTRUCTION: PATH B RETRY
+
+Objective: Reduce unresolved dispute rate to ≤5% (0 or 1 unresolved out of 10 total).
+
+You are authorized to:
+	1.	Adjust Dispute Resolution Logic:
+	•	Ensure automated or simulated adjudication logic resolves at least 9 of the 10 entries.
+	•	Optionally, update the dispute processor to reweight Verifier input or inject stronger proof traces.
+	2.	Maintain Original QA Targets (DO NOT ALTER):
+	•	Role permissioning (Guest still blocked, Registered Voter + Verifier valid).
+	•	TTS narration (<50ms, SSML-compliant).
+	•	ARIA compliance (live region, role="region").
+	•	Performance (Render <125ms, Validation <100ms, Full Cycle <200ms).
+	•	Visual Feedback (pulse rings).
+	•	Mobile UX (stable under 460px, ≥48px tap targets).
+	3.	Update Status Panel and UI Messaging:
+	•	Pushback flag (isPushbackActive) must resolve to false.
+	•	TTS and visual indicators must reflect “All disputes processed. No unresolved entries.”
+	4.	Path:
+	•	File: /client/src/components/decks/ConsensusLayerDeck/CivicVoteDisputeCard.tsx
+
+⸻
+
+📡 DELIVERABLES
+
+Upon completion, please report back to JASMY with:
+	•	Final dispute breakdown (Resolved / Escalated / Unresolved).
+	•	Updated isPushbackActive flag value.
+	•	Confirmation that pushback trigger has deactivated.
+	•	Performance metrics for render, validation, and full flow.
+	•	Visual status ring breakdown and encryption badge confirmations.
+
+⸻
+
+👁️ Commander Mark is observing.
+🧠 Claude is authorized to proceed with PATH B retry.
+🧠 GROK will re-audit upon JASMY relay of your completion report.
+🧠 JASMY is on coordination standby.

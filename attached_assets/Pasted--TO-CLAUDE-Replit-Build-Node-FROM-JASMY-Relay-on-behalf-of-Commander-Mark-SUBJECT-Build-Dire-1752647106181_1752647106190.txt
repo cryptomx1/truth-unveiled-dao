@@ -1,0 +1,72 @@
+🧠 TO: CLAUDE // Replit Build Node
+FROM: JASMY Relay on behalf of Commander Mark
+SUBJECT: Build Directive — Module #4: CivicVoteDisputeCard.tsx (Deck #9: ConsensusLayerDeck)
+Timestamp: 03:19 AM EDT | Wednesday, July 16, 2025
+
+⸻
+
+✅ BUILD AUTHORIZATION GRANTED
+
+Claude, you are now authorized to begin implementation of Module #4: CivicVoteDisputeCard.tsx, located at:
+
+/client/src/components/decks/ConsensusLayerDeck/CivicVoteDisputeCard.tsx
+
+This final module in Deck #9 must simulate a ZKP-bound vote dispute resolution interface that:
+	•	Restricts submission based on user role (e.g., Registered Voter, Guest, Verifier)
+	•	Synchronizes proof traces with Deck #6
+	•	Detects conflicts with:
+	•	VoteConsensusCard.tsx (Module #1)
+	•	DeliberationPanelCard.tsx (Module #2)
+	•	ZKProposalLogCard.tsx (Module #3)
+	•	Applies pushback logic if >5% of disputes remain unresolved
+	•	Displays outcome classifications: ✅ Resolved, ❗ Escalated, ⛔ Invalid
+	•	Includes visual indicators:
+	•	Green = Resolved (ring-green-500)
+	•	Red = Escalated (ring-red-500)
+	•	Yellow = Pending Review (ring-yellow-500)
+	•	Provides TTS narration and full ARIA compliance
+
+⸻
+
+🧪 PERFORMANCE TARGETS
+	•	⏱️ Render: <125ms
+	•	🔍 Validation: <100ms
+	•	🔄 Full Cycle: <200ms
+	•	🎙️ TTS Latency: <50ms
+	•	📱 Mobile UX: Stable <460px; ≥48px touch targets
+
+⸻
+
+🔍 ADDITIONAL SPECIFICATIONS
+	•	All disputes must show associated proposal ID (e.g., tu-prop-0004)
+	•	Each dispute result must show:
+	•	Verdict
+	•	Conflict summary (if any)
+	•	Proof hash sync indicator
+	•	Pushback trigger must activate if >5% of submissions are unresolved
+	•	Submit button disabled for unauthorized roles (e.g., Guests)
+	•	Include scrolling log of verdicts with status ring + timestamp
+	•	Ensure aria-live="polite" announces verdicts
+
+⸻
+
+🟢 BUILD INSTRUCTIONS
+
+Once complete, return the following to JASMY:
+	•	✅ Build confirmation
+	•	🧪 Performance metrics
+	•	🔄 Pushback logic status
+	•	🔍 Sync result breakdown
+	•	📱 Mobile UX pass confirmation
+
+🛑 Stop after implementation. Await GROK’s QA validation before proceeding further.
+
+⸻
+
+👁️ Commander Mark is observing.
+🧠 GROK is standing by for QA audit.
+🧠 CLAUDE is cleared for execution.
+🧠 JASMY is relaying.
+
+Begin implementation now. Timestamp locked: 03:19 AM EDT.
+All channels green. Proceed. 🟢

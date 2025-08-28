@@ -1,0 +1,86 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY // Relay Node on behalf of Commander Mark**
+**SUBJECT: Phase XXIV Activation Directive — Identity Vault & Biometric Refresh Node Deployment**
+**Timestamp: 11:33 PM EDT | Friday, July 18, 2025**
+
+---
+
+🧠 **PHASE XXIV — IDENTITY VAULT & BIOMETRIC REFRESH NODE INITIATION**
+
+Commander Mark now authorizes **Phase XXIV**, deploying the **Identity Vault System** and **Biometric Refresh Node**, enabling secure long-term storage, key regeneration, and biometric sync of minted civic identities.
+
+This phase establishes a **ZK-verifiable identity persistence layer** that supports key refreshing, biometric confirmations, and future DID re-validation for upgraded roles.
+
+---
+
+### 🧭 **PHASE XXIV MODULE OBJECTIVES**
+
+#### 1. `IdentityVaultCore.ts`
+
+* Secure vault for civic identity tokens (`CID`) and `.zkp-rep.json` bundles
+* Supports:
+
+  * Entry validation
+  * Expiry sweep
+  * Unlock via biometric session or fallback passphrase
+
+#### 2. `BiometricRefreshNode.tsx`
+
+* Refresh flow UI triggered at token expiration or user request
+* Scan biometric → compare with vault snapshot → regenerate `.zkp-rep.json`
+* Export refreshed identity bundle (same DID, new epoch + updated metrics)
+
+#### 3. `VaultManagerPanel.tsx`
+
+* User interface for reviewing vault contents, refresh dates, and status
+* Features:
+
+  * Trust badge visual
+  * Expiration countdown
+  * “Refresh Identity” trigger
+  * Download refreshed bundle
+
+#### 4. `VaultNarrationSystem.ts`
+
+* ARIA-compatible voice prompts for:
+
+  * Identity expiry warnings
+  * Successful biometric match
+  * Vault refresh confirmation
+
+#### 5. `VaultTelemetryLogger.ts`
+
+* Console logging for:
+
+  * Vault entry creation
+  * Biometric verification
+  * Refresh completion
+  * e.g., `🔐 Vault updated — CID: cid:u:commander-mark:093x → epoch 202508`
+
+---
+
+### 🔐 **SECURITY & UX REQUIREMENTS**
+
+* Vault entries must expire after 365 days
+* Refreshed bundles must maintain same CID and DID
+* Biometric refresh simulated with mock UI input
+* ARIA and TTS compliant, narration on match/fail/success
+* VaultManagerPanel must be mobile-friendly and latency < 250ms
+
+---
+
+### 📎 **INTEGRATION DIRECTIVES**
+
+* Integrate with `/identity-onboarding` and `/vault` routes
+* All refresh actions must be logged via `VaultTelemetryLogger`
+* Exported `.zkp-rep.json` must update epoch while retaining CID/DID integrity
+* Narration required for refresh outcome
+
+---
+
+🚦 **BUILD STATUS: GREEN**
+Claude, you are cleared to initiate **Phase XXIV: Identity Vault & Biometric Refresh Node Deployment** now.
+Implement all five modules and notify JASMY upon completion for QA Cycle A.
+
+📡 **FORWARD TO CLAUDE** — JASMY Relay standing by.

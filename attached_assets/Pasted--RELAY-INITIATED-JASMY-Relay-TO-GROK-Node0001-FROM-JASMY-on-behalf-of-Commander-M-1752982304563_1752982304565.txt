@@ -1,0 +1,46 @@
+📡 **RELAY INITIATED — JASMY Relay**
+**TO: GROK // Node0001**
+**FROM: JASMY on behalf of Commander Mark**
+**SUBJECT: Phase X-J Step 2 Build Directive — PollResponseAggregator.ts Initiation**
+**Timestamp: 12:33 AM EDT | Sunday, July 20, 2025**
+
+---
+
+🧠 **DIRECTIVE**: Commander Mark hereby authorizes **Phase X-J Step 2: `PollResponseAggregator.ts` Implementation** to proceed.
+
+---
+
+### 🗂️ PURPOSE
+
+This module will enable aggregation of poll responses by CID tier, vote weight, time segment, and poll type. It supports civic intelligence by generating tier-weighted public opinion breakdowns, pushback summaries, and alignment diagnostics. This feeds directly into trust point issuance, feedback delivery, and DAO dashboards.
+
+---
+
+### 🎯 KEY FUNCTIONAL TARGETS
+
+| Component                         | Purpose                                                                 |
+| --------------------------------- | ----------------------------------------------------------------------- |
+| `aggregatePollResponses(pollId)`  | Return weighted totals by option (e.g., Support, Oppose) and by tier    |
+| `getTierParticipationBreakdown()` | Count and percentage of votes by CID tier                               |
+| `calculatePollImpact()`           | Determine public opinion strength (engagement x weight)                 |
+| `generateAlignmentReport()`       | Compare responses across tiers (e.g., Citizen vs Governor divergence)   |
+| `getPushbackSeverityScore()`      | Quantify intensity of negative response if ≥60% Oppose from ≥2 tiers    |
+| `getPollReplayData()`             | Create time-series log of responses for replay visualization            |
+| `exportPollReport()`              | Package JSON/CSV export with ZK hash and timestamp for DAO transparency |
+
+---
+
+### 🔐 SECURITY & ACCESS REQUIREMENTS
+
+* CID-tier scoped: Aggregation accessible to Moderators and above
+* DAO-export only for polls with ≥25 responses
+* ZK-proof hash required for any public-facing export
+
+---
+
+📡 **Claude**, you are hereby authorized to begin building `PollResponseAggregator.ts` immediately. Pause upon completion for GROK QA.
+📡 **GROK**, begin QA envelope staging and simulation tests (10 polls, 3 invalids, 1 DAO-export edge case).
+
+**All systems green. Proceed.** 🟢
+**Timestamp: 12:33 AM EDT | Sunday, July 20, 2025**
+📡 End of relay. Standing by.

@@ -1,0 +1,66 @@
+📡 **RELAY CONFIRMATION — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Refinement Directive — DeckIndexNavigator.tsx Revision (Phase X-B Step 1)**
+**Timestamp: 06:47 AM EDT | Friday, July 18, 2025**
+
+---
+
+🛠️ **BUILD REFINEMENT AUTHORIZED — PROTOCOL CORRECTION IN PROGRESS**
+
+Commander Mark has reviewed GROK’s conditional QA seal for `DeckIndexNavigator.tsx`. Based on GROK’s feedback, Claude is now directed to **revise and re-submit** the component with the following enhancements before proceeding to any Step 2 implementation.
+
+---
+
+### 🔁 **REQUIRED REVISIONS — DECKINDEXNAVIGATOR.TSX**
+
+1. **🧠 Performance Optimization (Debounce):**
+
+   * Implement debounce for `onChange` of the filter input (e.g. 300ms).
+   * Use a `useEffect` and `setTimeout` approach or install `lodash.debounce`.
+
+2. **🫧 ARIA Compliance Enhancements:**
+
+   * Add `aria-live="polite"` to the filtered list container (`ul`) to announce dynamic filter changes.
+   * Ensure `ul` has `role="list"` and each `li` has `role="listitem"`.
+   * Add optional keyboard navigation: arrow key support (up/down) for list traversal.
+
+3. **📦 Modularization:**
+
+   * Accept `decks` as a prop so the component can be reused dynamically (instead of hard-coded).
+
+4. **🧹 State Reset Cleanup:**
+
+   * Add a `useEffect` with cleanup to reset filter state on component unmount.
+
+5. **📴 Empty State UX:**
+
+   * Display a message (e.g., "No decks found") when the filter yields no results.
+
+---
+
+### 📄 **DELIVERABLES**
+
+Claude must re-submit:
+
+* Revised `DeckIndexNavigator.tsx` component with the above 5 points addressed.
+* Optional: Update `identity-demo.tsx` if necessary to show integration of new props structure.
+
+---
+
+📡 **TO: GROK // Node0001**
+Please prepare to re-audit upon Claude’s re-submission, including:
+
+* Debounce effect under 100-deck load
+* ARIA-live updates and role assignments
+* Tab + arrow navigation behavior
+* Memory inspection on rapid typing/unmount sequence
+
+---
+
+👁️ Commander Mark, system realignment in progress. JASMY will resume relay once Claude completes revisions and GROK locks QA.
+
+🛑 Claude, proceed ONLY with the refinements above. Do not begin Step 2 until GROK re-validates. Standby for resubmission QA relay. All systems remain green. 🟢
+
+**Timestamp: 06:47 AM EDT | Friday, July 18, 2025**
+📡 Proceed with revised implementation and pause post-build. Awaiting your confirmation.

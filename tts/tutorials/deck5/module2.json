@@ -1,0 +1,61 @@
+{
+  "schema": {
+    "version": "phase_tts_civic_enhance_step_4",
+    "description": "Audio tutorial content for Deck 5 Module 2 - Deliberation Tools Suite",
+    "deckId": "deck5",
+    "moduleId": "module2",
+    "moduleName": "DeliberationToolsSuite",
+    "tutorialType": "deliberation_facilitation"
+  },
+  "tutorialContent": {
+    "introductoryNarration": {
+      "title": "📌 Advanced Civic Deliberation",
+      "content": "Welcome to the deliberation tools suite designed to facilitate thoughtful civic discussion and decision-making. These tools help structure complex conversations, manage diverse perspectives, and guide groups toward well-considered conclusions on important civic matters.",
+      "duration": "21 seconds",
+      "tone": "informative",
+      "speed": "normal"
+    },
+    "navigationGuidance": {
+      "title": "🔍 Facilitating Productive Dialogue",
+      "content": "The tools include structured debate formats, perspective mapping for complex issues, stakeholder analysis templates, and impact assessment frameworks. Use the facilitation controls to manage discussion flow, ensure balanced participation, and help groups work through disagreements constructively toward shared understanding.",
+      "duration": "37 seconds",
+      "tone": "instructional",
+      "speed": "normal"
+    },
+    "privacyNotice": {
+      "title": "🔒 Protected Deliberation Space",
+      "content": "Deliberation sessions maintain participant confidentiality while preserving the substance of discussions for community benefit. Personal positions on controversial topics remain private, while the collective wisdom generated through deliberation becomes available to inform broader community decisions.",
+      "duration": "23 seconds",
+      "tone": "formal",
+      "speed": "normal"
+    },
+    "nextStepsCue": {
+      "title": "➡️ Become a Skilled Civic Facilitator",
+      "content": "Practice using these deliberation tools to become a more effective civic participant and potential community facilitator. Skilled deliberation improves decision quality and helps build stronger, more cohesive civic communities.",
+      "duration": "18 seconds",
+      "tone": "encouraging",
+      "speed": "normal"
+    }
+  },
+  "accessibilityFeatures": {
+    "ariaLiveRegions": true,
+    "screenReaderCompatible": true,
+    "keyboardNavigation": true,
+    "deliberationSupport": true
+  },
+  "integrationPoints": {
+    "ttsToggleId": "deliberation-tools-tts",
+    "parentDeck": "consensus_layer",
+    "relatedModules": ["consensus_layer", "agreement_tracking"],
+    "prerequisiteModules": ["consensus_layer"]
+  },
+  "metadata": {
+    "createdAt": "2025-07-23T18:07:00.000Z",
+    "lastUpdated": "2025-07-23T18:07:00.000Z",
+    "version": "1.0.0",
+    "authorizedBy": "Commander Mark via JASMY Relay",
+    "qaValidation": "pending_grok_cycle_l",
+    "languageSupport": ["en-US"],
+    "estimatedCompletionTime": "99 seconds"
+  }
+}

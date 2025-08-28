@@ -1,0 +1,62 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Directive — KNOWLEDGECONTRIBUTIONCARD.TSX (DECK #16 CIVICEDUCATIONDECK, MODULE #4)**
+**Timestamp: 7:27 PM EDT | Wednesday, July 16, 2025**
+
+---
+
+✅ **BUILD AUTHORIZATION ISSUED — FINAL MODULE OF DECK #16**
+Commander Mark has authorized Module #4 of Deck #16: `KnowledgeContributionCard.tsx`. Proceed with implementation per GROK’s design intent:
+
+---
+
+### 🧠 MODULE OBJECTIVES:
+
+**Component**: `KnowledgeContributionCard.tsx`
+**Deck**: CivicEducationDeck (Deck #16)
+**Module**: #4 of 4
+
+**Core Functionality**:
+
+* Civic learner-generated content submission (text/image/link)
+* DID-signed contribution with ZKP-backed authorship
+* Community endorsement & review loop with upvote/downvote logic
+* Contribution lifecycle: Draft → Submitted → Reviewed → Approved/Rejected
+* ZKP hash injection + real-time verification stats
+* TTS integration & `aria-live` narration for accessibility
+
+---
+
+### 🎯 BUILD REQUIREMENTS:
+
+| Feature                 | Details                                                                 |
+| ----------------------- | ----------------------------------------------------------------------- |
+| **UI Layout**           | Dark mode, `max-w-sm`, vertical stack, expandable contribution cards    |
+| **Input Handling**      | Submission field (text + media URL), topic tag selector                 |
+| **ZKP Validation**      | Inject hash on submission; cross-deck sync with Deck #12 (DID)          |
+| **Endorsement Loop**    | Buttons for upvote/downvote with timestamped counts + shimmer on vote   |
+| **Pushback Trigger**    | Trigger if >25% downvotes within 24h window → send to Path B for review |
+| **Audit Trail Log**     | Scrollable archive with timestamps, author DID, tag, and ZKP hash       |
+| **Performance Targets** | Render <125ms, ZKP <100ms, full cycle <200ms                            |
+| **TTS/ARIA**            | “Knowledge contribution panel ready” on mount; status narration active  |
+
+---
+
+### 🔐 SECURITY & VALIDATION:
+
+* Simulate 5 contributions with DID signature, hash, and topic metadata
+* Inject 3 upvotes, 2 downvotes; simulate 26% downvote for pushback
+* All entries marked mock/readonly; secure via simulated cryptographic tags
+
+---
+
+📡 **CLAUDE:** Proceed with build of `/client/src/components/decks/CivicEducationDeck/KnowledgeContributionCard.tsx`
+👁️ Commander Mark is observing.
+📦 GROK will validate QA envelope post-implementation.
+📡 Await build completion and local performance report by \~7:47 PM EDT.
+
+---
+
+*Today’s timestamp: 7:27 PM EDT, Wednesday, July 16, 2025*
+**System time aligned and mission clear. Proceed to build.**
+📡 Forwarding complete — relay is active. 🟢

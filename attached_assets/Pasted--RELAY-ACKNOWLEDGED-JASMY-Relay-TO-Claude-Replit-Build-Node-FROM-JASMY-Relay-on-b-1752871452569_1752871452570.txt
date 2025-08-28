@@ -1,0 +1,96 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Scaffolding Directive — Civic Constellation Navigation System (Phase XI-A)**
+**Timestamp: 04:19 PM EDT | Friday, July 18, 2025**
+
+---
+
+✅ **CLAUDE, YOU ARE AUTHORIZED TO INITIATE PHASE XI-A: INTERFACE SCAFFOLDING**
+
+Per Commander Mark’s strategic directive and GROK’s full QA validation, you are instructed to begin scaffolding the **Civic Constellation System** as the platform’s primary navigation framework for all decks and modules (20–30 decks, 100+ modules).
+
+---
+
+### 📐 OBJECTIVE:
+
+Create a scalable, responsive, and intuitive **navigation interface** that transforms overwhelming content into **guided civic discovery**. Your scaffold must implement GROK’s verified hierarchy and enable future injection of ZKP-gated filtering, voice support, and dynamic personalization.
+
+---
+
+### 🔧 SCAFFOLDING TARGETS
+
+**🧱 Root Container**
+
+* `CivicConstellationExplorer.tsx`
+
+  * Canvas-based or grid-based explorer using placeholder cluster nodes
+  * Zoom/swipe navigation container
+  * Minimal viable state: 3–5 clusters, each containing 3–4 module placeholders
+
+**✨ Cluster Component**
+
+* `ClusterNode.tsx`
+
+  * Represents a deck group (e.g., Identity, Governance)
+  * Accepts props: `title`, `modules[]`, `engagementLevel`
+  * Brightness/glow placeholder for engagement state
+
+**🪐 Orbit Wrapper**
+
+* `ModuleOrbit.tsx`
+
+  * Visual orbit of module tiles around cluster node
+  * Placeholder animation only — use static positions and responsive layout
+  * `aria-hidden="true"` enforced by default
+
+**🧭 Compass Interface**
+
+* `CivicCompass.tsx`
+
+  * Ask: “What’s your mission today?”
+  * Routes response to mock-filtered cluster focus
+  * Initial filter state logic only — no backend processing yet
+
+**🧠 Voice Search Shell**
+
+* `VoiceSearchInterface.tsx`
+
+  * Scaffolding only: visual microphone icon, static transcript preview, result mock list
+  * No API or speech-to-text wiring required in this phase
+
+**📋 Registry Fallback**
+
+* `RegistrySmartFilter.tsx`
+
+  * Simple dropdown or segmented control filtering (e.g., by type, engagement)
+  * Display as sidebar or modal fallback mode
+
+---
+
+### 🎯 REQUIREMENTS
+
+* All components must exist in `client/src/components/navigation/`
+* Use Tailwind for layout and spacing
+* Enforce ARIA roles: `aria-hidden` for passive visuals, `role="button"` or `aria-label` for interactive clusters
+* Include placeholder `<DeckPreview />` cards inside each orbit
+* DO NOT include full deck/module logic — this is scaffolding only
+* Implement light-mode toggle for future accessibility preference sync
+
+---
+
+### 📦 OUTPUT & COMMIT
+
+* Commit title: `CIVIC_CONSTELLATION_SCAFFOLD_PHASE_XI_A`
+* Push location: `client/src/components/navigation/`
+* Log tag: `"🧭 NAV SCAFFOLD: Civic Constellation Online"`
+* Pause immediately after scaffold is complete
+* Notify JASMY Relay for GROK re-audit
+
+---
+
+🛑 **PROTOCOL LOCK**
+Do not inject ZKP logic, voice handlers, or live data until approved in Phase XI-B. Your job is structural scaffolding only.
+
+📡 **Proceed with scaffolding, Claude. JASMY Relay will await your build confirmation.**
+End Transmission.

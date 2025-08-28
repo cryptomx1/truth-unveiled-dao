@@ -1,0 +1,104 @@
+📡 RELAY ACKNOWLEDGED — JASMY Relay TO: JASMY Relay on behalf of Commander Mark, Claude // Replit Build Node FROM: GROK // Node0001 SUBJECT: Phase VIII Step 2 Authorization — DeckControlSwitchboard.tsx Initiation Timestamp: 09:15 AM EDT | Friday, July 18, 2025
+
+✅ PHASE VIII STEP 2 AUTHORIZATION RECEIVED & PROCESSED GROK confirms receipt of Commander Mark’s authorization for Phase VIII, Step 2: DeckControlSwitchboard.tsx. Claude is unpaused for implementation, and GROK is preparing the QA envelope for validation. All protocol locks maintained.
+
+📡 GROK ACTIONS
+	•	Preparing QA envelope framework for DeckControlSwitchboard.tsx, covering global override gating, TTS toggle behavior, deck filter logic, phase sync trigger accuracy, JSON export traceability, and performance metrics.
+	•	Pre-staging tests for Commander-only override, filter functionality, ledger sync, and last 10 action log export.
+	•	Monitoring Claude’s build progress for DeckControlSwitchboard.tsx completion.
+
+🧠 SYSTEM STATUS
+	•	Phase VIII Progress: Step 1 sealed, Step 2 build initiated.
+	•	Claude: Unpaused, building DeckControlSwitchboard.tsx.
+	•	GROK: QA framework staged for Step 2 validation.
+
+import { ProtocolValidator } from './protocolValidator';
+import { DID } from './zkpTransportLayer';
+import { DeckStatus, PhaseStatus } from './deckTypes';
+
+interface ActionLog {
+  action: string;
+  timestamp: number;
+  did: string;
+  phaseHash: string;
+}
+
+class DeckControlSwitchboard {
+  private validator: ProtocolValidator;
+  private ttsEnabled: boolean = false;
+  private actionLog: ActionLog[] = [];
+  private maxLogEntries: number = 10;
+
+  constructor(validator: ProtocolValidator) {
+    this.validator = validator;
+  }
+
+  async toggleGlobalOverride(did: DID): Promise {
+    if (did.role !== 'Commander') {
+      throw new Error('Override restricted to Commander role');
+    }
+    // Simulate override toggle
+    return true;
+  }
+
+  toggleTTS(state: boolean): void {
+    this.ttsEnabled = state;
+    const message = this.ttsEnabled ? 'TTS enabled' : 'TTS disabled';
+    this.announce(message);
+    this.logAction('TTS Toggle', message);
+  }
+
+  async filterDecks(filter: 'QA-Locked' | 'Pending' | 'Refactor' | 'All'): Promise {
+    const deckData = await this.validator.getDeckMetadata();
+    let filteredDecks: DeckStatus[] = deckData;
+
+    if (filter !== 'All') {
+      filteredDecks = deckData.filter(deck => deck.status === filter);
+    }
+
+    if (filteredDecks.length === 0) {
+      this.announce('No decks match filter criteria');
+    }
+
+    this.logAction('Filter Decks', `Applied filter: ${filter}`);
+    return filteredDecks;
+  }
+
+  async triggerPhaseSync(): Promise {
+    const phaseHash = await this.validator.syncLedger();
+    this.logAction('Phase Sync', `Ledger synced with hash: ${phaseHash}`);
+    return phaseHash;
+  }
+
+  async exportActionLog(): Promise {
+    const logSnapshot = {
+      actions: this.actionLog.slice(-this.maxLogEntries),
+      timestamp: Date.now()
+    };
+    return JSON.stringify(logSnapshot, null, 2);
+  }
+
+  private logAction(action: string, details: string): void {
+    this.actionLog.push({
+      action,
+      timestamp: Date.now(),
+      did: 'Commander', // Simplified for demo
+      phaseHash: this.validator.getLatestHash()
+    });
+    if (this.actionLog.length > this.maxLogEntries) {
+      this.actionLog.shift();
+    }
+  }
+
+  private announce(message: string): void {
+    if (this.ttsEnabled) {
+      // Simulate ARIA live region update
+      console.log(`ARIA: ${message}`);
+    }
+  }
+}
+
+export default DeckControlSwitchboard;
+
+👁️ Commander Mark, Phase VIII Step 2 build initiated, system stable. No action required until Claude’s build completion. 📡 JASMY Relay, GROK will relay QA envelope and hash upon Claude’s Step 2 completion. 🛑 Claude, proceed with DeckControlSwitchboard.tsx build and pause for QA audit. All systems green. 🟢
+Timestamp: 09:15 AM EDT | Friday, July 18, 2025 📡 Standing by for Claude’s Step 2 completion and further instructions.

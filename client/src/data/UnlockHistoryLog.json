@@ -1,0 +1,98 @@
+{
+  "unlockHistory": {
+    "metadata": {
+      "version": "1.0.0",
+      "created": "2025-07-25T08:00:00Z",
+      "description": "Guardian unlock history and verification log for Phase X-M Step 4",
+      "totalUnlocks": 0,
+      "lastUpdate": "2025-07-25T08:00:00Z"
+    },
+    "verificationSchema": {
+      "unlockRecord": {
+        "id": "string - unique unlock identifier",
+        "timestamp": "ISO 8601 datetime",
+        "did": "string - decentralized identifier",
+        "cid": "string - content identifier",
+        "pillarId": "string - civic pillar identifier",
+        "pillarName": "string - human readable pillar name",
+        "guardianName": "string - assigned guardian name",
+        "tier": "enum - Citizen|Governor|Commander",
+        "requirements": {
+          "truthPoints": "number - required TP amount",
+          "genesisBadges": "number - required badge count",
+          "zkpProofs": "number - required ZKP proof count",
+          "ritualComplete": "boolean - ritual completion status"
+        },
+        "verification": {
+          "verificationHash": "string - cryptographic verification hash",
+          "cidValid": "boolean - CID validation result",
+          "didValid": "boolean - DID validation result",
+          "zkpValid": "boolean - ZKP validation result",
+          "tpStakeValid": "boolean - TruthPoint stake validation",
+          "fusionCheck": "boolean - Genesis badge fusion check"
+        },
+        "status": "enum - pending|verified|active|revoked",
+        "processingTime": "number - verification time in milliseconds"
+      }
+    },
+    "sampleUnlocks": [
+      {
+        "id": "unlock_sample_001",
+        "timestamp": "2025-07-25T08:00:00Z",
+        "did": "did:civic:sample_user",
+        "cid": "cid:wallet:sample_user",
+        "pillarId": "GOVERNANCE",
+        "pillarName": "Governance",
+        "guardianName": "Athena",
+        "tier": "Citizen",
+        "requirements": {
+          "truthPoints": 500,
+          "genesisBadges": 1,
+          "zkpProofs": 2,
+          "ritualComplete": true
+        },
+        "verification": {
+          "verificationHash": "0x1234567890abcdef",
+          "cidValid": true,
+          "didValid": true,
+          "zkpValid": true,
+          "tpStakeValid": true,
+          "fusionCheck": true
+        },
+        "status": "active",
+        "processingTime": 245
+      }
+    ],
+    "statistics": {
+      "totalVerificationAttempts": 0,
+      "successfulUnlocks": 0,
+      "failedVerifications": 0,
+      "averageProcessingTime": 0,
+      "pillarDistribution": {
+        "GOVERNANCE": 0,
+        "EDUCATION": 0,
+        "PRIVACY": 0,
+        "SUSTAINABILITY": 0,
+        "WELLBEING": 0,
+        "AGRICULTURE": 0,
+        "HEALTH": 0,
+        "JUSTICE": 0
+      },
+      "tierDistribution": {
+        "Citizen": 0,
+        "Governor": 0,
+        "Commander": 0
+      }
+    },
+    "auditTrail": {
+      "lastAudit": "2025-07-25T08:00:00Z",
+      "auditFrequency": "daily",
+      "integrityChecks": {
+        "hashValidation": true,
+        "timestampConsistency": true,
+        "requirementMatching": true,
+        "didUniqueness": true
+      }
+    }
+  }
+}

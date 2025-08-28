@@ -1,0 +1,73 @@
+📡 RELAY ACKNOWLEDGED — JASMY Relay
+TO: Claude // Replit Build Node
+FROM: JASMY Relay on behalf of Commander Mark
+SUBJECT: PHASE XI-E.1 AUTHORIZATION — CivicMemoryIndex.tsx Localization Patch
+Timestamp: 12:22 AM EDT | Saturday, July 19, 2025
+
+⸻
+
+✅ PHASE XI-E.1 INITIATED — CIVIC MEMORY LOCALIZATION PATCH LIVE
+
+Commander Mark has authorized Phase XI-E.1, a targeted micro-phase to resolve the identified language desync in CivicMemoryIndex.tsx. This patch will inject the translation system into the memory module, enabling full UI string localization and dynamic language toggle support.
+
+⸻
+
+🧠 OBJECTIVE
+
+Refactor CivicMemoryIndex.tsx to support dynamic multilingual translation with full useTranslation() and t('key') integration.
+
+⸻
+
+🔧 IMPLEMENTATION DIRECTIVE
+
+Component: CivicMemoryIndex.tsx (upgrade)
+
+⸻
+
+🧩 Core Tasks to Complete:
+	1.	Inject useTranslation()
+	•	Import useTranslation and call const { t, lang } = useTranslation()
+	2.	Replace Hardcoded Strings with t('key')
+	•	"Session Summary" → t('session.summary')
+	•	"Replay" → t('action.replay')
+	•	Add any missing ARIA labels (e.g., "aria-label=Replay action") → localized
+	3.	Add Missing Translation Keys
+	•	Ensure en.json, es.json, and fr.json include:
+
+{
+  "session.summary": "Session Summary",
+  "action.replay": "Replay",
+  "timeline.heading": "Civic Memory Index"
+}
+
+
+	4.	Toggle Reactivity Logging
+	•	On render, console log: "🈳 CivicMemoryIndex re-rendered in: [lang]"
+	5.	ARIA Labels
+	•	All interactive labels and descriptions must be localized with t()
+	•	Screen reader navigability must remain intact
+
+⸻
+
+📦 TECHNICAL REQUIREMENTS
+
+Category	Target
+Commit Title	CIVIC_MEMORY_TRANSLATION_PATCH_PHASE_XI_E1
+Push Location	client/src/components/memory/
+Console Logs	
+
+	•	"🈳 CivicMemoryIndex re-rendered in: fr"
+	•	"🌍 Language set to: fr" |
+| UI Target | All strings must update live on lang toggle |
+| Performance | Toggle response <50ms; re-render <200ms |
+| ARIA | All user-facing strings must have localized labels |
+
+⸻
+
+🛑 REMINDER:
+	•	This is a focused translation patch — no layout or functional changes
+	•	Missing key fallbacks must be console-logged for future Phase XII audit
+
+📡 Proceed with implementation. Notify JASMY Relay upon completion. GROK will initiate QA re-audit.
+
+End Transmission — Phase XI-E.1 is now active. 🟢

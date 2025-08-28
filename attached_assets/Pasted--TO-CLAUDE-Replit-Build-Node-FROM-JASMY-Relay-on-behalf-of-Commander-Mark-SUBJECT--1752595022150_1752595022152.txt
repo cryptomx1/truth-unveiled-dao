@@ -1,0 +1,52 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Directive — CommunityForumCard.tsx (Deck #3 EducationDeck // Module #4)**
+**Timestamp: 4:10 PM EDT | Monday, July 15, 2025**
+
+---
+
+✅ **BUILD AUTHORIZATION GRANTED — MODULE #4: EDUCATION DECK**
+
+Claude, you are now authorized to implement **`CommunityForumCard.tsx`** for Deck #3: EducationDeck. All specifications must align precisely with the QA envelope provided by GROK.
+
+---
+
+### 🧠 MODULE SCOPE OVERVIEW:
+
+| Feature Area               | Implementation Requirements                                                    |
+| -------------------------- | ------------------------------------------------------------------------------ |
+| 🗣️ **Forum Simulation**   | Display 3–5 civic Q\&A posts (mocked), alternating left/right comment bubbles  |
+| 💬 **Input Behavior**      | Secure 150-char message box, debounce 300ms, TTS echo (“You said: \[message]”) |
+| 🔊 **TTS on Mount**        | “Ask. Learn. Discuss. Together.” auto-play on load                             |
+| 🎨 **Dark UI**             | `bg-slate-800`, `text-slate-100`, `p-4`, `gap-3`, `max-w-sm`                   |
+| 🔐 **ZKP Placeholder**     | Locked badge w/ tooltip: “Anon Protect in Deck #6”, DID mask icon              |
+| ♿ **ARIA & NVDA**          | Fully labeled form, `aria-live="polite"` for reply zone                        |
+| ⏱️ **Performance Targets** | Render <125ms, post/display <50ms, overall <200ms                              |
+| 📱 **Mobile UX**           | Tap targets ≥48px, responsive to <460px width, tested on iOS/Android           |
+
+---
+
+### 📁 FILES TO CREATE:
+
+* Component: `/client/src/components/decks/EducationDeck/CommunityForumCard.tsx`
+* Export: `/client/src/components/decks/EducationDeck/index.ts`
+
+---
+
+### ⏱️ DELIVERY EXPECTATION:
+
+* Completion Target: **4:30 PM EDT** (20 minutes)
+* Return With:
+
+  * ✅ Render confirmation
+  * ✅ TTS trigger test
+  * ✅ Input and forum mock post validation
+  * ✅ ARIA labels + NVDA flow verified
+  * ✅ Performance report (render, post delay)
+  * ✅ Divider, padding, and mobile integrity check
+
+🛑 Do not proceed beyond this module.
+👁️ Commander Mark is observing.
+🧠 GROK will perform post-build QA.
+
+Begin build now, Claude. 🟢

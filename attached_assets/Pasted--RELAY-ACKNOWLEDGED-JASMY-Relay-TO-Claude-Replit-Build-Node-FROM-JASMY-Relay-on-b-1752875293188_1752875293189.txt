@@ -1,0 +1,88 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: PHASE X-G STEP 1 AUTHORIZATION — CivicConstellationExplorer.tsx Directive**
+**Timestamp: 07:16 PM EDT | Friday, July 18, 2025**
+
+---
+
+✅ **PHASE X-G INITIATION AUTHORIZED — CONSTELLATION VISUALIZATION LAYER ONLINE**
+
+By unanimous consensus of JASMY and GROK, Commander Mark authorizes **Phase X-G Step 1** — activation of the visual deck explorer. This will convert the routing intelligence into an interactive constellation, finally making citizen onboarding visible, spatial, and emotionally engaging.
+
+---
+
+### 🌌 OBJECTIVE
+
+Implement `CivicConstellationExplorer.tsx` — the zoomable, swipeable canvas that presents decks as glowing clusters organized by mission affinity, tier accessibility, and engagement score.
+
+---
+
+### 🔧 IMPLEMENTATION DIRECTIVE
+
+**Component**: `CivicConstellationExplorer.tsx`
+**Location**: `client/src/components/navigation/`
+
+---
+
+#### 💠 Core Features to Implement (Scaffold Only)
+
+1. **Zoomable Canvas Container**
+
+   * Swipable mobile canvas with max 5 clusters for now
+   * Placeholder orbit logic: decks shown as stars in clusters
+   * Each cluster = a civic theme (e.g., Identity, Governance, Feedback)
+
+2. **ClusterNode Placeholder**
+
+   * Render at least 3 clusters with:
+
+     * Cluster title
+     * Static orbit of 2–3 decks (mock icons, no interactivity yet)
+     * Placeholder glow intensity prop (based on engagement)
+
+3. **Deck Rendering Mock**
+
+   * Each deck shown as:
+
+     * Small glowing node
+     * Static deck title
+     * ZKP-tier lock badge (mocked)
+     * ARIA label: `"Deck: Governance — Accessible to Citizen Tier"`
+
+4. **Minimal Interactivity**
+
+   * No deck selection yet
+   * Zoom in/out mock toggle button
+   * Log mock path: `"🔭 User zoomed into Feedback Cluster"`
+
+5. **Mobile UX + ARIA Harmony**
+
+   * ARIA roles: `region`, `list`, `listitem`
+   * Canvas: `role="application"` for screen readers
+   * 460px layout tested, swipe navigation activated
+
+---
+
+### 📦 TECHNICAL REQUIREMENTS
+
+| Category      | Target                                        |
+| ------------- | --------------------------------------------- |
+| Commit Title  | `CIVIC_CONSTELLATION_EXPLORER_PHASE_XG_STEP1` |
+| Push Location | `client/src/components/navigation/`           |
+| Console Logs  |                                               |
+
+* `"🌌 CivicConstellationExplorer initialized"`
+* `"🪐 Rendering cluster: Governance"`
+* `"✨ Deck: Feedback Dashboard — Tier: Citizen — Glow: 82"`
+* `"🔭 User zoomed into Feedback Cluster"` |
+  \| UI Mode | Visual scaffold only — no routing or active deck behaviors yet |
+  \| Performance | Initial render time <300ms for 5 clusters |
+
+---
+
+🛑 **Reminder:** No deck interactivity or animations required yet. This is a scaffold. Intelligence overlays and real-time engagement visuals will be enabled in Step 2.
+
+📡 Proceed with implementation. Pause after build. Notify JASMY Relay upon completion. GROK will initiate QA re-audit.
+
+**End Transmission — Phase X-G is now active.**

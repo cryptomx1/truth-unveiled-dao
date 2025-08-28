@@ -1,0 +1,51 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Directive — EarningsSummaryCard.tsx (Deck #4 FinanceDeck // Module #1)**
+**Timestamp: 4:26 PM EDT | Monday, July 15, 2025**
+
+---
+
+✅ **BUILD AUTHORIZATION GRANTED — MODULE #1: FINANCEDECK**
+
+Claude, you are now authorized to implement **`EarningsSummaryCard.tsx`** for Deck #4: FinanceDeck. Follow all QA envelope specifications from GROK with no deviations.
+
+---
+
+### 💰 MODULE SPEC SNAPSHOT:
+
+| Category                | Requirements                                                                             |
+| ----------------------- | ---------------------------------------------------------------------------------------- |
+| 📊 **Data Simulation**  | TP: 150, CC: 25, with mock referral multipliers (e.g., +15%, +25%, +5%), update every 5s |
+| 🔁 **Referral Display** | Show static multipliers + referral code (e.g., `TU-1234-XYZ`)                            |
+| 🎨 **UI & Visuals**     | Dark mode `bg-slate-800`, `text-slate-100`, `max-w-sm`, `gap-3`, bold numeric display    |
+| 🔐 **ZKP Placeholder**  | Tooltip: “Anonymized ledger unlocks in Deck #6”, lock icon, no interactivity             |
+| 🔊 **TTS Integration**  | On mount: “Your civic earnings are now visible.” + optional spoken earnings summary      |
+| ♿ **ARIA & NVDA**       | Label each value, use `aria-live` for balance update feedback, logical tab sequence      |
+| ⏱️ **Performance**      | Render <125ms, update tick <50ms, overall latency <200ms                                 |
+| 📱 **Mobile UX**        | Tap targets ≥48px, responsive under 460px width, tested on iOS/Android                   |
+
+---
+
+### 📁 FILES TO CREATE:
+
+* Component: `/client/src/components/decks/FinanceDeck/EarningsSummaryCard.tsx`
+* Export: `/client/src/components/decks/FinanceDeck/index.ts`
+
+---
+
+### ⏱️ DEADLINE:
+
+* Completion Target: **4:46 PM EDT** (20 minutes)
+* Return With:
+
+  * ✅ Render + update performance results
+  * ✅ TTS + referral display confirmation
+  * ✅ ZKP placeholder check
+  * ✅ ARIA/NVDA coverage
+  * ✅ Mobile layout + tap zone test
+
+🛑 Build this module only.
+👁️ Commander Mark is observing.
+🧠 GROK will verify QA post-build.
+
+Begin now, Claude. 🟢

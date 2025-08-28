@@ -1,0 +1,88 @@
+📡 RELAY ACKNOWLEDGED — JASMY Relay
+TO: Claude // Replit Build Node
+FROM: JASMY Relay on behalf of Commander Mark
+SUBJECT: PHASE XI-D AUTHORIZATION — Translation System Bootstrap Directive
+Timestamp: 11:55 PM EDT | Friday, July 18, 2025
+
+⸻
+
+✅ PHASE XI-D INITIATED — MULTILINGUAL TRANSLATION SYSTEM ONLINE
+
+Commander Mark has authorized Phase XI-D: Translation System Bootstrap — the critical infrastructure to enable dynamic, full-system localization across all modules. This phase will resolve hardcoded English content by centralizing all UI strings into language-specific files and connecting them via a t(key) utility function.
+
+⸻
+
+🌐 OBJECTIVE
+
+Implement a centralized multilingual translation system with .json dictionaries and integrate it across major civic modules using the t('key') utility.
+
+⸻
+
+🔧 IMPLEMENTATION DIRECTIVE
+
+New Files to Create:
+	•	translation/en.json
+	•	translation/es.json
+	•	translation/fr.json
+	•	useTranslation.ts (with t(key) and fallback logic)
+
+⸻
+
+🧩 Core Features to Implement:
+	1.	Translation Dictionary Structure
+	•	Example (en.json):
+
+{
+  "mission.selectPrompt": "What is your mission today?",
+  "deck.feedback.title": "Feedback Dashboard",
+  "tier.citizen": "Citizen",
+  "streak.days": "{{count}} Days Streak"
+}
+
+
+	2.	useTranslation() Hook
+	•	Pulls current lang from LangContext
+	•	Returns:
+	•	t(key: string, params?: Record<string, string | number>)
+	•	Includes fallback logic if key or lang missing
+	•	Logs fallback event: "⚠️ Missing translation: [key] for [lang]"
+	3.	Module Refactors
+	•	Update at least 2 key modules to use t():
+	•	CivicMissionOnboardingCard.tsx
+	•	UnifiedNavBarExtension.tsx
+	•	Replace all visible strings with translation keys
+	4.	Parameter Interpolation
+	•	Support placeholders (e.g., "{{count}}") using params in t()
+	•	Example:
+
+t('streak.days', { count: 6 }) // → “6 Days Streak”
+
+
+	5.	Fallback Logging
+	•	Console output when missing key or unsupported lang encountered
+
+⸻
+
+📦 TECHNICAL REQUIREMENTS
+
+Category	Target
+Commit Title	TRANSLATION_SYSTEM_BOOTSTRAP_PHASE_XI_D
+Push Location	client/src/translation/
+Console Logs	
+
+	•	"🌐 Translation system initialized for lang: ES"
+	•	"⚠️ Missing translation: deck.audit.title for fr" |
+| Performance | t() resolve ≤10ms, UI updates <200ms |
+| UI | Must reflect selected lang toggle immediately on string level |
+| ARIA | Labels, tooltips, buttons localized where possible |
+
+⸻
+
+🛑 REMINDER:
+	•	Only refactor 2–3 modules in this step for proof-of-concept
+	•	ZKP content, proposal logs, and heatmaps will be refactored in later i18n pass
+	•	This bootstrap lays the groundwork for Phase XII (Multilingual Governance Core)
+
+📡 Proceed with implementation. Notify JASMY Relay upon completion. GROK will initiate QA re-audit.
+
+End Transmission — Phase XI-D is now active. 🟢

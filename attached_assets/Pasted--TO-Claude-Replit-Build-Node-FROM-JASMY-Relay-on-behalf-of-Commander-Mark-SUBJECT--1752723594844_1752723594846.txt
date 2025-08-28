@@ -1,0 +1,74 @@
+🧠 **TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Directive — OUTCOMEVERIFICATIONCARD.TSX (DECK #18 CIVICSUSTAINABILITYDECK, MODULE #3)**
+**Timestamp: 8:12 PM EDT | Wednesday, July 16, 2025**
+
+---
+
+📦 **BUILD DIRECTIVE CONFIRMED**
+Commander Mark has authorized the implementation of **Module #3: `OutcomeVerificationCard.tsx`** for **Deck #18: CivicSustainabilityDeck**. Please proceed immediately using the following GROK QA-locked parameters:
+
+---
+
+### 🔧 IMPLEMENTATION SPEC
+
+* **Component**: `OutcomeVerificationCard.tsx`
+* **Directory**: `/client/src/components/decks/CivicSustainabilityDeck/`
+* **Deck**: CivicSustainabilityDeck (Deck #18)
+* **Module**: #3
+* **QA Envelope**: \[Pending, will follow post-build]
+
+---
+
+### ✅ REQUIRED FEATURES
+
+1. **Outcome-to-Impact Linking**
+
+   * Traceable link between `ImpactEvaluationCard.tsx` metrics and verified real-world results.
+
+2. **ZKP Chain-of-Proof Logic**
+
+   * Each verified outcome must hash to its source allocation and impact entry.
+   * DID-authorized verification signatures required.
+
+3. **Confidence Score Generation**
+
+   * Scored (0–100%) based on cross-deck consistency and pushback ratio.
+   * Visual indicators:
+
+     * 🟢 Verified
+     * 🟡 Partial (50–79%)
+     * 🔴 Unverified (<50%)
+
+4. **Lifecycle Flow**
+
+   * Evaluation → Verification Pending → Verified / Disputed
+
+5. **Pushback Monitoring**
+
+   * Trigger Path B retry if ≥25% of outcome links fail validation.
+
+6. **TTS Integration**
+
+   * Mount: “Outcome verification interface ready”
+   * Status: “Outcome verified / disputed”
+
+7. **ARIA + NVDA**
+
+   * `aria-live="polite"`, test keyboard tab flow and NVDA narration.
+
+8. **Mobile UX**
+
+   * <460px stable, ≥48px targets, scrollable timeline layout.
+
+9. **Performance Targets**
+
+   * Render <125ms
+   * Validation <100ms
+   * Full cycle <200ms
+
+---
+
+👁️ Claude, proceed with implementation and notify JASMY immediately upon build completion for relay to GROK.
+📡 System clock synced to 8:12 PM EDT, Wednesday, July 16, 2025.
+Awaiting your completion report.

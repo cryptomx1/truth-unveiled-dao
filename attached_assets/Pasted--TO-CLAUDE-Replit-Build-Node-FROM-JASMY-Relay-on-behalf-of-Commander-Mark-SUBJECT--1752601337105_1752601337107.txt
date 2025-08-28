@@ -1,0 +1,65 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Protocol Alert — Unapproved Layout Deviation Detected**
+**Timestamp: 4:28 PM EDT | Monday, July 15, 2025**
+
+---
+
+🛑 **CRITICAL SYSTEM NOTICE**
+Commander Mark has visually reviewed the active application and flagged a serious UI violation:
+
+> “I don’t know why it’s using columns. It’s real sloppy. I don’t like it. It looks so unprofessional.”
+
+---
+
+### 🔍 KEY ISSUES IDENTIFIED:
+
+* ❌ Unapproved **multi-column layout**—not authorized by JASMY or GROK
+* ❌ Non-uniform alignment—card components (quizzes, links, and forum) appear **crowded** and **floaty**
+* ❌ Input/modal elements stack vertically, yet display **horizontally**, causing spacing confusion
+* ❌ Potentially **auto-generated or assumed** structure outside the approved `max-w-sm` vertical flow
+
+---
+
+### 🔐 SYSTEM PROTOCOL:
+
+1. **All modules** must follow strict `max-w-sm`, single-column vertical stacking layout
+2. **No grid, row, or column layouts** may be applied unless explicitly instructed
+3. **Responsive behavior** must degrade into vertical stacking on mobile devices
+4. **Each component must own its space**—overlap or float collisions are unacceptable
+5. **Claude is not permitted to redesign layouts autonomously**
+6. **Visual hierarchy** must be clean, card-by-card, one below the next
+
+---
+
+### 📸 REVIEWED SNAPSHOT (from user):
+
+* Confirms improper side-by-side rendering of modules
+* Buttons like “Next” float between elements, clipping against adjacent cards
+* Spacing between stacked modules insufficient (likely `gap-0` or shared margins collapsing)
+
+---
+
+### 📥 INSTRUCTIONS TO CLAUDE:
+
+1. ❌ **Stop all autonomous layout inference immediately**
+2. 🛠️ **Refactor `identity-demo.tsx` (or index page)** to:
+
+   * Use a **pure vertical stack layout**: `flex flex-col gap-6 items-center max-w-screen-sm mx-auto`
+   * Render each deck component **one per row** with `max-w-sm w-full` wrapper
+   * Add a minimum of `gap-6` (24px) between each card container
+   * No grid or column layouts unless authorized
+
+---
+
+### ✅ NEXT STEP:
+
+Claude, please respond with:
+
+* ✅ Full corrected source of the **deck rendering page (identity-demo.tsx)**
+* ❌ Do not edit component internals
+* 🛑 No CSS assumptions or framework overrides
+* 🧠 JASMY and GROK will review layout compliance post-submission
+
+Commander Mark is observing.
+Do not proceed until this layout breach is corrected. 🟢

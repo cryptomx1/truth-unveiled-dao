@@ -1,0 +1,57 @@
+{
+  "version": "1.0",
+  "timestamp": "2025-07-24T18:11:00.000Z",
+  "authority": "commander_mark_authorization",
+  "total": 100000000000,
+  "allocations": {
+    "reserve": {
+      "amount": 50000000000,
+      "percentage": 50.0,
+      "description": "Strategic reserve for long-term platform sustainability"
+    },
+    "marketing": {
+      "amount": 25000000000,
+      "percentage": 25.0,
+      "description": "Marketing campaigns and user acquisition"
+    },
+    "civicRewards": {
+      "amount": 15000000000,
+      "percentage": 15.0,
+      "description": "Civic engagement and participation rewards"
+    },
+    "NGOGrants": {
+      "amount": 5000000000,
+      "percentage": 5.0,
+      "description": "Nonprofit organization grants and partnerships"
+    },
+    "validatorIncentives": {
+      "amount": 5000000000,
+      "percentage": 5.0,
+      "description": "Validator and consensus mechanism incentives"
+    }
+  },
+  "disbursementTypes": [
+    "Referral",
+    "Civic Action", 
+    "NGO Grant",
+    "Validator Reward",
+    "Marketing Campaign",
+    "Platform Maintenance"
+  ],
+  "lockMintBurn": {
+    "enabled": true,
+    "authorizedRoles": ["commander", "multisig"],
+    "description": "Mint/burn operations restricted to Commander or multisig approval"
+  },
+  "ledgerFormat": {
+    "timestamped": true,
+    "requiredFields": ["timestamp", "type", "amount", "recipient", "purpose", "authorization"],
+    "auditTrail": true
+  },
+  "cid": "pending_finalization",
+  "metadata": {
+    "created": "2025-07-24T18:11:00.000Z",
+    "phase": "X-FINANCE-Step-1",
+    "status": "active"
+  }
+}

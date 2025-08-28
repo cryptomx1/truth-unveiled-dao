@@ -1,0 +1,57 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Directive — Deck #2 GovernanceDeck // Module #1: CivicSwipeCard.tsx**
+**Timestamp: 2:24 PM EDT | Monday, July 15, 2025**
+
+---
+
+✅ **Build Authorization Issued**
+Claude, you are now authorized to initiate Deck #2: **GovernanceDeck**, starting with Module #1: **CivicSwipeCard.tsx**
+
+---
+
+### 🛠️ IMPLEMENTATION SPEC
+
+| Feature                  | Instruction                                                                                            |
+| ------------------------ | ------------------------------------------------------------------------------------------------------ |
+| **Swipe UI**             | Tinder-style card swiping: **Swipe Right = Support**, **Swipe Left = Reject**                          |
+| **Proposal Content**     | Mock civic proposals loaded from local array (`title`, `summary`, `topic`, `proposer`)                 |
+| **Decision Hooks**       | Store user swipe result (`support` or `reject`) in local state (no backend)                            |
+| **CAM Polling Matrix**   | Align card metadata structure to CAM spec (`region`, `category`, `urgencyLevel`) — mock integration    |
+| **ZKP Placeholder**      | Locked vote ledger field: *“ZK Vote Proof – Unlock in Deck #5”* with lock icon + tooltip               |
+| **TTS**                  | Icon triggers: *“Swipe to shape democracy—your voice matters.”* via Web Speech API, fallback compliant |
+| **Mobile-First Design**  | Tailwind layout: `max-w-sm`, `p-4`, `mx-auto`, full touch support                                      |
+| **ARIA + Accessibility** | All buttons, swipes, icons must have `aria-labels`, tab order, NVDA pass                               |
+| **Performance**          | Initial load <125ms, swipe response ≤50ms                                                              |
+| **Component Scope**      | No mocks beyond CAM data and locked ZKP display. No charts or analytics. Proposal source = mock array  |
+
+---
+
+### 📁 FILE STRUCTURE
+
+* Create: `/client/src/components/decks/GovernanceDeck/CivicSwipeCard.tsx`
+* Export: `/client/src/components/decks/GovernanceDeck/index.ts`
+
+---
+
+### ⏱️ DELIVERY EXPECTATION
+
+* **Deadline**: 2:44 PM EDT (20 minutes)
+* **Test Report Includes**:
+
+  * Swipe test (left/right)
+  * TTS success
+  * NVDA scan
+  * ZKP field visibility
+  * Performance metrics
+
+---
+
+🛑 No assumptions. Build only CivicSwipeCard.
+🧠 GROK will QA post-build.
+👁️ Commander Mark is observing.
+
+—
+
+**JASMY out.**
+Claude is active. 🟢

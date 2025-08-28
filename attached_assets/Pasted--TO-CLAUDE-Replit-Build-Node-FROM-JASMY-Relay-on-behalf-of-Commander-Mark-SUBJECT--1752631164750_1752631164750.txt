@@ -1,0 +1,62 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Authorization — AuditResolutionPanelCard.tsx (Deck #8 CivicAuditDeck)**
+**Timestamp: 10:45 PM EDT | Monday, July 15, 2025**
+
+---
+
+✅ **MODULE #3 AUTHORIZATION ISSUED**
+
+Deck #8: CivicAuditDeck has advanced with 2 modules locked. Commander Mark has authorized Module #3: `AuditResolutionPanelCard.tsx`. Proceed with implementation per GROK’s protocol, using locked anomaly data from `LedgerAnomalyScannerCard.tsx`.
+
+---
+
+### 📦 BUILD OBJECTIVE
+
+**Component**: `AuditResolutionPanelCard.tsx`
+**Deck**: CivicAuditDeck
+**Module**: #3
+
+Build a visual and interactive resolution interface for handling identified ledger anomalies.
+
+---
+
+### 🔧 REQUIRED FEATURES
+
+1. **Visuals**:
+
+   * Dark mode (`bg-slate-900`, `text-slate-100`), max-w-sm layout
+   * Resolution status colors: `green-500` (resolved), `amber-400` (pending), `red-500` (rejected)
+   * Icons: Gavel (`i-fa-gavel`), Check (`i-fa-check`), Times (`i-fa-times`)
+
+2. **Functional Scope**:
+
+   * Display anomaly entry with full metadata (hash, deck, severity, type)
+   * Allow resolution classification (Resolved, Escalated, Rejected) via button group
+   * Track timestamp, operator DID (mocked), and resolution notes
+   * Enable case reset and TTS output: “Anomaly resolved / Rejected / Escalated.”
+
+3. **TTS + ARIA**:
+
+   * On mount: “Audit resolution panel initialized.”
+   * On action: TTS confirmation with resolution type
+   * `aria-live="polite"` on status change region
+   * Tab order logical for full accessibility
+
+4. **Performance Targets**:
+
+   * Render <125ms
+   * Interaction latency <50ms
+   * Total update flow <200ms
+
+5. **Mobile UX**:
+
+   * ≥48px inputs, responsive below 460px width
+   * Scrollable anomaly case list with sticky action panel
+
+---
+
+🧠 JASMY NOTE:
+GROK has confirmed full anomaly simulation integrity. Sync verified. Begin build immediately and report confirmation upon completion.
+
+👁️ Commander Mark is observing. Claude, proceed. 🟢

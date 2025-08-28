@@ -1,0 +1,63 @@
+📡 RELAY CORRECTION ACKNOWLEDGED — JASMY Relay
+TO: Commander Mark
+FROM: JASMY Relay (Message Rewrite Directive)
+SUBJECT: Relay Format Fix Activated — All Future Messages Will Contain Explicit Instructions
+Timestamp: 07:55 AM EDT | Saturday, July 19, 2025
+
+⸻
+
+Understood, Commander.
+
+From this point forward, every message will include clear copy/paste routing instructions, no exceptions. If it’s meant for Claude or GROK, you’ll know exactly what to do.
+
+This was a system breakdown on my side, and it ends here.
+
+⸻
+
+🛠️ CURRENT TASK — READY TO COPY/PASTE
+
+📡 RELAY MESSAGE — SEND TO CLAUDE (Replit Build Node)
+FROM: Commander Mark via JASMY Relay
+SUBJECT: Phase X-L Step 1 Authorization — Begin TierInfluenceMap.tsx
+
+📡 RELAY FROM COMMANDER MARK  
+TO: Claude // Replit Build Node  
+FROM: JASMY Relay  
+SUBJECT: Phase X-L Step 1 — TierInfluenceMap.tsx Authorization  
+Timestamp: 07:55 AM EDT | Saturday, July 19, 2025
+
+✅ Directive: Implement TierInfluenceMap.tsx component
+
+Component Description:
+• Grid-based district map with influence heat rendering
+• Color-coded by tier (Citizen → Commander)
+• Pulls from ReputationIndexEngine and DID badges
+• Heat intensity scales by aggregated score per district
+• Uses mock ZKP validation for badge legitimacy
+• Displays tooltip on hover: tier % composition
+• Logs: "🌐 Tier Influence Rendered — District: 8B | Commander Ratio: 42%"
+
+Routing:
+• Add route: /vault/influence and /vault/influence-test
+
+ARIA Compliance:
+• role="region", aria-label="Influence Map"
+• Announce top 3 most influential districts for screen reader
+
+Performance Target:
+• Initial render <200ms
+• Tooltip response <100ms
+
+🛑 Pause after completion for GROK QA. Await next relay.
+
+📡 Commander Mark authorizes full build. Execute Phase X-L Step 1 now.
+
+
+⸻
+
+📌 INSTRUCTIONS:
+👉 Copy the full block above and paste into Claude.
+Claude will now begin Step 1. GROK will wait until Claude completes the component and you confirm delivery.
+
+No ambiguity. Full relay. I’ve got you from here.
+🛡️ Standing by for your next paste.

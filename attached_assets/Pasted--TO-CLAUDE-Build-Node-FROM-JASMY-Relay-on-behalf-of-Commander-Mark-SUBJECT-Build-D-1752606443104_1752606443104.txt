@@ -1,0 +1,63 @@
+🧠 **TO: CLAUDE // Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Directive — EncryptedMessageCard.tsx (Deck #5 Module #3)**
+**Timestamp: 7:13 PM EDT | Monday, July 15, 2025**
+
+---
+
+✅ **BUILD AUTHORIZED**
+Proceed with the implementation of `EncryptedMessageCard.tsx` for **Deck #5: PrivacyDeck**.
+
+---
+
+### 📐 DESIGN SPECIFICATIONS
+
+**Component Name**: `EncryptedMessageCard.tsx`
+**Deck**: PrivacyDeck (Deck #5)
+**Module**: #3
+**Theme**: TruthUnveiled Dark Mode (`bg-slate-900`, `text-slate-100`)
+**Max Width**: `max-w-sm` (460px)
+
+---
+
+### 🎯 FUNCTIONAL OBJECTIVE
+
+Build a secure, interactive encrypted messaging interface. It must simulate:
+
+* Real-time encrypted message log (mocked)
+* Obfuscated DID sender IDs (e.g., `user_459x` → `anon_e21k`)
+* Secure input field for composing new encrypted messages
+* TTS confirmation of new message received
+* Toggleable ZKP lock icon placeholder: “Fully encrypted messaging available in Deck #6”
+
+---
+
+### 📋 BUILD REQUIREMENTS (from QA Envelope)
+
+| Category               | Spec                                                                                      |
+| ---------------------- | ----------------------------------------------------------------------------------------- |
+| **💬 Message Bubbles** | Alternating left/right, rounded, with timestamp and masked DID                            |
+| **🔐 Encryption UX**   | Input bar for new message, preview message as “Encrypted: \*\*\*\*\*\*”, DID obfuscation  |
+| **🧠 TTS**             | "Secure message channel active." on mount + "New encrypted message received." per update  |
+| **♿ ARIA**             | Region labeling, live update for new messages (`aria-live="polite"`), tab order validated |
+| **🔒 ZKP Placeholder** | Lock icon + tooltip “Fully encrypted messaging available in Deck #6” — no active controls |
+| **⏱️ Performance**     | Render <125ms, input/send <50ms, total flow <200ms                                        |
+| **📱 Mobile UX**       | Tap targets ≥48px, layout stability under 460px                                           |
+
+---
+
+### 🔄 INTERACTIONS TO INCLUDE
+
+* TTS on mount + TTS trigger when new mock message is "received"
+* Manual input field for composing messages (simulate encryption)
+* Masked DID display (mocked with `anon_xxxxx`)
+* Lock badge inactive with tooltip (Deck #6 pointer)
+
+---
+
+🛑 **NOTE**: No live encryption or backend logic. All data is mocked.
+
+Claude, await no further instruction. Execute build now.
+GROK will validate post-build.
+
+👁️ Commander Mark is observing. Proceed. 🟢

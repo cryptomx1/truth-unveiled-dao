@@ -1,0 +1,82 @@
+🧠 TO: CLAUDE // Replit Build Node
+FROM: JASMY Relay on behalf of Commander Mark
+SUBJECT: Build Directive — FeedbackImpactAnalyzerCard.tsx (Module #3, Deck #10 GovernanceFeedbackDeck)
+Timestamp: 05:00 AM EDT | Wednesday, July 16, 2025
+
+⸻
+
+✅ BUILD AUTHORIZATION CONFIRMED
+
+Per Commander Mark’s directive and GROK’s QA lock on Module #2, you are now authorized to implement Module #3: FeedbackImpactAnalyzerCard.tsx for Deck #10: GovernanceFeedbackDeck.
+
+⸻
+
+🧩 MODULE SCOPE
+
+Parameter	Detail
+Deck	#10 — GovernanceFeedbackDeck
+Module #	3 of 4
+Path	/client/src/components/decks/GovernanceFeedbackDeck/FeedbackImpactAnalyzerCard.tsx
+Purpose	Visually simulate and explain how citizen sentiment affects policy proposals, voting patterns, and public responses using verified ZKP-linked data
+
+
+⸻
+
+🔧 BUILD INSTRUCTIONS
+
+1. Core Features
+	•	Accept cross-deck sentiment inputs from:
+	•	ZKPFeedbackNodeCard.tsx (raw sentiment classification)
+	•	SentimentAggregationCard.tsx (mood index)
+	•	Accept vote/pass/fail input status from:
+	•	VoteConsensusCard.tsx (Deck #9)
+	•	Simulate potential policy impact from sentiment trends:
+	•	Example: “High dissent + low pass rate” → high impact alert
+	•	Display as a color-coded trend meter (0–100 impact scale)
+
+2. Design Spec
+	•	Dark Mode: bg-slate-900, text-slate-100
+	•	Accent Colors:
+	•	Green (consensus-aligned sentiment)
+	•	Amber (uncertain/mixed)
+	•	Red (high dissent/high mismatch)
+	•	Card Structure:
+	•	Header: “Feedback Impact Analyzer”
+	•	Inputs: Vote status, sentiment weights
+	•	Output: Impact Score (0–100), Message (e.g., “High Impact: Policy revision likely”)
+	•	Ring animation: ring-blue-500 (stable), ring-red-500 (escalating), ring-green-500 (stabilized)
+	•	Use max-w-sm, p-4, gap-3 layout with flex-col
+
+3. Performance Targets
+	•	Render: <125ms
+	•	Data sync: <100ms
+	•	Full flow: <200ms
+
+4. Accessibility
+	•	aria-live="polite" for feedback updates
+	•	role="region" for the entire card
+	•	All controls ≥48px for mobile
+	•	Responsive under 460px width
+
+5. TTS Integration
+	•	Mount: “Feedback impact analyzer ready.”
+	•	On update: “Sentiment trend indicates [X]% policy impact.”
+
+⸻
+
+✅ POST-BUILD
+
+Once complete, pause and await GROK’s QA validation. Include:
+	•	Sentiment-to-impact mapping logic
+	•	Final impact percentage
+	•	Ring color state
+	•	TTS line sample
+	•	Any volatility or sync flags
+
+⸻
+
+👁️ Commander Mark is observing
+🧠 GROK is on standby for QA
+🧠 CLAUDE is cleared to proceed 🟢
+
+Begin implementation of FeedbackImpactAnalyzerCard.tsx now.

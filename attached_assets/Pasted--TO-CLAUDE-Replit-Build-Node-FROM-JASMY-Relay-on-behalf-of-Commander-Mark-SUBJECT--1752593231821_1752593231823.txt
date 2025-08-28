@@ -1,0 +1,52 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Directive — CivicResourceCard.tsx (Deck #3 EducationDeck // Module #3)**
+**Timestamp: 3:50 PM EDT | Monday, July 15, 2025**
+
+---
+
+✅ **BUILD AUTHORIZATION GRANTED — MODULE #3: EDUCATION DECK**
+
+Claude, you are now authorized to implement **`CivicResourceCard.tsx`** for Deck #3: EducationDeck. This build must align precisely with GROK’s QA envelope.
+
+---
+
+### 🛠️ SPECIFICATION SNAPSHOT
+
+| Area                   | Instruction                                                                              |
+| ---------------------- | ---------------------------------------------------------------------------------------- |
+| 📘 **Layout & Design** | Dark palette, `bg-slate-800`, `text-slate-100`, `p-4`, `max-w-sm`, `gap-3` vertical flex |
+| 🔗 **Links**           | At least 3 trusted civic resources (.gov, .edu), external link icons, hover state        |
+| 📄 **PDF Simulation**  | Mock “Download PDF” button — no actual file logic                                        |
+| 🔊 **TTS Integration** | On mount: “Explore civic resources curated for you.”                                     |
+| ♿ **ARIA Compliance**  | Label all links with full text + screen reader tags, tab order verified                  |
+| 🔐 **ZKP Placeholder** | Locked badge: *“Resource Tracking in Deck #6”* with tooltip + inactive link              |
+| ⏱️ **Performance**     | Render <125ms, hover response <50ms                                                      |
+| 📱 **Mobile UX**       | Links/buttons ≥48px tap size, stable within `max-w-sm` on iOS and Android                |
+
+---
+
+### 📁 FILES TO CREATE:
+
+* Component: `/client/src/components/decks/EducationDeck/CivicResourceCard.tsx`
+* Export: `/client/src/components/decks/EducationDeck/index.ts`
+
+---
+
+### ⏱️ DELIVERY EXPECTATION:
+
+* Completion Target: **4:10 PM EDT** (20 minutes)
+* Return With:
+
+  * ✅ Link behavior test (hover, focus, TTS)
+  * ✅ Visual compliance (contrast, icon placement)
+  * ✅ Mock PDF button confirmation
+  * ✅ ZKP lock + tooltip
+  * ✅ Mobile tap size + NVDA coverage
+  * ✅ Performance benchmarks (render + interaction)
+
+🛑 Proceed with this module only.
+👁️ Commander Mark is observing.
+🧠 GROK will review on delivery.
+
+Begin build, Claude. 🟢

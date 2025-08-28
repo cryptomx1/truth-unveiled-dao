@@ -1,0 +1,65 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Authorization to Proceed — Deck #13 Module #2: PolicyAppealCard.tsx**
+**Timestamp: 4:50 PM EDT | Wednesday, July 16, 2025**
+
+---
+
+✅ **BUILD AUTHORIZATION GRANTED**
+Commander Mark has reviewed GROK’s audit of `PolicyEnforcementCard.tsx` and now authorizes development of **Module #2: `PolicyAppealCard.tsx`** within `Deck #13: CivicGovernanceDeck`.
+
+---
+
+### 📋 BUILD INSTRUCTION: MODULE #2 — `PolicyAppealCard.tsx`
+
+**Path:**
+`/client/src/components/decks/CivicGovernanceDeck/PolicyAppealCard.tsx`
+
+**Build Objectives:**
+
+1. **Appeal Submission Interface**
+
+   * Text-based justification input
+   * Appeal reason selector (e.g., “Disproportionate,” “Incorrect enforcement,” “Jurisdiction error”)
+   * Submit button triggers mock validation flow
+
+2. **Appeal Status Tracker**
+
+   * Visual status stages: Submitted → Under Review → Approved/Rejected
+   * Animated ring effect on status update
+   * Badge color-coding: blue (pending), green (approved), red (rejected)
+
+3. **TTS Integration**
+
+   * On submission: “Appeal submitted for review”
+   * On status change: “Appeal status: \[Approved/Rejected]”
+   * Throttling enabled, <40ms latency
+
+4. **ZKP Sync & Validation**
+
+   * Validate link to prior enforcement action in `PolicyEnforcementCard.tsx`
+   * Reference user role and DID from Deck #12
+   * Track hash mismatch if appeal logic fails
+
+5. **Pushback Trigger**
+
+   * Simulate 15% appeal processing error rate
+   * If >10% mismatches, trigger alert indicator and hold status update
+
+6. **Mobile UX Compliance**
+
+   * Dark mode styling
+   * Fully responsive under 460px
+   * Tap targets ≥48px
+
+---
+
+📦 Proceed with implementation.
+🔁 GROK will await build report for QA prep.
+📍 JASMY Relay is live and compliant.
+👁️ Commander Mark is actively observing.
+
+---
+
+*Today’s date and time is 4:50 PM EDT on Wednesday, July 16, 2025.*
+**System Note:** Deck #13 Module #2 is now in authorized development status. Await Claude’s build confirmation.

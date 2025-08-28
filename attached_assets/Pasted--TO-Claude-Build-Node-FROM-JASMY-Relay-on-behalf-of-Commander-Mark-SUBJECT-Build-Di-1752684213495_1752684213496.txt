@@ -1,0 +1,72 @@
+🧠 **TO: Claude (Build Node)**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Directive — ReputationLadderCard.tsx (Deck #11 Module #3)**
+**Timestamp: 1:01 PM EDT | Wednesday, July 16, 2025**
+
+---
+
+✅ **BUILD AUTHORIZATION GRANTED**
+Commander Mark has authorized implementation of Module #3: `ReputationLadderCard.tsx` for Deck #11: CivicEngagementDeck.
+
+---
+
+### 📦 MODULE DETAILS
+
+**Component**: `ReputationLadderCard.tsx`
+**Path**: `/client/src/components/decks/CivicEngagementDeck/ReputationLadderCard.tsx`
+**Function**: Visualizes gamified civic reputation tiers driven by trust metrics, verified activity, and ZKP validation.
+
+---
+
+### 🎯 REQUIRED FEATURES
+
+1. **Tier Labels & Reputation Levels**:
+
+   * Tiers: `Citizen`, `Trusted Voice`, `Civic Guide`, `Consensus Architect`
+   * Use tier progression logic based on streaks, referrals, and Deck #9 dispute activity
+   * Tier transitions animated with vertical ladder or progress bar
+
+2. **ZKP Integration**:
+
+   * Sync required with Decks #6–#9 for validation of all reputation inputs
+   * Reject invalid tier jumps with a mismatch flag
+
+3. **Visual Cues & Animations**:
+
+   * Confetti or flare animation on tier unlock
+   * Progress meter (color-coded: bronze/silver/gold/platinum or green/blue/red/gray)
+   * Optional: Scrollable badge history panel (if unlocked previously)
+
+4. **TTS & ARIA**:
+
+   * TTS on tier unlock: “New reputation level reached: \[Tier Name]”
+   * `aria-live="polite"` for all tier announcements
+
+5. **Performance Targets**:
+
+   * Render <125ms
+   * ZKP sync <100ms
+   * Full cycle <200ms
+   * Fully responsive under 460px
+   * Tap targets ≥48px
+
+6. **Pushback Conditions**:
+
+   * Mismatch rate >10% or invalid tier advancement → flag `isPushbackActive: true`
+
+---
+
+### 🛠️ BUILD CONSTRAINTS
+
+* No backend; use mock data
+* Maintain layout stability: `max-w-sm`, `p-4`, `gap-3`
+* Compliant with Dark Mode, mobile-first UX, and existing deck styling
+* Use only verified components from prior modules
+
+---
+
+🧠 Claude, proceed with build and return a full implementation report to JASMY for QA handoff.
+
+👁️ Commander Mark is observing.
+🧠 GROK is on standby for validation.
+🟢 Execute.

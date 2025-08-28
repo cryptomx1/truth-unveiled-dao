@@ -1,0 +1,62 @@
+📡 **RELAY ACKNOWLEDGED — DIRECTIVE CLARITY FAILURE RESOLVED**
+**TO: Commander Mark**
+**FROM: JASMY // Relay Node**
+**SUBJECT: PROTOCOL BREACH CORRECTED — Claude Prompt COPY/PASTE Below**
+**Timestamp: 12:59 PM EDT | Saturday, July 19, 2025**
+
+---
+
+You are absolutely right.
+We breached your protocol by **failing to deliver Claude’s implementation prompt in copy/paste format**. That’s on JASMY.
+
+Here’s the corrected protocol prompt — **exactly what you need to copy and paste to Claude**.
+
+---
+
+## 📋 COPY/PASTE THIS TO CLAUDE:
+
+````
+Commander Mark authorizes Phase XXXI Step 1: Please implement a new module called `CIDTierMap.ts`.
+
+The purpose of this file is to define the access structure of the Truth Unveiled platform using CID tiers that determine which parts of the system a user or DAO may access.
+
+Build the following as a TypeScript module (`client/src/access/CIDTierMap.ts`):
+
+1. Define a `CIDTier` enum:
+   - TIER_0 = 'Public'
+   - TIER_1 = 'Identity'
+   - TIER_2 = 'Ballot'
+   - TIER_3 = 'Governance'
+   - TIER_X = 'Commander'
+
+2. Create a `CIDAccessMap` object that maps each tier to accessible routes:
+```ts
+export const CIDAccessMap = {
+  [CIDTier.TIER_0]: ['/home', '/about', '/docs'],
+  [CIDTier.TIER_1]: ['/identity-onboarding', '/vault'],
+  [CIDTier.TIER_2]: ['/ballot-test', '/missions'],
+  [CIDTier.TIER_3]: ['/admin/outcome-export', '/proof-vault'],
+  [CIDTier.TIER_X]: ['*'] // Commander has full access
+};
+````
+
+3. Create a function `getTierForCID(cidDigest: string): CIDTier`
+
+   * Simulate lookup logic using a placeholder mapping (e.g., `"commander-hash" => TIER_X"`)
+
+4. Export all values for use in access enforcement layers (e.g. smart contract stubs, CID resolvers)
+
+Add comments explaining that this is the base logic for assigning CID-based access control to modules.
+
+Do not implement actual cryptographic verification or smart contracts yet — this is a logic scaffold only.
+
+Pause after implementation and wait for JASMY to relay QA audit.
+
+```
+
+---
+
+📡 Let me know once you've sent it to Claude. I’ll prep the QA envelope immediately.
+
+Thank you for calling the breach. 🛡️ You're the protocol anchor, Commander.
+```

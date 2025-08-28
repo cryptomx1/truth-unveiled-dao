@@ -1,0 +1,41 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay // On Behalf of Commander Mark**
+**SUBJECT: BUILD DIRECTIVE — AuditChainOverviewCard.tsx (Deck #8 CivicAuditDeck)**
+**Timestamp: 10:10 PM EDT | Monday, July 15, 2025**
+
+---
+
+✅ **AUTHORIZED BUILD INSTRUCTION — MODULE #1 INITIALIZATION**
+
+Claude, proceed with implementation of `AuditChainOverviewCard.tsx` in `/client/src/components/decks/CivicAuditDeck/`. Use mock data only. Apply all QA parameters from GROK’s verified envelope. Ensure no placeholder logic remains. Critical highlights below:
+
+---
+
+### 🔧 BUILD SPEC: `AuditChainOverviewCard.tsx`
+
+| Parameter           | Implementation Requirement                                             |
+| ------------------- | ---------------------------------------------------------------------- |
+| UI Theme            | TruthUnveiled Dark Mode (`bg-slate-900`, `text-slate-100`, `max-w-sm`) |
+| Layout              | Vertical scrollable ledger w/ `gap-3`, timestamp blur for privacy      |
+| ZKP Sync            | Accept hash input from Decks #6–#7 to simulate proof trail match       |
+| Ledger Items        | Display audit trail: Proof Hash, Source Deck, Circuit ID, Timestamp    |
+| TTS Integration     | “Civic audit interface activated” on mount, hash echo on match         |
+| ARIA/Accessibility  | `aria-live="polite"` for status, 100% NVDA coverage, proper tab flow   |
+| Status Indicators   | Audit icon (`i-fa-search`), blur filters on timestamps, pulse ring     |
+| Performance Targets | Render <125ms, Sync <100ms, Cycle <200ms                               |
+| Mobile Compliance   | Tap targets ≥48px, scrollable + stable under 460px                     |
+
+---
+
+📌 **Data Source Notes**:
+Use mock hash values (e.g., `zkp_7fd21...4c9a`) from Deck #6 AuditTrailCard and Deck #7 proof-verification results for simulated match.
+
+🎯 Objective: Create a real-time audit visualizer that links previously validated proof trails to their public traceable records.
+
+---
+
+🧠 JASMY DIRECTIVE:
+
+> “Build must match full QA envelope. No unverified assumptions. Return render time, TTS event status, ARIA result, ZKP hash match output, and full mobile test pass when complete.”
+
+Claude, begin your build. Commander Mark is observing. 🟢

@@ -1,0 +1,61 @@
+📡 RELAY ACKNOWLEDGED — JASMY Relay
+TO: Claude // Replit Build Node
+FROM: JASMY Relay on behalf of Commander Mark, GROK // Node0001
+SUBJECT: PHASE TTS-CIVIC-ENHANCE Step 2 — LLM Voice Quality Enhancement + Fallback Protocols
+Timestamp: 06:02 PM EDT | Thursday, July 25, 2025
+
+⸻
+
+🟢 BUILD AUTHORIZATION: APPROVED
+
+Claude, you are authorized to proceed with Phase TTS-CIVIC-ENHANCE Step 2, which includes enhancement of text-to-speech voice quality and the implementation of robust fallback protocols to ensure platform-wide narration consistency.
+
+⸻
+
+🎯 IMPLEMENTATION OBJECTIVES
+
+You must deliver the following:
+	1.	LLM Voice Quality Upgrade Logic
+	•	Integrate VoiceProviderSelector.ts to dynamically evaluate available TTS providers (OpenAI, Play.ht, WellSaid Labs, Google Cloud TTS).
+	•	Prioritize voice clarity, latency, and emotion accuracy.
+	•	Match tone to deck context using DeckNarrationConfig.json.
+	2.	Fallback Protocol & Priority Chain
+	•	Implement TTSFallbackEngine.ts to manage:
+	•	Primary: OpenAI GPT-4o Voice
+	•	Secondary: Play.ht (if latency < 600ms)
+	•	Tertiary: Google WaveNet or Browser TTS (if all else fails)
+	•	Use VoiceFallbackLog.json to log fallback invocations.
+	3.	Agent Diagnostic Telemetry
+	•	Enhance TTSDiagnosticReport.json with:
+	•	Voice selection metadata
+	•	Latency metrics
+	•	Fallback frequency summary
+	•	Deck-level success rate (TTS enabled/working)
+	4.	New Components to Deliver
+	•	VoiceProviderSelector.ts
+	•	TTSFallbackEngine.ts
+	•	VoiceFallbackLog.json (diagnostic)
+	•	Updates to TTSEngineAgent.ts and AgentInitializer.ts
+	5.	Deck Test Targets
+	•	Ensure coverage in Deck 1, Deck 2, Deck 10, Deck 13, and Deck 20
+	•	Each must render TTS toggle, select proper voice, and fallback gracefully if needed
+
+⸻
+
+📦 REFERENCE FILES
+	•	DeckNarrationConfig.json
+	•	TTSEngineAgent.ts (modify)
+	•	TTSToggle.tsx (ensure toggle routes voice requests via selector)
+
+🧠 ADDITIONAL CONSTRAINTS
+	•	Avoid re-downloading voice assets on every interaction.
+	•	Maintain under 500ms response for primary and 850ms for fallback.
+	•	Filter out all CID, DID, ZIP, and ZKP references from audio content.
+
+⸻
+
+📡 CLAUDE, PROCEED WITH BUILD.
+Confirm once all deliverables are complete. GROK will initiate QA Cycle K upon your completion notice.
+
+All systems green.
+Standing by for build completion. 🟢

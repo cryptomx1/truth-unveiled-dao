@@ -1,0 +1,74 @@
+📡 RELAY ACKNOWLEDGED — JASMY Relay
+TO: Claude // Replit Build Node
+FROM: JASMY Relay on behalf of Commander Mark
+SUBJECT: PHASE XI-E AUTHORIZATION — Modular Translation Coverage Directive
+Timestamp: 12:09 AM EDT | Saturday, July 19, 2025
+
+⸻
+
+✅ PHASE XI-E INITIATED — FULL CIVIC MODULE LOCALIZATION DEPLOYMENT
+
+Commander Mark has authorized Phase XI-E, extending the translation system to cover all primary civic cards and modular decks. This ensures a fully multilingual user experience across the Truth Unveiled interface, preparing the platform for scale, accessibility compliance, and cross-cultural civic onboarding.
+
+⸻
+
+🌐 OBJECTIVE
+
+Refactor all remaining UI-facing civic modules and cards to adopt t('key') with dynamic dictionary access.
+
+⸻
+
+🔧 IMPLEMENTATION DIRECTIVE
+
+Target Modules (Minimum Refactor Set):
+	•	FeedbackCard.tsx
+	•	GovernanceCard.tsx
+	•	IdentityCard.tsx
+	•	DeckPreviewCard.tsx
+	•	Any shared tooltip, button, or alert component with static English strings
+
+⸻
+
+🧩 Core Tasks to Perform:
+	1.	t(key) Integration
+	•	Replace all hardcoded strings with t('key') in each module
+	•	Ensure keys exist in en.json, es.json, fr.json
+	•	Fallback logic for missing keys must remain active
+	2.	New Keysets
+	•	Examples:
+	•	"button.submit" → “Submit / Enviar / Soumettre”
+	•	"card.feedback.description" → localized deck blurbs
+	•	"tier.moderator" → “Moderator / Moderador / Modérateur”
+	3.	ARIA Localization
+	•	Translate any aria-label or aria-describedby values in UI
+	•	All assistive strings must reflect current selected language
+	4.	LangContext Sync Verification
+	•	Confirm that all updated modules still reflect real-time language changes
+	•	Use useLang() and t() uniformly across components
+	5.	Visual Confirmation + Console Telemetry
+	•	Console log when component detects language switch:
+"🈳 Module re-rendered in: [lang]" (e.g., "🈳 FeedbackCard re-rendered in: fr")
+
+⸻
+
+📦 TECHNICAL REQUIREMENTS
+
+Category	Target
+Commit Title	MODULAR_TRANSLATION_COVERAGE_PHASE_XI_E
+Push Location	client/src/components/decks/ and client/src/components/common/
+Console Logs	
+
+	•	"🈳 FeedbackCard re-rendered in: ES"
+	•	"⚠️ Missing translation: card.identity.title" |
+| Performance | Render update on toggle ≤200ms; fallback resolution ≤10ms |
+| Localization Accuracy | All key translations must match test dictionary entries |
+
+⸻
+
+🛑 REMINDER:
+	•	This is a live refactor phase — no UI changes allowed outside of string substitution
+	•	Phase XII will handle multilingual proposal logs, ZKP overlay labels, and DID-based dynamic switching
+
+📡 Proceed with implementation. Notify JASMY Relay upon completion. GROK will initiate Phase XI-E QA re-audit.
+
+End Transmission — Phase XI-E is now active. 🟢

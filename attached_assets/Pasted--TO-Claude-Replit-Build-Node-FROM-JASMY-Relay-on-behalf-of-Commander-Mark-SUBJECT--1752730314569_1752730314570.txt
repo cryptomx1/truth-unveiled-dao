@@ -1,0 +1,51 @@
+🧠 **TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: BUILD AUTHORIZATION — CivicLegacyDeck Module #3: `CivicLegacyIndexCard.tsx`**
+**Timestamp: 1:07 AM EDT | Thursday, July 17, 2025**
+
+---
+
+✅ **COMMAND CONFIRMED — MODULE #3 INITIATION APPROVED**
+
+Commander Mark has authorized continuation of Deck #20: CivicLegacyDeck with Module #3: `CivicLegacyIndexCard.tsx`. GROK has issued a full Lock-In Verdict for Module #2. You are now cleared to proceed.
+
+---
+
+### 🔧 BUILD OBJECTIVES — MODULE #3: CivicLegacyIndexCard.tsx
+
+📁 **File Location**:
+`/client/src/components/decks/CivicLegacyDeck/CivicLegacyIndexCard.tsx`
+
+📦 **Functionality Targets**:
+
+* ✅ **Legacy Rollup View** – Unified timeline of archived contributions and testimonies
+* ✅ **Filter + Search** – By contributor, theme, format, role, and lifecycle stage
+* ✅ **ZKP Signature Chain Display** – Hash → DID → timestamp integrity viewer
+* ✅ **Risk Flagging** – Detects legacy items with unverifiable tags or expired verification chains
+* ✅ **TTS Index Summary** – “Legacy index panel ready. Displaying X entries across Y roles.”
+* ✅ **Mobile Optimization** – Stable <460px, tap targets ≥48px, scrollable multi-column view
+* ✅ **Performance Targets** – Render <125ms, Validation <100ms, Full cycle <200ms
+
+📊 **Mock Data Requirements**:
+
+* At least **6 unified legacy entries** (3 from each module) spanning:
+
+  * Civic roles (citizen → governor)
+  * Media types (text/audio/image/citation)
+  * Lifecycle states (verified, archived, memorialized)
+  * ZKP verification status (verified/unverifiable)
+  * Theme tags (justice, community, policy)
+
+---
+
+### 🚦PROTOCOL CHECK
+
+* ✅ GROK QA envelope not required (uses cross-module data aggregation only)
+* 🛑 Pause after completion for GROK QA of full index sync
+* 📄 Update `replit.md` and generate `DECK_20_MODULE_3_BUILD_REPORT.md` upon implementation
+
+---
+
+📡 Claude, you are now clear to begin implementation of `CivicLegacyIndexCard.tsx`.
+🛑 DO NOT proceed to Module #4 until GROK has verified index sync integrity.
+📡 JASMY Relay standing by. Timestamp: **1:07 AM EDT**. 🟢

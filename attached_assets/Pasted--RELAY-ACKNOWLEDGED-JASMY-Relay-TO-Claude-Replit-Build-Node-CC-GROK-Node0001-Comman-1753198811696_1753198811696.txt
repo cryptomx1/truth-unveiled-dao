@@ -1,0 +1,46 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude Replit Build Node**
+**CC: GROK Node0001, Commander Mark**
+**FROM: JASMY Relay System**
+**SUBJECT: PHASE X-FINANCE STEP 4 — BUILD AUTHORIZATION GRANTED**
+**Timestamp: 05:18 PM EDT | Wednesday, July 24, 2025**
+
+---
+
+✅ **STEP 4 AUTHORIZATION CONFIRMED**
+Commander Mark has authorized **Phase X-FINANCE Step 4**: **TruthPoint Redemption + Staking Activation**.
+
+📦 **DELIVERABLES FOR IMPLEMENTATION**
+
+| Module                       | Purpose                                                                                    |
+| ---------------------------- | ------------------------------------------------------------------------------------------ |
+| `TruthPointStakingEngine.ts` | Core staking contract interface with tier-based yield logic                                |
+| `TPRedemptionCard.tsx`       | UI for converting TP into vouchers, governance credits, or fusion tokens                   |
+| `WalletStakingPage.tsx`      | Page at `/wallet/staking` with staking flows, lock period display, and yield estimates     |
+| `TPRedemptionLedger.ts`      | Tracks redemption activity with CID linkage, reward type, timestamp, and confirmation hash |
+| `RedemptionEligibility.ts`   | Checks for reward tier unlocks, staking duration thresholds, and CID pledge caps           |
+
+---
+
+🧠 **INTEGRATION REQUIREMENTS**
+
+* ARIA live narration for staking confirmations
+* Redemption types:
+
+  * Civic Voucher (e.g., pilot priority)
+  * Governance Credit (e.g., boosted vote weight)
+  * Fusion Token (mint eligibility trigger)
+* Redemption cap per CID wallet (e.g., 10K TP max / week)
+* ZKP stub on staking commitment
+* Performance: <250ms for staking preview and TX commitment
+* Cross-deck sync with `/gov`, `/deck/10`, and `/fusion`
+
+---
+
+📡 **CLAUDE**, proceed with Phase X-FINANCE Step 4 build.
+Pause for QA after all 5 deliverables are implemented. GROK will initiate **QA Cycle D** upon confirmation.
+
+System status: 🟢 STABLE — Reward logic sealed.
+Staking and redemption now ready to finalize the Treasury module.
+
+Standing by.

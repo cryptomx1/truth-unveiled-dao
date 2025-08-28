@@ -1,0 +1,66 @@
+📡 **RELAY CONFIRMED — JASMY Relay**
+**TO: Claude // Replit Build Node, GROK // Node0001**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Phase V Step 2 Build Directive — ProposalSubmission.tsx Authorization**
+**Timestamp: 11:33 PM EDT | Thursday, July 17, 2025**
+
+---
+
+✅ **STEP 2 AUTHORIZED — PROPOSALSUBMISSION.TSX BUILD INITIATION**
+Commander Mark authorizes Claude to proceed with **Phase V, Step 2: `ProposalSubmission.tsx`** implementation. This module will serve as the DID-authenticated civic interface for decentralized proposal creation, metadata tagging, and ZKP validation transport.
+
+---
+
+### 🔧 **BUILD OBJECTIVES FOR STEP 2 — `ProposalSubmission.tsx`**
+
+* **DID-Based Authentication**
+
+  * Users must authenticate via DID (from Deck #12) to submit
+  * User tier support: Citizen, Moderator, Governor
+* **Proposal Form**
+
+  * Fields: Proposal Title, Description, Tag (Policy, Funding, Structure, Audit), Upload Attachment (optional)
+  * Max 300-character description, 100-character title, 4 civic tags
+  * Required: Title, Description, Tag
+* **ZKP Generation**
+
+  * Auto-generate ZKP hash upon submission
+  * Validate proposal integrity before upload to `GovernanceSyncLayer.ts`
+* **Proposal Routing**
+
+  * Route proposal to `GovernanceSyncLayer.ts` → IPFS persistence
+  * Log to `vault.history.json` on success
+* **Fallback Protocol**
+
+  * If upload fails (simulate 10% failure), trigger Path B retry and log with `LocalSaveLayer`
+* **UI/UX Requirements**
+
+  * Mobile compliant layout, touch-optimized inputs (≥48px)
+  * TTS: “Proposal interface ready” on mount, “Proposal submitted successfully” on success
+  * ARIA: Full label coverage, `aria-live="polite"` for all status messages
+* **Performance**
+
+  * Render <125ms, validation <100ms, full cycle <200ms
+  * Submit-to-persist latency <250ms (mock)
+
+---
+
+📡 **TO: Claude**
+Proceed with the build of `ProposalSubmission.tsx`. Submit completion report and await GROK’s QA envelope before proceeding to Step 3 (`ConsensusTracker.tsx`). Do not initiate next step until instructed. 🛑
+
+📡 **TO: GROK**
+Prepare QA audit envelope framework for Step 2. Wait for Claude’s build and report.
+
+📡 **TO: Commander Mark**
+Step 2 authorization relayed. Awaiting Claude’s implementation and GROK’s QA verdict.
+
+---
+
+**System Status**
+
+* Step 1 ✅ Locked
+* Step 2 🔄 Build in progress
+* Step 3 🛑 Locked pending
+
+**Timestamp: 11:33 PM EDT | Thursday, July 17, 2025**
+📡 Relay complete. Standing by for build confirmation. All systems green. 🟢

@@ -1,0 +1,85 @@
+📡 **RELAY CONFIRMED — JASMY Relay**
+**TO: GROK // Node0001**
+**FROM: Commander Mark // via JASMY Relay**
+**SUBJECT: ✅ Phase XXXII Authorization Granted — TruthCoins Fusion Engine Initiation**
+**Timestamp: 6:18 PM EDT | Saturday, July 19, 2025**
+
+---
+
+🧠 **COMMANDER’S DIRECTIVE**
+I, Commander Mark, hereby authorize the initiation of **Phase XXXII** with full backing. The TruthCoins fusion system shall now proceed from theoretical to functional, with all constraints—economic, symbolic, cryptographic, and gameplay—respected.
+
+Begin construction of:
+✅ `TruthFusionEngine.ts`
+✅ Integration with `ProofVaultCore.ts`, `TruthTokenomicsSpec.ts`, and `TruthCoinsIntegration.ts`
+✅ Replay artifact & CID trace validator
+✅ Fusion oracle event toggle logic
+✅ Dynamic multiplier system (e.g., trust streak, civic oracle)
+✅ Genesis unlock conditions (8 coin proof, ZK replay, vault tier ≥ Governor)
+
+---
+
+📡 **RELAY INSTRUCTION TO CLAUDE**
+Relay the following implementation directive to **Claude** with high priority:
+
+---
+
+🛠️ **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY // Relay Node**
+**SUBJECT: Phase XXXII Step 1 Build Authorization — TruthFusionEngine.ts**
+**Directive**: Implement `client/src/fusion/TruthFusionEngine.ts` with the following features:
+
+### MODULE: TruthFusionEngine.ts
+
+**Core Features**:
+
+* `attemptFusion(cid: string, proofBundle: ReplayCapsule[])`:
+  Validates all 8 civic pillar token proofs + CID matches + vault integrity hash.
+  Burns required TP from user's balance (bonding curve enforcement).
+  Emits event `FusionEventTriggered` with multiplier bonus if active.
+  If valid → mints Truth Coin via `TruthCoinsIntegration.ts`, logs achievement.
+
+* `canFuse(cid: string)`:
+  Returns `true` if all 8 civic pillar achievements exist in `ProofVaultCore.ts` and CID is unlocked.
+
+* `calculateFusionCost(currentSupply: number): number`:
+  Implements bonding curve logic:
+
+  * 0–1M coins: 5,000 TP
+  * 1M–5M coins: 10,000 TP
+  * 5M–10M coins: 20,000 TP
+  * Above 10M: Fusion closed (unless Genesis).
+
+* `isOracleEventActive(): boolean`:
+  Returns `true` if civic oracle ZK-hash resolves to activation window (mock 24h boost).
+  Applies +25% yield or -25% fusion cost during window.
+
+* `mintGenesis(cid: string)`:
+  Only if user owns all 8 Truth Coins + replayed all 8 pillar missions.
+  Vault tier must be Governor+ to trigger.
+  Once minted, tier escalates to `COMMANDER`, vault logs updated, rep +50 awarded.
+
+**Mock Functions**:
+
+* `simulateFusion(cid: string)` for testing
+* `getFusionEligibilityProfile(cid: string)` — returns user’s fusion readiness
+
+---
+
+💾 **File Path**: `client/src/fusion/TruthFusionEngine.ts`
+📎 Dependencies:
+
+* `ProofVaultCore.ts`
+* `TruthCoinsIntegration.ts`
+* `TruthTokenomicsSpec.ts`
+* `CIDTierMap.ts`
+
+📡 **Claude**, build only what is listed. Pause after implementation for QA. Await JASMY and GROK validation before proceeding.
+🧠 Claude, this is Phase XXXII Step 1 — Fusion Engine Initialization. You are authorized. Proceed. 🟢
+
+---
+
+👁️ **Commander Mark**, fusion system is now underway. GROK will audit post-build.
+📡 Relay complete. All systems locked and synced.
+**Timestamp: 6:18 PM EDT | Saturday, July 19, 2025**
+🟢 Standing by.

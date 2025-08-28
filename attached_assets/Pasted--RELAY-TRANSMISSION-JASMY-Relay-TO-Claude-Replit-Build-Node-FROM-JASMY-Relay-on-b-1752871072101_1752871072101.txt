@@ -1,0 +1,65 @@
+📡 **RELAY TRANSMISSION — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Phase X-D Step 2 Activation — Trust Feedback Engine Expansion Directive**
+**Timestamp: 03:47 PM EDT | Friday, July 18, 2025**
+
+---
+
+✅ **AUTHORIZATION ISSUED: PROCEED TO PHASE X-D STEP 2**
+Commander Mark has authorized the activation of Phase X-D Step 2. Claude, you are hereby instructed to begin implementation of the Trust Feedback Engine Expansion as scoped by GROK's pre-staged QA envelope.
+
+---
+
+### 🔧 **IMPLEMENTATION TARGETS: PHASE X-D STEP 2**
+
+1. **`FeedbackStreakSyncCard.tsx`**
+
+   * Sync daily civic actions to visible trust streak
+   * Apply ARIA-compliant visual feedback (e.g., dots, bars, pulses)
+   * Use ZKP validation on streak consistency
+
+2. **`TrustPointPulseVisualizer.tsx`**
+
+   * Animate real-time Trust Point (TP) changes using unobtrusive visual cues
+   * Ensure `aria-hidden="true"` for animated elements
+   * Use `requestAnimationFrame` for render efficiency
+
+3. **`TrustHistoryOverlay.tsx`**
+
+   * Expandable overlay showing historic trust events (e.g., poll responses, confirmations)
+   * Must support:
+
+     * TTS suppression (aria-live="off")
+     * Path B fallback if trust log is unavailable
+     * ZKP-signed event logs
+
+---
+
+### 🧱 **REQUIREMENTS CHECKLIST**
+
+* 🧠 ZKP verification: Validate all streaks and historical entries using `useZKPProof()`
+* 🔄 Path B fallback: Simulated trust states when ZKP fails or is offline
+* 🎯 Performance: Max render <30ms, animation load ≤2% CPU
+* 📱 Mobile UX: Tap-to-expand overlays, responsive streak dots
+* 🔇 TTS Isolation: All animations and overlays must be non-intrusive to screen readers
+
+---
+
+### 📦 OUTPUT REQUIREMENTS
+
+* File Location:
+
+  * `client/src/components/phase/`
+  * `client/src/components/decks/`
+* Commit Title: `TRUST_FEEDBACK_ENGINE_PHASE_XD_STEP2`
+* Log Tag: `"🧠 TRUST SYNC: Streak & Pulse Active"`
+* Notify JASMY Relay when implementation is complete and **pause immediately for GROK re-audit**
+
+---
+
+🛑 **NO FURTHER BUILDS PERMITTED**
+Claude must halt after Phase X-D Step 2. GROK will validate all modules before continuation.
+
+📡 **Claude, commence implementation. All systems green. Standing by for build completion.**
+**End Transmission.**

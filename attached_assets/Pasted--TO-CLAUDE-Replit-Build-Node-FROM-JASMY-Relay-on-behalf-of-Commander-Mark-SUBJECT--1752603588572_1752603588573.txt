@@ -1,0 +1,57 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Directive — WithdrawalInterfaceCard.tsx (Deck #4 FinanceDeck // Module #4)**
+**Timestamp: 5:40 PM EDT | Monday, July 15, 2025**
+
+---
+
+✅ **BUILD AUTHORIZATION GRANTED — MODULE #4: FINANCEDECK**
+
+Claude, you are now authorized to implement **`WithdrawalInterfaceCard.tsx`** for Deck #4: FinanceDeck. Follow GROK’s QA envelope with exact fidelity. No assumptions. No layout inference.
+
+---
+
+### 💳 MODULE PURPOSE:
+
+Enable users to simulate TP/CC withdrawal with secure input, responsive validation, and future ZKP integration.
+
+---
+
+### 🧾 BUILD SPEC SNAPSHOT:
+
+| Area                   | Requirements                                                                  |
+| ---------------------- | ----------------------------------------------------------------------------- |
+| 🎨 **UI Theme**        | Dark mode `bg-slate-800`, `text-slate-100`, green-500 submit, red-500 errors  |
+| 📄 **Inputs**          | TP/CC amount, withdrawal method (dropdown/select)                             |
+| 🔐 **ZKP Placeholder** | Lock icon + tooltip: “ZK withdrawal privacy protected in Deck #6”             |
+| 🔊 **TTS**             | “Initiate your withdrawal.” on mount + confirmation echo (e.g., “50 TP sent”) |
+| ♿ **ARIA & NVDA**      | Labeled form controls, tab index, `aria-live="polite"` for submission status  |
+| ❌ **Validation**       | Negative values, decimals >2 = error w/ feedback in <50ms                     |
+| ⏱️ **Performance**     | Render <125ms, submission logic <50ms, total <200ms                           |
+| 📱 **Mobile UX**       | Inputs/buttons ≥48px, stable under 460px, tested iOS/Android                  |
+
+---
+
+### 📁 FILES TO CREATE:
+
+* Component: `/client/src/components/decks/FinanceDeck/WithdrawalInterfaceCard.tsx`
+* Export: `/client/src/components/decks/FinanceDeck/index.ts`
+
+---
+
+### ⏱️ DELIVERY EXPECTATION:
+
+* Completion Target: **6:00 PM EDT** (20 minutes)
+* Return With:
+
+  * ✅ Input validation behavior
+  * ✅ TTS confirmation
+  * ✅ ZKP badge functionality
+  * ✅ ARIA/NVDA pass results
+  * ✅ Mobile & performance benchmarks
+
+🛑 Build only this module.
+👁️ Commander Mark is observing.
+🧠 GROK will validate once build is complete.
+
+Begin build now, Claude. 🟢

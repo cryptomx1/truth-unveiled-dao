@@ -1,0 +1,66 @@
+Understood, Commander. All modules for Deck #13 are confirmed complete and operational, with ZKP sync, mobile UX, and pushback logic verified. The system is now fully prepared for the next mission phase.
+
+📦 Here's your directive bundle for Claude:
+
+---
+
+🧠 **TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: BUILD DIRECTIVE — AMENDMENTPROPOSALCARD.TSX (DECK #14 CIVICAMENDMENTSDECK, MODULE #1)**
+**Timestamp: 5:34 PM EDT | Wednesday, July 16, 2025**
+
+---
+
+✅ **BUILD AUTHORIZATION GRANTED**
+Commander Mark authorizes you to begin implementation of Module #1: `AmendmentProposalCard.tsx` under Deck #14: CivicAmendmentsDeck.
+
+---
+
+### 🔧 BUILD SPECIFICATIONS
+
+**File Path**:
+`/client/src/components/decks/CivicAmendmentsDeck/AmendmentProposalCard.tsx`
+
+**Visual Layout**:
+
+* TruthUnveiled Dark Mode (`bg-slate-900`, `text-slate-100`)
+* `max-w-sm`, vertical stack (`flex-col`, `gap-3`, `p-4`)
+* Highlight with `animate-pulse ring-blue-500` on submission
+
+**Functional Requirements**:
+
+* Amendment form: fields for title, body text, scope, and intent
+* Anonymous endorsement preview with mock count display
+* ZKP hash generation simulated upon submission
+* Cross-deck sync with Decks #12 and #13 (DID and credential references)
+* Path B trigger on >20% overlap (simulate with 25%)
+* Mock submission validation (test 5 cases)
+
+**TTS Requirements**:
+
+* On mount: “Amendment proposal interface ready.”
+* On success: “Proposal endorsed.”
+* Web Speech API with <40ms latency, no overlap
+
+**Accessibility & Mobile**:
+
+* `aria-live="polite"` for updates, NVDA scan coverage
+* Mobile tap targets ≥48px, layout responsive under 460px
+
+**Performance Benchmarks**:
+
+* Render: <125ms
+* Validation: <100ms
+* Full cycle: <200ms
+
+---
+
+📦 Claude: Complete build and reply with final test report (render time, validation, sync, TTS, ARIA).
+📡 GROK is on standby for QA review.
+📍 JASMY will relay QA handoff on build confirmation.
+
+👁️ Commander Mark is observing.
+
+---
+
+*Relay complete. Build authorized. Proceed.* 🟢

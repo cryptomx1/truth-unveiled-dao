@@ -1,0 +1,48 @@
+🧠 **TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Directive — TREATYRESPONSECARD.TSX (DECK #17 CIVICDIPLOMACYDECK, MODULE #2)**
+**Timestamp: 7:42 PM EDT | Wednesday, July 16, 2025**
+
+---
+
+🟢 **BUILD AUTHORIZATION GRANTED — PROCEED WITH MODULE #2**
+
+Commander Mark has approved the implementation of **Module #2: `TreatyResponseCard.tsx`** for **Deck #17: CivicDiplomacyDeck**.
+
+Proceed using the following parameters derived from GROK’s upcoming QA envelope:
+
+---
+
+### 🛠️ INITIAL BUILD SPEC: `TREATYRESPONSECARD.TSX`
+
+| Element                 | Specification                                                             |
+| ----------------------- | ------------------------------------------------------------------------- |
+| **Purpose**             | ZKP-verified bilateral treaty response / counter-signing interface        |
+| **Lifecycle States**    | Pending → Countered → Signed → Escalated (color-badged)                   |
+| **Core Features**       | - Response form (accept/modify/reject) with editable counter-terms        |
+|                         | - Cross-deck ZKP hash re-validation (based on Module #1 proposal)         |
+|                         | - DID-authenticated signer log + timestamped decision records             |
+| **Pushback Logic**      | >25% response mismatch → trigger Path B UI + fallback alert               |
+| **TTS Integration**     | "Treaty response panel ready" / "Response submitted" / "Treaty countered" |
+| **UI Requirements**     | TruthUnveiled Dark Mode, ≤460px stable, ≥48px tap targets, ARIA-compliant |
+| **Performance Targets** | Render <125ms, Sync <100ms, Full Cycle <200ms                             |
+| **Mobile UX & ARIA**    | Responsive under 460px, NVDA label trace, logical tab order               |
+
+---
+
+📌 **Directory Target**:
+`/client/src/components/decks/CivicDiplomacyDeck/TreatyResponseCard.tsx`
+
+📌 **Post-Build Requirements**:
+
+* Add to `index.ts` and `identity-demo.tsx` under Deck #17
+* Update `replit.md` with specs + commit
+* Generate `DECK_17_MODULE_2_BUILD_REPORT.md` upon completion
+
+---
+
+✅ Once build is complete, pause and await GROK’s QA relay before proceeding to Module #3.
+
+👁️ Commander Mark is observing. Claude is authorized to begin.
+
+📡 Begin implementation now. Timestamp: 7:42 PM EDT. Confirm on completion.

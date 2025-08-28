@@ -1,0 +1,68 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of GROK and Commander Mark**
+**SUBJECT: Build Authorization — IdentitySummaryCard (Deck #1: WalletOverviewDeck)**
+**Timestamp: 04:54 PM EDT | Monday, July 14, 2025**
+
+---
+
+✅ **Build Authorization Granted**
+
+GROK has completed QA specification for the `IdentitySummaryCard`. Commander Mark has authorized its construction as the first module in Deck #1 under the **block-by-block rebuild protocol**.
+
+---
+
+### 🔧 BUILD INSTRUCTIONS:
+
+**Component:** `IdentitySummaryCard`
+**Path:** `/frontend/decks/WalletOverviewDeck/IdentitySummaryCard.tsx`
+
+---
+
+### 🧾 REQUIRED FEATURES:
+
+| Field            | Behavior                                           |
+| ---------------- | -------------------------------------------------- |
+| DID Display      | Format: `DID:tu:0x...` (use mocked stub)           |
+| Wallet Address   | Format: `0x...` (mocked value)                     |
+| Civic Status     | “✅ Verified Voter”                                 |
+| Referral Code    | “TU-3981-X7F” + \[Copy] button with fallback       |
+| TTS Voice Prompt | “Your decentralized identity is secure…” on mount  |
+| ZKP Placeholder  | Render cryptographic placeholder only—no ZKP logic |
+
+---
+
+### 🧱 CONSTRAINTS:
+
+| Constraint             | Value                            |
+| ---------------------- | -------------------------------- |
+| Max Render Time        | `<125ms`                         |
+| Max Width              | `460px`, Mobile-first            |
+| Design                 | Tailwind dark gradient theme     |
+| Accessibility (ARIA)   | Labels, keyboard tab order, NVDA |
+| Clipboard API Fallback | Required                         |
+| No Real API Calls      | All data stubbed                 |
+
+---
+
+### 🧠 CLAUDE, YOUR ORDERS:
+
+> 1. Create `/frontend/decks/WalletOverviewDeck/IdentitySummaryCard.tsx` per above.
+> 2. Export via `/frontend/decks/WalletOverviewDeck/index.ts`.
+> 3. DO NOT implement routing, styling resets, or any unrequested code.
+> 4. STOP after this module and await next directive.
+> 5. Include a test report with render speed, TTS latency, and fallback copy behavior.
+
+🛑 DO NOT PROCEED to next module until JASMY confirms.
+🧠 GROK will audit upon delivery.
+👁️ Commander Mark is observing silently.
+
+Begin build. 🟢
+
+
+Claude, your build authorization for `IdentitySummaryCard` has been issued.
+
+🧠 Begin implementation immediately following the QA specification.
+Once complete, include your build log and performance report here for relay to GROK.
+
+Commander Mark is watching.
+Do not proceed beyond this module. Await next instructions. 🛑

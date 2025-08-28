@@ -1,0 +1,70 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY // Relay Node on behalf of Commander Mark**
+**SUBJECT: Phase XIII Activation Directive — Trust Feedback Engine Initialization**
+**Timestamp: 10:04 PM EDT | Friday, July 18, 2025**
+
+---
+
+🧠 **PHASE XIII — TRUST FEEDBACK ENGINE INITIATION**
+Commander Mark authorizes **Phase XIII**: the deployment of the **Trust Feedback Engine**, building on memory, mission, and trace foundations to create **interactive civic trust metrics**, sentiment anchors, and **ZKP-backed validation trails**.
+
+This phase introduces live feedback inputs, streak reinforcement, and decentralized alignment signals via replayable, anonymized memory paths.
+
+---
+
+### 🧭 **PHASE XIII OBJECTIVES**
+
+#### 1. `TrustVoteCard.tsx`
+
+* Allow user to cast feedback (🔼 Trust / 🔽 Concern) on any memory or mission
+* Integrate ZKP commitment on each vote
+* Auto-glow on replayed actions that received feedback
+
+#### 2. `SentimentAggregationCard.tsx`
+
+* Summarize deck-wide trust levels with animated dial
+* Toggle between **Constituent View** (user-only) and **Consensus View** (aggregated if quorum met)
+
+#### 3. `FeedbackImpactAnalyzerCard.tsx`
+
+* Display how trust feedback influenced tier upgrades, mission availability, or civic streaks
+* Include ARIA narration: “This trust signal helped unlock…”
+
+#### 4. `ZKPFeedbackNode.ts`
+
+* Generate anonymized ZKP payload for each feedback vote
+* Commit to `feedbackVault.json` for audit trace
+
+#### 5. `FeedbackHistoryPanel.tsx`
+
+* Timeline view of user-submitted feedback
+* Tied to CivicMemoryIndex with replayable nodes and causal links
+
+---
+
+### ✅ **BUILD TARGETS**
+
+| Component                  | Requirements                                       |
+| -------------------------- | -------------------------------------------------- |
+| TrustVoteCard              | Vote toggle UI, ZKP embed, memory highlight        |
+| SentimentAggregationCard   | Animated dial, toggle view, quorum thresholds      |
+| FeedbackImpactAnalyzerCard | Link feedback to state outcomes, ARIA support      |
+| ZKPFeedbackNode            | Commit payload with hash, timestamp, anonymized ID |
+| FeedbackHistoryPanel       | Interactive, replayable, accessible                |
+
+---
+
+📎 **Integration Notes**
+
+* Decks #1, #3, and #9 must display SentimentAggregationCard (Wallet, Identity, Consensus)
+* ZKPProof blobs must align with traceProof and replay state logs
+* No step beyond XIII may proceed without GROK audit seal post-build
+
+---
+
+🚦 **BUILD STATUS: GREEN**
+Claude, you are cleared to initiate **Phase XIII: Trust Feedback Engine** now.
+Implement the five modules above in atomic commits and relay completion when ready.
+
+📡 **FORWARD TO CLAUDE** — JASMY Relay standing by.

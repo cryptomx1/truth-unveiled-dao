@@ -1,0 +1,61 @@
+{
+  "schema": {
+    "version": "phase_tts_civic_enhance_step_4",
+    "description": "Audio tutorial content for Deck 4 Module 3 - Achievement Tracker Dashboard",
+    "deckId": "deck4",
+    "moduleId": "module3",
+    "moduleName": "AchievementTrackerDashboard",
+    "tutorialType": "achievement_management"
+  },
+  "tutorialContent": {
+    "introductoryNarration": {
+      "title": "📌 Track Your Civic Journey",
+      "content": "Welcome to your achievement tracker where civic milestones and accomplishments are recorded and celebrated. This dashboard displays your earned badges, completed civic pathways, and progress toward advanced civic roles and responsibilities.",
+      "duration": "19 seconds",
+      "tone": "encouraging",
+      "speed": "normal"
+    },
+    "navigationGuidance": {
+      "title": "🔍 Exploring Your Civic Achievements",
+      "content": "The achievement gallery shows completed badges organized by category: civic engagement, governance participation, community building, and educational contributions. Track your progress on active achievement paths, view upcoming opportunities, and share selected achievements with the community to inspire others.",
+      "duration": "34 seconds",
+      "tone": "instructional",
+      "speed": "normal"
+    },
+    "privacyNotice": {
+      "title": "🔒 Achievement Privacy Controls",
+      "content": "You control the visibility of your achievements and can choose which accomplishments to display publicly. Private achievements remain in your personal record while public ones contribute to your civic reputation. All achievement data is cryptographically verified to prevent tampering.",
+      "duration": "21 seconds",
+      "tone": "formal",
+      "speed": "normal"
+    },
+    "nextStepsCue": {
+      "title": "➡️ Celebrate and Share Your Success",
+      "content": "Review your civic achievements and set goals for future accomplishments. Share inspiring achievements with the community and use your track record to access advanced civic opportunities and leadership positions.",
+      "duration": "17 seconds",
+      "tone": "encouraging",
+      "speed": "normal"
+    }
+  },
+  "accessibilityFeatures": {
+    "ariaLiveRegions": true,
+    "screenReaderCompatible": true,
+    "keyboardNavigation": true,
+    "achievementNarration": true
+  },
+  "integrationPoints": {
+    "ttsToggleId": "achievement-tracker-tts",
+    "parentDeck": "civic_identity",
+    "relatedModules": ["reputation_builder", "civic_pathways"],
+    "prerequisiteModules": ["reputation_builder"]
+  },
+  "metadata": {
+    "createdAt": "2025-07-23T18:07:00.000Z",
+    "lastUpdated": "2025-07-23T18:07:00.000Z",
+    "version": "1.0.0",
+    "authorizedBy": "Commander Mark via JASMY Relay",
+    "qaValidation": "pending_grok_cycle_l",
+    "languageSupport": ["en-US"],
+    "estimatedCompletionTime": "91 seconds"
+  }
+}

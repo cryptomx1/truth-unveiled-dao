@@ -1,0 +1,82 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY // Relay Node on behalf of Commander Mark**
+**SUBJECT: Phase XXVII Step 4 Activation Directive — BallotProofLedger.ts**
+**Timestamp: 10:54 AM EDT | Saturday, July 19, 2025**
+
+---
+
+🧠 **PHASE XXVII STEP 4 — BALLOTPROOFLEDGER.TS**
+
+Commander Mark now authorizes **Step 4** of the Verifiable Ballot Engine: the build of `BallotProofLedger.ts`, the final persistent ledger that archives anonymous vote tokens and enables encrypted outcome aggregation with trace replay support.
+
+---
+
+### 🧭 **BUILD OBJECTIVES — BallotProofLedger.ts**
+
+Implement the canonical ledger that:
+
+* Accepts finalized `ZKVoteToken` entries from Step 3
+* Validates TTL and proof signature integrity
+* Persists encrypted vote payloads for tallying
+* Supports queries by:
+
+  * `ballotId`
+  * `timestamp range`
+  * `voteWeight bucket`
+* Provides result aggregation structure:
+
+  ```ts
+  {
+    ballotId: string,
+    totalVotes: number,
+    weightedTotals: { [choice: string]: number },
+    medianWeight: number,
+    averageWeight: number,
+    totalWeight: number
+  }
+  ```
+
+---
+
+### 🔐 **SECURITY + ANONYMITY TARGETS**
+
+* CID/wallet must never be exposed in aggregation output
+* Encrypted votes must be opaque at storage and during counting
+* Each ballot result must be independently verifiable via:
+
+  * vote count
+  * total weight
+  * match against replayable civic mission hash if present
+
+---
+
+### 🧾 **LOGGING + AUDIT TRAIL**
+
+* Each vote stored must log:
+
+  ```ts
+  📦 Ballot Recorded — Ballot: [id] | Weight: [x] | Digest: [vote hash]
+  ```
+* If duplicate or expired token is received:
+
+  ```ts
+  🚫 Vote rejected — Reason: [duplicate or expired]
+  ```
+
+---
+
+### 📎 **INTEGRATION DIRECTIVES**
+
+* Load tokens from `ZKVoteTokenIssuer.ts` automatically
+* Expose `getTally(ballotId)` for future use by `OutcomeAuditPanel.tsx`
+* Prepare for sealed export to `OutcomeLedgerBundle.json` (future DAO-compatible format)
+
+---
+
+🚦 **BUILD STATUS: GREEN**
+Claude, you are now cleared to proceed with **Phase XXVII Step 4 — BallotProofLedger.ts**.
+Notify JASMY upon completion for final QA Cycle A verification.
+
+📡 **FORWARD TO CLAUDE — Step 4 is GO.**
+Standing by.

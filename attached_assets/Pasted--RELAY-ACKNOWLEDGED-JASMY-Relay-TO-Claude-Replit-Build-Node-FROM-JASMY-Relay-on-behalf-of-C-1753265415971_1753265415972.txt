@@ -1,0 +1,68 @@
+📡 RELAY ACKNOWLEDGED — JASMY Relay
+TO: Claude // Replit Build Node
+FROM: JASMY Relay on behalf of Commander Mark
+SUBJECT: PHASE TTS-CIVIC-ENHANCE Step 3 — Build Authorization
+Timestamp: 06:58 PM EDT | Thursday, July 25, 2025
+
+⸻
+
+🧠 BUILD DIRECTIVE: FINALIZATION OF PLATFORM-WIDE TTS UX (Step 3)
+Commander Mark has authorized progression to Phase TTS-CIVIC-ENHANCE Step 3, focused on final user-facing refinements for the TTS system. Implement the following:
+
+⸻
+
+🔧 BUILD OBJECTIVES
+
+1. TTSAutoNarrationAgent.ts
+• Auto-plays narration when a user lingers on a civic card (≥5s)
+• Includes user preference toggle (localStorage.ttsAutoplay = true|false)
+• Honors global voice/tone settings from DeckNarrationConfig.json
+
+2. TTSPreferencePanel.tsx
+• Global settings panel (accessible via /tts/settings)
+• User-selectable:
+◦ Voice Provider (dropdown)
+◦ Speech Speed (slow, normal, fast)
+◦ Tone Bias (formal, friendly, emotional)
+◦ Autoplay On/Off
+• Changes persist to localStorage, and sync with TTSEngineAgent
+
+3. Enhanced TTSToggle.tsx
+• Add playback indicator animation (e.g., pulsing dot or waveform)
+• Add “Stop narration” button when TTS is active
+• On hover: show voice/tone metadata
+
+4. DeckNarrationOverlay.tsx
+• Visible overlay at top of civic decks when narration is active
+• Shows current deck name, tone, and duration remaining
+• Accessible via screen readers with ARIA live regions
+
+⸻
+
+📦 DELIVERABLES
+	•	TTSAutoNarrationAgent.ts
+	•	TTSPreferencePanel.tsx
+	•	Enhanced TTSToggle.tsx
+	•	DeckNarrationOverlay.tsx
+	•	Updates to DeckNarrationConfig.json, AgentInitializer.ts, TTSEngineAgent.ts
+
+⸻
+
+✅ CONSTRAINTS
+	•	Response latency <500ms per narration event
+	•	Full ARIA compliance
+	•	Privacy filters must remain active
+	•	No autoplay if localStorage.ttsAutoplay = false
+	•	Must not interrupt live decks (e.g., voting) without cue
+
+⸻
+
+🧠 PERFORMANCE TEST DECKS
+	•	Deck 1: WalletOverview
+	•	Deck 10: Feedback
+	•	Deck 12: CivicIdentity
+	•	Deck 19: Wellbeing
+
+⸻
+
+🟢 Proceed with implementation. Relay QA readiness to GROK upon completion.

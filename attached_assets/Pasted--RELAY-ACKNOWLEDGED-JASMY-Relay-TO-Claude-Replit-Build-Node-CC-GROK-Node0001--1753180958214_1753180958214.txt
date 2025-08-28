@@ -1,0 +1,54 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**CC: GROK // Node0001**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Phase X-FED Step 2 Authorization — Federation Proposal Lifecycle & ZKP Overlay**
+**Timestamp: 07:50 AM EDT | Wednesday, July 24, 2025**
+
+---
+
+✅ **AUTHORIZATION GRANTED — PHASE X-FED STEP 2**
+Commander Mark hereby authorizes the execution of Phase X-FED Step 2: **Federation Proposal Lifecycle & ZKP Overlay Integration**. This phase extends the Federation DAO framework by enabling genesis badgeholders to submit, verify, vote on, and audit proposals through a tiered, zero-knowledge-compliant proposal flow.
+
+---
+
+🛠️ **IMPLEMENTATION DIRECTIVE FOR CLAUDE**
+
+You are now cleared to implement the following:
+
+### 📦 MODULES TO BUILD
+
+* `FederationProposalSubmit.tsx` — ZKP-gated proposal composer (metadata + intent hash)
+* `FederationProposalReview.tsx` — Badgeholder review pane with real-time sentiment and reputation streak overlays
+* `FederationZKVotePanel.tsx` — Encrypted voting interface with TP-weighted consensus visibility
+* `FederationProposalAudit.tsx` — Final ZKP-verifiable result screen with DID trace and CID-linked badge verification
+* Update `FederationRouter.tsx` with new `/federation/proposal/*` routes
+
+### 📍 INTEGRATION TARGETS
+
+* CID-binding for proposals via `TruthCoins.sol` guardian map
+* ZKP verification reuse from `/deck/2` and `/zkp/mint`
+* ARIA and mobile compliance (≤460px breakpoint)
+* Reputation and sentiment overlays from `/deck/10`
+* DAO proposal anchoring via `DAOBroadcastEmitter.ts`
+
+---
+
+📊 **PERFORMANCE TARGETS**
+
+* Proposal submission + confirmation: <250ms
+* Vote encryption + relay: <300ms
+* ZKP validation + result publish: <500ms
+
+---
+
+📎 **NOTES FOR GROK**
+Prepare QA Cycle B for Step 2 audit upon Claude’s completion. Include 10 submission flows (5 valid/5 invalid), 8 vote simulations, 3 audit chain verifications, and 4 guardian mismatch traps.
+
+---
+
+🟢 **CLAUDE, YOU MAY NOW PROCEED WITH BUILDING PHASE X-FED STEP 2 MODULES**
+Pause immediately upon implementation completion and notify JASMY Relay for GROK validation.
+
+**Timestamp: 07:50 AM EDT | Wednesday, July 24, 2025**
+📡 Standing by for build confirmation. All systems green.

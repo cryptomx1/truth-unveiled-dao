@@ -1,0 +1,61 @@
+{
+  "schema": {
+    "version": "phase_tts_civic_enhance_step_4",
+    "description": "Audio tutorial content for Deck 3 Module 2 - Data Encryption Manager",
+    "deckId": "deck3",
+    "moduleId": "module2",
+    "moduleName": "DataEncryptionManager",
+    "tutorialType": "security_management"
+  },
+  "tutorialContent": {
+    "introductoryNarration": {
+      "title": "📌 Advanced Data Protection",
+      "content": "Welcome to the data encryption manager where your information receives military-grade protection. This system encrypts your civic data using advanced cryptographic techniques to ensure complete privacy while enabling transparent civic participation.",
+      "duration": "19 seconds",
+      "tone": "formal",
+      "speed": "normal"
+    },
+    "navigationGuidance": {
+      "title": "🔍 Managing Your Encryption Keys",
+      "content": "The encryption dashboard shows your active security profiles and encryption status. Use the key management section to generate new encryption keys, backup existing ones, or rotate keys for enhanced security. The verification panel confirms that your data is properly encrypted and accessible only to you.",
+      "duration": "30 seconds",
+      "tone": "instructional",
+      "speed": "normal"
+    },
+    "privacyNotice": {
+      "title": "🔒 Zero-Knowledge Architecture",
+      "content": "Your encryption keys are never stored on servers and remain under your exclusive control. The system uses zero-knowledge proofs to verify your civic participation without accessing your encrypted data. Even system administrators cannot view your private information.",
+      "duration": "21 seconds",
+      "tone": "formal",
+      "speed": "normal"
+    },
+    "nextStepsCue": {
+      "title": "➡️ Secure Your Civic Journey",
+      "content": "Configure your encryption preferences to match your security needs. Strong encryption protects your privacy while allowing full participation in civic activities. Your encrypted data remains secure across all platform interactions.",
+      "duration": "18 seconds",
+      "tone": "encouraging",
+      "speed": "normal"
+    }
+  },
+  "accessibilityFeatures": {
+    "ariaLiveRegions": true,
+    "screenReaderCompatible": true,
+    "keyboardNavigation": true,
+    "securityNotifications": true
+  },
+  "integrationPoints": {
+    "ttsToggleId": "data-encryption-tts",
+    "parentDeck": "privacy_deck",
+    "relatedModules": ["privacy_control", "anonymity_settings"],
+    "prerequisiteModules": ["privacy_control"]
+  },
+  "metadata": {
+    "createdAt": "2025-07-23T18:07:00.000Z",
+    "lastUpdated": "2025-07-23T18:07:00.000Z",
+    "version": "1.0.0",
+    "authorizedBy": "Commander Mark via JASMY Relay",
+    "qaValidation": "pending_grok_cycle_l",
+    "languageSupport": ["en-US"],
+    "estimatedCompletionTime": "88 seconds"
+  }
+}

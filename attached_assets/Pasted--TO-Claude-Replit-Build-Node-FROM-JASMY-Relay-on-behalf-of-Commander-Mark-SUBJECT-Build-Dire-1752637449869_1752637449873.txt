@@ -1,0 +1,75 @@
+🧠 TO: Claude // Replit Build Node
+FROM: JASMY Relay on behalf of Commander Mark
+SUBJECT: Build Directive — Module #3: ZKProposalLogCard.tsx (Deck #9: ConsensusLayerDeck)
+Timestamp: 12:20 AM EDT | Wednesday, July 16, 2025
+
+⸻
+
+✅ BUILD AUTHORIZATION GRANTED
+Claude, you are now cleared to proceed with the implementation of Module #3: ZKProposalLogCard.tsx located at:
+📍 /client/src/components/decks/ConsensusLayerDeck/ZKProposalLogCard.tsx
+
+⸻
+
+🛠️ BUILD OBJECTIVE
+
+Construct an immutable proposal log interface that:
+	•	Displays proposal entries with cross-deck ZKP verification.
+	•	Syncs proposal hashes with:
+	•	VoteConsensusCard.tsx (Deck #9, Module #1)
+	•	AuditChainOverviewCard.tsx (Deck #8, Module #1)
+	•	Triggers pushback logic if >10% of hashes fail to validate.
+	•	Announces log state with TTS.
+	•	Displays encryption badge + pulsing blue ring for verified hashes.
+
+⸻
+
+🧪 IMPLEMENTATION CHECKLIST (per GROK QA Envelope)
+	1.	Visual Design:
+	•	Dark Mode (bg-slate-900, text-slate-100)
+	•	Verified entries use ring-blue-500 animate-pulse
+	2.	TTS Events:
+	•	On mount: “Proposal log ready, [x] entries.”
+	•	On update: “[x] proposals logged, [y] verified.”
+	3.	ZKP Sync:
+	•	Pull and verify hashes from Decks #6, #8
+	•	10%+ sync failure → trigger Path B: Retry logic
+	•	Show status indicators for each entry (✅ “Verified”, ❌ “Sync Failed”)
+	4.	ARIA & Accessibility:
+	•	aria-live="polite" for log updates
+	•	Tab-navigable, descriptive aria-labels
+	5.	Performance Targets:
+	•	Render <125ms
+	•	Validation <100ms
+	•	Full flow <200ms
+	6.	Mobile UX:
+	•	Stable <460px
+	•	Tap targets ≥48px
+	7.	Encryption Badge:
+	•	Displayed on verified proposals
+	•	Animation duration ~70ms
+
+⸻
+
+🔁 PUSHBACK SCENARIOS (Simulated via Mock Hashes)
+	•	0–10% sync failure = ✅ proceed (Path A)
+	•	10% sync failure = ⚠️ trigger retry (Path B) and flag failure in UI
+
+⸻
+
+🧠 JASMY AUTHORIZATION:
+
+“Build directive issued. Module #3 of Deck #9 now in progress. Claude is to implement per QA envelope specs. Await GROK’s QA verdict after build relay.”
+
+⸻
+
+👁️ Commander Mark is observing.
+🧠 Claude is now ACTIVE.
+🧠 GROK is on standby for QA audit.
+
+Please confirm when build is complete, including:
+	•	✅ Hash sync success rate
+	•	✅ TTS performance
+	•	✅ Visual and ARIA confirmations
+
+Proceed, Claude. 🟢

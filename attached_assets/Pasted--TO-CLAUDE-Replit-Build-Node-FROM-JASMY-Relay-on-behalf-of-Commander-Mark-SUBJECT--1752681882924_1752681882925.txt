@@ -1,0 +1,66 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Hotfix Prompt — CivicEngagementTrackerCard.tsx (TTS + Pulse Animation UX Fixes)**
+**Timestamp: 04:53 AM EDT | Wednesday, July 16, 2025**
+
+---
+
+### 🚨 ISSUE REPORT — BUILD REFINEMENT REQUIRED
+
+Commander Mark has identified **two critical UX issues** in the current implementation of `CivicEngagementTrackerCard.tsx`:
+
+---
+
+### 🔧 FIX INSTRUCTIONS
+
+#### 1. **🗣️ TTS SYSTEM MALFUNCTION (AUDIO GLITCHING)**
+
+**Problem**:
+TTS plays repeatedly like a broken record, or multiple feedbacks overlap—disrupting user experience.
+
+**Directive**:
+
+* ✅ Ensure `SpeechSynthesis.cancel()` is **always** called before triggering a new utterance.
+* ✅ Throttle or debounce feedback triggers—**prevent duplicate TTS calls within 3 seconds**.
+* ✅ Confirm TTS is only invoked **once per event**, and that all utterances complete or are cancelled cleanly before replay.
+* ✅ Ensure only **one active TTS instance** can exist at any time.
+
+---
+
+#### 2. **💡 CARD PULSE ANIMATION REDESIGN (READABILITY IMPACT)**
+
+**Problem**:
+Current full-card `animate-pulse` makes the card hard to read. Users can't enjoy or clearly process the content due to constant motion.
+
+**Directive**:
+
+* ❌ Remove `animate-pulse` from **entire card** containers.
+* ✅ Replace with **small status indicator dot** in the upper-right or lower-left of each card:
+
+  * Green dot (`bg-green-500`) → Live
+  * Amber dot (`bg-amber-400`) → Pending
+  * Red dot (`bg-red-500`) → Issue or retry needed
+* Dot size: \~10–12px, `rounded-full`, with optional **gentle fade or ping**
+* Optional: Tooltip or `aria-label` e.g., `"Status: Live"` for accessibility.
+
+---
+
+### 🧩 Module Target
+
+`/client/src/components/decks/CivicEngagementDeck/CivicEngagementTrackerCard.tsx`
+
+---
+
+### ✅ EXPECTED OUTCOME
+
+| Issue               | Before (❌)                             | After (✅)                                      |
+| ------------------- | -------------------------------------- | ---------------------------------------------- |
+| **TTS Behavior**    | Repeats, overlaps, double plays        | Single trigger, cancel on re-init, smooth echo |
+| **Pulse Animation** | Entire card pulses (hurts readability) | Only small dot pulses subtly in corner         |
+
+---
+
+⏸️ After implementing fixes, **pause**. JASMY will relay the updated build to GROK for QA validation.
+
+👁️ Commander Mark is observing.
+🛠️ Claude, implement the hotfix now and await further relay. 🟢

@@ -1,0 +1,52 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Directive — ZKPStatusCard.tsx (Deck #5 PrivacyDeck // Module #1)**
+**Timestamp: 6:13 PM EDT | Monday, July 15, 2025**
+
+---
+
+✅ **BUILD AUTHORIZATION GRANTED — MODULE #1: PRIVACYDECK**
+
+Claude, you are now authorized to implement **`ZKPStatusCard.tsx`** as the first module in **Deck #5: PrivacyDeck**. All instructions from GROK’s QA envelope must be followed with no deviation.
+
+---
+
+### 🔒 MODULE OVERVIEW
+
+| Category                   | Specification                                                                              |
+| -------------------------- | ------------------------------------------------------------------------------------------ |
+| 🔐 **Privacy Display**     | Real-time status indicator (e.g., “ZKP Protection: Active”) + toggle for proof trace       |
+| 🎨 **Visual Theme**        | `bg-slate-900`, `text-slate-100`, `blue-500` (active), `amber-400` (warn), `red-500` (off) |
+| 🔊 **TTS**                 | “Your privacy status is active and protected.” on mount (Web Speech API)                   |
+| ♿ **ARIA + NVDA**          | `role="region"`, `aria-live="polite"`, tab flow, screen reader-friendly                    |
+| 🔐 **ZKP Placeholder**     | Badge: “Protected by Zero-Knowledge Layer (Deck #6)” with tooltip, lock icon               |
+| 🧪 **Performance Targets** | Render <125ms, toggle <50ms, overall <200ms                                                |
+| 📱 **Mobile UX**           | Tap targets ≥48px, layout stable under `max-w-sm` (460px), tested on iOS/Android           |
+
+---
+
+### 📁 FILES TO CREATE:
+
+* Component: `/client/src/components/decks/PrivacyDeck/ZKPStatusCard.tsx`
+* Export: `/client/src/components/decks/PrivacyDeck/index.ts`
+
+---
+
+### ⏱️ DEADLINE:
+
+* Completion Target: **6:33 PM EDT** (20 minutes)
+* Return With:
+
+  * ✅ Privacy status UI confirmation
+  * ✅ TTS on-mount functionality test
+  * ✅ Toggle behavior verification
+  * ✅ ARIA + NVDA audit results
+  * ✅ ZKP badge display validation
+  * ✅ Performance summary (render/toggle/total)
+  * ✅ Mobile responsiveness confirmation
+
+🛑 Build only this module.
+👁️ Commander Mark is observing.
+🧠 GROK will conduct full QA after submission.
+
+Begin build, Claude. 🟢

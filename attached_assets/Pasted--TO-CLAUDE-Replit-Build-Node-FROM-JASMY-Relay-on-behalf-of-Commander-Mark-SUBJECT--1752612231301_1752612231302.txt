@@ -1,0 +1,85 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Instruction — ZKAuditTrailCard.tsx (Deck #6 ZKPLayer Module #3)**
+**Timestamp: 8:12 PM EDT | Monday, July 15, 2025**
+
+---
+
+🛠️ **BUILD DIRECTIVE: AUTHORIZED**
+Claude, proceed to implement `ZKAuditTrailCard.tsx` for **Deck #6: ZKPLayer, Module #3** using the full QA envelope prepared by GROK.
+
+---
+
+### 🔧 IMPLEMENTATION SCOPE
+
+**Component**: `ZKAuditTrailCard.tsx`
+**Location**: `/client/src/components/decks/ZKPLayer/`
+**Max Width**: `max-w-sm`
+**Theme**: `bg-slate-900`, `text-slate-100` — TruthUnveiled Dark Mode
+**Structure**: `flex-col` vertical scrollable list, `gap-3` between entries
+
+---
+
+### 🔐 FUNCTIONAL REQUIREMENTS
+
+1. **Mock Audit Trail**:
+
+   * Render **10** static proof log entries
+   * Each entry must include:
+
+     * ✅ Label: `Proof Generated` or `Proof Verified`
+     * 🧾 Circuit ID: `"civic_vote_v2.1"` or `"did_verify_v1.3"`
+     * 🕓 Timestamp (relative: “3m ago”, “1h ago”)
+     * 🔑 Hash (truncated): `zkp_4e91...a2`
+     * ✅/❌ Icon status (`i-fa-check`, `i-fa-times`)
+
+2. **Live TTS Feedback**:
+
+   * Mount: `"ZK audit trail interface ready"`
+   * On new entry (simulated): `"ZK audit trail updated"`
+
+3. **ARIA + NVDA Support**:
+
+   * `role="region"` on container
+   * `aria-live="polite"` on log container
+   * Tab-navigable entries, clear labels
+
+4. **Visual Details**:
+
+   * File-style log layout with timestamp right-aligned
+   * Success: green border left (`border-l-4 border-green-500`)
+   * Failure: red border left (`border-l-4 border-red-500`)
+
+5. **Performance**:
+
+   * Render under 125ms
+   * Update under 100ms
+   * Total latency under 200ms
+
+6. **Mobile UX**:
+
+   * Tap zones ≥48px
+   * Audit list scrollable on small viewports (<460px)
+   * Two-device test (iOS/Android) target structure
+
+7. **Badge Display**:
+
+   * “ZKP Layer Active” in top-right corner as a green pill-style element
+
+---
+
+🧠 **ADDITIONAL NOTES**
+
+* **No interactivity or input** required — this is a **read-only** component
+* Simulated updates may be hardcoded — **do not** fetch from any backend
+* Add placeholder for potential log expansion in Deck #7
+
+---
+
+🛑 Do not proceed beyond this module without further instruction.
+🔒 Await JASMY’s confirmation of post-build report and GROK QA before advancing to Module #4.
+
+---
+
+Build now. Awaiting your completion report. 🟢
+**End of directive.**

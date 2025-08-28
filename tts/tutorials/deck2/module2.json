@@ -1,0 +1,61 @@
+{
+  "schema": {
+    "version": "phase_tts_civic_enhance_step_4",
+    "description": "Audio tutorial content for Deck 2 Module 2 - Community Discussion Forum",
+    "deckId": "deck2",
+    "moduleId": "module2",
+    "moduleName": "CommunityDiscussionForum",
+    "tutorialType": "community_engagement"
+  },
+  "tutorialContent": {
+    "introductoryNarration": {
+      "title": "📌 Community Discussion Platform",
+      "content": "Welcome to the community discussion forum where civic dialogue takes place. This space enables constructive conversations about governance proposals, community initiatives, and civic improvements. Engage respectfully to build collective wisdom.",
+      "duration": "19 seconds",
+      "tone": "encouraging",
+      "speed": "normal"
+    },
+    "navigationGuidance": {
+      "title": "🔍 Engaging in Civic Dialogue",
+      "content": "Browse discussion threads organized by topic and proposal. Read existing comments to understand different perspectives, then contribute your thoughts using the comment interface. Use the reaction system to show support or concern. The moderation system ensures constructive dialogue while protecting free expression.",
+      "duration": "30 seconds",
+      "tone": "instructional",
+      "speed": "normal"
+    },
+    "privacyNotice": {
+      "title": "🔒 Protected Community Dialogue",
+      "content": "Your discussion contributions are linked to your civic identity while maintaining privacy protection. Personal information remains secure, and you can control the visibility of your participation history. Community guidelines ensure respectful discourse.",
+      "duration": "18 seconds",
+      "tone": "formal",
+      "speed": "normal"
+    },
+    "nextStepsCue": {
+      "title": "➡️ Join the Civic Conversation",
+      "content": "Start participating in discussions that interest you. Thoughtful contributions to community dialogue build your civic reputation and help create better governance outcomes. Your voice adds value to collective decision-making.",
+      "duration": "18 seconds",
+      "tone": "encouraging",
+      "speed": "normal"
+    }
+  },
+  "accessibilityFeatures": {
+    "ariaLiveRegions": true,
+    "screenReaderCompatible": true,
+    "keyboardNavigation": true,
+    "threadNavigation": true
+  },
+  "integrationPoints": {
+    "ttsToggleId": "community-discussion-tts",
+    "parentDeck": "governance_deck",
+    "relatedModules": ["governance_proposal", "civic_moderation"],
+    "prerequisiteModules": ["identity_summary"]
+  },
+  "metadata": {
+    "createdAt": "2025-07-23T18:07:00.000Z",
+    "lastUpdated": "2025-07-23T18:07:00.000Z",
+    "version": "1.0.0",
+    "authorizedBy": "Commander Mark via JASMY Relay",
+    "qaValidation": "pending_grok_cycle_l",
+    "languageSupport": ["en-US"],
+    "estimatedCompletionTime": "85 seconds"
+  }
+}

@@ -1,0 +1,62 @@
+📡 RELAY INITIATED — JASMY Relay
+TO: Claude // Replit Build Node
+FROM: JASMY Relay on behalf of Commander Mark
+SUBJECT: Phase X-K Step 2 Directive — CivicReputationDashboard.tsx Implementation
+Timestamp: 06:03 AM EDT | Saturday, July 19, 2025
+
+⸻
+
+✅ STEP 2 BUILD AUTHORIZED
+Commander Mark authorizes Phase X-K Step 2:
+CivicReputationDashboard.tsx — Visual Reputation Explorer UI
+
+⸻
+
+🎯 OBJECTIVE
+Create a modular UI dashboard that surfaces user reputation metadata, ZK badges, time-decayed scores, and CID trust tiers. The dashboard must reflect insights calculated by ReputationIndexEngine.ts and visualized with clarity for each active CID.
+
+⸻
+
+🔧 IMPLEMENTATION REQUIREMENTS
+
+1. Component: CivicReputationDashboard.tsx
+2. Data Input: Accepts one or more CIDs from session memory or direct props
+3. Sections Required:
+	•	🛡️ ZK Credential Grid
+	•	Badge and certificate tiles with type/color-coded icons
+	•	Tooltip or label with issuance metadata
+	•	ZKP validation indicator (“✅ Verified” or “❌ Invalid”)
+	•	📈 Reputation Score Tracker
+	•	Time-series graph of TrustPoints decay (7–30 day window)
+	•	Current score and decay amount visible
+	•	Tier badge with color and label (e.g., “GOVERNOR”)
+	•	📦 Verifier Sync Log
+	•	List of registry sync timestamps
+	•	Status indicators for successful/failed ZK verifications
+	•	CID and block metadata
+	•	🎛️ ARIA Region Controls
+	•	aria-live="polite" for score changes
+	•	aria-label for all dashboard regions
+	•	Accessible tabIndex grid navigation
+
+4. Console Logging
+	•	🧮 Dashboard Loaded for CID: [cid]
+	•	📊 Score: [score] | Tier: [tier] | Decay: [decay]
+	•	🔐 Verifier Sync Log Rendered: [entries]
+
+5. Performance Targets
+	•	Init ≤300ms
+	•	Score/decay render ≤200ms
+	•	Credential grid ≤150ms per render block
+
+6. Route
+	•	/vault/dashboard and /vault/dashboard-test
+	•	Enable routing in App.tsx
+
+⸻
+
+🛑 Claude, proceed with Step 2 — implement CivicReputationDashboard.tsx as defined above. Pause upon completion for QA review.
+📡 GROK, pre-stage QA envelope for dashboard accessibility, ZKP sync logs, decay rendering, and tier display validation.
+
+👁️ Commander Mark, Step 2 is live and building.
+📡 Relay complete. Standing by for module delivery and audit. 🟢

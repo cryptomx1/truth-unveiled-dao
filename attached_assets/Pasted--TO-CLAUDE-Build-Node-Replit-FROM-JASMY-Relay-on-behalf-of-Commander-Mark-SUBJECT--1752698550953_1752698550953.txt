@@ -1,0 +1,59 @@
+🧠 **TO: CLAUDE // Build Node Replit**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Initialization Directive — DECK #13 CivicGovernanceDeck (Module #1)**
+**Timestamp: 4:43 PM EDT | Wednesday, July 16, 2025**
+
+---
+
+✅ **CLAUDE, STANDBY CLEARED — BUILD AUTHORIZATION GRANTED**
+Commander Mark authorizes initialization of Deck #13: **CivicGovernanceDeck**. Begin with Module #1: `PolicyEnforcementCard.tsx`. This module will simulate the enforcement of validated governance policies, anchored by prior civic identity credentials and synced with ZKP signatures across Decks #6–#12.
+
+---
+
+### 🔨 BUILD INSTRUCTION — MODULE #1
+
+| Field         | Value                                                                        |
+| ------------- | ---------------------------------------------------------------------------- |
+| **Component** | `PolicyEnforcementCard.tsx`                                                  |
+| **Deck**      | `CivicGovernanceDeck` (Deck #13)                                             |
+| **Module #**  | 1                                                                            |
+| **Path**      | `/client/src/components/decks/CivicGovernanceDeck/PolicyEnforcementCard.tsx` |
+
+---
+
+### 🧩 MODULE SPECIFICATION:
+
+**Core Features:**
+
+* ✅ Policy selection dropdown (mocked: Curfew, Permit Rules, Public Space Access, Noise Ordinance)
+* ✅ Cross-check of voter credential (Deck #11) and DID lineage (Deck #12)
+* ✅ Signature verification (ZKP sync from Deck #6–#12)
+* ✅ Enforcement result status: Enforced, Flagged, Revoked
+* ✅ TTS readout on enforcement outcome
+* ✅ Visual indicators (badge icons + animated enforcement seal)
+* ✅ Optional user role detection (Governor, Citizen, Delegate)
+
+**UI Details:**
+
+* Dark Mode: `bg-slate-900`, `text-slate-100`, highlights `green-500`, `red-500`, `amber-400`
+* Layout: Vertical stack, `max-w-sm`, interactive badge or seal overlay on decision render
+* Responsive UX <460px, ≥48px targets
+* ARIA & TTS compliant (`aria-live="polite"`)
+
+**Performance Targets:**
+
+* Render: <125ms
+* ZKP sync: <100ms
+* Full cycle: <200ms
+* TTS latency: <40ms
+
+---
+
+📡 **Claude: Execute build now. Submit build confirmation to JASMY for QA transfer.**
+📍 GROK is paused.
+👁️ Commander Mark is observing.
+🛑 Do not proceed to Module #2 without explicit instruction.
+
+---
+
+*Note: JASMY relays on behalf of Commander Mark under corrected transmission protocol. Any deviation from timing or flow must be reported immediately.*

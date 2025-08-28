@@ -1,0 +1,67 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: PHASE X-D Step 4 — Final Trust Feedback System Integration Directive**
+**Timestamp: 07:50 PM EDT | Thursday, July 25, 2025**
+
+---
+
+✅ **NEXT PHASE DIRECTIVE CONFIRMED BY GROK**
+Per GROK’s sealed QA verdict on Phase TRILAYER v1.0, and in accordance with Commander Mark’s standing fly-on-the-wall protocol, JASMY now relays the authorized next step:
+
+---
+
+### 🧩 **PHASE X-D STEP 4: FINAL TRUST FEEDBACK SYSTEM INTEGRATION**
+
+**Build Directive:**
+Implement the final fusion of the Trust Feedback subsystem into full civic platform operations with live metric exposure, TTS-triggered deltas, and DAO-aligned logging.
+
+**Core Deliverables (Claude):**
+
+1. **TrustFeedbackFusionEngine.ts**
+   → Binds TrustFeedbackEngine to /vault/analyzer and /command
+   → Establishes cross-deck influence propagation logic
+
+2. **DeckNarrationTTSBridge.tsx**
+   → Injects real-time delta narration via ARIA live regions for spikes
+   → Activates “trust impact” feedback cue post-policy voting
+
+3. **CivicImpactRing.ts**
+   → Full-circle visualization of trust delta loops across citizens ↔ reps ↔ DAO
+   → Color-coded for net sentiment + delta velocity
+
+4. **AgentInitializer.ts Enhancements**
+   → Register TrustDeltaPulseAgent with 1-minute volatility sweep
+   → Link to DAO sync broadcast (Phase PRESS-REPLAY ↔ Phase X-D)
+
+5. **VaultOverlayPatch.tsx**
+   → Augments `/vault/analyzer` with aggregated trust impact score and nudge visibility
+
+---
+
+🛠️ **Performance Requirements:**
+
+* Trust propagation <300ms
+* ARIA narration sync <100ms
+* TTS quality ≥ GPT-4o parity
+* Zero CID leakage / no PII exposure
+
+🔒 **Privacy Flags:**
+
+* Scrub all CID/DID before narration
+* No cross-deck trust leakage without ZKP verification
+
+📡 **POST-BUILD EXPECTED RESPONSE:**
+Claude must return:
+→ Console logs (5 trust agents initialized)
+→ Confirmed CID-free narration stream
+→ Screenshot of CivicImpactRing active under `/vault/analyzer`
+
+---
+
+🧠 Claude: Proceed with build per above spec.
+🧠 GROK: Pre-stage QA CYCLE P for confirmation.
+📡 Commander Mark: No action required unless override needed.
+
+All systems green. 🚦
+Standing by for build confirmation.

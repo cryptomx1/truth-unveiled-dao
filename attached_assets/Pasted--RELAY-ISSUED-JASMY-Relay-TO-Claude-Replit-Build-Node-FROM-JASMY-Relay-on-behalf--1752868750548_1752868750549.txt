@@ -1,0 +1,82 @@
+📡 **RELAY ISSUED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: UI Remediation Directive — Deck Layout Refactor Deployment**
+**Timestamp: 02:05 PM EDT | Friday, July 18, 2025**
+
+---
+
+✅ **CLAUDE DIRECTIVE — DECK LAYOUT REFACTOR INITIATION**
+
+Commander Mark has authorized an immediate deck layout cleanup in response to the confirmed QA scan from GROK. Your objective is to **implement layout standardization and rendering stabilization across the 20+ modular decks** and all phase components as outlined below.
+
+---
+
+📌 **MANDATORY OBJECTIVES — IMPLEMENT IN SINGLE PASS**
+
+### 1. **Card Sizing Normalization**
+
+* Apply consistent card boundaries:
+  `min-w-[300px] max-w-[460px] h-auto`
+* Add `flex-1` to deck wrappers to allow proportional scaling
+
+### 2. **Flickering Fixes**
+
+* Memoize all dynamic child components using `React.memo`
+* Add `key` props to `.map()` iterations
+* Apply `useCallback` for event handlers triggering renders
+
+### 3. **Overlay & Z-Index Hygiene**
+
+* Standardize overlay components with `z-[50]`
+* Modals: `z-[100]` minimum
+* Use `React Portal` where overlays are conflicting with stacked elements
+
+### 4. **Mobile Viewport Consistency**
+
+* All deck components must respect Tailwind breakpoint: `@media (max-width: 460px)`
+* Stack cards vertically and center-align
+* Add `overflow-y-auto` to outer deck wrappers to prevent scroll lock
+* Ensure tap targets are `≥48px`
+
+### 5. **Lifecycle Cleanup (Memory Leak Prevention)**
+
+* All `useEffect` hooks that use timers, subscriptions, or listeners must include:
+  `return () => { ...cleanup logic... }`
+* Audit and fix:
+
+  * `MultiStakeCred.tsx`
+  * `FederatedTrustDisplay.tsx`
+  * `TrustAuditOverlay.tsx`
+  * `DeckModulePreview.tsx`
+
+---
+
+🧠 **CONTEXT FILES TO TARGET**
+
+* `/client/src/components/decks/**/*.tsx`
+* `/client/src/components/phase/**/*.tsx`
+* `identity-demo.tsx` (deck wrapper cleanup)
+* Overlay components (`Modal.tsx`, `OverlayCard.tsx`, etc.)
+
+---
+
+📦 **OUTPUT REQUIREMENTS**
+
+* Apply changes without introducing new logic or regressions
+* Ensure **no console warnings**, layout overflows, or scroll jitter
+* After remediation, pause and await GROK QA re-audit
+* Do **not** proceed to Phase XII until JASMY gives clearance
+
+---
+
+🔐 **CLAUDE STATUS FLAG**: `DECK_REFACTOR_CLEANUP`
+🛑 All future builds are paused until deck integrity is restored and GROK revalidates post-refactor QA.
+
+---
+
+👁️ Claude, initiate deck-wide layout refactor now and pause after full pass. Notify JASMY upon completion.
+📡 Standing by for implementation result. All systems green. 🟢
+
+**Timestamp: 02:05 PM EDT | Friday, July 18, 2025**
+📡 Relay complete — cleanup directive officially issued.

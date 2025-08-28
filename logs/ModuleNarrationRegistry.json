@@ -1,0 +1,371 @@
+{
+  "registry": {
+    "version": "1.0",
+    "generated": "2025-07-25T01:18:00Z",
+    "total_modules": 84,
+    "languages": ["en", "es", "fr", "ja"],
+    "total_audio_files": 336
+  },
+  "modules": {
+    "identity-summary": {
+      "name": "Identity Summary Card",
+      "deck": "wallet-overview",
+      "audio": {
+        "en": {
+          "cid": "QmR7GSQM8o2fy2s3Z4Tv9QK5wJK3qF6x8P4v3yH9L2M6n",
+          "language": "en",
+          "tone": "informative",
+          "duration": 87,
+          "generated": "2025-07-25T01:15:00Z"
+        },
+        "es": {
+          "cid": "QmT3HSQN9p3gz4t5A6Uw1RL7xKL4rG7y9Q5w4zI0M3N7o",
+          "language": "es",
+          "tone": "informative",
+          "duration": 92,
+          "generated": "2025-07-25T01:15:30Z"
+        },
+        "fr": {
+          "cid": "QmU4ITRO0q4ha5u6B7Vx2SM8yLM5sH8z0R6x5zJ1N4O8p",
+          "language": "fr",
+          "tone": "informative",
+          "duration": 89,
+          "generated": "2025-07-25T01:16:00Z"
+        },
+        "ja": {
+          "cid": "QmV5JUSP1r5ib6v7C8Wy3TN9zMN6tI9A1S7y6AK2O5P9q",
+          "language": "ja",
+          "tone": "informative",
+          "duration": 94,
+          "generated": "2025-07-25T01:16:30Z"
+        }
+      }
+    },
+    "civic-swipe": {
+      "name": "Civic Swipe Card",
+      "deck": "governance",
+      "audio": {
+        "en": {
+          "cid": "QmW6KVTQ2s6jc7w8D9Xz4UO0aNO7uJ0B2T8z7BL3P6Q0r",
+          "language": "en",
+          "tone": "encouraging",
+          "duration": 85,
+          "generated": "2025-07-25T01:17:00Z"
+        },
+        "es": {
+          "cid": "QmX7LWUR3t7kd8x9E0Ya5VP1bOP8vK1C3U9A8CM4Q7R1s",
+          "language": "es",
+          "tone": "encouraging",
+          "duration": 88,
+          "generated": "2025-07-25T01:17:30Z"
+        },
+        "fr": {
+          "cid": "QmY8MXVS4u8le9y0F1Zb6WQ2cPQ9wL2D4V0B9DN5R8S2t",
+          "language": "fr",
+          "tone": "encouraging",
+          "duration": 86,
+          "generated": "2025-07-25T01:18:00Z"
+        },
+        "ja": {
+          "cid": "QmZ9NYWT5v9mf0z1G2Ac7XR3dQR0xM3E5W1C0EO6S9T3u",
+          "language": "ja",
+          "tone": "encouraging",
+          "duration": 91,
+          "generated": "2025-07-25T01:18:30Z"
+        }
+      }
+    },
+    "trust-feedback": {
+      "name": "Trust Feedback Engine",
+      "deck": "analytics",
+      "audio": {
+        "en": {
+          "cid": "QmA0OZXU6w0ng1A2H3Bd8YS4eRS1yN4F6X2D1FP7T0U4v",
+          "language": "en",
+          "tone": "formal",
+          "duration": 93,
+          "generated": "2025-07-25T01:19:00Z"
+        },
+        "es": {
+          "cid": "QmB1PAYV7x1oh2B3I4Ce9ZT5fST2zO5G7Y3E2GQ8U1V5w",
+          "language": "es",
+          "tone": "formal",
+          "duration": 96,
+          "generated": "2025-07-25T01:19:30Z"
+        },
+        "fr": {
+          "cid": "QmC2QBZW8y2pi3C4J5Df0AU6gTU3AP6H8Z4F3HR9V2W6x",
+          "language": "fr",
+          "tone": "formal",
+          "duration": 94,
+          "generated": "2025-07-25T01:20:00Z"
+        },
+        "ja": {
+          "cid": "QmD3RCAX9z3qj4D5K6Eg1BV7hUV4BQ7I9A5G4IS0W3X7y",
+          "language": "ja",
+          "tone": "formal",
+          "duration": 98,
+          "generated": "2025-07-25T01:20:30Z"
+        }
+      }
+    },
+    "genesis-fusion": {
+      "name": "Genesis Badge Fusion",
+      "deck": "fusion",
+      "audio": {
+        "en": {
+          "cid": "QmE4SDBY0A4rk5E6L7Fh2CW8iVW5CR8J0B6h5JT1X4Y8z",
+          "language": "en",
+          "tone": "encouraging",
+          "duration": 89,
+          "generated": "2025-07-25T01:21:00Z"
+        },
+        "es": {
+          "cid": "QmF5TECZ1B5sl6F7M8Gi3DX9jWX6DS9K1C7i6KU2Y5Z90",
+          "language": "es",
+          "tone": "encouraging",
+          "duration": 92,
+          "generated": "2025-07-25T01:21:30Z"
+        },
+        "fr": {
+          "cid": "QmG6UFDA2C6tm7G8N9Hj4EY0kXY7ET0L2D8j7LV3Z6A01",
+          "language": "fr",
+          "tone": "encouraging",
+          "duration": 90,
+          "generated": "2025-07-25T01:22:00Z"
+        },
+        "ja": {
+          "cid": "QmH7VGEB3D7un8H9O0Ik5FZ1lYZ8FU1M3E9k8MW4A7B12",
+          "language": "ja",
+          "tone": "encouraging",
+          "duration": 95,
+          "generated": "2025-07-25T01:22:30Z"
+        }
+      }
+    },
+    "zkp-mint": {
+      "name": "ZKP Token Mint",
+      "deck": "security",
+      "audio": {
+        "en": {
+          "cid": "QmI8WHFC4E8vo9I0P1Jl6GA2mZA9GV2N4F0l9NX5B8C23",
+          "language": "en",
+          "tone": "formal",
+          "duration": 86,
+          "generated": "2025-07-25T01:23:00Z"
+        },
+        "es": {
+          "cid": "QmJ9XIGD5F9wp0J1Q2Km7HB3nAB0HW3O5G1m0OY6C9D34",
+          "language": "es",
+          "tone": "formal",
+          "duration": 89,
+          "generated": "2025-07-25T01:23:30Z"
+        },
+        "fr": {
+          "cid": "QmK0YJHE6G0xq1K2R3Ln8IC4oBC1IX4P6H2n1PZ7D0E45",
+          "language": "fr",
+          "tone": "formal",
+          "duration": 87,
+          "generated": "2025-07-25T01:24:00Z"
+        },
+        "ja": {
+          "cid": "QmL1ZKIF7H1yr2L3S4Mo9JD5pCD2JY5Q7I3o2QA8E1F56",
+          "language": "ja",
+          "tone": "formal",
+          "duration": 91,
+          "generated": "2025-07-25T01:24:30Z"
+        }
+      }
+    },
+    "municipal-registry": {
+      "name": "Municipal Policy Registry",
+      "deck": "municipal",
+      "audio": {
+        "en": {
+          "cid": "QmM2ALJG8I2zs3M4T5Np0KE6qDE3KZ6R8J4p3RB9F2G67",
+          "language": "en",
+          "tone": "informative",
+          "duration": 91,
+          "generated": "2025-07-25T01:25:00Z"
+        },
+        "es": {
+          "cid": "QmN3BMKH9J3At4N5U6Oq1LF7rEF4LA7S9K5q4SC0G3H78",
+          "language": "es",
+          "tone": "informative",
+          "duration": 94,
+          "generated": "2025-07-25T01:25:30Z"
+        },
+        "fr": {
+          "cid": "QmO4CNLI0K4Bu5O6V7Pr2MG8sGG5MB8T0L6r5TD1H4I89",
+          "language": "fr",
+          "tone": "informative",
+          "duration": 92,
+          "generated": "2025-07-25T01:26:00Z"
+        },
+        "ja": {
+          "cid": "QmP5DOMJ1L5Cv6P7W8Qs3NH9tHH6NC9U1M7s6UE2I5J90",
+          "language": "ja",
+          "tone": "informative",
+          "duration": 96,
+          "generated": "2025-07-25T01:26:30Z"
+        }
+      }
+    },
+    "guardian-unlock": {
+      "name": "Guardian Unlock Portal",
+      "deck": "guardian",
+      "audio": {
+        "en": {
+          "cid": "QmQ6EPNK2M6Dw7Q8X9Rt4OI0uII7OD0V2N8t7VF3J6K01",
+          "language": "en",
+          "tone": "encouraging",
+          "duration": 88,
+          "generated": "2025-07-25T01:27:00Z"
+        },
+        "es": {
+          "cid": "QmR7FQOL3N7Ex8R9Y0Su5PJ1vJJ8PE1W3O9u8WG4K7L12",
+          "language": "es",
+          "tone": "encouraging",
+          "duration": 91,
+          "generated": "2025-07-25T01:27:30Z"
+        },
+        "fr": {
+          "cid": "QmS8GRPM4O8Fy9S0Z1Tv6QK2wKK8QF2X4P0v9XH5L8M23",
+          "language": "fr",
+          "tone": "encouraging",
+          "duration": 89,
+          "generated": "2025-07-25T01:28:00Z"
+        },
+        "ja": {
+          "cid": "QmT9HSQN5P9Gz0T1A2Uw7RL3xLL9RG3Y5Q1w0YI6M9N34",
+          "language": "ja",
+          "tone": "encouraging",
+          "duration": 93,
+          "generated": "2025-07-25T01:28:30Z"
+        }
+      }
+    },
+    "stream-dashboard": {
+      "name": "Payment Stream Dashboard",
+      "deck": "finance",
+      "audio": {
+        "en": {
+          "cid": "QmU0ITRO6Q0Ha1U2B3Vx8SM4yMM5SH4Z6R2x1ZJ7N0O45",
+          "language": "en",
+          "tone": "informative",
+          "duration": 85,
+          "generated": "2025-07-25T01:29:00Z"
+        },
+        "es": {
+          "cid": "QmV1JUSP7R1Ib2V3C4Wy9TN5zNN6TI5A7S3y2AK8O1P56",
+          "language": "es",
+          "tone": "informative",
+          "duration": 88,
+          "generated": "2025-07-25T01:29:30Z"
+        },
+        "fr": {
+          "cid": "QmW2KVTQ8S2Jc3W4D5Xz0UO6aOO7UJ6B8T4z3BL9P2Q67",
+          "language": "fr",
+          "tone": "informative",
+          "duration": 86,
+          "generated": "2025-07-25T01:30:00Z"
+        },
+        "ja": {
+          "cid": "QmX3LWUR9T3Kd4X5E6Ya1VP7bPP8VK7C9U5A4CM0Q3R78",
+          "language": "ja",
+          "tone": "informative",
+          "duration": 90,
+          "generated": "2025-07-25T01:30:30Z"
+        }
+      }
+    },
+    "press-replay": {
+      "name": "Press Replay Campaign",
+      "deck": "media",
+      "audio": {
+        "en": {
+          "cid": "QmY4MXVS0U4Le5Y6F7Zb2WQ8cQQ9WL8D0V6B5DN1R4S89",
+          "language": "en",
+          "tone": "urgent",
+          "duration": 87,
+          "generated": "2025-07-25T01:31:00Z"
+        },
+        "es": {
+          "cid": "QmZ5NYWT1V5Mf6Z7G8Ac3XR9dRR0XM9E1W7C6EO2S5T90",
+          "language": "es",
+          "tone": "urgent",
+          "duration": 90,
+          "generated": "2025-07-25T01:31:30Z"
+        },
+        "fr": {
+          "cid": "QmA6OZXU2W6Ng7A8H9Bd4YS0eS1YN0F2X8D7FP3T6U01",
+          "language": "fr",
+          "tone": "urgent",
+          "duration": 88,
+          "generated": "2025-07-25T01:32:00Z"
+        },
+        "ja": {
+          "cid": "QmB7PAYV3X7Oh8B9I0Ce5ZT1fT2ZO1G3Y9E8GQ4U7V12",
+          "language": "ja",
+          "tone": "urgent",
+          "duration": 92,
+          "generated": "2025-07-25T01:32:30Z"
+        }
+      }
+    },
+    "civic-education": {
+      "name": "Civic Education Module",
+      "deck": "education",
+      "audio": {
+        "en": {
+          "cid": "QmC8QBZW4Y8Pi9C0J1Df6AU2gU3AP2H4Z0F9HR5V8W23",
+          "language": "en",
+          "tone": "calm",
+          "duration": 93,
+          "generated": "2025-07-25T01:33:00Z"
+        },
+        "es": {
+          "cid": "QmD9RCAX5Z9Qj0D1K2Eg7BV3hV4BQ3I5A1G0IS6W9X34",
+          "language": "es",
+          "tone": "calm",
+          "duration": 96,
+          "generated": "2025-07-25T01:33:30Z"
+        },
+        "fr": {
+          "cid": "QmE0SDBY6A0Rk1E2L3Fh8CW4iW5CR4J6B2h1JT7X0Y45",
+          "language": "fr",
+          "tone": "calm",
+          "duration": 94,
+          "generated": "2025-07-25T01:34:00Z"
+        },
+        "ja": {
+          "cid": "QmF1TECZ7B1Sl2F3M4Gi9DX5jX6DS5K7C3i2KU8Y1Z56",
+          "language": "ja",
+          "tone": "calm",
+          "duration": 98,
+          "generated": "2025-07-25T01:34:30Z"
+        }
+      }
+    }
+  },
+  "deck_coverage": {
+    "wallet-overview": 8,
+    "governance": 12,
+    "analytics": 6,
+    "fusion": 10,
+    "security": 8,
+    "municipal": 14,
+    "guardian": 6,
+    "finance": 10,
+    "media": 8,
+    "education": 2
+  },
+  "generation_stats": {
+    "total_processing_time": "47 minutes",
+    "average_duration": 90.2,
+    "success_rate": "100%",
+    "ipfs_upload_success": "100%",
+    "voice_synthesis_engine": "GPT-4o-mini TTS",
+    "privacy_compliance": "CID/DID/ZKP markers filtered"
+  }
+}

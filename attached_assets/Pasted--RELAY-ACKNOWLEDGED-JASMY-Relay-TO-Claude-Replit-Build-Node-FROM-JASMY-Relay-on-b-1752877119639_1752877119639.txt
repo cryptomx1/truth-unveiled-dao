@@ -1,0 +1,98 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: PHASE X-H STEP 1 AUTHORIZATION — CivicLayoutShell.tsx Integration Directive**
+**Timestamp: 07:47 PM EDT | Friday, July 18, 2025**
+
+---
+
+✅ **PHASE X-H INITIATED — UNIFIED LAYOUT SHELL ACTIVATION**
+
+Commander Mark has authorized **Phase X-H Step 1**, launching the integration phase that will unify all previously modular components into a singular mobile-first app shell. This is the step that transforms your raw constellation framework into a full **civic navigation experience**.
+
+---
+
+### 🧭 OBJECTIVE
+
+Implement `CivicLayoutShell.tsx` — the global wrapper that:
+
+* Anchors constellation, onboarding, routing, and intelligence into one seamless viewport
+* Handles transitions between decks, onboarding, and constellation views
+* Enables navigation bar, tier/status indicators, and responsive layout logic
+
+---
+
+### 🔧 IMPLEMENTATION DIRECTIVE
+
+**Component**: `CivicLayoutShell.tsx`
+**Location**: `client/src/components/layout/`
+
+---
+
+#### 🧩 Core Features to Implement:
+
+1. **Mobile-First App Viewport**
+
+   * Flexible shell container (`max-width: 460px`)
+   * Includes header, view stack, and bottom nav placeholder
+   * Viewport must persist LangContext, ZKP tier, and trust streak state
+
+2. **View Router (Internal Only)**
+
+   * Three routed views:
+
+     * `onboarding` → CivicMissionOnboardingCard
+     * `constellation` → CivicConstellationExplorer
+     * `deck` → Placeholder: “Deck View Coming Soon”
+   * Routing controlled by mock state (no external library)
+
+3. **Navigation Bar Scaffold**
+
+   * Fixed bottom nav with 3 icons:
+
+     * 🧭 Mission
+     * 🌌 Explorer
+     * 📚 Decks
+   * Logs selected view: `"🧭 Navigation: Switched to Explorer View"`
+
+4. **Tier Status Banner**
+
+   * Sticky top status bar: `"🛡️ Tier: Citizen | Trust Streak: 5 Days"`
+   * Pulls from mock `useUserSession()` context
+
+5. **Context Integration**
+
+   * Wraps:
+
+     * LangContext
+     * UserSessionContext (mock for now)
+     * AccessibilityHarmonyEngine
+
+---
+
+### 📦 TECHNICAL REQUIREMENTS
+
+| Category      | Target                              |
+| ------------- | ----------------------------------- |
+| Commit Title  | `CIVIC_LAYOUT_SHELL_PHASE_XH_STEP1` |
+| Push Location | `client/src/components/layout/`     |
+| Console Logs  |                                     |
+
+* `"📲 CivicLayoutShell Initialized"`
+* `"🧭 Navigation: Switched to Explorer View"`
+* `"🛡️ Tier: Citizen | Trust Streak: 5 Days"` |
+  \| Mobile Layout | Full width ≤460px, safe for mobile preview |
+  \| ARIA Compliance | Region roles for views + nav, aria-current active tab |
+  \| Routing | Internal state only — no external routing libraries |
+
+---
+
+🛑 **REMINDER:**
+
+* No real deck views yet — show a placeholder
+* Mock session + routing is acceptable for Step 1
+* Mission memory + persistence (Phase X-I) will follow this step
+
+📡 Proceed with implementation. Notify JASMY Relay upon completion. GROK will initiate QA re-audit.
+
+**End Transmission — Phase X-H is now live.**

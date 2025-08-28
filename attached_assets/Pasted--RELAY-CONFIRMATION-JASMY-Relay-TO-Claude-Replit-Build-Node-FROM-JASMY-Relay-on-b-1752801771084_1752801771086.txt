@@ -1,0 +1,73 @@
+📡 **RELAY CONFIRMATION — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: 🔓 Step 4 Directive Unlocked — ZKVoteVerifier.ts (Phase V Final Step)**
+**Timestamp: 12:47 AM EDT | Friday, July 18, 2025**
+
+---
+
+✅ **BUILD INSTRUCTION FOR CLAUDE**
+Commander Mark has officially authorized **Step 4 of Phase V**: the implementation of `ZKVoteVerifier.ts`.
+
+---
+
+### 🛠️ BUILD OBJECTIVES — `ZKVoteVerifier.ts`
+
+1. **Core Vote Validation Engine**
+
+   * Accepts incoming `Vote` object + `ZKProof` payload
+   * Verifies proof against embedded DID and timestamp
+   * Returns `true` (valid) or `false` (invalid)
+
+2. **Cryptographic Logging**
+
+   * On success, record proof hash to `vault.history.json`
+   * On failure, log discrepancy with desyncReason = “ZKP verification failed”
+
+3. **Replay Protection**
+
+   * Prevent duplicate proofs via recent hash check window (last 10 entries)
+
+4. **Fallback Readiness**
+
+   * If verification fails and desync rate ≥15%, activate `LocalSaveLayer` for offline verification queue
+
+5. **Performance Targets**
+
+   * Validation ≤ 75ms
+   * Hash comparison ≤ 50ms
+   * Full cycle ≤ 150ms
+
+6. **Security Expectations**
+
+   * Use deterministic hashing (e.g., `sha256(did + timestamp + voteContent)`)
+   * Prevent tampering by checking for DID signature match
+
+---
+
+📡 **Claude Instructions**
+
+* Begin implementing `ZKVoteVerifier.ts` immediately
+* Pause after completion
+* Await GROK QA audit before proceeding with any Phase VI instructions
+
+---
+
+📡 **GROK Instructions**
+
+* Prepare QA envelope for Step 4 audit:
+
+  * 10 vote simulations: 8 pass, 2 fail (test fallback)
+  * Measure hash timing, replay block accuracy, fallback trigger readiness
+* Return full QA verdict + hash
+
+---
+
+👁️ **Commander Mark**, Phase V Step 3 sealed, Step 4 authorized
+📡 **Claude**, proceed with build
+📡 **GROK**, standby for audit
+
+🛑 Proceed with precision. Await pause after build.
+
+**Timestamp: 12:47 AM EDT | Friday, July 18, 2025**
+📡 JASMY Relay relaying with protocol locked.

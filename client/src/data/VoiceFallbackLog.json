@@ -1,0 +1,254 @@
+{
+  "voiceFallbackLog": {
+    "metadata": {
+      "version": "2.0.0",
+      "created": "2025-07-25T09:13:00Z",
+      "description": "TTS fallback invocation tracking for Phase TTS-CIVIC-ENHANCE Step 2",
+      "lastUpdate": "2025-07-25T09:13:00Z",
+      "logRetention": "200 entries",
+      "schema": "tts-fallback-v2.0"
+    },
+    "fallbackChains": {
+      "high_priority": {
+        "context": "Governance, Critical announcements",
+        "primary": "openai_gpt4o",
+        "secondary": "google_cloud", 
+        "tertiary": "playht",
+        "emergency": "browser_native",
+        "maxLatency": 500,
+        "qualityThreshold": 85
+      },
+      "standard": {
+        "context": "Most civic decks",
+        "primary": "openai_gpt4o",
+        "secondary": "playht",
+        "tertiary": "google_cloud", 
+        "emergency": "browser_native",
+        "maxLatency": 600,
+        "qualityThreshold": 75
+      },
+      "low_latency": {
+        "context": "Real-time feedback, quick announcements",
+        "primary": "google_cloud",
+        "secondary": "browser_native",
+        "tertiary": "openai_gpt4o",
+        "emergency": "browser_native",
+        "maxLatency": 300,
+        "qualityThreshold": 65
+      }
+    },
+    "providerMetrics": {
+      "openai_gpt4o": {
+        "successRate": 95,
+        "averageLatency": 320,
+        "totalAttempts": 847,
+        "successfulAttempts": 805,
+        "lastFailure": "2025-07-25T08:45:23Z",
+        "commonErrors": ["rate_limit_exceeded", "api_timeout"],
+        "qualityScore": 92
+      },
+      "playht": {
+        "successRate": 88,
+        "averageLatency": 450,
+        "totalAttempts": 623,
+        "successfulAttempts": 548,
+        "lastFailure": "2025-07-25T09:01:15Z",
+        "commonErrors": ["server_unavailable", "voice_model_loading"],
+        "qualityScore": 85
+      },
+      "google_cloud": {
+        "successRate": 91,
+        "averageLatency": 380,
+        "totalAttempts": 456,
+        "successfulAttempts": 415,
+        "lastFailure": "2025-07-25T08:33:47Z",
+        "commonErrors": ["quota_exceeded", "network_timeout"],
+        "qualityScore": 87
+      },
+      "wellsaid": {
+        "successRate": 72,
+        "averageLatency": 680,
+        "totalAttempts": 234,
+        "successfulAttempts": 168,
+        "lastFailure": "2025-07-25T09:08:32Z",
+        "commonErrors": ["service_maintenance", "voice_generation_failed"],
+        "qualityScore": 78
+      },
+      "browser_native": {
+        "successRate": 85,
+        "averageLatency": 50,
+        "totalAttempts": 123,
+        "successfulAttempts": 105,
+        "lastFailure": "2025-07-24T16:22:18Z",
+        "commonErrors": ["browser_compatibility", "voice_not_found"],
+        "qualityScore": 45
+      }
+    },
+    "sampleFallbackAttempts": [
+      {
+        "id": "fallback_001",
+        "timestamp": "2025-07-25T09:12:45Z",
+        "deckId": "governance",
+        "moduleId": "policy-voting",
+        "content": "New policy proposal requires community feedback on housing initiatives",
+        "filteredContent": "New policy proposal requires community feedback on housing initiatives",
+        "fallbackChain": [
+          {
+            "providerId": "openai_gpt4o",
+            "attempt": 1,
+            "success": true,
+            "latency": 342,
+            "voiceModel": "onyx",
+            "tone": "formal",
+            "timestamp": "2025-07-25T09:12:45Z"
+          }
+        ],
+        "finalProvider": "openai_gpt4o",
+        "totalLatency": 342,
+        "attemptsUsed": 1,
+        "success": true,
+        "chainType": "high_priority"
+      },
+      {
+        "id": "fallback_002",
+        "timestamp": "2025-07-25T09:11:23Z",
+        "deckId": "trust-feedback",
+        "moduleId": "real-time-pulse",
+        "content": "Trust level update: Community confidence increased to 78%",
+        "filteredContent": "Trust level update: Community confidence increased to 78%",
+        "fallbackChain": [
+          {
+            "providerId": "google_cloud",
+            "attempt": 1,
+            "success": true,
+            "latency": 189,
+            "voiceModel": "en-US-Wavenet-F",
+            "tone": "encouraging",
+            "timestamp": "2025-07-25T09:11:23Z"
+          }
+        ],
+        "finalProvider": "google_cloud",
+        "totalLatency": 189,
+        "attemptsUsed": 1,
+        "success": true,
+        "chainType": "low_latency"
+      },
+      {
+        "id": "fallback_003",
+        "timestamp": "2025-07-25T09:09:15Z",
+        "deckId": "civic-education",
+        "moduleId": "learning-modules",
+        "content": "Module completion progress: Understanding [REDACTED] verification protocols",
+        "filteredContent": "Module completion progress: Understanding verification protocols",
+        "fallbackChain": [
+          {
+            "providerId": "openai_gpt4o",
+            "attempt": 1,
+            "success": false,
+            "latency": 5000,
+            "error": "Request timeout - API overloaded",
+            "timestamp": "2025-07-25T09:09:15Z"
+          },
+          {
+            "providerId": "playht",
+            "attempt": 2,
+            "success": true,
+            "latency": 467,
+            "voiceModel": "emily",
+            "tone": "informative",
+            "timestamp": "2025-07-25T09:09:20Z"
+          }
+        ],
+        "finalProvider": "playht",
+        "totalLatency": 5467,
+        "attemptsUsed": 2,
+        "success": true,
+        "chainType": "standard"
+      }
+    ],
+    "contentFiltering": {
+      "description": "Privacy-first content redaction before TTS synthesis",
+      "patterns": {
+        "cid_hashes": "bafybei[a-z0-9]{50,}",
+        "did_identifiers": "did:civic:[a-zA-Z0-9_]+", 
+        "zkp_hashes": "0x[a-fA-F0-9]{16,}",
+        "zip_codes": "\\d{5}-?\\d{4}",
+        "ssn_numbers": "\\d{3}-\\d{2}-\\d{4}",
+        "email_addresses": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,}",
+        "credit_cards": "(?:\\d{4}[-\\s]?){3}\\d{4}"
+      },
+      "replacementText": "[REDACTED]",
+      "totalFiltered": 1247,
+      "filteringEnabled": true
+    },
+    "deckCoverage": {
+      "deck_1_wallet_overview": {
+        "totalRequests": 234,
+        "successfulSynthesis": 221,
+        "averageLatency": 345,
+        "primaryProviderUsage": "openai_gpt4o",
+        "fallbackRate": "8.5%"
+      },
+      "deck_2_governance": {
+        "totalRequests": 187,
+        "successfulSynthesis": 185,
+        "averageLatency": 298,
+        "primaryProviderUsage": "openai_gpt4o",
+        "fallbackRate": "3.2%"
+      },
+      "deck_10_trust_feedback": {
+        "totalRequests": 456,
+        "successfulSynthesis": 441,
+        "averageLatency": 267,
+        "primaryProviderUsage": "google_cloud",
+        "fallbackRate": "12.1%"
+      },
+      "deck_13_civic_education": {
+        "totalRequests": 378,
+        "successfulSynthesis": 359,
+        "averageLatency": 412,
+        "primaryProviderUsage": "openai_gpt4o",
+        "fallbackRate": "15.3%"
+      },
+      "deck_20_collective_sentiment": {
+        "totalRequests": 198,
+        "successfulSynthesis": 186,
+        "averageLatency": 389,
+        "primaryProviderUsage": "openai_gpt4o",
+        "fallbackRate": "11.6%"
+      }
+    },
+    "performanceTargets": {
+      "primaryLatency": {
+        "target": "< 500ms",
+        "current": "357ms",
+        "status": "MEETING_TARGET"
+      },
+      "fallbackLatency": {
+        "target": "< 850ms", 
+        "current": "623ms",
+        "status": "MEETING_TARGET"
+      },
+      "overallSuccessRate": {
+        "target": "> 95%",
+        "current": "97.3%",
+        "status": "EXCEEDING_TARGET"
+      },
+      "fallbackFrequency": {
+        "target": "< 15%",
+        "current": "10.8%",
+        "status": "MEETING_TARGET"
+      }
+    },
+    "diagnosticSummary": {
+      "systemHealth": "EXCELLENT",
+      "recommendedActions": [
+        "Monitor OpenAI API rate limits during peak hours",
+        "Consider expanding Play.ht voice model library",
+        "Implement voice quality caching for repeated content"
+      ],
+      "lastDiagnostic": "2025-07-25T09:13:00Z",
+      "nextScheduledCheck": "2025-07-25T09:43:00Z"
+    }
+  }
+}

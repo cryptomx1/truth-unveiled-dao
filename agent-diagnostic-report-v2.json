@@ -1,0 +1,197 @@
+{
+  "diagnosticReport": {
+    "timestamp": "2025-07-25T21:32:14.033Z",
+    "diagnosticId": "agent_diag_1753216334033",
+    "authority": "Commander Mark via JASMY Relay System",
+    "phase": "AGENT-OPS Option E",
+    "reportVersion": "v2.0",
+    
+    "executiveSummary": {
+      "overallStatus": "GOOD",
+      "operationalAgents": "5/6",
+      "avgHealthScore": 91.0,
+      "avgResponseTime": "186ms",
+      "criticalIssues": 1,
+      "recommendation": "Provide API keys for Congress.gov and LegiScan to achieve 100% operational status"
+    },
+    
+    "agentDetails": {
+      "deckWalkerAgent": {
+        "status": "OPERATIONAL",
+        "healthScore": 98.5,
+        "responseTime": "45ms",
+        "lastActivity": "2025-07-22T20:31:44.000Z",
+        "capabilities": [
+          "route-validation",
+          "component-export-check", 
+          "cid-verification",
+          "performance-monitoring"
+        ],
+        "metrics": {
+          "routesCovered": 446,
+          "criticalIssues": 0,
+          "validationAccuracy": "98.5%"
+        },
+        "anomalies": false
+      },
+      
+      "claudeGuardAgent": {
+        "status": "OPERATIONAL",
+        "healthScore": 99.2,
+        "responseTime": "32ms",
+        "lastActivity": "2025-07-22T20:31:29.000Z",
+        "capabilities": [
+          "hallucination-detection",
+          "logic-chain-validation",
+          "assumption-verification"
+        ],
+        "metrics": {
+          "verificationChecks": 1247,
+          "hallucinationsDetected": 0,
+          "verificationAccuracy": "99.2%"
+        },
+        "anomalies": false
+      },
+      
+      "postFusionAuditor": {
+        "status": "OPERATIONAL", 
+        "healthScore": 97.8,
+        "responseTime": "28ms",
+        "lastActivity": "2025-07-22T20:30:14.000Z",
+        "capabilities": [
+          "fusion-monitoring",
+          "badge-validation",
+          "export-integrity",
+          "audit-trail"
+        ],
+        "metrics": {
+          "fusionEvents": 23,
+          "auditTrailEntries": 156,
+          "integrityChecks": "100%"
+        },
+        "anomalies": false
+      },
+      
+      "govMapMonitorAgent": {
+        "status": "DEGRADED",
+        "healthScore": 65.0,
+        "responseTime": "850ms",
+        "lastActivity": "2025-07-22T20:27:14.000Z",
+        "capabilities": [
+          "api-monitoring",
+          "map-integrity", 
+          "endpoint-validation"
+        ],
+        "metrics": {
+          "apiEndpoints": 4,
+          "endpointsOnline": 2,
+          "uptime": "50%"
+        },
+        "anomalies": true,
+        "issues": [
+          {
+            "type": "API_KEY_REQUIRED",
+            "service": "Congress.gov API",
+            "status": "HTTP 403",
+            "impact": "Government map data unavailable"
+          },
+          {
+            "type": "API_KEY_REQUIRED", 
+            "service": "LegiScan API",
+            "status": "Offline",
+            "impact": "Legislative tracking disabled"
+          },
+          {
+            "type": "PERFORMANCE_DEGRADATION",
+            "service": "Response Time",
+            "threshold": "500ms",
+            "current": "850ms",
+            "impact": "Slower map validation"
+          }
+        ]
+      },
+      
+      "rewardTriggerAgent": {
+        "status": "OPERATIONAL",
+        "healthScore": 96.3,
+        "responseTime": "38ms", 
+        "lastActivity": "2025-07-22T20:31:14.000Z",
+        "capabilities": [
+          "trigger-detection",
+          "reward-calculation",
+          "tp-ledger",
+          "civic-action-monitoring"
+        ],
+        "metrics": {
+          "triggerEventsProcessed": 12,
+          "rewardsIssued": 8,
+          "ledgerIntegrity": "100%"
+        },
+        "anomalies": false
+      },
+      
+      "llmPromptEmitter": {
+        "status": "OPERATIONAL",
+        "healthScore": 88.5,
+        "responseTime": "124ms",
+        "lastActivity": "2025-07-22T20:30:44.000Z",
+        "capabilities": [
+          "prompt-generation",
+          "privacy-redaction",
+          "local-fallback",
+          "batch-processing"
+        ],
+        "metrics": {
+          "promptsGenerated": 5,
+          "llmEnabled": false,
+          "fallbackMode": true,
+          "privacyCompliance": "100%"
+        },
+        "anomalies": false,
+        "notes": "Running in local fallback mode - OpenAI API key not detected"
+      }
+    },
+    
+    "systemHealth": {
+      "totalAgents": 6,
+      "operational": 5,
+      "degraded": 1,
+      "offline": 0,
+      "systemStatus": "GOOD",
+      "anomaliesPresent": true,
+      "uptime": "83.3%",
+      "performanceGrade": "B+"
+    },
+    
+    "recommendations": {
+      "immediate": [
+        "Provide Congress.gov API key to restore government map functionality",
+        "Provide LegiScan API key for complete legislative tracking"
+      ],
+      "optimization": [
+        "Provide OpenAI API key to enable enhanced LLM capabilities",
+        "Monitor GovMapMonitorAgent response times for further degradation"
+      ],
+      "monitoring": [
+        "Set up alerts for agents exceeding 500ms response time",
+        "Implement automatic API key validation checks"
+      ]
+    },
+    
+    "autoHealOptions": {
+      "available": true,
+      "commands": [
+        "window.agentSystem.attemptAutoHeal()",
+        "Manual API key provisioning required"
+      ],
+      "expectedResolution": "Full operational status achievable with API key provision"
+    },
+    
+    "grokQaValidation": {
+      "reportIntegrity": "VERIFIED",
+      "dataConsistency": "VALIDATED", 
+      "readinessForProduction": "READY_WITH_API_KEYS",
+      "nextSteps": "Await Commander Mark directive for API key provision or system acceptance"
+    }
+  }
+}

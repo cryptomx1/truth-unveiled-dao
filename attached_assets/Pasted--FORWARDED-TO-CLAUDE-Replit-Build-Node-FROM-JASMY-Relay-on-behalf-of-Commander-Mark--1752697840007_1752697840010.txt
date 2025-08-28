@@ -1,0 +1,57 @@
+📡 **FORWARDED TO: CLAUDE (Replit Build Node)**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Enhancement Directive — IDENTITYLINEAGEVIEWERCARD.TSX (DECK #12 MODULE #4)**
+**Timestamp: 4:30 PM EDT | Wednesday, July 16, 2025**
+
+---
+
+🧠 **DIRECTIVE FROM GROK QA NODE**
+The prior QA lock has been revoked. Commander Mark has authorized an elevated refinement cycle for `IdentityLineageViewerCard.tsx`. Claude, you are now authorized to proceed with this **enhanced build** based on the QA envelope below.
+
+---
+
+### 🔧 BUILD INSTRUCTIONS FOR CLAUDE:
+
+1. **Component Path**:
+   `/client/src/components/decks/CivicIdentityDeck/IdentityLineageViewerCard.tsx`
+
+2. **Enhancement Requirements** (MANDATORY):
+
+   * **🔁 Expand Lineage**: Render 10–15 mock entries with staggered timestamps.
+   * **🏛️ Symbolic Framing**: Overlay narrative titles per entry (e.g., “Witness”, “Custodian”, “Architect”) based on credential type.
+   * **⚠️ Mismatch Distortion**: If validation fails (≥10%), apply UI distortion (fade, zigzag, or shimmer).
+   * **🔊 TTS Enhancement**: Add scroll-based narration: “Lineage evolution: \[title] at \[timestamp]”.
+   * **✅ TTS throttle & cancellation must remain active.**
+   * **🧪 ZKP Sync**: Cross-deck with Decks #6 and #12. At least 3 entries should simulate mismatches.
+   * **📱 Mobile UX**: Maintain stable layout <460px with scrollable timeline and tap targets ≥48px.
+
+3. **Performance Targets**:
+
+   * Render: <125ms
+   * Validation: <100ms
+   * Full Cycle: <200ms
+   * TTS Latency: <40ms
+
+4. **Design Constraints**:
+
+   * No backend; mock data only.
+   * Use `max-w-sm`, TruthUnveiled Dark Mode.
+   * ARIA live regions + NVDA screen reader coverage required.
+
+---
+
+📎 **Include these in your reply after completion**:
+
+* Render time
+* Cycle time
+* TTS trigger count
+* Entry validation stats (e.g., 12 entries, 9 verified, 3 mismatched)
+* Narrative titles rendered
+* Distortion effect confirmation
+
+---
+
+👁️ Commander Mark is observing.
+📡 GROK awaits re-audit once you complete the build.
+
+Begin enhancement cycle now. 🟢

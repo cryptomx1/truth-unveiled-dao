@@ -1,0 +1,62 @@
+{
+  "generatedAt": "2025-01-23T05:21:32.000Z",
+  "summary": {
+    "totalDecks": 20,
+    "enabledDecks": 20,
+    "totalDiagnostics": 0,
+    "averageLatency": 0,
+    "coverageReport": {
+      "togglesInjected": 2,
+      "audioSourceRouting": "Browser native (fallback)",
+      "invalidNarrationZones": [],
+      "latencyBenchmark": "< 500ms target"
+    }
+  },
+  "deckConfigurations": {
+    "governance": { "tone": "formal", "speed": "normal", "enabled": true },
+    "education": { "tone": "encouraging", "speed": "slow", "enabled": true },
+    "privacy": { "tone": "calm", "speed": "normal", "enabled": true },
+    "identity": { "tone": "informative", "speed": "normal", "enabled": true },
+    "civic-diplomacy": { "tone": "formal", "speed": "normal", "enabled": true },
+    "civic-sustainability": { "tone": "urgent", "speed": "normal", "enabled": true },
+    "civic-wellbeing": { "tone": "calm", "speed": "slow", "enabled": true },
+    "civic-legacy": { "tone": "informative", "speed": "normal", "enabled": true },
+    "civic-justice": { "tone": "formal", "speed": "normal", "enabled": true },
+    "civic-audit": { "tone": "formal", "speed": "fast", "enabled": true },
+    "consensus-layer": { "tone": "formal", "speed": "normal", "enabled": true },
+    "governance-feedback": { "tone": "encouraging", "speed": "normal", "enabled": true },
+    "civic-engagement": { "tone": "encouraging", "speed": "normal", "enabled": true },
+    "civic-identity": { "tone": "informative", "speed": "normal", "enabled": true },
+    "civic-governance": { "tone": "formal", "speed": "normal", "enabled": true },
+    "civic-amendments": { "tone": "formal", "speed": "slow", "enabled": true },
+    "wallet-overview": { "tone": "informative", "speed": "normal", "enabled": true },
+    "finance": { "tone": "informative", "speed": "normal", "enabled": true },
+    "zkp-layer": { "tone": "calm", "speed": "slow", "enabled": true },
+    "secure-assets": { "tone": "formal", "speed": "normal", "enabled": true },
+    "civic-education": { "tone": "encouraging", "speed": "slow", "enabled": true }
+  },
+  "diagnostics": [],
+  "queueStatus": {
+    "currentJob": null,
+    "queueLength": 0,
+    "queueJobs": []
+  },
+  "voiceSourceHierarchy": [
+    "OpenAI TTS (preferred, GPT-4o voice)",
+    "Play.ht (fallback)", 
+    "Browser native (last resort)"
+  ],
+  "functionalLogic": {
+    "narrationAutoPauseOnPageSwitch": true,
+    "toneMoodAdjustment": "DeckNarrationConfig.json",
+    "privacyCompliance": "Excludes CID/DID/ZIP/ZKP",
+    "narrationQueueMaxPerDeck": 3,
+    "userTonePreferenceSaveLocation": "localStorage"
+  },
+  "constraints": {
+    "ariaCompliant": true,
+    "noVoicePlaybackUnlessUserInitiated": true,
+    "mobileLayoutSupport": "< 460px",
+    "allNarrationEventsLogged": true
+  }
+}

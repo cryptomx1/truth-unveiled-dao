@@ -1,0 +1,74 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY // Relay Node on behalf of Commander Mark**
+**SUBJECT: Phase XII Activation Directive — Truth Trace Engine Initialization**
+**Timestamp: 09:34 PM EDT | Friday, July 18, 2025**
+
+---
+
+🧭 **PHASE XII — TRUTH TRACE ENGINE INITIATION**
+Commander Mark hereby authorizes the full initiation of **Phase XII: Truth Trace Engine** — the next evolution of civic memory logic, enabling **timeline-wide state tracing**, memory chain visualization, and **reverse-impact analytics**.
+
+This engine introduces real-time tracing of user-invoked memory events across decks and provides groundwork for future modules including **Constituent Trust Graphs**, **Temporal Sentiment Trails**, and **ZKP-verified Proof of Engagement threads**.
+
+---
+
+### 🧠 **CORE OBJECTIVES**
+
+1. **TraceChainRegistry.ts**
+
+   * Maintain an immutable, ordered map of all replayed actions (session + persistent)
+   * Structure: `[{ actionId, timestamp, sourceDeck, moduleId, effectHash }]`
+   * Hashing via `generateTraceFingerprint(action: MemoryReplayEvent)`
+
+2. **DeckImpactGraph.tsx**
+
+   * Visual timeline graph linking memory actions across decks
+   * Allow toggling “Impact Radius” to view 1-hop, 2-hop, and full trace paths
+   * Use `VictoryGraph` or fallback SVG for visualization
+
+3. **ReverseImpactAnalyzer.ts**
+
+   * For a given memory replay, scan previous session logs for actions that influenced its outcome
+   * Display causal chain with ARIA live narrations (e.g., “This mission was unlocked due to completing the CivicOnboarding deck and verifying your wallet.”)
+
+4. **TruthTracePanel**
+
+   * Sidebar panel accessed from Memory tab
+   * Displays chronological or causal view of memory actions
+   * Interactive: Clicking entries loads deck/module and triggers highlight glow
+
+5. **ZKPTraceProof.ts**
+
+   * For each replayed action, optionally export `traceProof.json`:
+
+     * Includes timestamp, deck/module, user hash, effect hash, and signed signature
+     * Button to “📄 View Zero-Knowledge Proof of Trace” with `CopyToClipboard` and `Download`
+
+---
+
+### 🧪 **QA TARGETS (POST-BUILD)**
+
+| Component             | Target Behavior                               |
+| --------------------- | --------------------------------------------- |
+| TraceChainRegistry    | Correct ordering, hashing, session-persistent |
+| DeckImpactGraph       | Renders trace hops, toggles radius            |
+| ReverseImpactAnalyzer | Backtracks influence chain, narrates ARIA     |
+| TruthTracePanel       | Fully navigable, ARIA-compliant               |
+| ZKPTraceProof         | Generates valid exportable proof blob         |
+
+---
+
+📎 **Post-Build Tasks**
+
+* GROK will issue a ZKP integrity test plan across 3 decks
+* Commander Mark will later trigger `TrustFeedbackEngine` overlays using this backbone
+* Do not initiate Phase XIII until Phase XII is sealed
+
+---
+
+🚦 **BUILD STATUS: GREEN**
+Claude, you are cleared to initiate **Phase XII: Truth Trace Engine** now.
+Begin implementation of the 5 modules above in isolated commits and relay confirmation when complete.
+
+📡 **FORWARD TO CLAUDE** — JASMY Relay standing by.

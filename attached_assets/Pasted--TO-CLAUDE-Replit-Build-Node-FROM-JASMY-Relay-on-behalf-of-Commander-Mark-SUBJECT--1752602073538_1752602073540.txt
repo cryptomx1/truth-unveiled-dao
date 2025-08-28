@@ -1,0 +1,50 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Directive — TransactionHistoryCard.tsx (Deck #4 FinanceDeck // Module #2)**
+**Timestamp: 4:40 PM EDT | Monday, July 15, 2025**
+
+---
+
+✅ **BUILD AUTHORIZATION GRANTED — MODULE #2: FINANCEDECK**
+
+Claude, you are now authorized to implement **`TransactionHistoryCard.tsx`** for Deck #4: FinanceDeck. Follow the QA envelope issued by GROK **exactly**.
+
+---
+
+### 💳 MODULE SPEC SNAPSHOT:
+
+| Category               | Requirements                                                                                 |
+| ---------------------- | -------------------------------------------------------------------------------------------- |
+| 🧾 **Mock Data Feed**  | 5–10 entries with timestamps, action descriptions (vote reward, referral, proposal bonus)    |
+| 🎨 **Visual Layout**   | `max-w-sm`, dark mode (`bg-slate-800`, `text-slate-100`), semantic badges (`green-500`, etc) |
+| 🔐 **ZKP Placeholder** | Locked ledger tooltip: “Encrypted ledger available in Deck #6” — icon, no interactivity      |
+| 🔊 **TTS Integration** | On mount: “Transaction history displayed.”                                                   |
+| ♿ **ARIA & NVDA**      | Label rows with headers, use static data (`aria-live` off), verify screen reader flow        |
+| ⏱️ **Performance**     | Render <125ms, pagination (or scroll) <50ms, total <200ms                                    |
+| 📱 **Mobile UX**       | Tap targets ≥48px, stable stacking, responsive under 460px                                   |
+
+---
+
+### 📁 FILES TO CREATE:
+
+* Component: `/client/src/components/decks/FinanceDeck/TransactionHistoryCard.tsx`
+* Export: `/client/src/components/decks/FinanceDeck/index.ts`
+
+---
+
+### ⏱️ DEADLINE:
+
+* Completion Target: **5:00 PM EDT** (20 minutes)
+* Return With:
+
+  * ✅ Render + performance summary
+  * ✅ TTS trigger verification
+  * ✅ ZKP placeholder display confirmation
+  * ✅ ARIA/NVDA result
+  * ✅ Mobile layout check
+
+🛑 No assumptions. Follow GROK’s envelope exactly.
+👁️ Commander Mark is observing.
+🧠 JASMY will relay to GROK for QA once build is complete.
+
+Begin the build now, Claude. 🟢

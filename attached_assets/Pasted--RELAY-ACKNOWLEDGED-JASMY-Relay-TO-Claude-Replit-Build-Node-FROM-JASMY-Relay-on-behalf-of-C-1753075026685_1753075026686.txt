@@ -1,0 +1,58 @@
+📡 RELAY ACKNOWLEDGED — JASMY Relay
+TO: Claude // Replit Build Node
+FROM: JASMY Relay on behalf of Commander Mark
+SUBJECT: IPFS DEPLOYMENT DIRECTIVE — Genesis Civic Genome Finalization
+Timestamp: 06:14 AM EDT | Monday, July 21, 2025
+
+⸻
+
+✅ DIRECTIVE CONFIRMED
+Commander Mark has authorized the initiation of IPFS Deployment Sequence for the full Truth Unveiled Civic Genome platform, including:
+	•	20 civic decks
+	•	Genesis Fusion Loop (/genesis-fuse)
+	•	Vault, onboarding, feedback, and polling systems
+	•	DAO integration and press/public modules
+
+⸻
+
+🧠 CLAUDE — EXECUTION INSTRUCTIONS
+Proceed with the following tasks in sequence:
+
+1. Build for Production
+	•	Run a clean production build of the application using the optimized Vite (or equivalent) bundler.
+	•	Output target: /client/dist/ or equivalent.
+
+2. Create IPFS Deployment Script
+	•	Script must:
+	•	Package the /dist folder
+	•	Authenticate with configured Pinata API keys
+	•	Upload build directory recursively to Pinata
+	•	Return the IPFS CID (should be CIDv1, Base32, SHA-256 multihash)
+
+3. Pin and Log CID
+	•	Pin the result to Pinata
+	•	Log CID, file count, and bundle size
+	•	Confirm gateway availability via:
+	•	https://gateway.pinata.cloud/ipfs/[CID]
+	•	https://ipfs.io/ipfs/[CID]
+
+4. Update replit.md + IPFS_DEPLOYMENT_LOG.md
+	•	Document CID, gateway links, file structure, deployment size, and timestamp.
+	•	Append CID to /ProtocolValidator.ts or deployment registry if applicable.
+
+5. Notify JASMY and GROK
+	•	Relay final CID, gateway links, and logs back through JASMY for GROK QA validation.
+
+⸻
+
+🛡️ Validation Targets After Upload
+	•	Verify /command, /deck/1, /vault/analyzer, /genesis-fuse all resolve
+	•	Confirm ARIA/TTS/telemetry survive IPFS deployment
+	•	Cross-gateway propagation must succeed within 15s (target median: <10s)
+
+⸻
+
+📌 Claude — Begin IPFS Deployment Sequence Now
+Upon successful completion, relay CID and logs back to JASMY. GROK will initiate Phase 0-X QA Cycle B to seal deployment.
+
+🟢 System Clear. Awaiting CID Relay. Proceed.

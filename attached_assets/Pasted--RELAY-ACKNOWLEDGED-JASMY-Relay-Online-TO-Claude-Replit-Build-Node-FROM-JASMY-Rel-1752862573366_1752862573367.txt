@@ -1,0 +1,90 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay Online**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Phase XI Step 1 Build Directive — RoleInfluenceCard.tsx**
+**Timestamp: 11:56 AM EDT | Friday, July 18, 2025**
+
+---
+
+✅ **BUILD DIRECTIVE: PHASE XI STEP 1 AUTHORIZED**
+Claude, you are authorized to begin implementation of `RoleInfluenceCard.tsx` as Step 1 of **Phase XI**. The design and scope are based on GROK’s QA recommendation and Commander Mark’s authorization.
+
+---
+
+### 🛠️ **BUILD OBJECTIVES — ROLEINFLUENCECARD.TSX**
+
+**Component Purpose**:
+Display a dynamic role influence dashboard that shows how Civic Trust Tiers (Novice → Architect) influence Truth Point distribution, decision weight, and referral trust across the system. Integrates with:
+
+* Trust tiers (Synced from TrustAuditOverlay.tsx)
+* ParticipationStreakCard.tsx for streak bonuses
+* DID overlays for identity-aware routing
+* TruthPoint reward graph and federated sync pathways
+
+---
+
+### 💡 **FEATURE REQUIREMENTS**
+
+1. **Tier-to-Tier Influence Display**
+
+   * Influence Map: Novice → Architect role trust impact by percentage
+   * Visual tiers rendered as vertical progress bars or radial charts
+
+2. **Cross-Role TP Distribution**
+
+   * Dynamic TP bonus preview based on observer’s role
+   * Aggregation logic for multi-deck reward sources
+
+3. **ZKP Verification Integration**
+
+   * DID-linked influence verified via ZKP chain
+   * Signature toggle (optional for Citizens, mandatory for Governors)
+
+4. **Fallback Activation**
+
+   * ≥15% influence desync triggers Path B (`LocalSaveLayer` fallback)
+   * Cache to `vault.history.json` with `isMock=true` flag
+
+5. **Accessibility & Mobile UX**
+
+   * <460px responsiveness, ≥48px tap targets
+   * ARIA-live announcements for trust tier changes
+   * Keyboard navigation and TTS suppression
+
+6. **Performance Targets**
+
+   * ≤125ms render time
+   * ≤200ms dynamic update cycle (tier sync or DID change)
+
+---
+
+📎 **INTEGRATIONS**
+
+* Sync with TrustAuditOverlay.tsx for real-time tier status
+* Use vault.history.json for trust data fetch
+* Fetch DID from global context (`didContext`)
+* Feed outputs into DeckMissionCard reward logic
+
+---
+
+🧪 **GROK QA ENVELOPE WILL VALIDATE**
+
+* Civic trust routing logic
+* Tier-weighted Truth Point preview
+* Signature enforcement by role
+* Path B fallback logic
+* Accessibility and render speed
+
+---
+
+🛑 **CLAUDE STATUS**
+Proceed with `RoleInfluenceCard.tsx` build. **Pause immediately** after implementation and await GROK QA audit. Do not proceed to Step 2 until GROK issues confirmation.
+
+---
+
+👁️ **Commander Mark**, GROK has prepped QA and Claude is now authorized to begin Step 1.
+📡 **GROK**, initiate post-build QA audit after Claude completes Step 1.
+🟢 **Claude**, commence build. Await pause confirmation.
+
+**Timestamp: 11:56 AM EDT | Friday, July 18, 2025**
+📡 Standing by for Claude’s Step 1 completion.

@@ -1,0 +1,56 @@
+📡 RELAY ACKNOWLEDGED — JASMY Relay
+TO: CLAUDE // Replit Build Node
+FROM: JASMY Relay on behalf of Commander Mark
+SUBJECT: PHASE X-MUNICIPALPREP STEP 4 — BUILD AUTHORIZATION GRANTED
+Timestamp: 05:05 PM EDT | Thursday, July 25, 2025
+
+⸻
+
+✅ BUILD DIRECTIVE: PHASE X-MUNICIPALPREP STEP 4 INITIATED
+
+Commander Mark has authorized continuation into Phase X-MUNICIPALPREP Step 4, focusing on Regional Policy Registry + Federation Sync. Claude, you are hereby authorized to begin implementation of the following module set:
+
+⸻
+
+🏛️ MODULE OBJECTIVES – STEP 4: MUNICIPAL POLICY REGISTRY
+
+Component	Description
+MunicipalPolicyRegistry.tsx	Region-based policy registry dashboard with DID-gated editing
+RegistryContributionForm.tsx	Secure submission form for policy drafts, amendments, and public commentary
+RegionalLegislationLog.json	Immutable CID-linked archive of submitted drafts, votes, and feedback
+FederationSyncEngine.ts	Handles DAO node syncing for municipal-level registry alignment
+Route: /municipal/registry	Interface route for regional submissions and DAO broadcast status
+
+
+⸻
+
+🔐 FUNCTIONAL REQUIREMENTS
+	•	🧾 CID Integrity: All entries must be CID-anchored and exportable via IPFSExportAgent
+	•	🧠 ZKP Auth: Editing restricted to DID-holders with verified jurisdiction
+	•	🔄 Federation Integration: Sync new entries across all nodes within the DAO region ring
+	•	🏙️ Municipal Tier Logic: Tier-gated access for verified civic tier contributors (Citizen+, Commander)
+	•	📢 Broadcast Readiness: DAO broadcast trigger for major submissions
+
+⸻
+
+📡 CLAUDE BUILD DIRECTIVE (TO: CLAUDE)
+
+You are cleared to:
+	1.	Scaffold all components listed above.
+	2.	Ensure federation DAO sync across all simulated nodes.
+	3.	Apply full mobile UX (<460px), ARIA narration cues, and privacy redactions.
+	4.	Register /municipal/registry in App.tsx with lazy loading.
+	5.	Output diagnostic logs and CID export confirmation.
+
+Pause after implementation for QA relay to GROK.
+
+⸻
+
+✅ SYSTEM STATUS
+	•	Claude: UNPAUSED for Step 4
+	•	GROK: QA envelope staged for post-build audit
+	•	Commander Mark: Fly-on-the-wall mode confirmed
+	•	JASMY: Relay active and protocol stable
+
+📡 Proceed with implementation. Standing by for completion confirmation.
+🟢 All systems green.

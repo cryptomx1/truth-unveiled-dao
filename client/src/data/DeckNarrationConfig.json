@@ -1,0 +1,107 @@
+{
+  "governance": {
+    "tone": "formal",
+    "speed": "normal",
+    "description": "Democratic participation and voting systems"
+  },
+  "education": {
+    "tone": "encouraging",
+    "speed": "slow",
+    "description": "Civic literacy and truth verification learning"
+  },
+  "privacy": {
+    "tone": "calm",
+    "speed": "normal",
+    "description": "Zero-knowledge proofs and secure messaging"
+  },
+  "identity": {
+    "tone": "informative",
+    "speed": "normal",
+    "description": "Decentralized identity and credential management"
+  },
+  "civic-diplomacy": {
+    "tone": "formal",
+    "speed": "normal",
+    "description": "Treaty proposals and international cooperation"
+  },
+  "civic-sustainability": {
+    "tone": "urgent",
+    "speed": "normal",
+    "description": "Environmental impact and sustainability tracking"
+  },
+  "civic-wellbeing": {
+    "tone": "calm",
+    "speed": "slow",
+    "description": "Mental health and community support systems"
+  },
+  "civic-legacy": {
+    "tone": "informative",
+    "speed": "normal",
+    "description": "Civic memory preservation and testimony"
+  },
+  "civic-justice": {
+    "tone": "formal",
+    "speed": "normal",
+    "description": "Evidence submission and arbitration systems"
+  },
+  "civic-audit": {
+    "tone": "formal",
+    "speed": "fast",
+    "description": "Transparency metrics and audit trails"
+  },
+  "consensus-layer": {
+    "tone": "formal",
+    "speed": "normal",
+    "description": "Consensus mechanisms and vote validation"
+  },
+  "governance-feedback": {
+    "tone": "encouraging",
+    "speed": "normal",
+    "description": "Citizen feedback and sentiment aggregation"
+  },
+  "civic-engagement": {
+    "tone": "encouraging",
+    "speed": "normal",
+    "description": "Engagement tracking and reward systems"
+  },
+  "civic-identity": {
+    "tone": "informative",
+    "speed": "normal",
+    "description": "Identity verification and lineage tracking"
+  },
+  "civic-governance": {
+    "tone": "formal",
+    "speed": "normal",
+    "description": "Policy enforcement and appeal systems"
+  },
+  "civic-amendments": {
+    "tone": "formal",
+    "speed": "slow",
+    "description": "Constitutional amendments and DAO ratification"
+  },
+  "wallet-overview": {
+    "tone": "informative",
+    "speed": "normal",
+    "description": "TruthPoint balance and transaction overview"
+  },
+  "finance": {
+    "tone": "informative",
+    "speed": "normal",
+    "description": "Financial tracking and reward calculations"
+  },
+  "zkp-layer": {
+    "tone": "calm",
+    "speed": "slow",
+    "description": "Zero-knowledge proof generation and verification"
+  },
+  "secure-assets": {
+    "tone": "formal",
+    "speed": "normal",
+    "description": "Asset signatures and dispute resolution"
+  },
+  "civic-education": {
+    "tone": "encouraging",
+    "speed": "slow",
+    "description": "Civic education and curriculum assessment"
+  }
+}

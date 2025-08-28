@@ -1,0 +1,92 @@
+📡 RELAY ACKNOWLEDGED — JASMY Relay
+TO: Claude // Replit Build Node
+FROM: JASMY Relay on behalf of Commander Mark
+SUBJECT: PHASE XVI.3 AUTHORIZATION — Push Notification Ruleset Directive
+Timestamp: 01:47 AM EDT | Saturday, July 19, 2025
+
+⸻
+
+✅ PHASE XVI.3 INITIATED — CIVIC PUSH NOTIFICATION SIMULATION SYSTEM ONLINE
+
+Commander Mark has authorized Phase XVI.3: Push Notification Ruleset, which will enable trust-based civic alerting, ZIP-linked notification logic, and legislation-driven push simulations for constituent targeting and feedback triggering.
+
+This phase simulates a real-time push infrastructure tied to district activity, trust volatility, and live bill changes.
+
+⸻
+
+📬 OBJECTIVE
+
+Implement PushRuleEngine.ts and wire mock alert dispatch to the existing GovMapEngine.tsx interaction logic.
+
+⸻
+
+🔧 IMPLEMENTATION DIRECTIVE
+
+Core Component:
+	•	PushRuleEngine.ts (in client/src/agents/)
+
+⸻
+
+🧩 Core Features to Implement
+	1.	PushRuleEngine.ts
+	•	Function: evaluatePushRules(context: PushContext): PushAlert[]
+	•	Inputs:
+
+{
+  zip: "20852",
+  district: "8B",
+  trustLevel: 61,
+  streak: 6,
+  activeBills: [ /* from LegiFeedService */ ]
+}
+
+
+	•	Outputs: Array of push alerts:
+
+[
+  { type: "trust-drop", message: "⚠️ Trust volatility detected in District 8B" },
+  { type: "bill-watch", message: "📜 New bill ‘HB2034’ needs your attention" }
+]
+
+
+	2.	Integration with GovMapEngine
+	•	On district select:
+	•	Pull session state (trust/streak) and current bills
+	•	Pass to evaluatePushRules()
+	•	Display push alert overlay
+	•	Console log each alert
+	3.	ARIA Live Region
+	•	Alerts announced via aria-live="assertive"
+	•	Example: "⚠️ Trust volatility detected in your district"
+	4.	Push Thresholds
+	•	Trigger “trust-drop” if trustLevel <65
+	•	Trigger “bill-watch” if new bill introduced in past 48 hours
+	5.	Fallback
+	•	If no alerts: "✅ No critical updates for your district" (logged and spoken)
+
+⸻
+
+📦 TECHNICAL REQUIREMENTS
+
+Category	Target
+Commit Title	CIVIC_PUSH_RULESET_PHASE_XVI_3
+Push Location	
+
+	•	client/src/agents/PushRuleEngine.ts
+	•	Updates to GovMapEngine.tsx |
+| Console Logs |
+	•	"📬 Push Alert: ⚠️ Trust volatility detected in District 8B"
+	•	"📬 Push Alert: 📜 New bill HB2034 introduced yesterday"
+	•	"✅ No critical updates for your district" |
+| ARIA | aria-live=assertive for real-time civic alerts |
+| Performance | Rule evaluation + UI trigger <150ms |
+
+⸻
+
+🛑 REMINDER:
+	•	This is a simulation only — no backend push infra or notification tokens
+	•	All logic runs in-app, triggered via view interactions and session state
+
+📡 Proceed with implementation. Notify JASMY Relay upon completion. GROK will initiate QA re-audit.
+
+End Transmission — Phase XVI.3 is now live. 🟢

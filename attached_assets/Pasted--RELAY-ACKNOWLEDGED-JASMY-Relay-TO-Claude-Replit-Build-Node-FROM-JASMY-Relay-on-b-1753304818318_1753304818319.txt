@@ -1,0 +1,66 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: PHASE X-ZEBEC STEP 3 — BUILD AUTHORIZATION: ZebecTreasuryRouter.ts Implementation**
+**Timestamp: 07:18 PM EDT | Thursday, July 25, 2025**
+
+---
+
+✅ **BUILD DIRECTIVE AUTHORIZED**
+Per Commander Mark’s roadmap, proceed with Phase X-ZEBEC Step 3: **Treasury Distribution System Implementation**
+
+---
+
+🔨 **BUILD SPEC: ZebecTreasuryRouter.ts Implementation**
+
+Component: `ZebecTreasuryRouter.ts`
+
+**Purpose**:
+Establish an automated treasury routing system to distribute Zebec streams for civic task incentives and TruthPoint (TP) redemptions.
+
+**Required Functionality**:
+
+1. **Automated Zebec stream creation** from treasury account to verified recipients.
+2. **Distribution logic** based on task type (e.g., deck participation, DAO vote, guardian unlock).
+3. **Tier-scaling multipliers**:
+
+   * Citizen = 1x
+   * Governor = 2x
+   * Commander = 3x
+4. **Route mapping** from `/wallet/finance` interface to stream events.
+5. **Ledger tracking** via `TreasuryDistributionLog.json`
+
+   * Logs each stream: CID, recipient address, amount, task type, timestamp.
+
+**Tech Requirements**:
+
+* Must integrate with existing `ZebecAdapter`
+* Use mock API if live Zebec keys not present
+* Include fallback logic for stream creation failures
+* Must inject console logs for each transaction creation
+* Render success/fail status to `StreamDashboard.tsx` if possible
+
+**Performance Benchmarks**:
+
+* Max initiation time per stream: <300ms
+* Logging interval accuracy: ±2s tolerance
+* TTS-ready narration: “Treasury stream created to \[Recipient] for \[Task]”
+
+**Compliance**:
+
+* ARIA accessible (if UI-linked)
+* CID/DID/ZKP safe
+* Use TTSEngineAgent hooks if verbal logging applied
+
+---
+
+📦 **FOLLOW-UP ACTIONS**
+
+* Update `AgentInitializer.ts` to register `ZebecTreasuryRouter`
+* On build complete, relay summary to GROK for QA Cycle R
+
+---
+
+👁️ **Claude**, begin implementation of `ZebecTreasuryRouter.ts` and supporting files. Proceed per Phase X-ZEBEC Step 3 specs.
+
+📡 Standing by for build completion confirmation. 🟢

@@ -1,0 +1,86 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of GROK and Commander Mark**
+**SUBJECT: BUILD DIRECTIVE — WalletBalanceCard.tsx (Deck #1, Reset Architecture)**
+**Timestamp: 12:21 PM EDT | Monday, July 15, 2025**
+
+---
+
+✅ **QA for IdentitySummaryCard.tsx is approved under reset protocol.**
+You are now authorized to begin WalletBalanceCard.tsx implementation, following the same strict `/client/src` architecture, mock-only data policy, and mobile-first constraints.
+
+---
+
+### 🔧 BUILD SPECIFICATION — WalletBalanceCard
+
+**Component Path**: `/client/src/components/decks/WalletOverviewDeck/WalletBalanceCard.tsx`
+**Export Path**: `/client/src/components/decks/WalletOverviewDeck/index.ts`
+
+---
+
+### 🧱 BUILD CONSTRAINTS:
+
+| Constraint             | Target                                                   |
+| ---------------------- | -------------------------------------------------------- |
+| Render Performance     | ✅ <125ms                                                 |
+| Mobile-First Layout    | ✅ max-w-\[460px] + Tailwind grid                         |
+| Jasmy TTS Integration  | ✅ On mount: “Tracking your civic earnings in real time.” |
+| ZKP Placeholder        | ✅ Hash label w/ lock icon                                |
+| No Fakes / Simulations | ✅ No simulated APIs                                      |
+| ARIA Compliance        | ✅ Full screen reader support                             |
+| Copy Button Behavior   | ✅ Clipboard API + fallback                               |
+| Token Switcher         | ✅ Toggle between TP / CC (mock)                          |
+| Referral Boost Display | ✅ Read-only, mock field                                  |
+
+---
+
+### 🔍 FEATURES TO INCLUDE:
+
+1. **Civic Wallet Balances**:
+
+   * Truth Points (TP) and Contribution Credits (CC)
+   * Dynamic toggle button for TP/CC view
+   * Responsive numbers w/ token badge
+
+2. **ZKP Placeholder Hash**:
+
+   * Read-only secure hash label w/ lock icon
+   * Styled for dark mode
+
+3. **Referral Boost Info**:
+
+   * Read-only text (e.g., “Referral Boost: +15%”) — mock value
+
+4. **Copy Button**:
+
+   * Copy TP address with tooltip + fallback
+
+5. **Jasmy TTS**:
+
+   * Trigger on mount: “Tracking your civic earnings in real time.”
+
+6. **ARIA**:
+
+   * All interactive elements must be tab-navigable
+   * Announce current balance view
+
+---
+
+### ⚠️ REMINDERS:
+
+* Use only mock data (TP = 3,421 | CC = 142 | Boost = 15%)
+* No backend integration
+* DO NOT proceed to next component until explicitly instructed
+* No routing or layout changes beyond component logic
+* No visual surprises — follow existing gradient + layout styling
+
+---
+
+✅ You are cleared to proceed.
+🛑 STOP after WalletBalanceCard.tsx is completed.
+🧠 GROK will perform QA next.
+👁️ Commander Mark is observing.
+
+Standing by for your build report... 🟢
+
+
+🧠 Claude has been activated with the WalletBalanceCard.tsx build directive. I will now await his implementation and post the build report here once complete for GROK to review. Commander, no action needed unless you wish to push a design suggestion. 🟢

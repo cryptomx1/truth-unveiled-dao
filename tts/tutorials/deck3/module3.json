@@ -1,0 +1,61 @@
+{
+  "schema": {
+    "version": "phase_tts_civic_enhance_step_4",
+    "description": "Audio tutorial content for Deck 3 Module 3 - Anonymity Settings Panel",
+    "deckId": "deck3",
+    "moduleId": "module3",
+    "moduleName": "AnonymitySettingsPanel",
+    "tutorialType": "anonymity_configuration"
+  },
+  "tutorialContent": {
+    "introductoryNarration": {
+      "title": "📌 Configure Your Digital Anonymity",
+      "content": "Welcome to the anonymity settings where you control how your civic identity appears to others. This panel allows you to participate in community activities while maintaining different levels of anonymity based on your preferences and security needs.",
+      "duration": "20 seconds",
+      "tone": "informative",
+      "speed": "normal"
+    },
+    "navigationGuidance": {
+      "title": "🔍 Customizing Your Civic Visibility",
+      "content": "Choose from multiple anonymity levels: full anonymity for sensitive topics, pseudonymous participation for ongoing discussions, or civic reputation display for leadership activities. The profile masking options let you hide specific demographic information while maintaining civic credibility through verified achievements.",
+      "duration": "32 seconds",
+      "tone": "instructional",
+      "speed": "normal"
+    },
+    "privacyNotice": {
+      "title": "🔒 Selective Privacy Protection",
+      "content": "Your anonymity preferences are cryptographically enforced and cannot be bypassed by any party. You can change these settings at any time, and historical anonymity choices are preserved. The system prevents correlation attacks while maintaining democratic accountability.",
+      "duration": "21 seconds",
+      "tone": "formal",
+      "speed": "normal"
+    },
+    "nextStepsCue": {
+      "title": "➡️ Balance Privacy and Participation",
+      "content": "Set your anonymity preferences to match different civic activities. You can use different levels for various discussions while building civic reputation where you feel comfortable. Your privacy choices adapt to your civic journey.",
+      "duration": "19 seconds",
+      "tone": "encouraging",
+      "speed": "normal"
+    }
+  },
+  "accessibilityFeatures": {
+    "ariaLiveRegions": true,
+    "screenReaderCompatible": true,
+    "keyboardNavigation": true,
+    "anonymityIndicators": true
+  },
+  "integrationPoints": {
+    "ttsToggleId": "anonymity-settings-tts",
+    "parentDeck": "privacy_deck",
+    "relatedModules": ["privacy_control", "data_encryption"],
+    "prerequisiteModules": ["privacy_control"]
+  },
+  "metadata": {
+    "createdAt": "2025-07-23T18:07:00.000Z",
+    "lastUpdated": "2025-07-23T18:07:00.000Z",
+    "version": "1.0.0",
+    "authorizedBy": "Commander Mark via JASMY Relay",
+    "qaValidation": "pending_grok_cycle_l",
+    "languageSupport": ["en-US"],
+    "estimatedCompletionTime": "92 seconds"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "bundleName": "Truth Unveiled Civic Genome v1.1 - Final Distribution Bundle",
+  "version": "1.1",
+  "timestamp": "2025-07-21T00:10:56.211Z",
+  "cid": "bafybeirtkz5k4yb6caagedpwgjrdlvgmtlawezrtkz5k4yb6caagedpwgj",
+  "authority": "Commander Mark via JASMY Relay System",
+  "phase": "PRESS-DIST",
+  "files": [
+    {
+      "name": "Truth_Unveiled_Press_Release_v1.1.md",
+      "description": "Official press release with updated CID and deployment metadata",
+      "type": "press-material"
+    },
+    {
+      "name": "IPFS_Deployment_Report.md",
+      "description": "Technical deployment report with CID validation",
+      "type": "technical-documentation"
+    },
+    {
+      "name": "Phase_0Z_Emergency_Completion.md",
+      "description": "Emergency re-upload completion verification",
+      "type": "operations-report"
+    },
+    {
+      "name": "Bundle_Manifest.json",
+      "description": "This manifest file with bundle metadata",
+      "type": "metadata"
+    }
+  ],
+  "gatewayUrls": [
+    "https://gateway.pinata.cloud/ipfs/bafybeirtkz5k4yb6caagedpwgjrdlvgmtlawezrtkz5k4yb6caagedpwgj",
+    "https://ipfs.io/ipfs/bafybeirtkz5k4yb6caagedpwgjrdlvgmtlawezrtkz5k4yb6caagedpwgj",
+    "https://bafybeirtkz5k4yb6caagedpwgjrdlvgmtlawezrtkz5k4yb6caagedpwgj.ipfs.dweb.link",
+    "https://dweb.link/ipfs/bafybeirtkz5k4yb6caagedpwgjrdlvgmtlawezrtkz5k4yb6caagedpwgj"
+  ],
+  "demoRoutes": [
+    "/command",
+    "/vault/analyzer",
+    "/deck/10"
+  ],
+  "validation": {
+    "cidFormat": "CIDv1, Base32, SHA-256 multihash compliant",
+    "cidLength": 59,
+    "gatewayCount": 4,
+    "pressReleaseVersion": "1.1",
+    "lastUpdated": "July 21, 2025"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema": {
+    "version": "phase_tts_civic_enhance_step_4",
+    "description": "Audio tutorial content for Deck 3 Module 1 - Privacy Control Center",
+    "deckId": "deck3",
+    "moduleId": "module1",
+    "moduleName": "PrivacyControlCenter",
+    "tutorialType": "privacy_management"
+  },
+  "tutorialContent": {
+    "introductoryNarration": {
+      "title": "📌 Your Privacy Control Hub",
+      "content": "Welcome to your privacy control center where you manage personal data protection and civic engagement visibility. This interface gives you complete control over what information you share and how your civic participation appears to others.",
+      "duration": "18 seconds",
+      "tone": "formal",
+      "speed": "normal"
+    },
+    "navigationGuidance": {
+      "title": "🔍 Managing Your Digital Privacy",
+      "content": "The privacy dashboard displays your current settings across different categories. Adjust data sharing preferences using the toggle controls, review your activity visibility settings, and configure communication preferences. The advanced section provides cryptographic options for maximum privacy protection.",
+      "duration": "31 seconds",
+      "tone": "instructional",
+      "speed": "normal"
+    },
+    "privacyNotice": {
+      "title": "🔒 Zero-Knowledge Privacy Protection",
+      "content": "Your privacy settings are enforced using advanced cryptographic techniques. Personal data never leaves your control, and civic participation can be verified without revealing individual choices. The system is designed with privacy by default principles.",
+      "duration": "19 seconds",
+      "tone": "formal",
+      "speed": "normal"
+    },
+    "nextStepsCue": {
+      "title": "➡️ Customize Your Privacy Experience",
+      "content": "Review and adjust your privacy settings to match your comfort level. You can participate fully in civic activities while maintaining complete control over your personal information and digital footprint.",
+      "duration": "17 seconds",
+      "tone": "encouraging",
+      "speed": "normal"
+    }
+  },
+  "accessibilityFeatures": {
+    "ariaLiveRegions": true,
+    "screenReaderCompatible": true,
+    "keyboardNavigation": true,
+    "privacyNotifications": true
+  },
+  "integrationPoints": {
+    "ttsToggleId": "privacy-control-tts",
+    "parentDeck": "privacy_deck",
+    "relatedModules": ["data_encryption", "anonymity_settings"],
+    "prerequisiteModules": ["identity_summary"]
+  },
+  "metadata": {
+    "createdAt": "2025-07-23T18:07:00.000Z",
+    "lastUpdated": "2025-07-23T18:07:00.000Z",
+    "version": "1.0.0",
+    "authorizedBy": "Commander Mark via JASMY Relay",
+    "qaValidation": "pending_grok_cycle_l",
+    "languageSupport": ["en-US"],
+    "estimatedCompletionTime": "85 seconds"
+  }
+}

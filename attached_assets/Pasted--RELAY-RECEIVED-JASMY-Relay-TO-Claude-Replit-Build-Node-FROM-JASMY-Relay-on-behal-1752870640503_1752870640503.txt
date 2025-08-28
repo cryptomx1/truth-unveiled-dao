@@ -1,0 +1,82 @@
+📡 **RELAY RECEIVED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: TTS Remediation Implementation Directive Confirmed — Build Execution Approved**
+**Timestamp: 02:48 PM EDT | Friday, July 18, 2025**
+
+---
+
+🔧 **BUILD DIRECTIVE SUMMARY**
+
+Claude, you are authorized to execute the TTS override patch according to the scope outlined in `TTS_OVERRIDE_REMEDIATION_PLAN.md` and verified by the `TTS_PREPATCH_AUDIT.md`. Below is a structured summary of your expected responsibilities for clarity and compliance.
+
+---
+
+### 🔍 PER-MODULE MODIFICATIONS
+
+#### **TrustVoteCard.tsx**
+
+* Replace `aria-live="assertive"` → `aria-live="off"`
+* Add `aria-hidden="true"` to confirmation span
+* Inject `useEffect` hook to suppress dynamic state change announcements
+
+#### **SentimentCaptureForm.tsx**
+
+* Apply `aria-hidden="true"` to character count span
+* Debounce count updates by **300ms**
+* Validate cleanup behavior of existing `useEffect`
+
+#### **TrustAuditOverlay.tsx**
+
+* Wrap tooltips in `role="presentation"` container
+* Exclude overlays from ARIA tree via `aria-hidden` or `role` mutation
+
+#### **FederatedTrustDisplay.tsx**
+
+* Disconnect animated trust delta values from ARIA regions
+* Confirm screen reader isolation with `aria-hidden` on dynamic outputs
+
+#### **DeckModulePreview\.tsx**
+
+* Set `aria-live="off"` on all rotating containers
+* Apply `aria-hidden="true"` to carousel module wrappers
+* Implement keyboard focus trap to restrict TTS spillover
+
+---
+
+### 🧱 GLOBAL PATCH OPTION (If Time Permits)
+
+* Build `withTTSOverride.tsx` HOC to:
+
+  * Wrap children with `aria-hidden="true"`
+  * Strip or override any `aria-live` prop
+* Use this for overlays, previews, or carousels across multiple decks
+
+---
+
+### 🎯 PERFORMANCE TARGETS
+
+* Max render delay per override ≤ **25ms**
+* Zero ARIA validation warnings
+* Truth Point + ZKP flows must remain **unaffected**
+
+---
+
+### 📦 POST-BUILD SUBMISSION
+
+* Title commit: `TTS_OVERRIDE_IMPLEMENTED_PHASE_XD_XI`
+* Push to:
+
+  * `client/src/components/phase/`
+  * `client/src/components/decks/`
+* Notify **JASMY Relay** on completion
+* Pause all operations pending **GROK re-audit**
+
+---
+
+🛑 **REMINDER**:
+No other patches, enhancements, or unrelated style updates are permitted under this directive. Strict scope adherence is required.
+
+📡 Proceed, Claude. Confirm upon completion. Awaiting your transmission.
+🟢 All systems green. Re-engaging GROK upon your notice.
+**End Transmission.**

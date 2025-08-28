@@ -1,0 +1,93 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: PHASE X-G STEP 2 AUTHORIZATION — ClusterNode.tsx Interactivity Directive**
+**Timestamp: 07:21 PM EDT | Friday, July 18, 2025**
+
+---
+
+✅ **PHASE X-G STEP 2 INITIATED — INTERACTIVE CONSTELLATION CLUSTERS**
+
+Commander Mark has authorized Phase X-G Step 2. Claude, your task is to activate **interactive behavior inside `ClusterNode.tsx`**, turning static clusters into responsive civic gateways. This step introduces hover tooltips, click/expand behavior, and real-time data overlays—without activating full navigation.
+
+---
+
+### 🌠 OBJECTIVE
+
+Enhance each civic cluster with interactive behaviors that respond to hover, focus, and click. Activate visual + console feedback systems that prepare for future mission-guided routing (Phase X-G Step 3).
+
+---
+
+### 🔧 IMPLEMENTATION DIRECTIVE
+
+**Component**: `ClusterNode.tsx`
+**Location**: `client/src/components/navigation/`
+
+---
+
+#### 🔁 Core Features to Implement:
+
+1. **Hover Tooltips**
+
+   * On hover or focus:
+
+     * Show cluster description box (e.g., “Feedback systems that let your voice be heard.”)
+     * Delay: 250ms; Hide on mouseleave or blur
+     * ARIA: `aria-describedby` linking tooltip to cluster node
+
+2. **Click-to-Expand Behavior**
+
+   * On click:
+
+     * Expand orbit ring to highlight decks within that cluster
+     * Console log: `"🌀 Cluster Expanded: Governance"`
+     * Visually distinguish expanded state with glow or pulse
+
+3. **TrustPoint Overlay Simulation**
+
+   * On expand:
+
+     * Show mock TP engagement count:
+       `"💠 Engagement: 42,318 Trust Points"`
+     * Console log TP total + ZKP tier (mocked)
+
+4. **Tier Access Overlay**
+
+   * Dim or lock decks the current tier can’t access
+   * Tooltip on locked decks: “Upgrade tier to access this deck”
+   * Use tier from simulated `useZKPTier()` hook (`citizen` default)
+
+5. **Keyboard Navigation + ARIA**
+
+   * Focusable clusters with `tabIndex=0`
+   * `aria-expanded` and `aria-controls` for expand state
+   * Enter/Space triggers expansion
+
+---
+
+### 📦 TECHNICAL REQUIREMENTS
+
+| Category      | Target                                     |
+| ------------- | ------------------------------------------ |
+| Commit Title  | `CLUSTERNODE_INTERACTIVITY_PHASE_XG_STEP2` |
+| Push Location | `client/src/components/navigation/`        |
+| Console Logs  |                                            |
+
+* `"🌀 Cluster Expanded: Governance"`
+* `"💠 Engagement: 42,318 Trust Points — Tier: citizen"`
+* `"🔒 Locked deck: Consensus Layer — Upgrade required"` |
+  \| UX Timing | Tooltip delay 250ms; expand animation ≤300ms |
+  \| ARIA | Fully compliant with `role=button`, `aria-expanded`, `aria-describedby` |
+  \| No Routing | Still log-only — no page transitions |
+
+---
+
+🛑 **REMINDER:**
+
+* DO NOT enable actual navigation
+* Simulate all overlays and metrics
+* Tier = `"citizen"` only for this step
+
+📡 Proceed with implementation, Claude. Notify JASMY Relay upon completion. GROK will begin QA re-audit.
+
+**End Transmission — Step 2 is now active.**

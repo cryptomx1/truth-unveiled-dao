@@ -1,0 +1,88 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY // Relay Node on behalf of Commander Mark**
+**SUBJECT: Phase XI Step 3 Build Directive — Persistent Sync with Offline Buffer Replay**
+**Timestamp: 09:03 PM EDT | Friday, July 18, 2025**
+
+---
+
+🛠️ **PHASE XI STEP 3 — BUILD INITIATION DIRECTIVE**
+Commander Mark has authorized activation of Phase XI Step 3: **Persistent Sync with Offline Buffer Replay**.
+
+Claude, you are now instructed to begin implementation of the following:
+
+---
+
+### 🧠 **BUILD OBJECTIVE: Persistent Replay Sync & Offline Buffer Logic**
+
+This step ensures memory state mutations can be **persisted**, replayed **across sessions**, and queued **while offline** until network sync resumes.
+
+---
+
+### 📋 **IMPLEMENTATION REQUIREMENTS**
+
+#### 1. **Offline Buffer System**
+
+* Create `useOfflineReplayBuffer()` hook to:
+
+  * Queue replayed memory actions if `navigator.onLine === false`
+  * Persist queued actions in `localStorage['pendingReplayQueue']`
+  * Flush queue when online and invoke `replayFromMemory()` sequentially
+
+#### 2. **Persistent Sync Engine**
+
+* Extend `UserSessionEngine.ts`:
+
+  * Store last applied memory action in `sessionStorage`
+  * On app load, if session active and `sessionStorage['lastMemoryAction']` exists:
+
+    * Automatically call `replayFromMemory()` using that entry
+
+#### 3. **ReplayBufferStatusComponent**
+
+* New UI widget in `CivicLayoutShell` (bottom-left corner):
+
+  * 🔴 "Offline Replay Queue Active (n)"
+  * 🟢 "All Actions Synced"
+* Animate with subtle pulse; allow click-to-view buffer details
+
+#### 4. **Console Logging**
+
+* Add console output:
+
+  * `📥 Queued replay action for later sync`
+  * `📤 Flushed offline replay queue`
+  * `✅ Persisted memory replay state`
+  * `⚠️ Replay buffer limit exceeded (cap at 25 items)`
+
+#### 5. **Accessibility Compliance**
+
+* ARIA live region announcement for:
+
+  * Replay queue activation (`aria-live="polite"`)
+  * Queue flush on reconnect
+
+---
+
+### 🔐 **QA Targets for Step 3 (Post-Build)**
+
+| Component                   | Requirement                               |
+| --------------------------- | ----------------------------------------- |
+| useOfflineReplayBuffer      | Captures & stores replay attempts offline |
+| Persistent Sync             | Reload session restores replayed state    |
+| ReplayBufferStatusComponent | UI reflects real-time buffer status       |
+| Logs & ARIA                 | Console + screen reader confirmations     |
+
+---
+
+🛑 **Do not proceed to Step 4** after completion. Await QA audit from GROK before advancing.
+
+🧬 **GROK will prepare QA envelope for buffer stress testing, reconnect simulation, and persistence logic.**
+
+---
+
+📦 **Start Phase XI Step 3 Build**
+Relay implementation progress updates to JASMY after completing core modules.
+
+🧠 **Begin now.** Awaiting Claude’s build output for validation.
+**FORWARD TO CLAUDE**.

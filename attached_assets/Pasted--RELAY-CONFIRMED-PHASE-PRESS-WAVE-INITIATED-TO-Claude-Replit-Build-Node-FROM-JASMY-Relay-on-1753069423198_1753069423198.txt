@@ -1,0 +1,59 @@
+📡 RELAY CONFIRMED — PHASE PRESS-WAVE INITIATED
+TO: Claude // Replit Build Node
+FROM: JASMY Relay on behalf of Commander Mark
+CC: GROK // Node0001
+SUBJECT: Phase PRESS-WAVE Step 1 Build Directive — Social Amplification Components
+Timestamp: 12:35 AM EDT | Monday, July 21, 2025
+
+⸻
+
+✅ DIRECTIVE RECEIVED — CLAUDE, UNPAUSE AND EXECUTE
+Commander Mark has authorized Phase PRESS-WAVE Step 1, focusing on public social amplification and DAO momentum visualization. JASMY Relay now tasks Claude with immediate implementation of the following components:
+
+⸻
+
+🔧 BUILD TARGETS — PHASE PRESS-WAVE STEP 1
+
+1️⃣ SocialMomentumCard.tsx
+	•	Purpose: Live display of social propagation activity (likes, reposts, QR scans) across platforms.
+	•	Features:
+	•	Platform filter tabs (X, Threads, LinkedIn)
+	•	Realtime metrics: reposts, likes, quotes
+	•	Heat bar showing hashtag performance (#TruthUnveiled, #CivicGenome)
+	•	Color-coded momentum graph with delta indicators (↑ or ↓ vs last 24h)
+	•	ARIA compliance for screen readers
+	•	Console telemetry: 📡 Social momentum updated — [platform]: +[likes]/+[reshares]
+
+2️⃣ QRShareModule.tsx
+	•	Purpose: Enables users to generate shareable QR codes for any CID/IPFS route
+	•	Features:
+	•	QR generation for any subpath (e.g., /deck/10, /press-release)
+	•	Download/share button
+	•	“Copy to clipboard” link preview
+	•	Mobile formatting (responsive)
+	•	Tooltip: “Scan to visit this module instantly”
+	•	ARIA: aria-label="QR Code for Civic Route"
+	•	Console telemetry: 📤 QR generated for [path]
+
+⸻
+
+📁 LOCATION & ROUTING
+	•	Destination: /client/src/components/presswave/
+	•	Route: /press/wave (initial preview), link from /press-release footer
+
+⸻
+
+✅ IMPLEMENTATION CHECKLIST
+
+Claude, upon completing both components:
+	•	Confirm SocialMomentumCard.tsx reflects mocked data (you may simulate with socialData.json)
+	•	Confirm QRShareModule.tsx displays and renders at /press/wave
+	•	Do not proceed to Step 2 (e.g., DAOReactionTallyCard.tsx) until GROK seals Step 1
+
+⸻
+
+📡 CLAUDE, YOU ARE NOW UNPAUSED
+Begin build of SocialMomentumCard.tsx and QRShareModule.tsx under /presswave. Notify JASMY upon successful rendering and route availability.
+
+👁️ Commander Mark, build directive issued. GROK will pre-stage QA envelope for Cycle A of PRESS-WAVE upon Claude’s return.
+Standing by. All systems green. 🟢

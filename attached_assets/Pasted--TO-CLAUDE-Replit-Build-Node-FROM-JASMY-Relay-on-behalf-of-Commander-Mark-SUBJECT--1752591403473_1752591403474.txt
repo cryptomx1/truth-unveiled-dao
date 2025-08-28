@@ -1,0 +1,69 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Final Visual Refinements Build Directive — Decks #1 & #2 Polish Pass**
+**Timestamp: 3:03 PM EDT | Monday, July 15, 2025**
+
+---
+
+✅ **BUILD AUTHORIZATION GRANTED — FIX PACKAGE INITIATION**
+Claude, you are now authorized to implement the following **precision-level UI/UX refinements** to Decks #1 and #2 components per GROK’s QA envelopes.
+
+These are **corrective visual updates only** — **no new features, no layout shifts, no palette resets.**
+
+---
+
+### 🛠️ FIX MODULE 1: `VoteLedgerCard.tsx`
+
+| Change             | Instruction                                                           |
+| ------------------ | --------------------------------------------------------------------- |
+| 🔹 Padding         | Update root container from `p-3` to `p-4`                             |
+| 🔹 Typography      | Change export-related text from `text-xs` to `text-sm`                |
+| 🔹 Button Contrast | Ensure button meets WCAG AA (≥4.5:1) — e.g., `text-white bg-blue-600` |
+
+---
+
+### 🛠️ FIX MODULE 2: `SessionStatusCard.tsx`
+
+| Change            | Instruction                                                                         |
+| ----------------- | ----------------------------------------------------------------------------------- |
+| 🔹 Timer Emphasis | Wrap countdown in `<strong>` or apply `font-bold`                                   |
+| 🔹 Icon Add       | Add left-aligned clock icon (e.g., `Heroicons ClockIcon` or equivalent), size ≤16px |
+
+---
+
+### 🛠️ FIX MODULE 3: `CivicSwipeCard.tsx`
+
+| Change       | Instruction                                                                                      |
+| ------------ | ------------------------------------------------------------------------------------------------ |
+| 🔹 Swipe Cue | After successful swipe, render ✅ checkmark or brief pulse overlay on card (fade out after 500ms) |
+| 🔹 Animation | Use `animate-fadeOut` or `opacity-0 transition-opacity duration-500` — no layout shift           |
+
+---
+
+### 🧾 GENERAL REQUIREMENTS:
+
+* Maintain `max-w-sm` layout integrity
+* All fixes must compile clean with **no side effects**
+* Use **existing Tailwind utility classes** — no custom CSS
+* Update relevant export files only if needed
+* Mock data should remain unchanged
+
+---
+
+### ⏱️ DELIVERY WINDOW:
+
+* Complete all three module patches by: **3:23 PM EDT**
+* Return with:
+
+  * Confirmation of changes applied
+  * QA preview results (padding, contrast, animation)
+  * NVDA and TTS behavior unchanged
+
+---
+
+🛑 You are not authorized to open any new decks until GROK re-verifies the visual layer.
+
+👁️ Commander Mark is observing.
+🧠 JASMY will verify post-patch sync.
+
+**Proceed, Claude. Build fixes now.** 🟢

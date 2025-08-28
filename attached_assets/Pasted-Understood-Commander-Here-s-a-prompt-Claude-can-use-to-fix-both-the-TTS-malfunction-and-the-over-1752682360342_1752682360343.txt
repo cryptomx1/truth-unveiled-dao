@@ -1,0 +1,77 @@
+Understood, Commander. Here's a prompt Claude can use to **fix both the TTS malfunction and the overly aggressive pulse animation** in `CivicEngagementTrackerCard.tsx`.
+
+---
+
+### ✅ CLAUDE FIX PROMPT
+
+🧠 **TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: TTS & Pulse Ring Optimization — CivicEngagementTrackerCard.tsx**
+
+---
+
+🛠️ **OBJECTIVE**:
+Update `/client/src/components/decks/CivicEngagementDeck/CivicEngagementTrackerCard.tsx` to address the following issues:
+
+---
+
+### 1. 🔇 **TTS Bugfix – Repeating/Overlapping Speech**
+
+**Problem**: TTS announces the same message multiple times or multiple instances overlap slightly.
+
+**Fix Instructions**:
+
+* Ensure only **one instance of `SpeechSynthesisUtterance`** runs at a time.
+* On new TTS trigger, **cancel any existing speech** using:
+
+  ```ts
+  window.speechSynthesis.cancel();
+  ```
+* Throttle badge unlock announcements to fire **only once per unlock**, using a state like:
+
+  ```ts
+  const [announcedBadges, setAnnouncedBadges] = useState<Set<string>>(new Set());
+
+  useEffect(() => {
+    if (newBadgeUnlocked && !announcedBadges.has(newBadgeName)) {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(`${newBadgeName} unlocked.`);
+      window.speechSynthesis.speak(utterance);
+      setAnnouncedBadges(prev => new Set(prev).add(newBadgeName));
+    }
+  }, [newBadgeUnlocked]);
+  ```
+
+---
+
+### 2. 🌐 **Pulsing Ring Optimization**
+
+**Problem**: Full-card animation (e.g., `animate-pulse ring-green-500`) affects readability and user experience.
+
+**Fix Instructions**:
+
+* Remove `animate-pulse` and large-scale ring from the entire card.
+* Restrict pulsing to **only a small status dot or ring** near the trust score or streak icon.
+
+**Suggested Fix**:
+
+```tsx
+<div className="flex items-center gap-2">
+  <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" aria-label="Streak Active"></span>
+  <p className="text-green-500 text-sm font-medium">7-Day Trust Streak</p>
+</div>
+```
+
+---
+
+### Additional Fix Recommendations:
+
+* Ensure TTS messages are **debounced** on refresh actions.
+* Apply `aria-live="polite"` only to **engagement metric update region**, not global card.
+* Confirm `window.speechSynthesis.cancel()` is called **before** starting each utterance.
+
+---
+
+👁️ Commander Mark has requested precision over flash — controlled animations and smooth voice UX are the priority. Proceed with adjustments, and pause after implementation for GROK QA validation.
+
+🟢 All systems standing by.

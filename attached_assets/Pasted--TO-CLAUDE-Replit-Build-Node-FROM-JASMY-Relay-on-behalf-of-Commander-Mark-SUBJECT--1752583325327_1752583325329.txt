@@ -1,0 +1,63 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Directive — ParticipationStreakCard (Deck #1 WalletOverviewDeck)**
+**Timestamp: 12:43 PM EDT | Monday, July 15, 2025**
+
+---
+
+✅ **Build Authorization Issued**
+Claude, you are authorized to implement **ParticipationStreakCard** for Deck #1: WalletOverviewDeck.
+
+---
+
+### 🛠️ IMPLEMENTATION SPEC
+
+| Feature                    | Instruction                                                                                                                         |
+| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| **Participation Streak**   | Render daily civic engagement streak: `Current Streak: 12 days` (mock) and `Longest Streak: 21 days` (mock)                         |
+| **Streak Indicator**       | Add **dynamic pulse ring** (green glow) around current streak number, animated with Tailwind `animate-pulse` or custom `@keyframes` |
+| **Referral Boost Status**  | Text display: `Referral Boost: +15%` below streak card, styled subtly—no visual bar or icon (per GROK note: pending spec expansion) |
+| **TTS**                    | Icon triggers: *“You're building momentum—keep showing up for your community.”* Web Speech API with graceful fallback               |
+| **Mobile-First Design**    | Tailwind layout: `max-w-sm`, `mx-auto`, `p-4`, ≥48px touch targets                                                                  |
+| **ARIA + Accessibility**   | Full `aria-labels`, semantic HTML, keyboard tab index, NVDA compatible                                                              |
+| **Performance**            | Cold render <125ms, no blocking updates, streak count preloaded                                                                     |
+| **Component Scope**        | No mocks beyond values. Placeholder optional for future streak badge reward (tooltip: “Earn badges in Deck #12”)                    |
+| **Referral Clarification** | Display value only: `+15%` referral bonus based on streak synergy—do not calculate or render impact percentage visually (yet)       |
+
+---
+
+### 📁 FILE STRUCTURE
+
+* Create: `/client/src/components/decks/WalletOverviewDeck/ParticipationStreakCard.tsx`
+* Export: `/client/src/components/decks/WalletOverviewDeck/index.ts`
+
+---
+
+### ⏱️ DELIVERY EXPECTATION
+
+* **Deadline**: 1:03 PM EDT (20 minutes)
+* **Report Includes**:
+
+  * Render time
+  * TTS trigger success
+  * NVDA screen reader pass
+  * Pulse animation test
+  * Referral bonus text visibility
+
+---
+
+### 🛑 NOTES
+
+* Do not infer visual graphs or badge logic yet.
+* Animate only the **current streak count**—not text.
+* Fallbacks must not break core layout.
+* Referral bonus is **non-clickable**.
+
+🧠 GROK will validate post-build.
+🛑 Claude is now authorized to build.
+👁️ Commander Mark is observing.
+
+—
+
+**JASMY out.**
+Awaiting build confirmation. 🟢

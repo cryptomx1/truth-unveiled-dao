@@ -1,0 +1,83 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY // Relay Node on behalf of Commander Mark**
+**SUBJECT: Phase XXV Activation Directive — Civic Mission Ledger + Dynamic Unlock System**
+**Timestamp: 12:03 AM EDT | Saturday, July 19, 2025**
+
+---
+
+🧭 **PHASE XXV — CIVIC MISSION LEDGER + DYNAMIC UNLOCK SYSTEM INITIATION**
+
+Commander Mark now authorizes **Phase XXV**, deploying the **Civic Mission Ledger** and **Dynamic Unlock Engine**, designed to integrate past memory actions, trust scores, identity tiers, and feedback trails into a unified mission management and eligibility system.
+
+This system transitions the civic platform from static unlock logic to a **live, replay-aware mission access model**, governed by replayed memory history and verified identity.
+
+---
+
+### 🧠 **PHASE XXV MODULE OBJECTIVES**
+
+#### 1. `CivicMissionLedger.ts`
+
+* Immutable log of user mission events: `missionId`, `status`, `timestamp`, `sourceTraceHash`, `tierRequired`, `unlockedVia`
+* Ledger entries updated via replay, feedback, identity tier changes
+
+#### 2. `MissionUnlockEngine.ts`
+
+* Core logic to determine unlock eligibility:
+
+  * Replayed memory actions
+  * Verified identity tier
+  * Trust score ≥ threshold
+  * Feedback badge or verified vote
+* Supports dynamic checks on `/missions/*` routes
+
+#### 3. `MissionAccessPanel.tsx`
+
+* UI for viewing locked/unlocked missions with indicators:
+
+  * 🔓 Unlocked | 🔒 Locked | 🧠 Replay Required | 🪪 Tier Required
+* Click triggers explanation of what is missing and how to unlock
+
+#### 4. `MissionNarrationNode.ts`
+
+* ARIA + optional TTS narration:
+
+  * Unlock announcements
+  * Locked state explanations
+  * Replay nudges (e.g., “Replay Know Your Civic Rights to unlock this mission.”)
+
+#### 5. `UnlockTelemetryLogger.ts`
+
+* Console + audit log tracking:
+
+  * Unlock attempts
+  * Unlock confirmations
+  * Eligibility failures
+  * e.g., `🧠 Unlock attempt: mission:gov-feedback-deck1 failed — Tier: Moderator required`
+
+---
+
+### 🔐 **SECURITY & LOGIC REQUIREMENTS**
+
+* Tier-based restrictions enforced server-side
+* Memory replay must validate `sourceTraceHash`
+* Unlock attempts must be logged regardless of result
+* Accessible at `/missions` and integrated into `/deck` components
+* All UIs screen-reader compliant, updates ≤150ms
+
+---
+
+### 📎 **INTEGRATION DIRECTIVES**
+
+* At least 4 missions must be represented in test deck set (e.g., Wallet, Identity, Consensus, Feedback)
+* Replay actions must retroactively unlock valid missions
+* At least one mission must require Tier: Governor or above
+* Console logs must include both success and failure attempts
+
+---
+
+🚦 **BUILD STATUS: GREEN**
+Claude, you are cleared to initiate **Phase XXV: Civic Mission Ledger + Dynamic Unlock System** now.
+Implement all five modules and notify JASMY upon completion for QA Cycle A.
+
+📡 **FORWARD TO CLAUDE** — JASMY Relay standing by.

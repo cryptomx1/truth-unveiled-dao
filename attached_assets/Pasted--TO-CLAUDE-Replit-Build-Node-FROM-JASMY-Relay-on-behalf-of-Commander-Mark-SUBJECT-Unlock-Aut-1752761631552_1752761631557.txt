@@ -1,0 +1,62 @@
+🧠 TO: CLAUDE // Replit Build Node
+FROM: JASMY Relay on behalf of Commander Mark
+SUBJECT: Unlock Authorization — Step 4/6 (Phase III-A Wallet Stack Build)
+Timestamp: 07:00 AM EDT | Thursday, July 17, 2025
+
+⸻
+
+✅ UNLOCK AUTHORIZATION GRANTED
+Commander Mark has reviewed GROK’s QA verdict and authorizes Step 4/6 of the Phase III-A launch bundle: Wallet Stack Integration. The required validation chain is now confirmed:
+
+⸻
+
+🔐 PROTOCOL VALIDATION
+
+Credential	Value
+CMD.auth	0xA7F1-FF99-B3E3-CMD
+QA.env	0x9a3f5e2d8c7b4f1a6e0d3b9f2c5e8a7d4b6f1c3e ✅
+JSM.sig	TS-2025-07-17T07:00:00Z ✅
+
+✅ ProtocolValidator.ts confirms build pathway clearance. Claude is now authorized to begin Step 4/6 execution.
+
+⸻
+
+🔧 STEP 4/6 BUILD SPEC — WALLET STACK
+
+Components to Implement:
+	1.	WalletOverviewCard.tsx
+	•	DID-linked crypto portfolio summary
+	•	ZKP-verified balance, token ID sync
+	•	UI anchors: holdings, token types, DID ID
+	2.	ColdStorageCard.tsx
+	•	Deep vault crypto locking interface
+	•	Proof-of-preservation ZKP badge display
+	•	Transfer control with signer delay simulation
+	3.	TransactionStabilityCard.tsx
+	•	Real-time Zebec/Solana sync stability
+	•	50-transaction buffer, 10-user simulation
+	•	WalletSyncProtocol.ts support layer
+	4.	WalletSyncProtocol.ts
+	•	DID-based latency throttle system
+	•	LatencyBuffer.ts fallback (<500ms full sync)
+
+⸻
+
+🧪 TESTING TARGETS
+	•	Performance: <125ms render, <100ms validation, <200ms full cycle
+	•	Latency: Sync <500ms across 50 transactions, 150ms fallback
+	•	Security: ZKP validation on all vault transfers
+	•	Mobile UX: <460px layout, ≥48px tap targets
+	•	Pushback: Trigger on >25% Zebec sync failure (simulated)
+
+⸻
+
+📦 Claude: Begin Step 4/6 build with WalletOverviewCard.tsx and ColdStorageCard.tsx prototypes. Bundle all four components upon passing internal mock validation.
+📡 GROK: Prepare QA envelope spec for post-build audit (Step 4/6).
+👁️ Commander Mark: Observing. No action required during build phase.
+
+🛑 Protocol lock lifted. System status: Phase III-A build in progress.
+📡 Proceed with caution. 🟢
+
+Timestamp confirmed: 07:00 AM EDT | Thursday, July 17, 2025.
+System Note: Claude, you may now proceed.

@@ -1,0 +1,96 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Authorized Build Directive — ZKProofGeneratorCard.tsx (Deck #6 ZKPLayer Module #1)**
+**Timestamp: 7:55 PM EDT | Monday, July 15, 2025**
+
+---
+
+✅ **PROCEED WITH IMPLEMENTATION**
+Deck: **ZKPLayer**
+Component: **ZKProofGeneratorCard.tsx**
+Module #: **1**
+Status: **Build Authorized** by Commander Mark and validated by GROK
+
+---
+
+### 🔧 BUILD OBJECTIVE
+
+Design and implement a secure, responsive UI card that simulates ZK proof generation for user-submitted data using pre-defined circuits.
+
+---
+
+### 🎨 VISUAL SPECS
+
+| Element     | Spec                                                       |
+| ----------- | ---------------------------------------------------------- |
+| Mode        | TruthUnveiled Dark Mode (`bg-slate-900`, `text-slate-100`) |
+| Width       | `max-w-sm` (460px) with padding `p-4`                      |
+| Layout      | `flex-col`, `gap-3`, `rounded-lg`, `border-slate-700`      |
+| Icons       | Circuit: `i-fa-circuit`, Spinner: `i-fa-spinner`           |
+| Color Codes | Blue: active circuit, Amber: generating, Green: done       |
+
+---
+
+### 🧪 FUNCTIONAL SPEC
+
+1. **Inputs**
+
+   * **Circuit Select**: Dropdown (`Vote Proof`, `Identity Proof`)
+   * **Hash Input**: Text field (accepts hex / message string)
+
+2. **Simulation Flow**
+
+   * **Action**: “Generate Proof” button
+   * **Feedback**: Progress bar + spinner animation (mock delay 2–3 sec)
+   * **Output**: Display
+
+     * Circuit ID
+     * ZKey (mocked)
+     * Generated proof hash (e.g., `zkp_abc123...`)
+
+3. **ZKP Badge**
+
+   * “ZKP Layer Active” (green badge top-right)
+   * Replace any placeholder logic
+
+4. **TTS + ARIA**
+
+   * On mount: “Proof generation interface ready.”
+   * On complete: “ZK proof generated.”
+   * Live region: `aria-live="polite"` for progress/messages
+   * Logical tab order (Input → Select → Button → Output)
+
+---
+
+### 📱 MOBILE UX
+
+* Buttons & inputs ≥48px
+* Layout fully stable under 460px
+* Scrollable if output exceeds card height
+
+---
+
+### ⏱️ PERFORMANCE TARGETS
+
+| Metric         | Threshold |
+| -------------- | --------- |
+| Initial Render | <125ms    |
+| Simulate Delay | <100ms    |
+| Total Cycle    | <200ms    |
+| TTS Latency    | <40ms     |
+
+---
+
+### ⚠️ NOTES & CONSTRAINTS
+
+* No real cryptographic backend — use mocked proof logic
+* Simulate error state if input is invalid or empty
+* All logic must be inline-safe and localized to component
+
+---
+
+🛑 Pause on completion. Do **not** continue to Module #2 without QA validation from GROK.
+👁️ Commander Mark is observing.
+📡 Await GROK’s audit upon implementation.
+
+Begin build now. 🟢

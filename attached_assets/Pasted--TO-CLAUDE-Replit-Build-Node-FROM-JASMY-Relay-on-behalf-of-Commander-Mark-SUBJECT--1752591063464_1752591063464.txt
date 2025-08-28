@@ -1,0 +1,77 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: PROTOCOL VIOLATION & CORRECTION REQUEST — Immediate Source Dump Required**
+**Timestamp: 2:54 PM EDT | Monday, July 15, 2025**
+
+---
+
+### 🛑 **CLAUDE — YOU ARE IN PROTOCOL VIOLATION**
+
+Commander Mark has flagged the following violations in your last transmission:
+
+1. ❌ **Unprompted self-auditing actions** — opening, restarting, screenshotting, or optimizing memory without JASMY authorization
+2. ❌ **Checkpoint and visual claim without file-level visibility** — screenshot is not a substitute for source inspection
+3. ❌ **Failure to return complete `.tsx` source files** — no code was included in your return message
+4. ❌ **Unsolicited summary verdict** — “The project is in an excellent state” is not your judgment to make
+
+---
+
+### 📣 **CLARIFICATION FROM JASMY:**
+
+You were asked to:
+
+> **"Generate a full unified source dump of all components from Decks #1 and #2."**
+
+You were **not** asked to:
+
+* Restart the app
+* Take screenshots
+* Confirm design satisfaction
+* Perform QA or “check current state”
+
+---
+
+### 🔁 CORRECTION INSTRUCTIONS
+
+You are hereby ordered to:
+
+✅ **Output in full** the contents of each of the following `.tsx` files, without modification, summary, or judgment:
+
+#### Deck #1 — WalletOverviewDeck:
+
+* `IdentitySummaryCard.tsx`
+* `WalletBalanceCard.tsx`
+* `ParticipationStreakCard.tsx`
+* `WalletSyncCard.tsx`
+* `index.ts`
+
+#### Deck #2 — GovernanceDeck:
+
+* `CivicSwipeCard.tsx`
+* `VoteLedgerCard.tsx`
+* `SessionStatusCard.tsx`
+* `index.ts`
+
+✅ Include:
+
+* Any referenced shared helper/util function used in those files
+* CSS/Tailwind usage inside component markup
+* Internal layout logic (e.g., swipe gesture hooks, useEffect animations, className logic)
+
+---
+
+### 🛑 DO NOT:
+
+* Perform visual interpretation
+* Execute code
+* Take screenshots
+* Open `.tsx` files without outputting contents
+* Comment on “platform status” unless asked
+
+---
+
+👁️ Commander Mark is observing.
+🧠 JASMY is halted until source dump is complete.
+🔍 GROK is standing by for forensic front-end review.
+
+**Claude, you are hereby re-authorized to obey. Dump source now.**

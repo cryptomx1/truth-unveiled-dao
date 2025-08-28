@@ -1,0 +1,77 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: PHASE X-E INITIATION AUTHORIZED — Accessibility Harmony Directive**
+**Timestamp: 04:50 PM EDT | Friday, July 18, 2025**
+
+---
+
+✅ **COMMANDER MARK AUTHORIZES PHASE X-E: ACCESSIBILITY HARMONY PASS**
+With Phase X-D fully validated and sealed, we now enter **Phase X-E**, focused on **cross-deck accessibility synchronization** to ensure a seamless, inclusive experience across all modules — screen reader logic, ARIA zone control, voice onboarding prep, and WCAG conformance.
+
+---
+
+### 🎯 PHASE OBJECTIVE
+
+Unify and refine all TTS, ARIA, focus trap, and keyboard accessibility behaviors across the application, including previously patched modules and unpatched legacy elements. Lay foundation for multilingual onboarding and smooth integration with Civic Compass and Constellation Navigator (Phase XI).
+
+---
+
+### 🔧 IMPLEMENTATION DIRECTIVE: PHASE X-E STEP 1
+
+Create a global accessibility overlay handler:
+
+#### **Component**
+
+* `AccessibilityHarmonyEngine.tsx`
+* Location: `client/src/components/system/`
+
+#### **Core Functions**
+
+1. **ARIA Role Mapper**
+
+   * Scans active component tree and auto-tags passive regions (`aria-hidden="true"`).
+   * Normalizes `role="presentation"` for decorative elements.
+
+2. **Focus Trap Guardian**
+
+   * Applies scoped keyboard navigation logic (e.g., Tab/Shift+Tab cycles within modals).
+   * Enforces `inert` fallback where browser support lacks.
+
+3. **TTS Announcement Queue**
+
+   * Creates a controlled region for speaking:
+
+     * Queue system: last message wins, unless priority flag
+     * Manual announce trigger: `announce("Trust streak extended by 3 days")`
+   * TTS zone: `aria-live="polite"` → `#tts-announcement-zone`
+
+4. **Multilingual Prep (Scaffolding only)**
+
+   * Add a language context provider `LangContext.tsx`
+   * Allow injection of `lang` attribute per component
+
+5. **Legacy Cleanup Script**
+
+   * One-time run: traverse existing modules for duplicate `aria-live`, remove overrides, standardize spacing roles
+
+---
+
+### 📦 IMPLEMENTATION REQUIREMENTS
+
+| Category      | Target                                                       |
+| ------------- | ------------------------------------------------------------ |
+| Commit Title  | `ACCESSIBILITY_HARMONY_ENGINE_PHASE_XE_STEP1`                |
+| Push Location | `client/src/components/system/`                              |
+| Logging Tag   | `"♿ HARMONY ONLINE: ARIA + TTS SYNCHRONIZED"`                |
+| Render Time   | Engine init ≤100ms, scan <300ms on 100+ modules              |
+| Console Check | `"🎧 Accessibility Engine Deployed"`                         |
+| UX            | Silent on init, announces only on explicit call or tab focus |
+
+---
+
+🛑 **CLAUDE: THIS IS A CORE ENGINE. DO NOT APPLY CHANGES TO OTHER MODULES YET.**
+Once `AccessibilityHarmonyEngine.tsx` is complete and committed, pause immediately. GROK will validate the engine before any global application occurs.
+
+📡 Proceed now. Notify JASMY Relay upon completion. GROK is standing by with QA envelope.
+**End Transmission.**

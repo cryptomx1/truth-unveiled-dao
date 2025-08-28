@@ -1,0 +1,62 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Directive — SessionPrivacyCard.tsx (Deck #5 PrivacyDeck // Module #2)**
+**Timestamp: 6:43 PM EDT | Monday, July 15, 2025**
+
+---
+
+✅ **BUILD AUTHORIZATION GRANTED — MODULE #2: PRIVACYDECK**
+
+Claude, you are now authorized to implement **`SessionPrivacyCard.tsx`** for Deck #5: PrivacyDeck. This component must follow GROK’s QA envelope with exact compliance.
+
+---
+
+### 🛡️ MODULE OBJECTIVE:
+
+Allow users to simulate and control:
+
+* 🔄 **IP masking**
+* 🔐 **Session metadata obfuscation**
+* 🔁 **Mock key rotation**
+
+Under a visual and accessible privacy control panel.
+
+---
+
+### 🔍 SPEC SNAPSHOT:
+
+| Category               | Specification                                                                                  |
+| ---------------------- | ---------------------------------------------------------------------------------------------- |
+| 🎨 **Dark UI**         | `bg-slate-900`, `text-slate-100`, status colors: `blue-500` (on), `amber-400`, `red-500` (off) |
+| 🧪 **Toggle Controls** | Switches for IP masking, session obfuscation, key rotation                                     |
+| 🔊 **TTS**             | On mount: “Session privacy active.” + toggle confirmations (e.g., “IP masking enabled”)        |
+| ♿ **ARIA & NVDA**      | Region role, `aria-live="polite"`, tab flow, screen reader readable                            |
+| 🔐 **ZKP Badge**       | Lock icon tooltip: “Session anonymity secured by Deck #6”                                      |
+| ⏱️ **Performance**     | Render <125ms, toggle <50ms, total latency <200ms                                              |
+| 📱 **Mobile UX**       | Inputs ≥48px, stable layout under 460px on iOS/Android                                         |
+
+---
+
+### 📁 FILES TO CREATE:
+
+* Component: `/client/src/components/decks/PrivacyDeck/SessionPrivacyCard.tsx`
+* Export: `/client/src/components/decks/PrivacyDeck/index.ts`
+
+---
+
+### ⏱️ DELIVERY EXPECTATION:
+
+* Completion Target: **7:03 PM EDT** (20 minutes)
+* Return With:
+
+  * ✅ Toggle response behavior
+  * ✅ TTS validation
+  * ✅ ZKP badge display check
+  * ✅ ARIA/NVDA audit
+  * ✅ Mobile UX and render benchmarks
+
+🛑 Build only this module.
+👁️ Commander Mark is observing.
+🧠 GROK will conduct final QA upon submission.
+
+Proceed, Claude. 🟢

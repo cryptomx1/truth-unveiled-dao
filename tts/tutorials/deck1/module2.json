@@ -1,0 +1,61 @@
+{
+  "schema": {
+    "version": "phase_tts_civic_enhance_step_4",
+    "description": "Audio tutorial content for Deck 1 Module 2 - Civic Swipe Card",
+    "deckId": "deck1",
+    "moduleId": "module2",
+    "moduleName": "CivicSwipeCard",
+    "tutorialType": "interaction_guidance"
+  },
+  "tutorialContent": {
+    "introductoryNarration": {
+      "title": "📌 Interactive Civic Engagement Cards",
+      "content": "Welcome to the civic swipe interface. This interactive system presents civic proposals, community initiatives, and governance decisions for your review. Each card contains essential information to help you make informed civic choices.",
+      "duration": "17 seconds",
+      "tone": "informative",
+      "speed": "normal"
+    },
+    "navigationGuidance": {
+      "title": "🔍 How to Navigate Civic Cards",
+      "content": "Swipe right to support a proposal, swipe left to express concerns, or tap the center to view detailed information. The progress bar shows community sentiment, while the tier indicators show participation from citizens, governors, and commanders. Your civic tier influences the weight of your engagement.",
+      "duration": "26 seconds",
+      "tone": "instructional",
+      "speed": "normal"
+    },
+    "privacyNotice": {
+      "title": "🔒 Anonymous Civic Participation",
+      "content": "Your civic engagement preferences are recorded anonymously. The system tracks participation patterns without storing personal voting records. Your civic tier and contribution history remain private while enabling transparent community governance.",
+      "duration": "19 seconds",
+      "tone": "formal",
+      "speed": "normal"
+    },
+    "nextStepsCue": {
+      "title": "➡️ Start Your Civic Participation",
+      "content": "Begin engaging with civic proposals by swiping through the available cards. Your participation helps shape community decisions and builds your civic reputation. Regular engagement unlocks additional governance privileges and rewards.",
+      "duration": "18 seconds",
+      "tone": "encouraging",
+      "speed": "normal"
+    }
+  },
+  "accessibilityFeatures": {
+    "ariaLiveRegions": true,
+    "screenReaderCompatible": true,
+    "keyboardNavigation": true,
+    "swipeAlternatives": true
+  },
+  "integrationPoints": {
+    "ttsToggleId": "civic-swipe-tts",
+    "parentDeck": "wallet_overview",
+    "relatedModules": ["governance_deck", "civic_achievements"],
+    "prerequisiteModules": ["identity_summary"]
+  },
+  "metadata": {
+    "createdAt": "2025-07-23T18:07:00.000Z",
+    "lastUpdated": "2025-07-23T18:07:00.000Z",
+    "version": "1.0.0",
+    "authorizedBy": "Commander Mark via JASMY Relay",
+    "qaValidation": "pending_grok_cycle_l",
+    "languageSupport": ["en-US"],
+    "estimatedCompletionTime": "80 seconds"
+  }
+}

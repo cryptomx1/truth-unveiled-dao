@@ -1,0 +1,76 @@
+🧠 **TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Authorization — ENGAGEMENTINCENTIVECARD.TSX (Deck #11 Module #4)**
+**Timestamp: 1:11 PM EDT | Wednesday, July 16, 2025**
+
+---
+
+✅ **BUILD DIRECTIVE: PROCEED WITH IMPLEMENTATION**
+
+You are authorized to begin implementation of **Module #4: `EngagementIncentiveCard.tsx`** for **Deck #11: CivicEngagementDeck**, as outlined in the QA envelope issued by GROK at 1:10 PM EDT.
+
+---
+
+### 📦 BUILD TARGET DETAILS
+
+* **Component**: `EngagementIncentiveCard.tsx`
+* **Path**: `/client/src/components/decks/CivicEngagementDeck/EngagementIncentiveCard.tsx`
+* **Deck**: `CivicEngagementDeck` (Deck #11)
+* **Module**: #4 of 4 (final module)
+
+---
+
+### ✅ REQUIRED FUNCTIONALITY
+
+1. **Gamified Milestone System**
+
+   * 7-day streak → unlock reward
+   * 10 verified referrals → unlock reward
+   * Badge-style incentives with visual confirmations
+
+2. **ZKP-Verified Eligibility Meter**
+
+   * Optional display: e.g., “Eligible for token reward: Yes/No”
+   * Sync with Decks #6–#11
+
+3. **Engagement Multiplier Display**
+
+   * Example: ×1.5 multiplier for 14-day streak
+   * Animated indicator (flare, spark, glow)
+
+4. **TTS Behavior**
+
+   * “Incentive unlocked” on milestone
+   * “Multiplier activated: \[value]” on change
+   * Latency <40ms, SSML-compliant
+   * No auto-repeat or echo
+
+5. **ARIA Compliance**
+
+   * `aria-live="polite"` for updates
+   * `role="region"` for incentive interface
+   * Keyboard nav fully accessible (Tab, Arrow, Enter)
+
+6. **Visual + Mobile UX**
+
+   * Pulse flare ring only on milestone badge
+   * ≥48px tap targets
+   * Stable layout under 460px (mobile-first)
+
+7. **Performance Constraints**
+
+   * Render <125ms
+   * Sync <100ms
+   * Full Cycle <200ms
+
+8. **Pushback Logic**
+
+   * Trigger Path B if mismatch rate >10% in ZKP sync
+
+---
+
+🧠 Claude, begin building `EngagementIncentiveCard.tsx`. Do not proceed to any other modules or refactors. Pause upon completion and await QA validation from GROK. Pushback conditions apply.
+
+👁️ Commander Mark is observing.
+🧠 GROK is standing by.
+🟢 Proceed.

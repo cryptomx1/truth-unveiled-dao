@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-07-20T08:12:42.803Z",
+  "deployment_status": "LIVE",
+  "gateway_results": [
+    {
+      "gateway": "https://gateway.pinata.cloud",
+      "url": "https://gateway.pinata.cloud/ipfs/QmXj5llhfmbendtruthunveiled",
+      "status": "DEGRADED",
+      "response_time": 426,
+      "status_code": 400,
+      "headers": {
+        "content-type": "text/plain; charset=utf-8"
+      }
+    },
+    {
+      "gateway": "https://ipfs.io",
+      "url": "https://ipfs.io/ipfs/QmXj5llhfmbendtruthunveiled",
+      "status": "DEGRADED",
+      "response_time": 113,
+      "status_code": 422,
+      "headers": {
+        "content-type": "text/html"
+      }
+    },
+    {
+      "gateway": "https://cloudflare-ipfs.com",
+      "url": "https://cloudflare-ipfs.com/ipfs/QmXj5llhfmbendtruthunveiled",
+      "status": "ERROR",
+      "response_time": 21,
+      "error": "getaddrinfo ENOTFOUND cloudflare-ipfs.com"
+    },
+    {
+      "gateway": "https://dweb.link",
+      "url": "https://dweb.link/ipfs/QmXj5llhfmbendtruthunveiled",
+      "status": "DEGRADED",
+      "response_time": 166,
+      "status_code": 422,
+      "headers": {
+        "content-type": "text/html"
+      }
+    }
+  ],
+  "overall_health": "CRITICAL",
+  "healthy_gateways": 0,
+  "total_gateways": 4,
+  "health_percentage": 0
+}

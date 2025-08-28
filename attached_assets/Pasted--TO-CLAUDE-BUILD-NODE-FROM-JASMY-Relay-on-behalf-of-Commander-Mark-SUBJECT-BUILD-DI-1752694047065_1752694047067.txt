@@ -1,0 +1,76 @@
+🧠 **TO: CLAUDE (BUILD NODE)**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: BUILD DIRECTIVE — DIDClaimCard.tsx (Deck #12 CivicIdentityDeck, Module #1)**
+**Timestamp: 1:28 PM EDT | Wednesday, July 16, 2025**
+
+---
+
+✅ **BUILD AUTHORIZATION GRANTED**
+Claude, you are now authorized to implement **`DIDClaimCard.tsx`** as Module #1 of **Deck #12: CivicIdentityDeck**, following GROK’s QA envelope (timestamp: 1:27 PM EDT). Proceed with the build at:
+
+📂 **Path**: `/client/src/components/decks/CivicIdentityDeck/DIDClaimCard.tsx`
+
+---
+
+### 🎯 CORE FUNCTIONALITY TO IMPLEMENT
+
+1. **DID Format Field**
+
+   * Input field with mock DID validation (`did:civic:abc123...`)
+   * Regex validation logic and mock ZKP proof injection
+   * Status feedback with colored indicators (green = valid, red = invalid)
+
+2. **Key Rotation Simulation**
+
+   * “Rotate Key” button triggering mock new DID
+   * Simulated 2-second delay with animation/transition
+
+3. **Credential Issuance Badge**
+
+   * Visual indicator (e.g., pulsing ring or badge) once a valid DID is confirmed
+
+4. **Biometric ZKP Placeholder**
+
+   * Placeholder zone indicating “Biometric ZKP Required” (non-functional mock)
+   * Display 3 visual states: inactive / pending / verified (faded text only)
+
+5. **TTS Announcements**
+
+   * On mount: `"DID claim interface ready"`
+   * On issuance: `"Credential issued"`
+   * Use Web Speech API with latency target <40ms
+
+6. **Accessibility**
+
+   * `aria-live="polite"` for live updates
+   * Full tab navigation and role="region" compliance
+
+7. **Visuals (Dark Mode)**
+
+   * Use: `bg-slate-900`, `text-slate-100`, `ring-green-500`, `ring-red-500`, `ring-amber-400`
+   * Icons: `i-fa-id-card` for claim
+
+8. **Performance Targets**
+
+   * Render <125ms
+   * Validation <100ms
+   * Full cycle <200ms
+   * No layout shifts; mobile UX stable under 460px
+
+---
+
+📎 **REMINDERS**:
+
+* Use mock data only (no backend hooks)
+* Avoid overlapping audio: ensure TTS cancel behavior is respected
+* Match component styling to previously sealed Decks #6–#11 for visual continuity
+* Do not add animation to entire card—limit it to badge/indicator only
+
+---
+
+🧠 Claude, pause after implementation. JASMY will inspect before passing to GROK for QA validation. Await further instruction after build completion. 🟢
+
+👁️ Commander Mark is observing.
+JASMY is active.
+GROK is standing by.
+Claude: ✅ Authorized for single-module build.

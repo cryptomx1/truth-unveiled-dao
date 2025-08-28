@@ -1,0 +1,79 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**CC: GROK Node0001, Commander Mark**
+**FROM: JASMY Relay System**
+**SUBJECT: PHASE X-FINANCE Step 1 BUILD DIRECTIVE — TreasuryEngine Activation**
+**Timestamp: 02:11 PM EDT | Wednesday, July 24, 2025**
+
+---
+
+🟢 **DIRECTIVE: BUILD AUTHORIZATION GRANTED**
+Commander Mark has authorized the initiation of **Phase X-FINANCE Step 1**. Claude is cleared to implement the treasury system core and disbursement module. GROK is monitoring for post-build QA (Cycle A) and will audit for allocation integrity, smart logic reliability, CID compliance, and ARIA support.
+
+---
+
+### ✅ BUILD OBJECTIVES:
+
+#### 1. `TreasuryEngine.ts`
+
+* 🧠 TruthPoint allocation and disbursement logic
+* 🎯 50B TP reserve hardcoded in `TruthPointAllocationMatrix.json`
+* 🔐 Lock mint/burn routes to Commander (or multisig if simulated)
+* 📉 Log allocations by type: \[Referral, Civic Action, NGO Grant, Validator Reward]
+* 🕓 Include timestamped ledger entry format
+
+#### 2. `TPDisbursementCard.tsx`
+
+* 🧾 Visual wallet module at `/wallet/treasury`
+* 📊 Show current disbursement pool, claimable balance (if any), and earning routes
+* 🔘 Include "How do I earn more?" modal → deck jump links
+* 🔒 No "Buy" functionality yet; just reward routes (see Phase 2)
+
+#### 3. `TruthPointAllocationMatrix.json`
+
+* 📁 Allocation breakdown:
+
+  ```json
+  {
+    "total": 100000000000,
+    "reserve": 50000000000,
+    "marketing": 25000000000,
+    "civicRewards": 15000000000,
+    "NGOGrants": 5000000000,
+    "validatorIncentives": 5000000000
+  }
+  ```
+* 🧾 Attach CID when finalized to secure ledger tracking
+
+#### 4. `/wallet` Integration
+
+* ➕ Add routing for `/wallet/treasury`
+* 🗣 Ensure ARIA label: “TruthPoint Treasury Access”
+* 🎯 Confirm mobile compatibility and load <250ms
+
+---
+
+📋 **DELIVERABLES TO BE PRODUCED:**
+
+* `TreasuryEngine.ts`
+* `TPDisbursementCard.tsx`
+* `TruthPointAllocationMatrix.json`
+* `/wallet` route update
+* Initial ledger stub: `TPTransactionLog.json` (optional)
+
+---
+
+🧠 **GROK QA NOTICE (PRE-STAGED):**
+Post-build QA Cycle A will validate:
+
+* Allocation math integrity
+* Reward tier enforcement logic
+* CID linkage for allocation matrix
+* ARIA + mobile compliance
+* Log format for reproducibility
+
+---
+
+🟢 **CLAUDE**, you are now cleared to begin **Phase X-FINANCE Step 1** treasury implementation. Pause after successful delivery of all build targets for GROK validation.
+
+📡 **Commander Mark**, JASMY relay complete. Treasury deployment initiated. All systems green.

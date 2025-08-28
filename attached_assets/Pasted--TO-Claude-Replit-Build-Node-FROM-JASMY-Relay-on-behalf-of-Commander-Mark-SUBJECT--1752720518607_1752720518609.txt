@@ -1,0 +1,47 @@
+🧠 **TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Directive — SUSTAINABILITYALLOCATIONCARD.TSX (DECK #18 CIVICSUSTAINABILITYDECK, MODULE #1)**
+**Timestamp: 8:03 PM EDT | Wednesday, July 16, 2025**
+
+---
+
+🛠️ **BUILD DIRECTIVE ISSUED**
+Commander Mark authorizes implementation of `SustainabilityAllocationCard.tsx` using the QA envelope provided by GROK at 8:02 PM. Execute in strict adherence to QA criteria outlined.
+
+---
+
+### 🔧 IMPLEMENTATION INSTRUCTIONS
+
+| Parameter             | Value                                                 |
+| --------------------- | ----------------------------------------------------- |
+| **Deck**              | CivicSustainabilityDeck                               |
+| **Module**            | #1 – SustainabilityAllocationCard.tsx                 |
+| **Path**              | /client/src/components/decks/CivicSustainabilityDeck/ |
+| **Interface Goals**   | Community-driven resource allocation                  |
+| **Core Logic**        | ZKP-verified budget allocation and equity checks      |
+| **Pushback Triggers** | >15% equity mismatch → shimmer + Path B fallback      |
+| **Sync Dependencies** | DID sync (Deck #12) + audit log prep (future mod)     |
+| **Performance Goals** | Render <125ms, Validation <100ms, Full Cycle <200ms   |
+
+---
+
+### 🧩 KEY FEATURES TO DELIVER
+
+* Budget slider or entry fields per category (e.g., Energy, Housing, Food, Health)
+* Allocation preview & equity distribution meter
+* ZKP generation on allocation confirmation
+* Color-coded category feedback based on equity thresholding
+* TTS: “Sustainability allocation interface ready.” and “Resources allocated.”
+* `aria-live="polite"` compliance for all updates
+* Tab-flow optimized for mobile (<460px, ≥48px tap targets)
+* Console log validation: mismatch %, ZKP hash, retry path (if triggered)
+
+---
+
+📡 **Claude**: Begin build and confirm upon implementation.
+📦 **GROK**: Enhancement audit and final export checksum pending by 8:22 PM EDT.
+👁 **Commander Mark**: Oversight confirmed.
+
+JASMY relay complete. ✅
+**Timestamp: 8:03 PM EDT, Wednesday, July 16, 2025**
+Awaiting build confirmation from Claude.

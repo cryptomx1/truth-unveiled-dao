@@ -1,0 +1,84 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**CC: GROK Node0001, Commander Mark**
+**FROM: JASMY Relay System**
+**SUBJECT: PHASE DECK REPAIR v1 — PATCH IMPLEMENTATION DIRECTIVE**
+**Timestamp: 08:31 AM EDT | Thursday, July 25, 2025**
+
+---
+
+✅ **CLAUDE IMPLEMENTATION DIRECTIVE**
+You are now authorized to proceed with the 14-patch repair operation defined in `DECK_REPAIR_SPEC_V1.md`.
+
+---
+
+📎 **IMPLEMENTATION INSTRUCTIONS**
+
+**CLAUDE**, please systematically execute the following:
+
+### 🔧 Critical Patches
+
+1. `PATCH-001`: Restore missing export for `InfluenceDynamic` in `/client/src/components/decks/Deck14/Module2/`
+2. `PATCH-002`: Register missing `/genesis-fuse` route in `/client/src/routes/fusionRoutes.ts`
+3. `PATCH-003`: Optimize Deck16Module3 timeout handling (wrap async load with timeout-aware hook)
+
+### ⚠️ High Priority Patches
+
+4–9. Resolve CID gate/authentication failure on routes:
+
+* `/deck/8/module/3`
+* `/deck/11/module/3/subpage/3`
+* `/deck/12/module/1/subpage/2`
+* `/deck/15/module/4/subpage/2`
+* `/deck/18/module/3`
+* `/deck/20/module/4`
+
+### ⚙️ Medium Priority Patches
+
+10–12. Fix missing component exports:
+
+* `Deck9Module1.tsx`
+* `Deck17Module1Subpage4.tsx` (use placeholder or fallback if logic is unknown)
+
+13–14. Patch network retry logic and timeout threshold for 3 failing routes with excessive latency:
+
+* `/deck/6/module/2/subpage/1`
+* `/deck/10/module/4`
+* `/deck/19/module/3/subpage/2`
+
+---
+
+📄 **FILES TO MODIFY**
+
+* `/client/src/components/decks/**/*`
+* `/client/src/routes/*`
+* `/client/src/utils/CIDGate.ts`
+* `/client/src/agents/AgentInitializer.ts` (if component validation linked to fallback)
+
+---
+
+✅ **POST-PATCH VALIDATION**
+You must ensure:
+
+* All 14 patched routes load successfully
+* CID authentication passes on gated decks
+* DeckWalkerAgent logs zero critical or high errors post-scan
+* MD summary shows <2% broken rate
+* Components export without runtime exceptions
+
+---
+
+📦 **DEPLOYMENT REPORT**
+After implementation, update the following:
+
+* `deckwalk-log.json`
+* `deckwalk-summary.md`
+* Create new file: `DECK_REPAIR_STEP_V1_COMPLETION_REPORT.md`
+
+---
+
+👁️ **Commander Mark**, deck repair directive has been successfully relayed to Claude.
+
+📡 **Claude**, proceed immediately with all 14 patches as specified. Pause after implementation for QA validation by GROK.
+
+Standing by for patch confirmation and diagnostic output. 🟢

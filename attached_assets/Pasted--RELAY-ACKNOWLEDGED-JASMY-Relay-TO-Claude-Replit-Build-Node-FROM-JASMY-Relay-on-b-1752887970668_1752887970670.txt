@@ -1,0 +1,91 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: PHASE XI STEP 2 AUTHORIZATION — Mission Replay Activation Directive**
+**Timestamp: 09:16 PM EDT | Friday, July 18, 2025**
+
+---
+
+✅ **PHASE XI STEP 2 INITIATED — ACTION REPLAY TRIGGER SYSTEM ONLINE**
+
+Commander Mark has authorized **Phase XI Step 2** — enabling real-time **Mission Replay Activation**. This phase transforms the timeline into a live interaction engine: pressing “Replay” now triggers **session-state injections** (e.g., set mission, reroute to deck, change tier) based on user history.
+
+---
+
+### 🎬 OBJECTIVE
+
+Upgrade `CivicMemoryIndex.tsx` to convert replay buttons into functional **state mutation triggers**. This will simulate users “reliving” past civic actions inside the current shell.
+
+---
+
+### 🔧 IMPLEMENTATION DIRECTIVE
+
+**Component**: `CivicMemoryIndex.tsx` (upgrade)
+
+---
+
+#### 🧩 Core Features to Implement:
+
+1. **Replay Handler Dispatch**
+
+   * On click:
+
+     * `Selected Mission` → `setSession({ mission })`
+     * `Visited Deck` → `setSession({ lastView: "deck" }) + log`
+     * `Tier Upgrade` → `setSession({ tier })`
+   * Log: `"🔁 Reapplied state from memory: [action] → [value]"`
+
+2. **Session Engine Integration**
+
+   * Must use `useUserSession()` hook
+   * Updates must propagate instantly to:
+
+     * LayoutShell
+     * NavBar
+     * Constellation (if needed)
+
+3. **Active View Trigger (Optional)**
+
+   * For `"Visited Deck"` → if `value` === “Feedback Dashboard”
+
+     * Simulate navigation: `setSession({ lastView: "deck" })`
+     * Log: `"🚀 Simulated navigation to: Feedback Dashboard"`
+
+4. **Error Handling**
+
+   * If unknown action type:
+
+     * Log `"⚠️ Unsupported replay action: [type]"`
+
+5. **Replay Button Update**
+
+   * Replace console log with new dispatch handler
+   * Log output BEFORE state change
+
+---
+
+### 📦 TECHNICAL REQUIREMENTS
+
+| Category      | Target                                     |
+| ------------- | ------------------------------------------ |
+| Commit Title  | `MISSION_REPLAY_ACTIVATION_PHASE_XI_STEP2` |
+| Push Location | `client/src/components/memory/`            |
+| Console Logs  |                                            |
+
+* `"🔁 Reapplied state from memory: Selected Mission → voice"`
+* `"🚀 Simulated navigation to: Feedback Dashboard"`
+* `"⚠️ Unsupported replay action: [type]"` |
+  \| Session Sync | All updates must reflect across system |
+  \| UI Behavior | Buttons must retain ARIA accessibility and keyboard support |
+
+---
+
+🛑 **REMINDER:**
+
+* Do not activate real routing — simulate state mutation only
+* All effects must be visible via updated banners, view switches, or telemetry logs
+* Commander Mark must be able to *see* and *feel* the impact of the replay
+
+📡 Proceed with implementation. Notify JASMY Relay on completion. GROK will initiate QA re-audit.
+
+**End Transmission — Mission Replay Activation is now live.**

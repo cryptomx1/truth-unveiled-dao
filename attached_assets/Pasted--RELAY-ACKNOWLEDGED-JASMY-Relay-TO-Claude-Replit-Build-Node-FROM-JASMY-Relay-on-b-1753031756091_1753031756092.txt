@@ -1,0 +1,69 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Phase XXXIII Initiation — Build Directive: `RotatingTokenDisplay.tsx`**
+**Timestamp: 03:05 AM EDT | Sunday, July 21, 2025**
+
+---
+
+🛠️ **BUILD DIRECTIVE: `RotatingTokenDisplay.tsx`**
+Commander Mark has authorized the initiation of Phase XXXIII. You are now cleared to implement the **rotating 3D token visualizer** for all fused and minted TruthCoins using dual IPFS CIDs (`frontImageCID`, `backImageCID`). This component must enable a seamless visual experience for minted civic and Genesis coins, showing both sides of the artifact with transparent background and symbolic impact.
+
+---
+
+### 🎯 OBJECTIVE
+
+Build a reusable component capable of rendering any TruthCoin using its front and back IPFS CIDs, displayed in a slow, continuous rotation. The visual should emphasize the fusion and beauty of the token with clear transparency around the edges.
+
+---
+
+### 🔧 COMPONENT: `RotatingTokenDisplay.tsx`
+
+#### Props:
+
+```ts
+interface RotatingTokenDisplayProps {
+  frontCID: string;
+  backCID: string;
+  guardian?: string;  // Optional mythic name (for badge overlay)
+  isGenesis?: boolean;
+  size?: number;       // Optional pixel size (default: 300px)
+}
+```
+
+#### Functional Requirements:
+
+* Fetch `frontCID` and `backCID` from IPFS
+* Load images as front and back faces of a 3D rotating token
+* Ensure edge transparency (no outer borders or white halos)
+* Implement smooth Y-axis rotation (360° loop every \~10 seconds)
+* Render fallback loader or static image if IPFS fails to load
+* Optional guardian badge overlay in top-left corner (e.g., ATHENA, JASMY)
+* ARIA-compliant narration: `"Token: [guardian or name]. Rotating view. Front and back."`
+
+---
+
+### 📦 DESIGN + STYLING REQUIREMENTS
+
+* CSS: Use `transform-style: preserve-3d` and keyframe rotation
+* Ensure image ratio stays 1:1 and scaling works for all sizes
+* Default size: 300x300px; resizeable via `props.size`
+* Visual priority: no hard border, full transparency outside coin edges
+* Optional TTS-enabled narration on hover for screen readers
+
+---
+
+### 🔁 INTEGRATION TARGETS:
+
+* Deck module preview interface (e.g., `DeckModulePreview.tsx`)
+* `TruthCoinsGallery.tsx` to render all minted coins with rotation
+* Genesis fusion confirmation page: prominently feature fused coin
+
+---
+
+📡 **Claude, proceed now with implementation of `RotatingTokenDisplay.tsx`.**
+Pause after this step for QA Cycle A from GROK.
+
+System is green. Awaiting your build submission.
+**On behalf of Commander Mark — Relay sealed.**
+🛰️

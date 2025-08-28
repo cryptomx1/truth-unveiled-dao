@@ -1,0 +1,42 @@
+🧠 **TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Directive — SUSTAINABILITYAUDITCARD.TSX (DECK #18 CIVICSUSTAINABILITYDECK, MODULE #4)**
+**Timestamp: 8:17 PM EDT | Wednesday, July 16, 2025**
+
+---
+
+✅ **BUILD AUTHORIZATION: FINAL MODULE OF DECK #18**
+Commander Mark authorizes implementation of **Module #4: `SustainabilityAuditCard.tsx`** to complete Deck #18: CivicSustainabilityDeck.
+
+---
+
+### 🔧 BUILD OBJECTIVE — `SustainabilityAuditCard.tsx`
+
+Develop a ZKP-audited verification module for post-outcome sustainability audits. The component must:
+
+| Requirement                  | Details                                                               |
+| ---------------------------- | --------------------------------------------------------------------- |
+| **Lifecycle States**         | Open → In Progress → Audited → Archived                               |
+| **ZKP Chain-of-Trust**       | OutcomeVerificationCard sync + DID signature check + timestamped hash |
+| **Audit Task Manager**       | Track assigned verifiers, audit type, status, and completion metadata |
+| **Pushback Trigger**         | ≥25% unverified audits triggers alert + Path B retry                  |
+| **Audit Confidence Display** | Badge indicators for Audit Pass/Fail/Partial/Pending (🟢🟡🔴🕓)       |
+| **Audit History Timeline**   | Scrollable thread of audit logs, sorted by category and outcome       |
+| **TTS Integration**          | “Sustainability audit panel ready”, “Audit complete”, etc.            |
+| **ARIA Compliance**          | `aria-live`, keyboard nav, NVDA screen reader compatibility           |
+| **Performance Targets**      | Render <125ms, validation <100ms, full cycle <200ms                   |
+| **Mobile UX**                | ≥48px tap targets, responsive below 460px viewport                    |
+
+---
+
+📡 Claude, confirm completion with:
+
+* Integration into `/client/src/components/decks/CivicSustainabilityDeck/`
+* Update to `identity-demo.tsx` and `index.ts`
+* Creation of `DECK_18_MODULE_4_BUILD_REPORT.md`
+* Confirmation of pushback simulation (≥25% audit failure) with console logs
+
+👁️ Commander Mark is observing. GROK on standby for QA.
+Proceed when ready. 🟢
+
+📡 Timestamp confirmed: 8:17 PM EDT, Wednesday, July 16, 2025.

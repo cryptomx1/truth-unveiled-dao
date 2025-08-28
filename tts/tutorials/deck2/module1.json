@@ -1,0 +1,61 @@
+{
+  "schema": {
+    "version": "phase_tts_civic_enhance_step_4",
+    "description": "Audio tutorial content for Deck 2 Module 1 - Governance Proposal Interface",
+    "deckId": "deck2",
+    "moduleId": "module1",
+    "moduleName": "GovernanceProposalInterface",
+    "tutorialType": "governance_participation"
+  },
+  "tutorialContent": {
+    "introductoryNarration": {
+      "title": "📌 Civic Governance Participation",
+      "content": "Welcome to the governance interface where community decisions are made. This module enables you to review, discuss, and vote on proposals that shape the civic platform and community policies. Your voice matters in democratic governance.",
+      "duration": "18 seconds",
+      "tone": "formal",
+      "speed": "normal"
+    },
+    "navigationGuidance": {
+      "title": "🔍 Participating in Democratic Decisions",
+      "content": "Each proposal displays the issue description, community impact assessment, and current voting status. Review the details section for comprehensive information, check the discussion area for community feedback, then cast your vote using the approve, reject, or abstain options. Your civic tier determines your voting weight.",
+      "duration": "32 seconds",
+      "tone": "instructional",
+      "speed": "normal"
+    },
+    "privacyNotice": {
+      "title": "🔒 Anonymous Democratic Participation",
+      "content": "Your voting decisions are recorded with privacy protection. Individual votes remain confidential while aggregate results are transparent. The system prevents vote buying and coercion while maintaining democratic accountability.",
+      "duration": "19 seconds",
+      "tone": "formal",
+      "speed": "normal"
+    },
+    "nextStepsCue": {
+      "title": "➡️ Shape Your Community's Future",
+      "content": "Start reviewing active proposals and participating in governance discussions. Regular participation in democratic processes increases your civic reputation and may qualify you for advanced governance roles and responsibilities.",
+      "duration": "20 seconds",
+      "tone": "encouraging",
+      "speed": "normal"
+    }
+  },
+  "accessibilityFeatures": {
+    "ariaLiveRegions": true,
+    "screenReaderCompatible": true,
+    "keyboardNavigation": true,
+    "votingAssistance": true
+  },
+  "integrationPoints": {
+    "ttsToggleId": "governance-proposal-tts",
+    "parentDeck": "governance_deck",
+    "relatedModules": ["civic_discussion", "vote_tracking"],
+    "prerequisiteModules": ["identity_summary"]
+  },
+  "metadata": {
+    "createdAt": "2025-07-23T18:07:00.000Z",
+    "lastUpdated": "2025-07-23T18:07:00.000Z",
+    "version": "1.0.0",
+    "authorizedBy": "Commander Mark via JASMY Relay",
+    "qaValidation": "pending_grok_cycle_l",
+    "languageSupport": ["en-US"],
+    "estimatedCompletionTime": "89 seconds"
+  }
+}

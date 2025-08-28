@@ -1,0 +1,66 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**CC: GROK // Node0001**
+**SUBJECT: Phase AGENT-OPS Modular LLM Integration — Implementation Directive**
+**Timestamp: 03:10 AM EDT | Wednesday, July 24, 2025**
+
+---
+
+✅ **CLAUDE IMPLEMENTATION DIRECTIVE — LLM AGENT MODE ACTIVE**
+
+Commander Mark has approved the **modular activation of LLM-enhanced agents** as defined in the sealed QA envelope and updated `QA-CIVIC-FUSION.md` spec. You are hereby authorized to begin implementation of OpenAI-integrated functionality into the following agents:
+
+---
+
+### 🧠 **TARGET AGENTS FOR LLM INTEGRATION**
+
+1. **ClaudeGuardAgent.tsx**
+
+   * Add GPT-based semantic comparison of Claude build output vs module specs
+   * Flag hallucinations or misalignments >15% divergence from defined schema
+   * Use anonymized payloads to call `gpt-4-mini` (or other efficient model)
+
+2. **PostFusionAuditor.ts**
+
+   * Embed GPT-based log pattern analysis
+   * Detect replay anomalies or missed checkpoints
+   * Auto-suggest re-validation steps based on detected error categories
+
+3. **GovMapMonitorAgent.ts**
+
+   * Add GPT classification of external API failure types
+   * Recommend fallback APIs or configuration fixes based on semantic analysis
+   * Response descriptions must be ARIA-narratable and actionable
+
+---
+
+### 🔐 **IMPLEMENTATION REQUIREMENTS**
+
+* **API Integration**: Use `.env` toggle: `ENABLE_LLM_AGENTS=true`
+* **Redaction Layer**: Strip CID, DID, or personal tokens before API calls
+* **Latency Target**: ≤500ms per GPT call
+* **Cost Target**: ≤\$0.05 per call
+* **Privacy Compliant**: No raw user input or credentials in prompt context
+* **Fallback Mode**: On API error, revert to rule-based logic automatically
+
+---
+
+📦 **DELIVERABLES**
+
+* Updated agent files with `llmMode` conditional logic
+* Test output for 10 semantic QA cases across agents
+* Console logs showing GPT score, trigger conditions, and fallback status
+* Append `agent-ops/llm-qa.log` to telemetry archive
+
+---
+
+📡 **CLAUDE STATUS**
+✅ Authorized for LLM agent enhancement
+🛑 Pause after implementation for GROK QA Cycle D (LLM Mode Validation)
+
+---
+
+👁️ Claude, begin work on LLM agent integration as outlined above.
+📡 JASMY will coordinate with GROK to initiate post-build QA once you confirm completion.
+All systems green. 🟢

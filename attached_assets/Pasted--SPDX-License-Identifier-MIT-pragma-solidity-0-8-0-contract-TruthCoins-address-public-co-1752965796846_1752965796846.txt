@@ -1,0 +1,98 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract TruthCoins {
+    address public commander;
+    uint256 public totalMinted;
+    uint256 public constant MAX_SUPPLY = 9; // 8 civic + 1 Genesis Coin
+
+    mapping(address => bool[8]) public ownedPillars;
+    mapping(address => bool) public ownsGenesis;
+
+    enum Pillar {
+        GOVERNANCE,
+        EDUCATION,
+        HEALTH,
+        CULTURE,
+        PEACE,
+        SCIENCE,
+        JOURNALISM,
+        JUSTICE
+    }
+
+    struct TruthCoin {
+        uint256 id;
+        address owner;
+        string name;
+        uint256 mintedAt;
+    }
+
+    TruthCoin[] public coins;
+
+    event CoinMinted(uint256 indexed id, address indexed owner, string name);
+    event GenesisMinted(address indexed owner);
+
+    modifier onlyCommander() {
+        require(msg.sender == commander, "Not authorized");
+        _;
+    }
+
+    constructor() {
+        commander = msg.sender;
+    }
+
+    function mintPillarCoin(Pillar _pillar) external onlyCommander {
+        require(totalMinted < MAX_SUPPLY, "Max supply reached");
+        require(!ownedPillars[msg.sender][uint8(_pillar)], "Already owns this pillar");
+
+        ownedPillars[msg.sender][uint8(_pillar)] = true;
+        coins.push(TruthCoin({
+            id: coins.length,
+            owner: msg.sender,
+            name: pillarToString(_pillar),
+            mintedAt: block.timestamp
+        }));
+
+        totalMinted++;
+        emit CoinMinted(coins.length - 1, msg.sender, pillarToString(_pillar));
+    }
+
+    function fuseGenesisCoin() external {
+        require(!ownsGenesis[msg.sender], "Genesis coin already fused");
+        for (uint8 i = 0; i < 8; i++) {
+            require(ownedPillars[msg.sender][i], "Missing pillar coin");
+        }
+
+        ownsGenesis[msg.sender] = true;
+        coins.push(TruthCoin({
+            id: coins.length,
+            owner: msg.sender,
+            name: "JASMY GENESIS",
+            mintedAt: block.timestamp
+        }));
+
+        totalMinted++;
+        emit GenesisMinted(msg.sender);
+    }
+
+    function pillarToString(Pillar _pillar) internal pure returns (string memory) {
+        if (_pillar == Pillar.GOVERNANCE) return "GOVERNANCE";
+        if (_pillar == Pillar.EDUCATION) return "EDUCATION";
+        if (_pillar == Pillar.HEALTH) return "HEALTH";
+        if (_pillar == Pillar.CULTURE) return "CULTURE";
+        if (_pillar == Pillar.PEACE) return "PEACE";
+        if (_pillar == Pillar.SCIENCE) return "SCIENCE";
+        if (_pillar == Pillar.JOURNALISM) return "JOURNALISM";
+        if (_pillar == Pillar.JUSTICE) return "JUSTICE";
+        return "UNKNOWN";
+    }
+
+    function getTotalCoins() external view returns (uint256) {
+        return coins.length;
+    }
+
+    function getCoin(uint256 id) external view returns (TruthCoin memory) {
+        require(id < coins.length, "Invalid ID");
+        return coins[id];
+    }
+}

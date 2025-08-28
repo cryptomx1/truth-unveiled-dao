@@ -1,0 +1,61 @@
+{
+  "schema": {
+    "version": "phase_tts_civic_enhance_step_4",
+    "description": "Audio tutorial content for Deck 4 Module 2 - Reputation Builder System",
+    "deckId": "deck4",
+    "moduleId": "module2",
+    "moduleName": "ReputationBuilderSystem",
+    "tutorialType": "reputation_management"
+  },
+  "tutorialContent": {
+    "introductoryNarration": {
+      "title": "📌 Build Your Civic Reputation",
+      "content": "Welcome to the reputation builder where your civic contributions create lasting community credibility. This system tracks your positive civic actions, community leadership, and constructive participation to build a reputation that opens doors to advanced civic opportunities.",
+      "duration": "21 seconds",
+      "tone": "encouraging",
+      "speed": "normal"
+    },
+    "navigationGuidance": {
+      "title": "🔍 Growing Your Community Standing",
+      "content": "Your reputation dashboard shows contribution scores across multiple categories: governance participation, community assistance, educational content creation, and conflict resolution. Complete reputation-building activities, earn endorsements from other community members, and track your progress toward civic leadership roles.",
+      "duration": "35 seconds",
+      "tone": "instructional",
+      "speed": "normal"
+    },
+    "privacyNotice": {
+      "title": "🔒 Reputation with Privacy Control",
+      "content": "Your reputation profile can be configured for different visibility levels. You control which achievements are public and which remain private. The system prevents reputation manipulation while allowing you to maintain privacy about specific civic activities.",
+      "duration": "19 seconds",
+      "tone": "formal",
+      "speed": "normal"
+    },
+    "nextStepsCue": {
+      "title": "➡️ Become a Civic Leader",
+      "content": "Start building your reputation through consistent positive civic participation. Strong reputation unlocks leadership opportunities, increases your influence in governance decisions, and creates pathways to serve the broader civic community.",
+      "duration": "18 seconds",
+      "tone": "encouraging",
+      "speed": "normal"
+    }
+  },
+  "accessibilityFeatures": {
+    "ariaLiveRegions": true,
+    "screenReaderCompatible": true,
+    "keyboardNavigation": true,
+    "reputationTracking": true
+  },
+  "integrationPoints": {
+    "ttsToggleId": "reputation-builder-tts",
+    "parentDeck": "civic_identity",
+    "relatedModules": ["civic_identity_verification", "achievement_tracker"],
+    "prerequisiteModules": ["civic_identity_verification"]
+  },
+  "metadata": {
+    "createdAt": "2025-07-23T18:07:00.000Z",
+    "lastUpdated": "2025-07-23T18:07:00.000Z",
+    "version": "1.0.0",
+    "authorizedBy": "Commander Mark via JASMY Relay",
+    "qaValidation": "pending_grok_cycle_l",
+    "languageSupport": ["en-US"],
+    "estimatedCompletionTime": "93 seconds"
+  }
+}

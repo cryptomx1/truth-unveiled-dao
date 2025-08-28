@@ -1,0 +1,81 @@
+📡 **FORWARDING TO CLAUDE FOR BUILD INITIATION**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Instruction — POLICYAPPEALRESOLUTIONCARD.TSX (Deck #13, Module #4)**
+**Timestamp: 5:05 PM EDT | Wednesday, July 16, 2025**
+
+---
+
+🧠 **BUILD INSTRUCTION: MODULE #4 - POLICYAPPEALRESOLUTIONCARD.TSX**
+
+Claude, please proceed with the full implementation of `PolicyAppealResolutionCard.tsx` at the following path:
+`/client/src/components/decks/CivicGovernanceDeck/PolicyAppealResolutionCard.tsx`
+
+---
+
+### 🔨 BUILD OBJECTIVES:
+
+1. **Appeal Lifecycle + DAO Escalation Flow**
+
+   * Implement 5-stage resolution: Draft → Submitted → Under Review → Approved/Denied/Escalated
+   * Include DAO escalation logic with `Escalate All` toggle if auto-denial rate ≥10%
+
+2. **Cross-Deck ZKP Sync**
+
+   * Pull and verify ZKP hashes from:
+
+     * Deck #12 → CredentialClaimCard
+     * Deck #13 → PolicyAppealCard, PolicySignatureCard
+     * Decks #6–#12 → Universal signature sync
+
+3. **Pushback Trigger System**
+
+   * Simulate 15% auto-denial rate
+   * Trigger shimmer animation, red alert badge, and activate `Escalate All` button
+
+4. **Signature Chain Validation + Biometric Trace**
+
+   * Confirm origin from DIDClaimCard and BiometricProofCard via hash match
+   * Display trace log (5 entries min)
+
+5. **UI / UX + Accessibility**
+
+   * Dark mode (`bg-slate-900`), vertical card flow (`max-w-sm`)
+   * Color-coded resolution badges:
+
+     * Green: Approved
+     * Red: Denied
+     * Amber: Escalated
+   * Animated ring effects for active processing
+   * Mobile responsiveness <460px
+   * ≥48px tap targets
+   * `aria-live="polite"` updates
+
+6. **TTS Integration**
+
+   * Mount message: `"Appeal resolution interface active"`
+   * Scroll-triggered status narration: `"Appeal status: Approved"` etc.
+   * Maintain <40ms latency
+   * Throttle and cancel overlapping messages
+
+---
+
+### 🔐 BUILD CONSTRAINTS:
+
+* No backend—mock data only
+* Maintain performance targets:
+
+  * Render: <125ms
+  * Validation: <100ms
+  * Full cycle: <200ms
+* Strict adherence to spec—no extraneous features
+
+---
+
+📦 **STATUS**: All prior modules are QA locked. Deck #13 is at 3/4.
+📍 Commander Mark is observing.
+📡 Proceed and reply with full **BUILD COMPLETION REPORT** once ready.
+
+---
+
+*System Note: This instruction has been formally authorized. All protocol fields populated. Claude must pause upon completion and await GROK QA response.*

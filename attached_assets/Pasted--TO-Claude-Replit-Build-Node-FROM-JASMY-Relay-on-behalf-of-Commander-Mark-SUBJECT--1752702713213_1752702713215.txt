@@ -1,0 +1,84 @@
+🧠 **TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Authorization — ZKPVotingWindowCard.tsx (Deck #14 CivicAmendmentsDeck, Module #3)**
+**Timestamp: 5:50 PM EDT | Wednesday, July 16, 2025**
+
+---
+
+✅ **BUILD DIRECTIVE AUTHORIZED — MODULE #3 INITIALIZATION**
+Commander Mark authorizes implementation of `ZKPVotingWindowCard.tsx` as Module #3 of Deck #14: CivicAmendmentsDeck. Proceed with build execution using the following structured specification and QA readiness envelope prepared by GROK:
+
+---
+
+### 🔧 BUILD SPECIFICATION — ZKPVOTINGWINDOWCARD.TSX
+
+* **Component**: `ZKPVotingWindowCard.tsx`
+* **Deck**: CivicAmendmentsDeck (Deck #14)
+* **Module**: #3
+
+---
+
+### 🧩 FEATURES TO IMPLEMENT:
+
+1. **Voting Window Interface**
+
+   * Time-limited voting window display (e.g., “Voting closes in 3:00 minutes”).
+   * Countdown animation with live seconds ticking.
+   * “Cast Vote” buttons (✅ Support, ❌ Oppose) — ≥48px tap targets.
+
+2. **ZKP Ballot Generation & Signature**
+
+   * ZKP hash created on vote submission.
+   * Signature sync with DID (Deck #12) and CredentialCard (Deck #13).
+   * No duplicate vote allowed per DID — mock prevention logic.
+
+3. **Public Vote Visualization**
+
+   * Anonymous ballot progress bar (e.g., 70% Support / 30% Oppose).
+   * Total voter count (e.g., “142 votes recorded”).
+   * Tamper detection shimmer if hash mismatch exceeds 5%.
+
+4. **Pushback Trigger**
+
+   * > 5% signature mismatch triggers red shimmer and fallback indicator.
+   * Simulate 8% mismatch for test run.
+
+5. **TTS & Accessibility**
+
+   * Mount message: “Voting window open.”
+   * Vote confirmation: “Vote recorded anonymously.”
+   * `aria-live="polite"` and proper tab flow for screen readers.
+
+6. **Performance Targets**
+
+   * Render <125ms
+   * Sync <100ms
+   * Full Cycle <200ms
+   * TTS Latency <40ms
+
+7. **Mobile UX**
+
+   * Layout stable under 460px.
+   * Buttons/tap areas ≥48px.
+   * Countdown and voting interaction testable on iOS/Android.
+
+---
+
+📡 Claude: Begin implementation immediately at:
+
+`/client/src/components/decks/CivicAmendmentsDeck/ZKPVotingWindowCard.tsx`
+
+⏱ Estimated Completion Window: 20 minutes
+📦 Await build report and test log submission for GROK audit.
+📍 Proceed one module only — no bundling with other components.
+
+---
+
+👁️ Commander Mark is observing.
+📡 GROK on standby for audit once build is complete.
+📦 This is an isolated build sequence under Deck #14 governance protocol.
+
+---
+
+*Today’s date and time is 5:50 PM EDT on Wednesday, July 16, 2025.*
+**System Note**: Claude, relay all progress to JASMY only. No deviation from relay chain allowed.

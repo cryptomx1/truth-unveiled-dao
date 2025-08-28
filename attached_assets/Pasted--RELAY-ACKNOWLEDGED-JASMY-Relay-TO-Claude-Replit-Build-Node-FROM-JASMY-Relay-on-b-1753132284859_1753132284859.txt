@@ -1,0 +1,84 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Implementation Authorization — Civic Fusion Cycle Phase 1 Build Directive**
+**Timestamp: 11:40 PM EDT | Tuesday, July 23, 2025**
+
+---
+
+✅ **CLAUDE, YOU ARE NOW AUTHORIZED TO PROCEED WITH PHASE 1 OF THE CIVIC FUSION CYCLE.**
+
+This relay confirms that QA pre-staging by GROK has been sealed for the **Civic Fusion Cycle**, integrating:
+
+* Phase X-M → Guardian onboarding + pillar selection
+* Phase 0-X → TP-based fusion + badge binding
+* Phase XXVIII → ZKP mint initiation + verification
+
+You are now cleared to implement **Civic Fusion Cycle — Step 1: Onboarding Validation**.
+
+---
+
+## 🔨 CLAUDE BUILD INSTRUCTIONS — STEP 1 COMPONENTS
+
+**1. CivicFusionRouter.tsx**
+Create a parent route wrapper for the new cycle:
+`/fusion` → contains child paths for dashboard, status, onboarding.
+
+**2. CivicMissionOnboardingCard.tsx**
+Refactor with embedded CID-tier detection. Mission buttons must only activate if the CID tier is eligible (≥Citizen). Route to `/fusion/onboarding/:missionId`.
+
+**3. CivicCompass.tsx**
+Upon mission selection, load pillar recommendations. Ensure ARIA narration:
+
+* “You’ve selected \[MISSION]. Recommended Pillar: \[PILLAR] Guardian: \[GUARDIAN].”
+* Example mapping: Voice → Governance → Athena
+
+**4. FusionEligibilityGate.tsx**
+Reusable component that checks TP from vault. If <500 TP, display ARIA:
+
+> “Fusion threshold not yet reached. Earn more Truth Points.”
+> If ≥500 TP, unlock route `/fusion/request`.
+
+**5. Route Activation**
+Ensure `/fusion/onboarding`, `/fusion/status`, and `/fusion/request` are registered in `App.tsx`. All routes must include ARIA regions and mobile support <460px.
+
+---
+
+## 📋 DELIVERABLES FOR THIS STEP
+
+| Component                      | Route                           | Description             |
+| ------------------------------ | ------------------------------- | ----------------------- |
+| CivicMissionOnboardingCard.tsx | `/fusion/onboarding`            | Choose civic mission    |
+| CivicCompass.tsx               | `/fusion/onboarding/:missionId` | Route to pillar intro   |
+| FusionEligibilityGate.tsx      | `/fusion/request`               | TP threshold validation |
+| CivicFusionRouter.tsx          | `/fusion/*`                     | Main fusion cycle shell |
+| App.tsx                        | Global                          | Route registration      |
+
+---
+
+📎 **QA BENCHMARKS FROM GROK**
+
+* ARIA live narration: <100ms
+* Mission routing: 5 valid, 2 invalid CID paths
+* TP ≥500 detection: 6 valid, 2 insufficient
+* Mobile layout: tap targets ≥48px
+
+🔐 **QA.env Hash**: `0x4f6a8b3c5e9d2f7b1a0c5d4e6f3b9a2c8e1d0f5b`
+
+---
+
+🛑 **Claude**, pause upon completion of **Step 1** and await GROK QA audit.
+Do not proceed to Step 2 (TP Verification + Mint UI) until authorized.
+Ensure full ARIA compliance and telemetry logging in all components.
+
+🧠 Claude, your performance on this fusion cycle will become the foundation for the **Genesis DAO Identity Loop**. Precision is critical.
+
+---
+
+👁️ Commander Mark, build relay has been transmitted.
+📡 Claude is cleared for Phase Civic Fusion Cycle Step 1: Onboarding Validation.
+📡 GROK will initiate QA Cycle A upon completion.
+
+**All systems green.**
+**Timestamp: 11:40 PM EDT | Tuesday, July 23, 2025**
+📡 Standing by for build confirmation.

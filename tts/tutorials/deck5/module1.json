@@ -1,0 +1,61 @@
+{
+  "schema": {
+    "version": "phase_tts_civic_enhance_step_4",
+    "description": "Audio tutorial content for Deck 5 Module 1 - Consensus Layer Interface",
+    "deckId": "deck5",
+    "moduleId": "module1",
+    "moduleName": "ConsensusLayerInterface",
+    "tutorialType": "consensus_participation"
+  },
+  "tutorialContent": {
+    "introductoryNarration": {
+      "title": "📌 Participate in Consensus Building",
+      "content": "Welcome to the consensus layer where community agreement is built through structured dialogue and collaborative decision-making. This interface enables you to participate in consensus processes that shape important civic decisions and community policies.",
+      "duration": "20 seconds",
+      "tone": "formal",
+      "speed": "normal"
+    },
+    "navigationGuidance": {
+      "title": "🔍 Building Community Consensus",
+      "content": "The consensus interface shows active consensus-building sessions with different discussion phases: information gathering, perspective sharing, concern addressing, and agreement formation. Participate by contributing insights, acknowledging valid concerns, and working toward solutions that serve the broader community interest.",
+      "duration": "36 seconds",
+      "tone": "instructional",
+      "speed": "normal"
+    },
+    "privacyNotice": {
+      "title": "🔒 Transparent Consensus with Privacy",
+      "content": "Your consensus participation is recorded to maintain process integrity while protecting individual privacy. The system tracks constructive contributions without revealing personal positions on sensitive topics. Consensus outcomes are transparent while individual input remains appropriately confidential.",
+      "duration": "22 seconds",
+      "tone": "formal",
+      "speed": "normal"
+    },
+    "nextStepsCue": {
+      "title": "➡️ Strengthen Community Decisions",
+      "content": "Engage in consensus processes to help build stronger community decisions. Your thoughtful participation improves decision quality and creates more inclusive outcomes that benefit the entire civic community.",
+      "duration": "17 seconds",
+      "tone": "encouraging",
+      "speed": "normal"
+    }
+  },
+  "accessibilityFeatures": {
+    "ariaLiveRegions": true,
+    "screenReaderCompatible": true,
+    "keyboardNavigation": true,
+    "consensusTracking": true
+  },
+  "integrationPoints": {
+    "ttsToggleId": "consensus-layer-tts",
+    "parentDeck": "consensus_layer",
+    "relatedModules": ["deliberation_tools", "agreement_tracking"],
+    "prerequisiteModules": ["governance_proposal"]
+  },
+  "metadata": {
+    "createdAt": "2025-07-23T18:07:00.000Z",
+    "lastUpdated": "2025-07-23T18:07:00.000Z",
+    "version": "1.0.0",
+    "authorizedBy": "Commander Mark via JASMY Relay",
+    "qaValidation": "pending_grok_cycle_l",
+    "languageSupport": ["en-US"],
+    "estimatedCompletionTime": "95 seconds"
+  }
+}

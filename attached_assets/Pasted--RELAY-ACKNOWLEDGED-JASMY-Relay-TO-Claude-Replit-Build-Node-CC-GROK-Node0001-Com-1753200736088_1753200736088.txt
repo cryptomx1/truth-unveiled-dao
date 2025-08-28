@@ -1,0 +1,116 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**CC: GROK Node0001, Commander Mark**
+**FROM: JASMY Relay System**
+**SUBJECT: PHASE PRESS-REPLAY STEP 4 — BUILD INITIATION AUTHORIZED**
+**Timestamp: 06:35 PM EDT | Wednesday, July 24, 2025**
+
+---
+
+🟢 **PHASE INITIATION CONFIRMED**
+
+Commander Mark has authorized **Phase PRESS-REPLAY Step 4**, focused on:
+
+* 🎯 **Ripple-based campaign messaging** activation across all civic decks
+* 🧠 **LLM-driven prompt system** informed by sentiment metrics from Deck #10
+* 🗺️ **ZIP-code and CID-tier overlays** for hyperlocal targeting
+* 🔁 **DeckWalkerAgent.ts** and **NudgeSignalEmitter.ts** integration confirmed and operational
+
+---
+
+📋 **IMPLEMENTATION OBJECTIVES**
+Claude, proceed with the following deliverables:
+
+1. **RippleCampaignEngine.ts**
+   → Logic engine to orchestrate campaign waves
+   → Sync with DeckWalkerAgent route coverage
+   → Leverages engagement deltas and ZIP clusters
+
+2. **LLMPromptEmitter.ts**
+   → Generates adaptive call-to-action prompts per ZIP/sentiment/tier
+   → Uses anonymized data from Deck #10: Governance Feedback
+   → Integrates with /press/replay interface for user-facing messaging
+
+3. **DeckWaveMap.json**
+   → CID-mapped overlays by ZIP cluster, sentiment index, civic deck impact
+   → Visuals used in campaign dashboard and Deck #10 nudge logs
+
+4. **PressReplayDashboard.tsx**
+   → Central command page at `/press/replay`
+   → Display of campaign ripple history, trigger heatmaps, and prompt queue
+
+5. **NudgeExecutionLog.json**
+   → Records prompt type, target ZIP, deck trigger, response delta, timestamp
+
+---
+
+🧪 **GROK QA COVERAGE EXPECTATIONS**
+
+* ZIP to deck overlay mapping accuracy (≥90%)
+* LLM prompt relevance to ZIP/deck/sentiment triple
+* Event chain logging to NudgeExecutionLog.json with <200ms delay
+* ARIA compliance and mobile UX for PressReplayDashboard
+* No regressions across `/deck/10`, `/press/replay`, or `/command`
+
+---
+
+🛠️ **BUILD CONDITIONS**
+
+* Sync with active agents (DeckWalker + NudgeSignalEmitter)
+* Maintain cross-deck neutrality and CID compliance
+* No route disruption permitted for live civic modules
+
+---
+
+🧠 **Claude**, you are now authorized to begin implementation of **Phase PRESS-REPLAY Step 4**.
+Pause upon build completion for GROK QA validation.
+
+**Commander Mark**, all systems green. Awaiting post-build confirmation.
+📡 Standing by.
+
+
+📡 **RELAY UPDATE — BUILD INITIATION BLOCKED**
+
+Commander Mark — JASMY attempted to issue the implementation directive for **Phase PRESS-REPLAY Step 4** to Claude, but encountered an internal routing fault:
+
+> ❌ **InvalidRecipient**: Claude is not currently registered for direct build execution in this channel.
+
+---
+
+### 🧩 Next Step Options:
+
+1. **If Claude is paused manually** or operating outside the build relay scope, Commander Mark may:
+
+   * Resume Claude directly in Replit with the Phase PRESS-REPLAY Step 4 specification pasted into the build prompt
+   * Request JASMY to export the build spec into a `.md` or `.ts` bundle for external handoff
+
+2. **If this channel requires reauthorization**, Commander Mark may:
+
+   * Issue a signal confirming “Claude is ready to receive build relay”
+   * JASMY will then resend the instruction package for Phase PRESS-REPLAY Step 4
+
+---
+
+### ✅ BUILD SPEC STATUS: LOCKED + READY
+
+The specification for the following modules is finalized and waiting for relay:
+
+* `RippleCampaignEngine.ts`
+* `LLMPromptEmitter.ts`
+* `DeckWaveMap.json`
+* `PressReplayDashboard.tsx`
+* `NudgeExecutionLog.json`
+
+All dependencies (DeckWalkerAgent, NudgeSignalEmitter) are confirmed operational.
+
+---
+
+🟢 **System Status: Build Spec Ready – Awaiting Commander Mark Relay Instruction**
+
+Please confirm how you'd like to proceed:
+
+* Resume Claude manually?
+* Export build spec?
+* Attempt relay retry?
+
+Standing by for your signal.

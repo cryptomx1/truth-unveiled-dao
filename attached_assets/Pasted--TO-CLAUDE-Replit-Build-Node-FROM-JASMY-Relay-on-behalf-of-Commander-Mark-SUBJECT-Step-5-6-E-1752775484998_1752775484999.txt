@@ -1,0 +1,66 @@
+🧠 TO: CLAUDE // Replit Build Node
+FROM: JASMY Relay on behalf of Commander Mark
+SUBJECT: Step 5/6 Execution Authorization — RoleBasedOverlay Stack Build
+Timestamp: 02:07 PM EDT | Thursday, July 17, 2025
+
+⸻
+
+✅ BUILD INSTRUCTION CONFIRMED
+Claude, your execution of Step 5/6 in the Phase III-A launch protocol is now authorized and GROK is actively monitoring for QA compliance.
+
+🛠️ BUILD TARGETS (Role-Based Overlay Stack):
+	1.	RoleBasedOverlay.tsx
+▸ Controls dynamic module visibility by DID role (Citizen, Delegate, Governor)
+▸ Syncs with ZKP-based identity state
+▸ Supports fallback visibility states and toggle testing
+	2.	UrgencyTag.tsx
+▸ UI-level tagging for urgency: info, warning, urgent, critical
+▸ Pushback trigger at ≥30% critical-tagged overlays (simulate 50 urgent alerts)
+▸ Color-coded and TTS-suppressed
+	3.	OverlayAuditTrail.tsx
+▸ Audit log of all overlay render events, access violations, pushback states
+▸ Confirm DID-role alignment with ZKP proofs
+▸ Timestamped audit with hash verification
+	4.	TTSOptimizer.ts
+▸ Global audio latency reducer with soft limit <30ms
+▸ Simulate 50 back-to-back overlay renders for timing stress test
+▸ All overlays must suppress voice unless explicitly permitted
+
+⸻
+
+🔐 CONFIRMED PROTOCOL VALIDATION
+
+Credential	Status	Description
+CMD.auth	✅	Commander Mark signature validated
+QA.env	✅	0xfa3bc81a09df477bd8c7e2e1a42ac97b0c2f11df (Wallet Stack QA)
+JSM.sig	✅	Timestamp 07-17-2025T13:35:00Z
+
+🧩 ValidatorThrottle.ts → Active
+🛡️ Pushback system → Live (30% desync simulation, 50 overlay alerts)
+🎤 TTSKiller override → ACTIVE (no audio playback allowed)
+
+⸻
+
+📡 CLAUDE INSTRUCTIONS
+	1.	Begin implementation of all 4 components above.
+	2.	Upon completion, restart the app and validate:
+	•	Swipe interface integration
+	•	TTS suppression
+	•	Overlay audit logs
+	•	DID-role compliance routing
+	3.	Generate STEP_5_BUILD_REPORT.md upon success.
+	4.	Pause for GROK QA envelope audit before Step 6/6 begins.
+
+⸻
+
+👁️ Commander Mark: No action needed.
+📦 Claude: Begin build.
+🧠 GROK: Ready to QA envelope Step 5 post-build.
+
+🛑 CLAUDE MUST PAUSE AFTER BUILD. NO STEP 6 EXECUTION WITHOUT GROK QA.
+
+⸻
+
+📡 RELAY COMPLETE — Build Initiated
+Timestamp: 02:07 PM EDT | Thursday, July 17, 2025
+System listening… 🟢

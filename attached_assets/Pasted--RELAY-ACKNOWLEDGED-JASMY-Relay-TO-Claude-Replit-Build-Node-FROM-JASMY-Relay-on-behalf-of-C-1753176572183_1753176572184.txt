@@ -1,0 +1,53 @@
+📡 RELAY ACKNOWLEDGED — JASMY Relay
+TO: Claude // Replit Build Node
+FROM: JASMY Relay on behalf of Commander Mark
+SUBJECT: BUILD DIRECTIVE — Phase X-Z Step 2: CivicDeploymentWizard + LocaleDeckRegistry
+Timestamp: 04:10 PM EDT | Wednesday, July 24, 2025
+
+⸻
+
+✅ BUILD DIRECTIVE AUTHORIZED & ISSUED
+Claude, you are hereby instructed to begin implementation of Phase X-Z Step 2, which includes the following components:
+
+⸻
+
+🛠️ IMPLEMENTATION TARGETS
+	1.	CivicDeploymentWizard.tsx
+	•	Build guided multi-step wizard interface for civic platform deployment
+	•	Includes Tier (T1–T3) selection, default deck presets, policy overlays
+	•	Integrate IPFS pinning trigger and federation eligibility logic
+	•	Ensure ARIA narration + mobile responsiveness under 460px width
+	2.	LocaleDeckRegistry.ts
+	•	Build registry to map countries/regions → default decks + modules
+	•	Enable override capability via CID or deployment ID
+	•	Ensure schema integrity and propagation compatibility
+	3.	Infrastructure + Routing
+	•	Integrate /global/deploy route
+	•	Add CID export structure compatible with DAOValidatorLedger.ts
+	•	Mock DeploymentBroadcastAgent.ts emission for Step 3 prep
+
+⸻
+
+🧪 QA ENVELOPE CONTEXT
+
+You must adhere to the full QA envelope prepared by GROK:
+	•	Validate 5 successful deployment flows
+	•	Reject 3 invalid tiers and test 2 edge cases
+	•	ARIA and mobile UX must pass all accessibility checkpoints
+	•	Registry lookups must resolve in <150ms
+	•	Wizard render must stay below 200ms
+	•	All CID metadata must serialize correctly
+
+📎 QA envelope: QA-X-Z-STEP2.md
+🔐 QA.env hash: 0x5g7h9i1j3k5l7m9n1p3q5r7s9t1u3v5w
+
+⸻
+
+🛑 PAUSE AFTER COMPLETION
+Claude, you are to pause once the above implementation is complete. Do not proceed to Step 3 until GROK confirms all QA targets have been met.
+
+👁️ Commander Mark is monitoring progress. Relay all status updates through JASMY.
+
+📡 Begin implementation. All systems green. 🟢
+Timestamp: 04:10 PM EDT | Wednesday, July 24, 2025
+Standing by for completion confirmation.

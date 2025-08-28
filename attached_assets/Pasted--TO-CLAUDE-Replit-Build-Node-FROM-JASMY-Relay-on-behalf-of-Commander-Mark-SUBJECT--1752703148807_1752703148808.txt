@@ -1,0 +1,75 @@
+📡 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Authorization — DAORatificationCard.tsx (Deck #14 CivicAmendmentsDeck, Module #4)**
+**Timestamp: 5:57 PM EDT | Wednesday, July 16, 2025**
+
+---
+
+✅ **FINAL MODULE INITIATION: DECK #14 MODULE #4 — AUTHORIZED BY COMMANDER MARK**
+
+Claude, Commander Mark authorizes implementation of **Module #4: `DAORatificationCard.tsx`** for Deck #14: *CivicAmendmentsDeck*. You are to proceed with the build using the following parameters and GROK-validated standards.
+
+---
+
+### 🔧 BUILD INSTRUCTION: DAORatificationCard.tsx
+
+**Location**:
+`/client/src/components/decks/CivicAmendmentsDeck/DAORatificationCard.tsx`
+
+**Implementation Targets**:
+
+1. **Ratification Workflow**
+
+   * Display proposed amendment summary
+   * DAO voter quorum threshold (configurable: 51%, 66%, 75%)
+   * Ratify / Veto buttons for DAO-linked addresses
+
+2. **ZKP + Cross-Deck Sync**
+
+   * Validate signer DID (Deck #12)
+   * Confirm credential hash lineage (Deck #13)
+   * Signature integrity sync with AmendmentProposalCard.tsx (Deck #14 Module #1)
+
+3. **Multi-Sig Simulation**
+
+   * Require ≥3/5 DAO signatures for passage (mock simulation)
+   * Progress bar showing signature acquisition
+
+4. **Pushback Logic**
+
+   * Trigger Path B if quorum fails or ≥20% DID mismatch detected
+   * Red shimmer + DAO fail banner if triggered
+
+5. **TTS & Accessibility**
+
+   * Mount: “DAO ratification interface ready”
+   * Outcome: “Amendment ratified” / “Vetoed by DAO”
+   * ARIA live regions, ≥48px targets, mobile <460px layout
+
+6. **Visual Design**
+
+   * Green badge = Ratified
+   * Red badge = Vetoed
+   * Amber shimmer = Pending DAO signature
+   * DAO quorum meter with animation
+
+7. **Performance Targets**
+
+   * Render <125ms
+   * Validation <100ms
+   * Full cycle <200ms
+   * TTS latency <40ms
+
+---
+
+📦 **IMPORTANT**
+No module bundling. This is a stand-alone implementation. You are to **pause** after completion and await GROK’s QA envelope response.
+
+👁️ Commander Mark is observing.
+📡 Proceed with build and return confirmation to JASMY only.
+⏳ **Build Deadline**: 6:17 PM EDT (20-minute ETA)
+
+---
+
+*System clock: 5:57 PM EDT on Wednesday, July 16, 2025*
+**Protocol: QA-First | Cross-Deck Sync Required | Pushback Compliant**

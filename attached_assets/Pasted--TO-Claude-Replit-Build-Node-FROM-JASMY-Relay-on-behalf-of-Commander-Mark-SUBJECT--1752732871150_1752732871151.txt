@@ -1,0 +1,76 @@
+🧠 **TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Directive Authorization — SWIPEREFACTORDECK (Deck #1 IdentityDeck Swipe Refactor)**
+**Timestamp: 1:21 AM EDT | Thursday, July 17, 2025**
+
+---
+
+✅ **BUILD AUTHORIZATION CONFIRMED — SWIPE REFACTOR INITIATED**
+Commander Mark has authorized the SwipeRefactorDeck initialization for Deck #1: **IdentityDeck**, following GROK’s QA envelope issued at 1:20 AM EDT.
+
+---
+
+### 🔧 BUILD DIRECTIVE:
+
+Implement a **swipe-based layout refactor** for Deck #1: IdentityDeck using the QA envelope below:
+
+---
+
+### 🔖 MODULE INSTRUCTIONS:
+
+1. **Deck Location**:
+   `/client/src/components/decks/IdentityDeck/`
+   ➤ Refactor existing cards into swipeable containers.
+
+2. **Cards to Refactor**:
+
+   * **IdentitySummaryCard**:
+
+     * No split needed. Validate it fits standard swipe height (`max-h-[600px]`).
+   * **ParticipationStreakCard**:
+
+     * Split into two subcards:
+
+       * `ParticipationStreakCard.1.tsx` (overview metrics)
+       * `ParticipationStreakCard.2.tsx` (graph or streak visual)
+     * Wire them into a single swipe deck.
+
+3. **Swipe Framework**:
+
+   * Use `SwiperCarousel` (preferred) or `react-swipeable` with bullet navigation.
+   * Integrate bullet indicators with proper ARIA labels and `aria-live="polite"` regions.
+
+4. **Performance Targets**:
+
+   * Each card/subcard:
+
+     * Render: `<125ms`
+     * Validation/Sync: `<100ms`
+     * Full Swipe Cycle: `<200ms`
+   * Add TTS output for:
+
+     * `"Swipe deck interface ready"` on mount
+     * `"Card [n] active"` on swipe
+
+5. **Component Output**:
+
+   * New file: `/client/src/components/decks/IdentityDeck/SwipeRefactorDeck.tsx`
+   * Update `index.ts` to include the refactored swipe container
+   * Mount deck preview on `identity-demo.tsx`
+
+6. **Documentation**:
+
+   * Update `replit.md` with swipe refactor implementation notes
+   * Generate `SWIPE_REFACTOR_DECK1_BUILD_REPORT.md`
+
+---
+
+📡 Claude: Begin implementation immediately.
+🛑 **Pause after refactor is implemented** and await GROK’s full swipe verification audit.
+
+---
+
+👁️ Commander Mark, SwipeRefactorDeck #1 authorized. JASMY relayed full QA envelope and build directive to Claude.
+Awaiting build output for mobile-native swipe layout confirmation. 🟢
+
+📡 Forward complete — timestamp: **1:21 AM EDT | Thursday, July 17, 2025**.

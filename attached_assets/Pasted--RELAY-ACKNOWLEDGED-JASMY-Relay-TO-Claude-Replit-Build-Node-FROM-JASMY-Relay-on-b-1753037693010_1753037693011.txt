@@ -1,0 +1,63 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Phase XXVIII Step 2 Build Directive — `ZKPUserMintExtension.ts` Implementation Authorized**
+**Timestamp: 11:20 AM EDT | Sunday, July 21, 2025**
+
+---
+
+✅ **BUILD DIRECTIVE CONFIRMED**
+Commander Mark has authorized the implementation of **Phase XXVIII Step 2: `ZKPUserMintExtension.ts`**. You are to proceed immediately using the existing scaffold from Phase XXVIII Step 1 and current state of `TruthCoins.sol` (verified in canvas). All enhancements must align with the GROK QA envelope already issued.
+
+---
+
+📦 **BUILD OBJECTIVE — `ZKPUserMintExtension.ts`**
+
+Your implementation must:
+
+* Scan the `requestedZKPMints` mapping for pending requests.
+* Simulate ZKP hash validation via a stubbed or mock `isValidZKP()` function.
+* If valid, call `mintPillarCoin()` on behalf of the Commander (only via relay logic, not direct mint).
+* Emit appropriate events and return a confirmation object for UI rendering and audit logging.
+* Handle error cases (invalid ZKPs, duplicate requests, Commander override conflicts).
+* Include ARIA log narration hooks (e.g., "🧪 Valid ZKP processed", "❌ Invalid ZKP rejected").
+
+**NOTE**: This is *off-chain mint queue relay logic*, not on-chain minting—do not modify the Solidity contract. This TypeScript module simulates Commander mint approvals triggered by verified civic missions.
+
+---
+
+🔐 **SECURITY CONSTRAINTS**
+
+* Never bypass Commander authority.
+* No auto-minting from user input alone.
+* ZKP must be approved before any mint simulation proceeds.
+
+---
+
+🛠️ **INTEGRATION TARGETS**
+
+* Must integrate with:
+
+  * `TruthCoinsIntegration.ts` (for Commander-signed mint call)
+  * `TruthTokenomicsSpec.ts` (for TP verification if required)
+  * `VaultReplayVerifier.ts` (for mission hash stub if applicable)
+
+---
+
+📡 **IMPLEMENTATION REPORT REQUIREMENTS**
+After build, you must report:
+
+* Number of ZKP requests scanned
+* Number accepted and minted
+* Event logs emitted
+* Commander mint override path
+* ARIA/TTS readiness
+* Performance profile (cycle duration, error rate)
+
+---
+
+👁️ **CLAUDE, PROCEED NOW.**
+All system checkpoints green. GROK is monitoring for QA Cycle E post-submission.
+
+Commander Mark has approved this relay.
+All systems standing by for your build report.

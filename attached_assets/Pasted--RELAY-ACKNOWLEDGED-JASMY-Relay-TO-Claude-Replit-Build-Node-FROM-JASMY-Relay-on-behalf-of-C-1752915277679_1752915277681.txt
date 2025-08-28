@@ -1,0 +1,100 @@
+📡 RELAY ACKNOWLEDGED — JASMY Relay
+TO: Claude // Replit Build Node
+FROM: JASMY Relay on behalf of Commander Mark
+SUBJECT: PHASE XXIII AUTHORIZATION — Civic Identity Minting + zk-Reputation Onboarding Initialization
+Timestamp: 04:53 AM EDT | Saturday, July 19, 2025
+
+⸻
+
+✅ PHASE XXIII INITIATED — CIVIC IDENTITY CREDENTIALS + ZERO-KNOWLEDGE REPUTATION SYSTEM ACTIVATED
+
+Commander Mark has authorized Phase XXIII, launching the minting of simulated Civic Identity Tokens (CIDs) and initializing the zk-Reputation onboarding pipeline. This phase unlocks reputation-based civic access, eligibility gating, and future inter-proposal tier scaling using a privacy-preserving credentialing system.
+
+⸻
+
+🧠 OBJECTIVE
+
+Implement an identity credential generation engine and onboarding panel, allowing verified users to mint a local civic identity token and generate a ZK-validatable reputation payload from historical activity.
+
+⸻
+
+🔧 IMPLEMENTATION DIRECTIVE
+
+Target Modules:
+	•	CivicIdentityMinter.ts (identity credential generator)
+	•	ZKReputationAssembler.ts (reputation hash packager)
+	•	IdentityOnboardingPanel.tsx (front-end interface)
+
+Location:
+	•	client/src/identity/
+	•	client/src/components/identity/
+
+⸻
+
+🧩 Phase XXIII Step 1 — Core Functional Targets
+	1.	CivicIdentityMinter.ts
+	•	Generates CivicIdentityToken object:
+
+{
+  cid: "cid:u:commander-mark:093x",
+  issuedAt: "2025-07-19T04:53:00Z",
+  tier: "Citizen",
+  trustIndex: 81,
+  streakDays: 6
+}
+
+
+	•	Logs: "🪪 Civic Identity Minted — CID: cid:u:commander-mark:093x"
+
+	2.	ZKReputationAssembler.ts
+	•	Hashes:
+	•	Trust index
+	•	Streak days
+	•	Vote history counts
+	•	Outputs ZK-compatible payload:
+
+{
+  signal: "0x123...",
+  epoch: "202507",
+  proofHash: "sha256:9fd2...e7c4"
+}
+
+
+	3.	IdentityOnboardingPanel.tsx
+	•	UI for:
+	•	Minting identity
+	•	Viewing trust/streak stats
+	•	Assembling reputation payload
+	•	Download .zkp-rep.json button
+	•	ARIA: "🧬 Reputation proof assembled and ready for export"
+	4.	Performance + Export
+	•	Mint + assemble + export ≤2s
+	•	File name: zkp-rep-[cid].json
+
+⸻
+
+📦 TECHNICAL REQUIREMENTS
+
+Category	Target
+Commit Title	CIVIC_IDENTITY_MINTING_PHASE_XXIII_STEP1
+Push Location	
+
+	•	client/src/identity/CivicIdentityMinter.ts
+	•	client/src/services/ZKReputationAssembler.ts
+	•	client/src/components/identity/IdentityOnboardingPanel.tsx |
+| Console Logs |
+	•	"🪪 Civic Identity Minted — CID: cid:u:commander-mark:093x"
+	•	"🧬 Reputation proof assembled — Trust: 81, Streak: 6"
+	•	"📦 Exported reputation bundle: zkp-rep-cid-u-commander-mark-093x.json" |
+| ARIA | Narrate identity creation and export status
+| Performance | End-to-end ≤2s (mint + reputation assembly + export)
+
+⸻
+
+🛑 REMINDER:
+	•	This is a simulated DID + reputation system — zk-validity hash only
+	•	No blockchain write in this step — export only
+
+📡 Proceed with implementation. Notify JASMY Relay upon completion. GROK will initiate Phase XXIII QA re-audit.
+
+End Transmission — Phase XXIII Step 1 is now live. 🟢

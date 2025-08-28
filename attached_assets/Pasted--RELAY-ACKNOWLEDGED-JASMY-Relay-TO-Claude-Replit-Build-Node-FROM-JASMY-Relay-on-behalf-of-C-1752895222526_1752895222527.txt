@@ -1,0 +1,74 @@
+📡 RELAY ACKNOWLEDGED — JASMY Relay
+TO: Claude // Replit Build Node
+FROM: JASMY Relay on behalf of Commander Mark
+SUBJECT: PHASE XI-C AUTHORIZATION — LanguageContextAudit.tsx Directive (Language Toggle & Sync Fix)
+Timestamp: 09:31 PM EDT | Friday, July 18, 2025
+
+⸻
+
+✅ PHASE XI-C INITIATED — LANGUAGE TOGGLE PATCH & CONTEXT SYNC AUDIT
+
+Commander Mark has authorized Phase XI-C to address the mixed EN/ES interface issue and restore a visible, responsive language toggle system. This is a tactical UX repair phase prior to launching the GovMap Sync or Dashboard Core.
+
+⸻
+
+🧠 OBJECTIVE
+
+Implement LanguageContextAudit.tsx — audit and patch the language toggle render, LangContext sync, and ARIA accessibility issues across the app shell and mission modules.
+
+⸻
+
+🔧 IMPLEMENTATION DIRECTIVE
+
+Component: LanguageContextAudit.tsx
+Location: client/src/components/system/
+Integrate into CivicLayoutShell.tsx
+
+⸻
+
+🧩 Core Features to Implement:
+	1.	LanguageToggle Component (Fix + Mount)
+	•	Restore full LanguageToggle rendering in top-right or NavBar
+	•	Include:
+	•	Dropdown or icon-based toggle
+	•	ARIA label: "🌐 Toggle Language" (localized)
+	•	Console log: "🌐 Language toggled to: [lang]"
+	2.	LangContext + UserSession Sync
+	•	Enforce single canonical language source:
+	•	UserSessionEngine → LangContext → useLang()
+	•	On toggle:
+	•	Call setSession({ lang }) and update LangContext
+	•	Log "🌍 Language set to: [lang]"
+	3.	Fallback Correction
+	•	If session missing or corrupt → fallback to "en"
+	•	Log fallback: "🔁 Fallback language applied: en"
+	4.	Accessibility & ARIA
+	•	aria-label must be localized
+	•	Toggle component screen reader friendly
+	•	Language changes announced if aria-live is active
+
+⸻
+
+📦 TECHNICAL REQUIREMENTS
+
+Category	Target
+Commit Title	LANGUAGE_CONTEXT_AUDIT_PHASE_XI_C
+Push Location	client/src/components/system/
+Console Logs	
+
+	•	"🌐 Language toggled to: ES"
+	•	"🌍 Language set to: ES"
+	•	"🔁 Fallback language applied: en" |
+| Performance | Toggle response <50ms, UI update <200ms |
+| ARIA Compliance | aria-label per language, screen reader test |
+| UI | Toggle must be visible on mobile shell and accessible |
+
+⸻
+
+🛑 REMINDER:
+	•	No rerouting or session mutation allowed beyond language
+	•	Toggle must remain active and visible in all major views (onboarding, constellation, deck)
+
+📡 Proceed with implementation. Notify JASMY Relay upon completion. GROK will initiate QA re-audit for language restoration.
+
+End Transmission — Phase XI-C is now active. 🟢

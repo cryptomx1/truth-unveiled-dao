@@ -1,0 +1,148 @@
+{
+  "generated": "2025-07-23T20:56:00.000Z",
+  "version": "1.0.0",
+  "description": "Treasury Distribution Log for Phase X-ZEBEC Step 3 - Automated Zebec stream creation and civic task incentives",
+  "totalDistributions": 8,
+  "stats": {
+    "totalStreams": 8,
+    "activeStreams": 5,
+    "totalValue": 2850,
+    "successRate": 87.5,
+    "averageProcessingTime": 285
+  },
+  "distributions": [
+    {
+      "streamId": "treasury_1721766960001_a7b3f9e2",
+      "cid": "bafybeig6xv5nwphfmvcnektpnojts33jqcuam7hszibdz5kzm7qbyfqj8i",
+      "recipientAddress": "0x1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t",
+      "amount": 150,
+      "taskType": "dao_vote",
+      "tier": "Governor",
+      "multiplier": 2.0,
+      "timestamp": "2025-07-23T20:56:00.001Z",
+      "status": "streaming",
+      "transactionHash": "0x7f2a8b3c9d4e5f6a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4",
+      "originDeck": "governance"
+    },
+    {
+      "streamId": "treasury_1721766960125_x9y8z7w6",
+      "cid": "bafybeihs4k7obvsyq5wjccoy6hqtafp7lw2g3x4jb5r8m9n0s1t2u3v4w5x",
+      "recipientAddress": "0x2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t1u",
+      "amount": 200,
+      "taskType": "guardian_unlock",
+      "tier": "Citizen",
+      "multiplier": 1.0,
+      "timestamp": "2025-07-23T20:56:00.125Z",
+      "status": "streaming",
+      "transactionHash": "0x8f3a9b4c0d5e6f7a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5",
+      "originDeck": "unlock-portal"
+    },
+    {
+      "streamId": "treasury_1721766960250_p5q4r3s2",
+      "cid": "bafybeifj3k8pcwtyr6wkdcpz7hqugtfq8m3x5j6r9n0s2t4u6v8w0x2y4z6",
+      "recipientAddress": "0x3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t1u2v",
+      "amount": 1500,
+      "taskType": "fusion_completion",
+      "tier": "Commander",
+      "multiplier": 3.0,
+      "timestamp": "2025-07-23T20:56:00.250Z",
+      "status": "streaming",
+      "transactionHash": "0x9f4a0b5c1d6e7f8a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6",
+      "originDeck": "fusion-complete"
+    },
+    {
+      "streamId": "treasury_1721766960375_m8n7o6p5",
+      "cid": "bafybeigk4l9qdxuzs7xledqq8hrugusg9n4y6k7s0o1t3u5v7w9x1y3z5a7",
+      "recipientAddress": "0x4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t1u2v3w",
+      "amount": 100,
+      "taskType": "municipal_engagement",
+      "tier": "Citizen",
+      "multiplier": 1.0,
+      "timestamp": "2025-07-23T20:56:00.375Z",
+      "status": "streaming",
+      "transactionHash": "0x0f5a1b6c2d7e8f9a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7",
+      "originDeck": "municipal-registry"
+    },
+    {
+      "streamId": "treasury_1721766960500_j1k2l3m4",
+      "cid": "bafybeihl5m0reyv0t8ymefrr9hsvhvtj0o5z7l8t1p2u4v6w8x0y2z4a6b8",
+      "recipientAddress": "0x5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t1u2v3w4x",
+      "amount": 50,
+      "taskType": "deck_participation",
+      "tier": "Citizen",
+      "multiplier": 1.0,
+      "timestamp": "2025-07-23T20:56:00.500Z",
+      "status": "streaming",
+      "transactionHash": "0x1f6a2b7c3d8e9f0a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8",
+      "originDeck": "wallet-overview"
+    },
+    {
+      "streamId": "treasury_1721766960625_g4h5i6j7",
+      "cid": "bafybeiin6n1sfzw1u9znfgss0htwixuk1p6a8m9u2q3v5w7x9y1z3a5b7c9",
+      "recipientAddress": "0x6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t1u2v3w4x5y",
+      "amount": 150,
+      "taskType": "dao_vote",
+      "tier": "Governor",
+      "multiplier": 2.0,
+      "timestamp": "2025-07-23T20:56:00.625Z",
+      "status": "completed",
+      "transactionHash": "0x2f7a3b8c4d9e0f1a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9",
+      "originDeck": "governance"
+    },
+    {
+      "streamId": "treasury_1721766960750_d7e8f9g0",
+      "cid": "bafybeijo7o2tgax2v0aoghjt1huxjyvl2q7b9n0v3r4w6x8y0z2a4b6c8d0",
+      "recipientAddress": "0x7g8h9i0j1k2l3m4n5o6p7q8r9s0t1u2v3w4x5y6z",
+      "amount": 400,
+      "taskType": "guardian_unlock",
+      "tier": "Governor",
+      "multiplier": 2.0,
+      "timestamp": "2025-07-23T20:56:00.750Z",
+      "status": "failed",
+      "transactionHash": null,
+      "originDeck": "guardian-portal"
+    },
+    {
+      "streamId": "treasury_1721766960875_a0b1c2d3",
+      "cid": "bafybeikp8p3uhby3w1bphjku2hvykzwm3r8c0o1w4s5x7y9z1a3b5c7d9e1",
+      "recipientAddress": "0x8h9i0j1k2l3m4n5o6p7q8r9s0t1u2v3w4x5y6z7a",
+      "amount": 300,
+      "taskType": "municipal_engagement",
+      "tier": "Commander",
+      "multiplier": 3.0,
+      "timestamp": "2025-07-23T20:56:00.875Z",
+      "status": "pending",
+      "transactionHash": null,
+      "originDeck": "municipal-policy"
+    }
+  ],
+  "metadata": {
+    "phase": "X-ZEBEC Step 3",
+    "component": "ZebecTreasuryRouter.ts",
+    "authority": "Commander Mark via JASMY Relay",
+    "compliance": {
+      "cidAnchored": true,
+      "tierWeighted": true,
+      "ttsIntegrated": true,
+      "ariaCompliant": true
+    },
+    "performance": {
+      "maxInitTime": "300ms",
+      "loggerInterval": "2s",
+      "successRate": "87.5%",
+      "avgProcessingTime": "285ms"
+    },
+    "taskTypes": {
+      "deck_participation": "50 TP base",
+      "dao_vote": "75 TP base", 
+      "guardian_unlock": "200 TP base",
+      "fusion_completion": "500 TP base",
+      "municipal_engagement": "100 TP base"
+    },
+    "tierMultipliers": {
+      "Citizen": "1.0x",
+      "Governor": "2.0x",
+      "Commander": "3.0x"
+    }
+  }
+}

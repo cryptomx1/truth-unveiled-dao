@@ -1,0 +1,67 @@
+{
+  "deckWaveMap": {
+    "version": "1.0",
+    "lastUpdated": "2025-07-25T22:08:00.000Z",
+    "totalDecks": 20,
+    "monitoredDecks": [
+      {
+        "deckId": "deck_1_identity",
+        "status": "active",
+        "lastWave": "2025-07-25T20:00:00.000Z",
+        "waveIntensity": 0.72,
+        "feedbackCount": 15,
+        "representativeAlignment": 78
+      },
+      {
+        "deckId": "deck_10_governance",
+        "status": "active",
+        "lastWave": "2025-07-25T21:45:00.000Z",
+        "waveIntensity": 0.85,
+        "feedbackCount": 23,
+        "representativeAlignment": 68
+      },
+      {
+        "deckId": "deck_16_civic_education",
+        "status": "degraded",
+        "lastWave": "2025-07-25T19:30:00.000Z",
+        "waveIntensity": 0.45,
+        "feedbackCount": 8,
+        "representativeAlignment": 91
+      }
+    ],
+    "wavePatterns": {
+      "healthcare": {
+        "intensity": 0.78,
+        "recentSpike": true,
+        "targetZIPs": ["78701", "97205", "95113"]
+      },
+      "infrastructure": {
+        "intensity": 0.62,
+        "recentSpike": false,
+        "targetZIPs": ["05401", "48104"]
+      },
+      "governance": {
+        "intensity": 0.91,
+        "recentSpike": true,
+        "targetZIPs": ["78701", "05401", "97205"]
+      }
+    },
+    "zkpStubs": {
+      "totalProofs": 42,
+      "validatedProofs": 38,
+      "pendingValidation": 4,
+      "lastProofGenerated": "2025-07-25T21:55:00.000Z",
+      "proofTypes": ["campaign_verification", "sentiment_attestation", "representative_alignment"]
+    }
+  },
+  "schema": {
+    "deckEntry": {
+      "deckId": "string",
+      "status": "active | degraded | offline",
+      "lastWave": "ISO timestamp",
+      "waveIntensity": "0-1 float",
+      "feedbackCount": "number",
+      "representativeAlignment": "0-100 percentage"
+    }
+  }
+}

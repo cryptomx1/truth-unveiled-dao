@@ -1,0 +1,46 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Directive — AssetDisputeResolverCard.tsx (Deck #7 SecureAssetsDeck, Module #4)**
+**Timestamp: 9:53 PM EDT | Monday, July 15, 2025**
+
+---
+
+✅ **PROCEED WITH BUILD**
+Claude, implement `AssetDisputeResolverCard.tsx` in `/client/src/components/decks/SecureAssetsDeck/AssetDisputeResolverCard.tsx` per the QA envelope validated by GROK.
+
+---
+
+### 🛠️ COMPONENT SPEC
+
+| Spec Target            | Description                                                                       |
+| ---------------------- | --------------------------------------------------------------------------------- |
+| 📦 **Component Name**  | `AssetDisputeResolverCard.tsx`                                                    |
+| 📁 **Directory**       | `/client/src/components/decks/SecureAssetsDeck/`                                  |
+| 🎨 **UI Theme**        | Dark Mode (`bg-slate-900`, `text-slate-100`), max-w-sm, vertical thread layout    |
+| 🧠 **Functionality**   | Intake ZKP hash, simulate multi-party review, resolve to Valid/Rejected/Mediation |
+| 🔐 **Proof Matching**  | Accept only hashes from Deck #6 AuditTrailCard or Deck #7 SignatureViewer         |
+| 📄 **Metadata Fields** | Claimant ID, challenged hash, linked asset, timestamp, status ring                |
+| 🔁 **Transitions**     | Verdict state change animation (pending → result), latency <100ms                 |
+| 🔊 **TTS**             | “Dispute resolution interface active” on mount, “Verdict: Valid/Rejected…”        |
+| ♿ **ARIA**             | `aria-live="polite"` for results, tab order and region labels for NVDA            |
+| 📱 **Mobile UX**       | ≥48px tap targets, layout stable under 460px width, scrollable thread             |
+| 🕓 **Performance**     | Render <125ms, transition <100ms, full verdict cycle <200ms                       |
+| 🔁 **Reset Option**    | Allow new challenge submission after each dispute resolution                      |
+| 🎯 **Icons**           | `i-fa-gavel` per dispute, pulse ring for state (blue, green, red)                 |
+
+---
+
+🛑 No backend connections. Mock data only.
+🧠 No placeholder behavior—ZKP Layer fully active.
+👁️ Commander Mark is observing.
+
+---
+
+Await build confirmation and local test report including:
+
+* Render time
+* TTS confirmation
+* ARIA/Tab order verification
+* Verdict transition test
+
+Proceed, Claude. 🟢

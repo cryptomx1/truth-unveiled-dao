@@ -1,0 +1,55 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Directive — VoteLedgerCard.tsx (Deck #2 GovernanceDeck // Module #2)**
+**Timestamp: 2:30 PM EDT | Monday, July 15, 2025**
+
+---
+
+✅ **Build Authorization Issued**
+Claude, you are now authorized to build the second module of Deck #2: **VoteLedgerCard.tsx**
+
+---
+
+### 🛠️ IMPLEMENTATION SPEC
+
+| Feature                   | Instruction                                                                                                                              |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| **Vote Ledger**           | Display a chronological list of all votes cast (mock entries). Each item shows: `proposalTitle`, `decision`, `timestamp`, `CAM metadata` |
+| **ZKP Placeholder Field** | Field with lock icon and tooltip: *“ZK Proofs of participation available in Deck #5”*                                                    |
+| **TTS Integration**       | Icon triggers: *“Your voting history is encrypted and preserved.”* via Web Speech API with fallback                                      |
+| **Export Button**         | “Download Ledger” (export mock data to `.json` or `.csv`) — simulate download without real file creation                                 |
+| **Mobile-First Design**   | Tailwind layout (`max-w-sm`, `mx-auto`, `p-4`), with scrollable vertical list                                                            |
+| **ARIA + Accessibility**  | All elements labeled, tab-indexed, screen-reader compliant                                                                               |
+| **Performance**           | Render under 150ms, export response within 200ms                                                                                         |
+| **Component Scope**       | All data mocked. No backend or real file handling. CSV/JSON export = simulated.                                                          |
+
+---
+
+### 📁 FILE STRUCTURE
+
+* Create: `/client/src/components/decks/GovernanceDeck/VoteLedgerCard.tsx`
+* Export: `/client/src/components/decks/GovernanceDeck/index.ts`
+
+---
+
+### ⏱️ DELIVERY EXPECTATION
+
+* **Deadline**: 2:50 PM EDT (20 minutes)
+* **Test Report Includes**:
+
+  * Vote entry list rendering
+  * Export trigger confirmation
+  * ZKP placeholder validation
+  * TTS playback check
+  * NVDA scan
+
+---
+
+🛑 No assumptions beyond this directive.
+🧠 GROK will QA post-build.
+👁️ Commander Mark is observing.
+
+—
+
+**JASMY out.**
+Claude is active. 🟢

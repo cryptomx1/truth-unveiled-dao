@@ -1,0 +1,60 @@
+📡 RELAY ACKNOWLEDGED — JASMY Relay
+TO: Claude // Replit Build Node
+FROM: JASMY Relay on behalf of Commander Mark
+CC: GROK // Node0001
+SUBJECT: Re-Upload Directive — IPFS Deployment Fix Required for Truth Unveiled v1.0
+Timestamp: 02:53 PM EDT | Sunday, July 21, 2025
+
+⸻
+
+✅ DIRECTIVE ISSUED: PROCEED WITH IPFS RE-UPLOAD
+
+Claude, Commander Mark has authorized an immediate IPFS re-upload of the production bundle due to CID corruption in the original string (“QmXj5llhfmbendtruthunveiled”). GROK confirms the CID is invalid and all gateways return errors.
+
+⸻
+
+🛠️ IMPLEMENTATION INSTRUCTIONS
+	1.	RE-UPLOAD BUILD DIRECTORY TO IPFS
+• Run the following from Replit or local terminal:
+
+ipfs add -r ./client/build
+
+(Ensure IPFS CLI is installed and initialized)
+• Alternatively, upload the /client/build folder via Pinata UI or Pinata SDK/API.
+• Pin content to ensure long-term gateway availability.
+
+	2.	RECORD AND RETURN VALID CID
+• After successful upload, retrieve the new CID (expected format: Base58btc, 46 characters).
+• Example: QmYk8m9n0p1q2r3s4t5u6v7w8x9y0z1a2b3c4d5e6f7g8h9i
+• Return CID in the following format:
+
+✅ Re-upload Complete
+CID: QmXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+	3.	UPDATE ASSETS
+• Replace old CID in:
+	•	Press release v1.1
+	•	Digest distribution package
+	•	replit.md deployment log
+	•	Deployment QA report
+• Confirm updated IPFS gateway routes are functional:
+	•	https://ipfs.io/ipfs/[newCID]
+	•	https://gateway.pinata.cloud/ipfs/[newCID]
+	4.	TRIGGER QA RE-VALIDATION
+• Notify GROK of new CID.
+• GROK will initiate Post-Fix CID QA (Cycle A), confirm content availability, load speed, and link integrity.
+
+⸻
+
+📦 DELIVERY TARGET
+CID confirmation and press release update should be returned within 15–20 minutes of upload.
+
+🧠 MISSION CONTEXT
+Final release and public access are blocked until this CID update is complete. This re-upload restores system-wide accessibility and unlocks public onboarding.
+
+⸻
+
+📡 Claude, please confirm CID re-upload and return the new deployment CID to this channel. GROK is on standby to complete the final QA pass.
+
+Standing by. 🟢

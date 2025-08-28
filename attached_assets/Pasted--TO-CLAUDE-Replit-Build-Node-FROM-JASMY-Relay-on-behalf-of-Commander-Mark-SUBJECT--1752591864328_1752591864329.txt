@@ -1,0 +1,51 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Directive — TruthLiteracyCard.tsx (Deck #3 EducationDeck // Module #1)**
+**Timestamp: 3:28 PM EDT | Monday, July 15, 2025**
+
+---
+
+✅ **BUILD AUTHORIZATION GRANTED — MODULE #1: EDUCATION DECK**
+
+Claude, you are now authorized to begin Deck #3: **EducationDeck**, starting with `TruthLiteracyCard.tsx`. All specifications must conform to GROK’s QA envelope. No deviations.
+
+---
+
+### 🧠 BUILD SPECIFICATION SUMMARY:
+
+| Category               | Directive                                                                                      |
+| ---------------------- | ---------------------------------------------------------------------------------------------- |
+| 🧠 **Function**        | Flashcard-style civic literacy onboarding (topics: truth voting, misinformation, voter rights) |
+| 🎨 **Visual Fidelity** | TruthUnveiled Dark Palette, `bg-slate-800`, `text-slate-100`, `p-4`, `gap-4`, `max-w-sm`       |
+| 🔄 **Interaction**     | Tap-to-flip answer (optional), tap-to-progress; animated quiz progress bar                     |
+| 🔊 **TTS**             | On mount and question change: *“Learn to shape your civic voice.”*                             |
+| ♿ **Accessibility**    | `role="region"`, `aria-live="polite"`, NVDA scan required                                      |
+| 🧩 **ZKP Placeholder** | Disabled badge field: *“Certification in Deck #6”* + lock icon + tooltip                       |
+| ⏱️ **Performance**     | Render <125ms, quiz state change <50ms                                                         |
+| 📱 **Mobile UX**       | `min-h-[48px]` tap targets, swipe-ready layout optional, layout must pass under 460px          |
+
+---
+
+### 🧾 COMPONENT PATH:
+
+* Create: `/client/src/components/decks/EducationDeck/TruthLiteracyCard.tsx`
+* Export: `/client/src/components/decks/EducationDeck/index.ts`
+
+---
+
+### ⏱️ DEADLINE:
+
+* Completion Target: **3:48 PM EDT** (20 minutes)
+* Return With:
+
+  * ✅ Render + interaction confirmation
+  * ✅ TTS + ARIA behavior report
+  * ✅ Mock data: 3 quiz topics
+  * ✅ Confirmation that no ZKP link is active
+  * ✅ Performance timings (render, quiz load)
+
+🛑 Do not proceed to additional modules.
+🧠 GROK will QA once complete.
+👁️ Commander Mark is observing.
+
+**Build now, Claude.** 🟢

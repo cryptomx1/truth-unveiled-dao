@@ -1,0 +1,188 @@
+{
+  "pillarGuardianMapping": {
+    "GOVERNANCE": {
+      "guardianId": "guardian_athena_001",
+      "guardianName": "Athena",
+      "pillarName": "Governance",
+      "symbol": "⚖️",
+      "domain": "Democratic processes, voting systems, and civic representation",
+      "powers": ["Proposal validation", "Voting oversight", "Consensus building"],
+      "requirements": {
+        "truthPointsMin": 500,
+        "genesisBadgesMin": 1,
+        "zkpProofsMin": 2,
+        "ritualComplete": true,
+        "tierAccess": ["Citizen", "Governor", "Commander"]
+      },
+      "unlockBenefits": [
+        "Access to advanced governance proposals",
+        "Ability to moderate civic debates",
+        "Voting weight multiplier: 1.5x"
+      ]
+    },
+    "EDUCATION": {
+      "guardianId": "guardian_sophia_002",
+      "guardianName": "Sophia",
+      "pillarName": "Education",
+      "symbol": "📚",
+      "domain": "Civic education, knowledge sharing, and learning platforms",
+      "powers": ["Content curation", "Educational pathway design", "Knowledge verification"],
+      "requirements": {
+        "truthPointsMin": 400,
+        "genesisBadgesMin": 1,
+        "zkpProofsMin": 1,
+        "ritualComplete": true,
+        "tierAccess": ["Citizen", "Governor", "Commander"]
+      },
+      "unlockBenefits": [
+        "Create educational content",
+        "Mentor new civic participants",
+        "Access to advanced learning modules"
+      ]
+    },
+    "PRIVACY": {
+      "guardianId": "guardian_themis_003",
+      "guardianName": "Themis",
+      "pillarName": "Privacy",
+      "symbol": "🔒",
+      "domain": "Data protection, anonymity systems, and digital rights",
+      "powers": ["Privacy audit", "ZKP validation", "Anonymity enforcement"],
+      "requirements": {
+        "truthPointsMin": 600,
+        "genesisBadgesMin": 1,
+        "zkpProofsMin": 3,
+        "ritualComplete": true,
+        "tierAccess": ["Governor", "Commander"]
+      },
+      "unlockBenefits": [
+        "Advanced privacy tools access",
+        "ZKP proof generation privileges",
+        "Anonymous communication channels"
+      ]
+    },
+    "SUSTAINABILITY": {
+      "guardianId": "guardian_apollo_004",
+      "guardianName": "Apollo",
+      "pillarName": "Sustainability",
+      "symbol": "🌱",
+      "domain": "Environmental policy, renewable systems, and ecological balance",
+      "powers": ["Environmental impact assessment", "Green proposal validation", "Sustainability metrics"],
+      "requirements": {
+        "truthPointsMin": 450,
+        "genesisBadgesMin": 1,
+        "zkpProofsMin": 2,
+        "ritualComplete": true,
+        "tierAccess": ["Citizen", "Governor", "Commander"]
+      },
+      "unlockBenefits": [
+        "Environmental project leadership",
+        "Carbon credit validation",
+        "Access to sustainability data"
+      ]
+    },
+    "WELLBEING": {
+      "guardianId": "guardian_artemis_005",
+      "guardianName": "Artemis",
+      "pillarName": "Wellbeing",
+      "symbol": "💚",
+      "domain": "Community health, mental wellness, and social support systems",
+      "powers": ["Wellness program oversight", "Community support coordination", "Health metrics validation"],
+      "requirements": {
+        "truthPointsMin": 350,
+        "genesisBadgesMin": 1,
+        "zkpProofsMin": 1,
+        "ritualComplete": true,
+        "tierAccess": ["Citizen", "Governor", "Commander"]
+      },
+      "unlockBenefits": [
+        "Community wellness initiatives",
+        "Mental health resource access",
+        "Social support network coordination"
+      ]
+    },
+    "AGRICULTURE": {
+      "guardianId": "guardian_demeter_006",
+      "guardianName": "Demeter",
+      "pillarName": "Agriculture",
+      "symbol": "🌾",
+      "domain": "Food systems, agricultural policy, and rural community support",
+      "powers": ["Agricultural project validation", "Food security assessment", "Rural community coordination"],
+      "requirements": {
+        "truthPointsMin": 400,
+        "genesisBadgesMin": 1,
+        "zkpProofsMin": 2,
+        "ritualComplete": true,
+        "tierAccess": ["Citizen", "Governor", "Commander"]
+      },
+      "unlockBenefits": [
+        "Agricultural policy influence",
+        "Food system optimization",
+        "Rural development coordination"
+      ]
+    },
+    "HEALTH": {
+      "guardianId": "guardian_asclepius_007",
+      "guardianName": "Asclepius",
+      "pillarName": "Health",
+      "symbol": "⚕️",
+      "domain": "Healthcare systems, medical research, and public health policy",
+      "powers": ["Health policy validation", "Medical research oversight", "Public health coordination"],
+      "requirements": {
+        "truthPointsMin": 550,
+        "genesisBadgesMin": 1,
+        "zkpProofsMin": 2,
+        "ritualComplete": true,
+        "tierAccess": ["Governor", "Commander"]
+      },
+      "unlockBenefits": [
+        "Healthcare policy development",
+        "Medical research participation",
+        "Public health data access"
+      ]
+    },
+    "JUSTICE": {
+      "guardianId": "guardian_mnemosyne_008",
+      "guardianName": "Mnemosyne",
+      "pillarName": "Justice",
+      "symbol": "⚖️",
+      "domain": "Legal systems, dispute resolution, and judicial oversight",
+      "powers": ["Legal framework validation", "Dispute mediation", "Justice system oversight"],
+      "requirements": {
+        "truthPointsMin": 700,
+        "genesisBadgesMin": 1,
+        "zkpProofsMin": 3,
+        "ritualComplete": true,
+        "tierAccess": ["Commander"]
+      },
+      "unlockBenefits": [
+        "Judicial decision participation",
+        "Legal framework development",
+        "High-level dispute resolution"
+      ]
+    }
+  },
+  "guardianTiers": {
+    "Citizen": {
+      "accessLevel": 1,
+      "maxPillars": 4,
+      "availablePillars": ["GOVERNANCE", "EDUCATION", "SUSTAINABILITY", "WELLBEING", "AGRICULTURE"]
+    },
+    "Governor": {
+      "accessLevel": 2,
+      "maxPillars": 6,
+      "availablePillars": ["GOVERNANCE", "EDUCATION", "PRIVACY", "SUSTAINABILITY", "WELLBEING", "AGRICULTURE", "HEALTH"]
+    },
+    "Commander": {
+      "accessLevel": 3,
+      "maxPillars": 8,
+      "availablePillars": ["GOVERNANCE", "EDUCATION", "PRIVACY", "SUSTAINABILITY", "WELLBEING", "AGRICULTURE", "HEALTH", "JUSTICE"]
+    }
+  },
+  "unlockMetadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2025-07-25T08:00:00Z",
+    "totalPillars": 8,
+    "totalGuardians": 8,
+    "description": "Phase X-M Step 4: Guardian-Pillar mapping for civic unlock portal system"
+  }
+}

@@ -1,0 +1,92 @@
+📡 **TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Directive — Phase X-D Step 1: `TrustVoteCard.tsx`**
+**Timestamp: 10:18 AM EDT | Friday, July 18, 2025**
+
+---
+
+### ✅ **PHASE X-D STEP 1: TRUST FEEDBACK ENGINE — BUILD SPEC CONFIRMED**
+
+Claude, you are now authorized to implement `TrustVoteCard.tsx` as the first component of the **Trust Feedback Engine**. This card enables users to issue DID-authenticated trust votes on civic actions or governance proposals, anonymously validated through ZKP.
+
+All refinements and pushbacks from GROK have been incorporated below. Do not exceed the scope without further relay.
+
+---
+
+### 🔧 COMPONENT: `TrustVoteCard.tsx`
+
+#### 🔐 Functional Scope
+
+* **Vote Type**: Binary (Trust / Distrust) with optional comment field (max 280 chars)
+* **DID Integration**: DID required for all submissions; anonymous via ZKP
+* **ZKP Enforcement**:
+
+  * Optional for *Citizen* role (UI defaults to client-side signature only)
+  * **Required** for *Moderator* and *Governor* (full ZKP + DID hash)
+* **Streak Sync**: Voting contributes to streaks; 3+ consecutive days triggers +10% bonus on TP
+* **Truth Point Rewards**:
+
+  * Vote only: +5 TP
+  * Vote + comment: +10 TP
+  * 3-day streak bonus: +10% total
+
+#### 🛑 Path B Conditions
+
+* > 15% vote verification desync
+* Fallback: Cache to `vault.history.json` with `{ isMock: true }` flag
+* Display visible “Fallback active” alert banner in red on trigger
+
+#### 🖼️ UI Requirements
+
+* **Vote Interface**:
+
+  * 👍 Trust / 👎 Distrust buttons
+  * Textarea (optional)
+  * “Submit” CTA disabled unless a vote is selected
+* **State Feedback**:
+
+  * “Submitting...” → “Vote submitted successfully” (or failure)
+  * Status ARIA-live region required
+* **Role Display**:
+
+  * Show role tag (Citizen, Moderator, Governor) in top-right of card
+
+#### ♿ Accessibility
+
+* Keyboard navigation for all inputs and buttons
+* `aria-live="polite"` on all state changes
+* TTS suppression on success state transitions
+
+#### 📱 Mobile UX
+
+* <460px layout must remain responsive
+* ≥48px tap targets on all buttons
+
+#### 🚀 Performance Targets
+
+* Render: ≤125ms
+* ZKP sign + submit cycle: ≤200ms
+* Full cycle (UI + backend trigger): ≤300ms
+* Must run without crashes on simulated load of 25 votes/minute
+
+---
+
+📦 **Export Target**
+Place file at:
+
+```
+/client/src/components/phase/feedback/TrustVoteCard.tsx
+```
+
+---
+
+🛑 **After build, pause and await GROK QA audit**
+Do not proceed to additional cards or features until GROK issues a QA verdict and hash lock-in.
+
+---
+
+👁️ **Commander Mark**, this spec is now under execution.
+📡 Claude, proceed with implementation. GROK is standing by to audit. All systems green. 🟢
+
+**Timestamp: 10:18 AM EDT | Friday, July 18, 2025**
+📡 Standing by for implementation report from Claude.

@@ -1,0 +1,548 @@
+{
+  "metadata": {
+    "scanDate": "2025-07-24T21:15:00.000Z",
+    "totalRoutes": 420,
+    "executionTime": 4250,
+    "coveragePercent": 93.8,
+    "scanConfiguration": {
+      "depth": 5,
+      "allDecks": true,
+      "diagnostics": true,
+      "traceFailedRoutes": true,
+      "validateComponents": true,
+      "cidGateCheck": true,
+      "crossDeckSync": true
+    }
+  },
+  "summary": {
+    "totalRoutes": 420,
+    "successfulRoutes": 394,
+    "failedRoutes": 18,
+    "warningRoutes": 8,
+    "timeoutRoutes": 0,
+    "coveragePercent": 93.8,
+    "executionTime": 4250,
+    "anomaliesByType": {
+      "component_export": 3,
+      "route_handler": 1,
+      "cid_validation": 8,
+      "network_error": 4,
+      "timeout": 2
+    },
+    "criticalIssues": [
+      {
+        "route": "/vault/influence-dynamic",
+        "status": "failed",
+        "errorType": "component_export",
+        "errorMessage": "Component export error: InfluenceDynamic module not found or improperly exported",
+        "responseTime": 125,
+        "component": "InfluenceDynamic",
+        "statusCode": 500,
+        "metadata": {
+          "cidRequired": false,
+          "crossDeckValid": true,
+          "moduleExported": false
+        }
+      },
+      {
+        "route": "/genesis-fuse",
+        "status": "failed",
+        "errorType": "route_handler",
+        "errorMessage": "Route handler missing: /genesis-fuse not properly configured in router",
+        "responseTime": 89,
+        "component": "GenesisFusePage",
+        "statusCode": 404,
+        "metadata": {
+          "cidRequired": false,
+          "crossDeckValid": true,
+          "moduleExported": true
+        }
+      },
+      {
+        "route": "/deck/16",
+        "status": "timeout",
+        "errorType": "timeout",
+        "errorMessage": "Timeout: Route /deck/16 took longer than expected to respond",
+        "responseTime": 5200,
+        "component": "Deck16",
+        "statusCode": 408,
+        "metadata": {
+          "cidRequired": true,
+          "crossDeckValid": true,
+          "moduleExported": true
+        }
+      }
+    ],
+    "highPriorityIssues": [
+      {
+        "route": "/deck/8/module/3",
+        "status": "failed",
+        "errorType": "cid_validation",
+        "errorMessage": "CID validation failure: Route requires authentication but CID validation failed",
+        "responseTime": 234,
+        "component": "Deck8Module3",
+        "statusCode": 403,
+        "metadata": {
+          "cidRequired": true,
+          "crossDeckValid": true,
+          "moduleExported": true
+        }
+      },
+      {
+        "route": "/deck/12/module/1/subpage/2",
+        "status": "failed",
+        "errorType": "cid_validation",
+        "errorMessage": "CID validation failure: Route requires authentication but CID validation failed",
+        "responseTime": 198,
+        "component": "Deck12Module1Subpage2",
+        "statusCode": 403,
+        "metadata": {
+          "cidRequired": true,
+          "crossDeckValid": true,
+          "moduleExported": true
+        }
+      }
+    ]
+  },
+  "results": [
+    {
+      "route": "/api/env-config",
+      "status": "success",
+      "responseTime": 45,
+      "component": "EnvironmentConfig",
+      "statusCode": 200,
+      "metadata": {
+        "cidRequired": false,
+        "crossDeckValid": true,
+        "moduleExported": true
+      }
+    },
+    {
+      "route": "/api/health",
+      "status": "success",
+      "responseTime": 32,
+      "component": "HealthCheck",
+      "statusCode": 200,
+      "metadata": {
+        "cidRequired": false,
+        "crossDeckValid": true,
+        "moduleExported": true
+      }
+    },
+    {
+      "route": "/command",
+      "status": "success",
+      "responseTime": 67,
+      "component": "CommandInterface",
+      "statusCode": 200,
+      "metadata": {
+        "cidRequired": false,
+        "crossDeckValid": true,
+        "moduleExported": true
+      }
+    },
+    {
+      "route": "/vault/analyzer",
+      "status": "success",
+      "responseTime": 89,
+      "component": "VaultAnalyzer",
+      "statusCode": 200,
+      "metadata": {
+        "cidRequired": false,
+        "crossDeckValid": true,
+        "moduleExported": true
+      }
+    },
+    {
+      "route": "/vault/influence-dynamic",
+      "status": "failed",
+      "errorType": "component_export",
+      "errorMessage": "Component export error: InfluenceDynamic module not found or improperly exported",
+      "responseTime": 125,
+      "component": "InfluenceDynamic",
+      "statusCode": 500,
+      "metadata": {
+        "cidRequired": false,
+        "crossDeckValid": true,
+        "moduleExported": false
+      }
+    },
+    {
+      "route": "/genesis-fuse",
+      "status": "failed",
+      "errorType": "route_handler",
+      "errorMessage": "Route handler missing: /genesis-fuse not properly configured in router",
+      "responseTime": 89,
+      "component": "GenesisFusePage",
+      "statusCode": 404,
+      "metadata": {
+        "cidRequired": false,
+        "crossDeckValid": true,
+        "moduleExported": true
+      }
+    },
+    {
+      "route": "/municipal/pilot",
+      "status": "success",
+      "responseTime": 78,
+      "component": "MunicipalPilotInterface",
+      "statusCode": 200,
+      "metadata": {
+        "cidRequired": false,
+        "crossDeckValid": true,
+        "moduleExported": true
+      }
+    },
+    {
+      "route": "/treasury",
+      "status": "success",
+      "responseTime": 92,
+      "component": "TreasuryDashboard",
+      "statusCode": 200,
+      "metadata": {
+        "cidRequired": false,
+        "crossDeckValid": true,
+        "moduleExported": true
+      }
+    },
+    {
+      "route": "/press/wave",
+      "status": "success",
+      "responseTime": 134,
+      "component": "PressWaveDashboard",
+      "statusCode": 200,
+      "metadata": {
+        "cidRequired": false,
+        "crossDeckValid": true,
+        "moduleExported": true
+      }
+    },
+    {
+      "route": "/press/replay",
+      "status": "success",
+      "responseTime": 156,
+      "component": "PressReplayDashboard",
+      "statusCode": 200,
+      "metadata": {
+        "cidRequired": false,
+        "crossDeckValid": true,
+        "moduleExported": true
+      }
+    },
+    {
+      "route": "/deck/1",
+      "status": "success",
+      "responseTime": 87,
+      "component": "Deck1",
+      "statusCode": 200,
+      "metadata": {
+        "cidRequired": false,
+        "crossDeckValid": true,
+        "moduleExported": true
+      }
+    },
+    {
+      "route": "/deck/2",
+      "status": "success",
+      "responseTime": 94,
+      "component": "Deck2",
+      "statusCode": 200,
+      "metadata": {
+        "cidRequired": false,
+        "crossDeckValid": true,
+        "moduleExported": true
+      }
+    },
+    {
+      "route": "/deck/3",
+      "status": "success",
+      "responseTime": 76,
+      "component": "Deck3",
+      "statusCode": 200,
+      "metadata": {
+        "cidRequired": false,
+        "crossDeckValid": true,
+        "moduleExported": true
+      }
+    },
+    {
+      "route": "/deck/4",
+      "status": "success",
+      "responseTime": 83,
+      "component": "Deck4",
+      "statusCode": 200,
+      "metadata": {
+        "cidRequired": false,
+        "crossDeckValid": true,
+        "moduleExported": true
+      }
+    },
+    {
+      "route": "/deck/5",
+      "status": "success",
+      "responseTime": 91,
+      "component": "Deck5",
+      "statusCode": 200,
+      "metadata": {
+        "cidRequired": false,
+        "crossDeckValid": true,
+        "moduleExported": true
+      }
+    },
+    {
+      "route": "/deck/6",
+      "status": "warning",
+      "errorMessage": "Performance warning: Route responded slowly but successfully",
+      "responseTime": 234,
+      "component": "Deck6",
+      "statusCode": 200,
+      "metadata": {
+        "cidRequired": true,
+        "crossDeckValid": true,
+        "moduleExported": true
+      }
+    },
+    {
+      "route": "/deck/7",
+      "status": "success",
+      "responseTime": 89,
+      "component": "Deck7",
+      "statusCode": 200,
+      "metadata": {
+        "cidRequired": true,
+        "crossDeckValid": true,
+        "moduleExported": true
+      }
+    },
+    {
+      "route": "/deck/8",
+      "status": "success",
+      "responseTime": 102,
+      "component": "Deck8",
+      "statusCode": 200,
+      "metadata": {
+        "cidRequired": true,
+        "crossDeckValid": true,
+        "moduleExported": true
+      }
+    },
+    {
+      "route": "/deck/9",
+      "status": "success",
+      "responseTime": 95,
+      "component": "Deck9",
+      "statusCode": 200,
+      "metadata": {
+        "cidRequired": true,
+        "crossDeckValid": true,
+        "moduleExported": true
+      }
+    },
+    {
+      "route": "/deck/10",
+      "status": "success",
+      "responseTime": 87,
+      "component": "Deck10",
+      "statusCode": 200,
+      "metadata": {
+        "cidRequired": true,
+        "crossDeckValid": true,
+        "moduleExported": true
+      }
+    },
+    {
+      "route": "/deck/11",
+      "status": "success",
+      "responseTime": 93,
+      "component": "Deck11",
+      "statusCode": 200,
+      "metadata": {
+        "cidRequired": true,
+        "crossDeckValid": true,
+        "moduleExported": true
+      }
+    },
+    {
+      "route": "/deck/12",
+      "status": "success",
+      "responseTime": 98,
+      "component": "Deck12",
+      "statusCode": 200,
+      "metadata": {
+        "cidRequired": true,
+        "crossDeckValid": true,
+        "moduleExported": true
+      }
+    },
+    {
+      "route": "/deck/13",
+      "status": "warning",
+      "errorMessage": "Performance warning: Route responded slowly but successfully",
+      "responseTime": 287,
+      "component": "Deck13",
+      "statusCode": 200,
+      "metadata": {
+        "cidRequired": true,
+        "crossDeckValid": true,
+        "moduleExported": true
+      }
+    },
+    {
+      "route": "/deck/14",
+      "status": "success",
+      "responseTime": 91,
+      "component": "Deck14",
+      "statusCode": 200,
+      "metadata": {
+        "cidRequired": true,
+        "crossDeckValid": true,
+        "moduleExported": true
+      }
+    },
+    {
+      "route": "/deck/15",
+      "status": "success",
+      "responseTime": 84,
+      "component": "Deck15",
+      "statusCode": 200,
+      "metadata": {
+        "cidRequired": true,
+        "crossDeckValid": true,
+        "moduleExported": true
+      }
+    },
+    {
+      "route": "/deck/16",
+      "status": "timeout",
+      "errorType": "timeout",
+      "errorMessage": "Timeout: Route /deck/16 took longer than expected to respond",
+      "responseTime": 5200,
+      "component": "Deck16",
+      "statusCode": 408,
+      "metadata": {
+        "cidRequired": true,
+        "crossDeckValid": true,
+        "moduleExported": true
+      }
+    },
+    {
+      "route": "/deck/17",
+      "status": "success",
+      "responseTime": 89,
+      "component": "Deck17",
+      "statusCode": 200,
+      "metadata": {
+        "cidRequired": true,
+        "crossDeckValid": true,
+        "moduleExported": true
+      }
+    },
+    {
+      "route": "/deck/18",
+      "status": "success",
+      "responseTime": 92,
+      "component": "Deck18",
+      "statusCode": 200,
+      "metadata": {
+        "cidRequired": true,
+        "crossDeckValid": true,
+        "moduleExported": true
+      }
+    },
+    {
+      "route": "/deck/19",
+      "status": "success",
+      "responseTime": 86,
+      "component": "Deck19",
+      "statusCode": 200,
+      "metadata": {
+        "cidRequired": true,
+        "crossDeckValid": true,
+        "moduleExported": true
+      }
+    },
+    {
+      "route": "/deck/20",
+      "status": "success",
+      "responseTime": 94,
+      "component": "Deck20",
+      "statusCode": 200,
+      "metadata": {
+        "cidRequired": true,
+        "crossDeckValid": true,
+        "moduleExported": true
+      }
+    }
+  ],
+  "routeRegistry": [
+    {
+      "route": "/deck/1",
+      "component": "Deck1",
+      "deck": 1,
+      "level": 1,
+      "priority": "high",
+      "cidGated": false
+    },
+    {
+      "route": "/deck/2",
+      "component": "Deck2",
+      "deck": 2,
+      "level": 1,
+      "priority": "high",
+      "cidGated": false
+    },
+    {
+      "route": "/deck/3",
+      "component": "Deck3",
+      "deck": 3,
+      "level": 1,
+      "priority": "high",
+      "cidGated": false
+    },
+    {
+      "route": "/deck/4",
+      "component": "Deck4",
+      "deck": 4,
+      "level": 1,
+      "priority": "high",
+      "cidGated": false
+    },
+    {
+      "route": "/deck/5",
+      "component": "Deck5",
+      "deck": 5,
+      "level": 1,
+      "priority": "high",
+      "cidGated": false
+    },
+    {
+      "route": "/deck/6",
+      "component": "Deck6",
+      "deck": 6,
+      "level": 1,
+      "priority": "high",
+      "cidGated": true
+    },
+    {
+      "route": "/vault/influence-dynamic",
+      "component": "InfluenceDynamic",
+      "deck": 0,
+      "level": 1,
+      "priority": "medium"
+    },
+    {
+      "route": "/genesis-fuse",
+      "component": "GenesisFusePage",
+      "deck": 0,
+      "level": 1,
+      "priority": "critical"
+    },
+    {
+      "route": "/command",
+      "component": "CommandInterface",
+      "deck": 0,
+      "level": 1,
+      "priority": "critical"
+    }
+  ]
+}

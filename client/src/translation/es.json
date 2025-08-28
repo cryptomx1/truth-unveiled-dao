@@ -1,0 +1,94 @@
+{
+  "mission.selectPrompt": "¿Cuál es tu misión hoy?",
+  "mission.representation": "Representación",
+  "mission.voice": "Voz",
+  "mission.data": "Datos",
+  "mission.description.representation": "Abogar por las necesidades de la comunidad y cambios de políticas",
+  "mission.description.voice": "Comparte tu perspectiva en discusiones cívicas",
+  "mission.description.data": "Analiza tendencias y contribuye a la transparencia",
+  "mission.continue": "Continuar",
+  
+  "tier.citizen": "Ciudadano",
+  "tier.moderator": "Moderador",
+  "tier.governor": "Gobernador", 
+  "tier.label": "Nivel:",
+  
+  "streak.days": "{{count}} Días",
+  "streak.label": "Racha de Confianza:",
+  
+  "nav.onboarding": "Inicio",
+  "nav.constellation": "Explorar",
+  "nav.deck": "Mazos",
+  "nav.audit": "Auditoría",
+  "nav.memory": "Memoria",
+  
+  "deck.feedback.title": "Panel de Comentarios",
+  "deck.interface.title": "Interfaz de Mazos Cívicos",
+  "deck.interface.description": "Accede a herramientas especializadas de participación cívica.",
+  "deck.audit.title": "Vista de Auditoría",
+  "deck.audit.description": "Interfaz de auditoría de nivel avanzado - disponible para moderadores y gobernadores.",
+  
+  "language.toggle": "Cambiar Idioma",
+  "language.set": "Idioma establecido a: {{lang}}",
+  "language.fallback": "Idioma de respaldo aplicado: en",
+  
+  "accessibility.initialized": "CivicLayoutShell Inicializado",
+  "accessibility.tier.status": "Nivel: {{tier}} | Racha de Confianza: {{days}} Días | Misión: {{mission}}",
+  
+  "view.current": "Vista actual: {{view}}",
+  
+  "system.tts.override": "Anulación TTS aplicada",
+  "system.tts.killer": "EXTERMINADOR TTS DE EMERGENCIA ACTIVADO - TODA VOZ DESTRUIDA",
+  
+  "button.submit": "Enviar",
+  "button.cancel": "Cancelar",
+  "button.save": "Guardar",
+  "button.refresh": "Actualizar",
+  "button.export": "Exportar",
+  "button.import": "Importar",
+  "button.close": "Cerrar",
+  "button.continue": "Continuar",
+  "button.back": "Atrás",
+  "button.next": "Siguiente",
+  
+  "card.feedback.title": "Comentarios de Confianza",
+  "card.feedback.description": "Validación de confianza comunitaria y recopilación de comentarios",
+  "card.feedback.submit": "Enviar Comentarios",
+  "card.feedback.history": "Ver Historial",
+  "card.feedback.explanation": "Los comentarios de confianza afectan los umbrales de propuestas y validación",
+  "card.feedback.community": "Los comentarios de la comunidad ayudan a optimizar los mecanismos de toma de decisiones",
+  
+  "card.governance.title": "Panel de Gobernanza",
+  "card.governance.description": "Gestión de propuestas cívicas e interfaz de votación",
+  "card.governance.proposals": "Propuestas Activas",
+  "card.governance.voting": "Votar Ahora",
+  "card.governance.results": "Ver Resultados",
+  
+  "card.identity.title": "Gestión de Identidad",
+  "card.identity.description": "Verificación de identidad descentralizada y gestión de credenciales",
+  "card.identity.verify": "Verificar Identidad",
+  "card.identity.credentials": "Gestionar Credenciales",
+  "card.identity.did": "Perfil DID",
+  
+  "card.deck.preview": "Vista Previa del Mazo",
+  "card.deck.modules": "{{count}} Módulos",
+  "card.deck.status": "Estado: {{status}}",
+  "card.deck.explore": "Explorar Mazo",
+  
+  "session.summary": "Resumen de Sesión",
+  "action.replay": "Reproducir",
+  "timeline.heading": "Índice de Memoria Cívica",
+  
+  "tts.feedback.ready": "Interfaz de comentarios lista",
+  "tts.governance.ready": "Panel de gobernanza listo",
+  "tts.identity.ready": "Interfaz de identidad lista",
+  "tts.quiz.ready": "Prueba tu perspicacia cívica",
+  "tts.node.ready": "Nodo de comentarios listo. {{count}} cargas útiles verificadas",
+  "tts.memory.ready": "Interfaz de memoria lista",
+  
+  "aria.feedback.vote": "Emitir voto de comentarios",
+  "aria.governance.proposal": "Ver detalles de la propuesta",
+  "aria.identity.verify": "Verificar credenciales de identidad",
+  "aria.deck.navigate": "Navegar al mazo",
+  "aria.language.select": "Seleccionar idioma de la interfaz"
+}

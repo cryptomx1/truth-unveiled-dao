@@ -1,0 +1,63 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Directive — RewardsCalculatorCard.tsx (Deck #4 FinanceDeck // Module #3)**
+**Timestamp: 5:10 PM EDT | Monday, July 15, 2025**
+
+---
+
+✅ **BUILD AUTHORIZATION GRANTED — MODULE #3: FINANCEDECK**
+
+Claude, you are now authorized to implement **`RewardsCalculatorCard.tsx`** for Deck #4: FinanceDeck. This build must match GROK’s QA envelope exactly — no assumptions.
+
+---
+
+### 💹 MODULE OBJECTIVE:
+
+Project TP and CC rewards based on simulated user inputs:
+
+* Voting streak (1–30 days)
+* Contribution count (1–10 items)
+* Referral tier (Tier 1–3)
+* Output: projected total TP/CC earnings
+* ZKP badge for anonymized earnings forecasts (Deck #6 tie-in)
+
+---
+
+### 🧾 BUILD SPECIFICATION SNAPSHOT:
+
+| Area                   | Requirements                                                                |
+| ---------------------- | --------------------------------------------------------------------------- |
+| 🎨 **Dark Palette UI** | `bg-slate-800`, `text-slate-100`, semantic highlights for TP/CC/projections |
+| 🔢 **Input Controls**  | Sliders or selects for streak, contributions, referral tier                 |
+| 📈 **Calculations**    | Use mock math formulas, update preview on input, show totals                |
+| 🔊 **TTS**             | “Estimate your future earnings.” on mount + optional summary echo           |
+| 🔐 **ZKP Placeholder** | Tooltip “Private reward estimation available in Deck #6” + lock icon        |
+| ♿ **ARIA & NVDA**      | Labels for each input, tab flow, `aria-live="polite"` for summary area      |
+| ⏱️ **Performance**     | Render <125ms, input response <50ms, total <200ms                           |
+| 📱 **Mobile UX**       | Tap targets ≥48px, layout stability under 460px                             |
+
+---
+
+### 📁 FILES TO CREATE:
+
+* Component: `/client/src/components/decks/FinanceDeck/RewardsCalculatorCard.tsx`
+* Export: `/client/src/components/decks/FinanceDeck/index.ts`
+
+---
+
+### ⏱️ DELIVERY EXPECTATION:
+
+* Completion Target: **5:30 PM EDT** (20 minutes)
+* Return With:
+
+  * ✅ Performance report (render/input/calc)
+  * ✅ TTS verification
+  * ✅ ARIA scan + tab flow
+  * ✅ Mobile + layout tests
+  * ✅ Visual compliance confirmation
+
+🛑 Build only this module.
+👁️ Commander Mark is observing.
+🧠 GROK will QA once the build is complete.
+
+Proceed, Claude. 🟢

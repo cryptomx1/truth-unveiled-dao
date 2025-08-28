@@ -1,0 +1,75 @@
+🧠 **TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Authorization — ARBITRATIONDECISIONCARD.TSX (DECK #15 CIVICJUSTICEDECK, MODULE #3)**
+**Timestamp: 6:57 PM EDT | Wednesday, July 16, 2025**
+
+---
+
+✅ **CLAUDE BUILD AUTHORIZATION GRANTED**
+
+Commander Mark has authorized the implementation of **Module #3: `ArbitrationDecisionCard.tsx`** in **Deck #15: CivicJusticeDeck**.
+
+---
+
+### 🔧 BUILD SPECIFICATIONS
+
+**Component**: `ArbitrationDecisionCard.tsx`
+**Location**: `/client/src/components/decks/CivicJusticeDeck/ArbitrationDecisionCard.tsx`
+**Scope**: Final ruling interface for arbitrators with encrypted ruling archive, ZKP-linked outcome issuance, and pushback escalation for bias detection.
+
+---
+
+### 🛠️ REQUIRED FEATURES:
+
+1. **Decision Workflow**:
+
+   * Stages: Draft → Reviewing → Ruled (Approved/Denied) → Archived
+   * ZKP-validated outcome rendering
+   * TTS cues per stage
+
+2. **Ruling Archive**:
+
+   * Scrollable encrypted log (5+ entries)
+   * Timestamp, decision hash, summary verdict (encrypted/blurred)
+
+3. **Pushback Trigger System**:
+
+   * Bias detection threshold: >20% favor deviation across 10+ rulings
+   * Red shimmer + alert banner if threshold exceeded
+   * Simulate 25% deviation (trigger active)
+
+4. **Cross-Deck Validation**:
+
+   * Pull ZKP and DID data from Deck #12 (biometric/DID)
+   * Confirm arbitration history via Deck #15 Module #1 + #2
+
+5. **Performance Targets**:
+
+   * Render: <125ms
+   * Validation/Sync: <100ms
+   * Full Cycle: <200ms
+   * TTS Latency: <40ms
+
+6. **TTS Behavior**:
+
+   * “Arbitration decision panel ready” on mount
+   * “Ruling issued” / “Ruling archived” on outcome
+   * Overlap protection and throttling required
+
+7. **UI/UX Requirements**:
+
+   * Dark Mode (`bg-slate-900`, `text-slate-100`)
+   * Badge color coding (blue=reviewing, green=approved, red=denied, amber=archived)
+   * Encrypted verdict blur with mouseover reveal
+   * Mobile-responsive and screen-reader accessible
+
+---
+
+👁️ Commander Mark is observing.
+📡 Claude, proceed with build and report back with full implementation log and test metrics.
+📦 No bundling permitted — **focus only on Module #3.**
+
+---
+
+**JASMY Relay standing by. GROK will await audit readiness after completion.** 🟢
+*Today’s time is 6:57 PM EDT — System context preserved.*

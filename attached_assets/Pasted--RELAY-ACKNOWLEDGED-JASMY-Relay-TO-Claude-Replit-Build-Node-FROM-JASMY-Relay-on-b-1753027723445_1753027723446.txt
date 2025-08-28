@@ -1,0 +1,78 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Phase 0-X Step 2 Build Authorization — MissionReferrerOverlay.tsx**
+**Timestamp: 01:03 AM EDT | Sunday, July 20, 2025**
+
+---
+
+✅ **BUILD DIRECTIVE — PROCEED TO IMPLEMENTATION**
+
+Commander Mark has authorized **Phase 0-X Step 2: `MissionReferrerOverlay.tsx`** for immediate implementation.
+
+---
+
+🧠 **BUILD OBJECTIVES — MISSION REFERRAL OVERLAY SYSTEM**
+
+You are to create an overlay module that:
+
+### 🎯 CORE FEATURES
+
+1. **Referrer Detection**
+
+   * Detects inbound referral code (via `?ref=` query string or local storage fallback)
+   * Validates referral code against known CID or affiliate registry
+
+2. **Visual Overlay**
+
+   * Renders badge or banner:
+     `"🪪 Mission Invite from [Name] — Accept your Civic Path"`
+   * Includes caller profile (TP rank, CID alias, TruthCoin holdings)
+
+3. **Onboarding Personalization**
+
+   * Logs referral into onboarding session (stored in `UserSessionEngine`)
+   * Enables tokenomics hook for TP airdrop or badge attribution
+
+4. **Access Trace Storage**
+
+   * Appends `referrerTrace` into `CivicMissionLedger.ts` for future replay/audit
+   * Syncs referral CID to `TruthAffiliateTokenBridge` once onboarded
+
+5. **Fallback Behavior**
+
+   * If referral is invalid/expired: shows
+     `"⚠️ Referral not found — Proceed as independent citizen"`
+   * No error breaks — reroutes to standard onboarding
+
+6. **Accessibility + Visuals**
+
+   * ARIA label: `"Referral Invite Detected — Begin Mission"`
+   * Dark mode + mobile layout responsive
+   * Animation: subtle fade-in with delay to avoid blocking page load
+
+---
+
+🔐 **INTEGRATIONS REQUIRED**
+
+* `UserSessionEngine.tsx`
+* `CivicMissionOnboardingCard.tsx`
+* `TruthAffiliateTokenBridge.ts`
+* `CivicMissionLedger.ts`
+* (Optional) `TPRewardEngine.ts` stub for test reward injection
+
+---
+
+📋 **DEVELOPMENT NOTES**
+
+* All referral codes are mock CID patterns for now
+* Add mock query: `?ref=cid:u:ally-123` or `?ref=code123`
+* Overlay should dismiss or auto-fade after 15 seconds if no action taken
+
+---
+
+📡 **Claude**, proceed with implementation of `MissionReferrerOverlay.tsx` for Phase 0-X Step 2.
+Notify JASMY and GROK when build is complete. Standby for QA validation thereafter.
+
+**Timestamp: 01:03 AM EDT | Sunday, July 20, 2025**
+📡 Relay complete — mission authorized. 🟢

@@ -1,0 +1,78 @@
+{
+  "schema": {
+    "version": "phase_xd_step_1",
+    "description": "Anonymous civic trust delta ledger with ZKP integrity",
+    "fields": {
+      "id": "string - Unique entry identifier",
+      "targetId": "string - Target deck/module/component identifier",
+      "submissionType": "string - support|dissent",
+      "intensity": "number - 1-5 feedback intensity level",
+      "tierWeight": "number - Citizen=1, Governor=2, Commander=3",
+      "anonymizedSubmitterId": "string - CID-derived anonymous identifier",
+      "zkpStub": "string - Zero-knowledge proof stub for verification",
+      "timestamp": "string - ISO 8601 submission timestamp",
+      "processTime": "number - Processing latency in milliseconds",
+      "cid": "string - Content identifier for integrity tracking"
+    }
+  },
+  "entries": [
+    {
+      "id": "trust_1753268400001_a7x9k2m1",
+      "targetId": "governance_deck::proposal_module",
+      "submissionType": "support",
+      "intensity": 4,
+      "tierWeight": 2,
+      "anonymizedSubmitterId": "anon_Z292ZXJub3I",
+      "zkpStub": "zkp_Z292ZXJub3JfcHJvcG9zYWxfMTc1MzI2ODQwMA",
+      "timestamp": "2025-07-23T15:00:00.001Z",
+      "processTime": 147.2,
+      "cid": "QmX7k9A2mGovernanceProposalSupportDelta001"
+    },
+    {
+      "id": "trust_1753268400002_b8y0l3n2",
+      "targetId": "civic_identity::verification_component",
+      "submissionType": "support",
+      "intensity": 5,
+      "tierWeight": 3,
+      "anonymizedSubmitterId": "anon_Y29tbWFuZGVy",
+      "zkpStub": "zkp_Y29tbWFuZGVyX2lkZW50aXR5XzE3NTMyNjg0MDA",
+      "timestamp": "2025-07-23T15:01:15.002Z",
+      "processTime": 134.8,
+      "cid": "QmY8l3N2CivicIdentityVerificationSupport002"
+    },
+    {
+      "id": "trust_1753268400003_c9z1m4o3",
+      "targetId": "privacy_deck::zkp_module::proof_component",
+      "submissionType": "dissent",
+      "intensity": 2,
+      "tierWeight": 1,
+      "anonymizedSubmitterId": "anon_Y2l0aXplbg",
+      "zkpStub": "zkp_Y2l0aXplbl9wcml2YWN5XzE3NTMyNjg0MDA",
+      "timestamp": "2025-07-23T15:02:30.003Z",
+      "processTime": 152.1,
+      "cid": "QmZ1M4O3PrivacyZKPProofDissent003"
+    }
+  ],
+  "aggregatedMetrics": {
+    "totalSubmissions": 3,
+    "supportCount": 2,
+    "dissentCount": 1,
+    "avgProcessTime": 144.7,
+    "tierDistribution": {
+      "Citizen": 1,
+      "Governor": 1,
+      "Commander": 1
+    },
+    "targetCoverage": {
+      "governance_deck": 1,
+      "civic_identity": 1,
+      "privacy_deck": 1
+    }
+  },
+  "integrityValidation": {
+    "lastUpdated": "2025-07-23T15:02:30.003Z",
+    "checksumHash": "integrity_a7b8c9d1e2f3g4h5",
+    "zkpVerificationStatus": "pending",
+    "anonymizationCompliant": true
+  }
+}

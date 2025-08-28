@@ -1,0 +1,68 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Directive — ZKPFeedbackNodeCard.tsx (Deck #10 GovernanceFeedbackDeck)**
+**Timestamp: 04:41 AM EDT | Wednesday, July 16, 2025**
+
+---
+
+✅ **BUILD AUTHORIZATION CONFIRMED**
+Claude, you are hereby authorized to implement **Module #1: `ZKPFeedbackNodeCard.tsx`** for **Deck #10: GovernanceFeedbackDeck**, using the QA envelope prepared by GROK (04:40 AM EDT). All specs must be implemented per the following build directive:
+
+---
+
+### 🔧 BUILD SPECIFICATIONS
+
+**Path**:
+`/client/src/components/decks/GovernanceFeedbackDeck/ZKPFeedbackNodeCard.tsx`
+
+**Core Requirements**:
+
+* Render time <125ms
+* Feedback classification: Approve, Dissent, Amend, Abstain
+* ZKP hash sync with VoteConsensusCard.tsx and ZKProposalLogCard.tsx
+* TTS on mount: *“Feedback node ready. \[X] payloads verified.”*
+* ARIA: Live region for new feedback submissions
+* Pushback logic: Activate if >10% integrity or signer mismatches
+* Visuals: Verified = blue pulsing ring, Pending = amber, Failed = red
+* Status panel showing match %, verified payloads, and timestamp
+
+**UI Layout**:
+
+* TruthUnveiled Dark Mode (`bg-slate-900`, `text-slate-100`)
+* Card width: `max-w-sm`, `p-4`, `gap-3`
+* Pulse animation: `animate-pulse ring-green-500` for verified
+* Icons: Use `i-fa-comment-alt` for sentiment entries
+* No layout shift permitted
+
+**Mobile UX**:
+
+* Stable under 460px
+* Tap targets ≥48px
+* Responsive scrollable feedback thread
+
+**Data Handling**:
+
+* Mock data only
+* Simulate up to 12 feedback entries with 10 verified (≈83.3%)
+* Use Deck #6–9 mock hash pools for feedback verification
+
+---
+
+🛠️ **DELIVERABLES FROM CLAUDE**:
+Upon build completion, report the following:
+
+1. Render Time, Validation Time, and Full Flow metrics
+2. Verified/Failed payload count
+3. Status of Pushback Trigger (active or inactive)
+4. TTS output confirmations
+5. Visual status ring implementation summary
+
+🧠 Claude, pause after build completion and await GROK’s QA review before proceeding to any future module.
+
+---
+
+👁️ Commander Mark is observing.
+🧠 GROK is on standby for QA audit.
+🧠 JASMY confirms transmission.
+
+Please proceed. 🟢

@@ -1,0 +1,61 @@
+{
+  "schema": {
+    "version": "phase_tts_civic_enhance_step_4",
+    "description": "Audio tutorial content for Deck 1 Module 3 - Treasury Balance Display",
+    "deckId": "deck1",
+    "moduleId": "module3",
+    "moduleName": "TreasuryBalanceDisplay",
+    "tutorialType": "financial_overview"
+  },
+  "tutorialContent": {
+    "introductoryNarration": {
+      "title": "📌 Your Civic Treasury Overview",
+      "content": "Welcome to your civic treasury dashboard. This module displays your earned TruthPoints, Genesis tokens, and available rewards from civic participation. Your treasury balance reflects your contributions to the civic ecosystem.",
+      "duration": "16 seconds",
+      "tone": "informative",
+      "speed": "normal"
+    },
+    "navigationGuidance": {
+      "title": "🔍 Understanding Your Civic Wealth",
+      "content": "The main balance shows your total TruthPoints earned through civic engagement. Genesis tokens appear when you complete pillar achievements. The rewards section displays claimable bonuses from governance participation, community contributions, and guardian activities. Use the claim buttons to access your earned rewards.",
+      "duration": "28 seconds",
+      "tone": "instructional",
+      "speed": "normal"
+    },
+    "privacyNotice": {
+      "title": "🔒 Secure Treasury Management",
+      "content": "Your treasury balances are protected with cryptographic security. Transaction records are maintained privately while enabling transparent reward distribution. Only your public civic contributions are visible to the community.",
+      "duration": "17 seconds",
+      "tone": "formal",
+      "speed": "normal"
+    },
+    "nextStepsCue": {
+      "title": "➡️ Maximize Your Civic Rewards",
+      "content": "Explore reward opportunities by engaging more deeply with civic modules. Participate in governance, complete educational content, and contribute to community discussions to earn additional TruthPoints and unlock exclusive benefits.",
+      "duration": "19 seconds",
+      "tone": "encouraging",
+      "speed": "normal"
+    }
+  },
+  "accessibilityFeatures": {
+    "ariaLiveRegions": true,
+    "screenReaderCompatible": true,
+    "keyboardNavigation": true,
+    "currencyFormatting": true
+  },
+  "integrationPoints": {
+    "ttsToggleId": "treasury-balance-tts",
+    "parentDeck": "wallet_overview",
+    "relatedModules": ["truthcoin_claims", "genesis_fusion"],
+    "prerequisiteModules": ["identity_summary"]
+  },
+  "metadata": {
+    "createdAt": "2025-07-23T18:07:00.000Z",
+    "lastUpdated": "2025-07-23T18:07:00.000Z",
+    "version": "1.0.0",
+    "authorizedBy": "Commander Mark via JASMY Relay",
+    "qaValidation": "pending_grok_cycle_l",
+    "languageSupport": ["en-US"],
+    "estimatedCompletionTime": "80 seconds"
+  }
+}

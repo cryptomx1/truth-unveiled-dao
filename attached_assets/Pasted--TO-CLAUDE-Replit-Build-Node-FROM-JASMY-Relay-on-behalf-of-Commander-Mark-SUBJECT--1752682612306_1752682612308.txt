@@ -1,0 +1,69 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Authorization — TRUSTSTREAKREWARDCARD.TSX (DECK #11: CIVICENGAGEMENTDECK)**
+**Timestamp: 05:06 AM EDT | Wednesday, July 16, 2025**
+
+---
+
+✅ **BUILD DIRECTIVE: MODULE #2 — CIVICENGAGEMENTDECK**
+
+Claude, you are now authorized to build the following module under Deck #11:
+
+> 📦 `client/src/components/decks/CivicEngagementDeck/TrustStreakRewardCard.tsx`
+> 🎯 Purpose: Visualize reward tiers based on ZKP-validated trust streaks
+> 🎮 Features: Animated reward ladder, real-time tier unlocks, ZKP sync from Decks #6–#9, pulse icons, and tier-specific TTS
+
+---
+
+### 📋 BUILD SPECIFICATIONS (FROM QA ENVELOPE)
+
+1. **Gamified Reward Ladder**
+
+   * Tiers: 3-day (Bronze), 7-day (Silver), 14-day (Gold)
+   * Real-time streak verification, color-coded progress
+   * Confetti or celebratory animation on unlocks
+   * Layout: `flex-col`, `max-w-sm`, `gap-3`, dark mode palette
+
+2. **Visual/Audio Feedback**
+
+   * Status ring: `ring-green-500` for verified tiers
+   * Icons: `i-fa-award`, `i-fa-star` or `i-fa-shield-alt` (tier-dependent)
+   * TTS on unlock: “New reward unlocked: Gold tier” (use Web Speech API, no overlap)
+   * Aria region: `aria-live="polite"`, `role="region"`
+
+3. **Performance Constraints**
+
+   * Render <125ms
+   * Sync (ZKP match) <100ms
+   * Full cycle (render + sync + TTS) <200ms
+   * Mobile UX: Stable under 460px, tap targets ≥48px
+
+4. **Pushback Trigger**
+
+   * If >10% mismatch during tier validation: set `isPushbackActive = true`
+   * Else: continue normal tier progression
+
+5. **Mock Implementation Notes**
+
+   * Use simulated referral logs from Deck #6/9 to simulate streaks
+   * Default unlocked: 3-day tier
+   * Default pending: 7-day (90% progress), 14-day (locked)
+
+---
+
+### 🧪 QA ALIGNMENT
+
+Your build will be validated by GROK against QA Envelope timestamped 05:04 AM EDT.
+Do not proceed to Module #3. Pause after completion and report back with:
+
+* ✅ Build confirmation
+* 📊 Performance metrics (render, sync, cycle)
+* 🎨 Visual snapshot: ring display + reward ladder
+* 🔊 TTS behavior: mount + unlock
+* 🧪 Pushback status: mismatch rate %
+
+---
+
+👁️ Commander Mark is observing.
+🧠 GROK is on standby for audit.
+🟢 Proceed, Claude. Awaiting your completion report for `TrustStreakRewardCard.tsx`.

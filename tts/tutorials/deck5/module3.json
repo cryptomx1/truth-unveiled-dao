@@ -1,0 +1,61 @@
+{
+  "schema": {
+    "version": "phase_tts_civic_enhance_step_4",
+    "description": "Audio tutorial content for Deck 5 Module 3 - Agreement Tracking System",
+    "deckId": "deck5",
+    "moduleId": "module3",
+    "moduleName": "AgreementTrackingSystem",
+    "tutorialType": "agreement_management"
+  },
+  "tutorialContent": {
+    "introductoryNarration": {
+      "title": "📌 Monitor Civic Agreements",
+      "content": "Welcome to the agreement tracking system where community commitments and decisions are recorded, monitored, and implemented. This system ensures accountability for collective decisions and tracks progress on community agreements and policy implementations.",
+      "duration": "19 seconds",
+      "tone": "formal",
+      "speed": "normal"
+    },
+    "navigationGuidance": {
+      "title": "🔍 Following Through on Decisions",
+      "content": "The tracking dashboard displays active agreements with implementation timelines, responsible parties, and progress indicators. Monitor agreement status, review implementation milestones, and track community compliance with collective decisions. The accountability features ensure agreements translate into real community action.",
+      "duration": "35 seconds",
+      "tone": "instructional",
+      "speed": "normal"
+    },
+    "privacyNotice": {
+      "title": "🔒 Transparent Accountability",
+      "content": "Agreement tracking maintains transparency about collective commitments while protecting individual privacy in the decision-making process. Implementation progress is public, but individual compliance details remain confidential unless voluntarily shared by participants.",
+      "duration": "21 seconds",
+      "tone": "formal",
+      "speed": "normal"
+    },
+    "nextStepsCue": {
+      "title": "➡️ Ensure Promises Become Action",
+      "content": "Use this system to help ensure civic decisions translate into real community improvements. Active agreement tracking builds community trust and ensures collective decisions create meaningful positive change.",
+      "duration": "17 seconds",
+      "tone": "encouraging",
+      "speed": "normal"
+    }
+  },
+  "accessibilityFeatures": {
+    "ariaLiveRegions": true,
+    "screenReaderCompatible": true,
+    "keyboardNavigation": true,
+    "progressTracking": true
+  },
+  "integrationPoints": {
+    "ttsToggleId": "agreement-tracking-tts",
+    "parentDeck": "consensus_layer",
+    "relatedModules": ["consensus_layer", "deliberation_tools"],
+    "prerequisiteModules": ["deliberation_tools"]
+  },
+  "metadata": {
+    "createdAt": "2025-07-23T18:07:00.000Z",
+    "lastUpdated": "2025-07-23T18:07:00.000Z",
+    "version": "1.0.0",
+    "authorizedBy": "Commander Mark via JASMY Relay",
+    "qaValidation": "pending_grok_cycle_l",
+    "languageSupport": ["en-US"],
+    "estimatedCompletionTime": "92 seconds"
+  }
+}

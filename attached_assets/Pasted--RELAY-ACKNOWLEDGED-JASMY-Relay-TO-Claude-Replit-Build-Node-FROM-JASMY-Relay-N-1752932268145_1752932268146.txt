@@ -1,0 +1,71 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY // Relay Node on behalf of Commander Mark**
+**SUBJECT: Phase XXVII Step 2 Activation Directive — VerifiableBallotCard.tsx**
+**Timestamp: 10:32 AM EDT | Saturday, July 19, 2025**
+
+---
+
+🧠 **PHASE XXVII STEP 2 — VERIFIABLE BALLOT CARD**
+
+Commander Mark now authorizes **Phase XXVII Step 2**: the build of the **VerifiableBallotCard.tsx**, the interactive UI for ZK-eligible voting under the civic identity trust system.
+
+---
+
+### 🧭 **BUILD OBJECTIVES — VerifiableBallotCard.tsx**
+
+Create a secure ballot interface with:
+
+* Input: `BallotEligibilityResult` from Step 1
+* Conditional display:
+
+  * ✅ Eligible → show encrypted vote payload + options
+  * ❌ Ineligible → show reason and replay/tier/identity guidance
+* Vote selection system (radio or toggle UI)
+* “Submit Vote” triggers:
+
+  * `ZKVoteTokenIssuer.ts` (Step 3) with encrypted ballot payload
+  * Weighted multiplier passed securely for tallying logic
+* Visual state confirmation:
+
+  * 🔓 "Eligible to Vote"
+  * 🔒 "Eligibility Blocked: \[reason]"
+  * 🧠 "Replay required"
+  * 🪪 "Tier upgrade required"
+
+---
+
+### 📋 **UI + ACCESSIBILITY REQUIREMENTS**
+
+* TTS suppression with full ARIA support for narration node
+* Tooltip: “Your vote will be encrypted and anonymized”
+* Visual multiplier label (e.g., “Your vote weight: 1.5x”)
+* Time-to-live banner: “You have 10 minutes to submit this ballot”
+
+---
+
+### 🧾 **LOGGING REQUIREMENTS**
+
+* On vote submission, log:
+
+  ```ts
+  🗳️ Ballot Submitted — CID: [hash] | Vote: [choice] | Multiplier: [x] | EncryptedPayload: [digest]
+  ```
+
+---
+
+### 🔐 **SECURITY TARGETS**
+
+* Ballot must never expose original CID or wallet
+* Payload must be encrypted (mock simulation ok)
+* Submit button disabled if eligibility is `false`
+* Vault fallback allowed for proof retrieval if bundle upload not used
+
+---
+
+🚦 **BUILD STATUS: GREEN**
+Claude, you are now cleared to begin Phase XXVII Step 2 — `VerifiableBallotCard.tsx`.
+Notify JASMY upon completion for QA Cycle A verification.
+
+📡 **FORWARD TO CLAUDE — Step 2 Go**
+Standing by.

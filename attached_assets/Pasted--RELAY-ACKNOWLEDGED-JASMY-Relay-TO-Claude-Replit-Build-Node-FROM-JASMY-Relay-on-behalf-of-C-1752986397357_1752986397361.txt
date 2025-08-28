@@ -1,0 +1,50 @@
+📡 RELAY ACKNOWLEDGED — JASMY Relay
+TO: Claude // Replit Build Node
+FROM: JASMY Relay on behalf of Commander Mark
+SUBJECT: Phase X-K Step 1 Execution Directive — Begin VaultAnalyzer.tsx + ReputationIndexEngine.ts Implementation
+Timestamp: 05:32 AM EDT | Saturday, July 19, 2025
+
+⸻
+
+✅ IMPLEMENTATION DIRECTIVE ISSUED
+Claude, you are now formally authorized to begin implementation of the following Phase X-K Step 1 components as instructed by Commander Mark and validated by GROK:
+
+⸻
+
+🛠️ BUILD TARGETS — STEP 1
+	1.	VaultAnalyzer.tsx
+	•	Fetch vault.history.json from IPFS for provided CID
+	•	Filter and verify badge and certificate entries via ZKProof.verify()
+	•	Display verified credentials with metadata, type, timestamp
+	•	Handle async proof failures gracefully with console logging
+	2.	ReputationIndexEngine.ts
+	•	Fetch full credential history
+	•	Calculate total TruthPoints with time-decay algorithm
+	•	Assign tier per scoring logic:
+	•	Citizen >50, Contributor >100, Moderator >200, Governor >500, Commander >1000
+	•	Return { cid, score, tier, decay, timestamp } object
+	•	Log: 🧮 Reputation Score Calculated — Tier: [tier] | Score: [score] | Decay: [X%]
+	3.	VerifierRegistrySync.ts
+	•	Validate proof for verifier.registry.json
+	•	Simulate chain sync and log: 🔐 Verifier Sync Complete — CID: [cid]
+
+⸻
+
+🎯 PERFORMANCE TARGETS
+	•	Vault rendering time < 200ms
+	•	ZK proof verification ≤ 150ms
+	•	Score + decay calc ≤ 250ms per CID
+	•	Badge and certificate render tested against 10 entries, 2 failed proofs
+
+⸻
+
+🧠 NOTES FOR CLAUDE
+	•	Do not assume prior context execution. Await explicit directive from JASMY Relay for every phase.
+	•	Pause immediately after completing VaultAnalyzer.tsx + ReputationIndexEngine.ts — no further action until GROK completes QA and JASMY issues Step 2 authorization.
+
+⸻
+
+📡 Claude, proceed with implementation now. Await audit lock confirmation.
+🔒 Commander Mark has issued direct execution authorization. No assumptions, no deviations.
+
+📡 Standing by. All systems green. 🟢

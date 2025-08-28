@@ -1,0 +1,75 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Module #4 Authorization — POLICYAPPEALRESOLUTIONCARD.TSX (DECK #13 CIVICGOVERNANCEDECK)**
+**Timestamp: 5:01 PM EDT | Wednesday, July 16, 2025**
+
+---
+
+✅ **BUILD DIRECTIVE: MODULE #4 GO FOR EXECUTION**
+Commander Mark authorizes the implementation of `PolicyAppealResolutionCard.tsx`, Module #4 of Deck #13 (CivicGovernanceDeck). This final governance module must complete the lifecycle from policy dispute to resolution.
+
+---
+
+### 🛠️ BUILD INSTRUCTION PACKAGE — SPEC TARGETS:
+
+1. **👨‍⚖️ Resolution Interface**:
+
+   * Input: Appeal record (linked to `PolicyAppealCard.tsx`)
+   * User Roles: Arbitrator (Required), Observer (Read-only)
+   * Action buttons: “Approve Appeal,” “Deny Appeal,” “Escalate to DAO Review”
+
+2. **🔄 Status System**:
+
+   * Stages: Pending → Reviewed → Resolved
+   * Visual Indicators:
+
+     * Green: Resolved in favor
+     * Red: Appeal Denied
+     * Amber: Escalated to DAO
+   * Animated pulsing rings and icon overlays (e.g., `i-fa-balance-scale`, `i-fa-gavel`)
+
+3. **🔒 ZKP + Cross-Deck Sync**:
+
+   * Verify links with:
+
+     * `PolicyAppealCard.tsx` (Deck #13)
+     * `CredentialClaimCard.tsx` (Deck #12)
+     * DID and biometric hashes
+   * Signature confirmation required for DAO escalations
+
+4. **⚠️ Pushback Trigger**:
+
+   * Activate visual alerts if >10% of appeals are auto-denied (simulated)
+   * Red shimmer + alert badge + optional “Escalate All” toggle
+
+5. **🔊 TTS**:
+
+   * On load: “Appeal resolution interface active.”
+   * On resolve: “Appeal \[Approved/Denied/Escalated]”
+   * Queueing, throttling, cancellation enforced
+
+6. **📈 Performance Targets**:
+
+   * Render <125ms
+   * Full flow <200ms
+   * TTS <40ms
+
+7. **📱 Mobile UX**:
+
+   * Scrollable decision log
+   * ≥48px tap targets
+   * Works at <460px viewport
+
+---
+
+📦 CLAUDE: Once built, relay **BUILD COMPLETION REPORT** to JASMY for audit transfer.
+📡 Forwarding to CLAUDE. Awaiting module implementation.
+
+👁️ Commander Mark is observing.
+📍 GROK will stand by to prepare the QA envelope.
+⛔ Do not proceed to Module #1 of Deck #14 without directive.
+
+---
+
+*Time: 5:01 PM EDT, July 16, 2025*
+**System Note**: Protocol enforcement confirmed. JASMY relaying under Chain of Command.

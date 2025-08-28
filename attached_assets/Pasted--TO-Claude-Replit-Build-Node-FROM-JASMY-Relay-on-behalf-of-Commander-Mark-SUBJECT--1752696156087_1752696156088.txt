@@ -1,0 +1,69 @@
+🧠 **TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Authorization — CREDENTIALCLAIMCARD.TSX (DECK #12 MODULE #3)**
+**Timestamp: 4:08 PM EDT | Wednesday, July 16, 2025**
+
+---
+
+✅ **BUILD AUTHORIZATION GRANTED**
+Commander Mark authorizes the implementation of **Module #3: `CredentialClaimCard.tsx`** for **Deck #12: CivicIdentityDeck**, following QA envelope prepared by GROK (04:02 PM EDT). Proceed with front-end build per the following criteria.
+
+---
+
+### 🔨 BUILD DIRECTIVE — IMPLEMENT AS FOLLOWS:
+
+1. **Path**:
+   `/client/src/components/decks/CivicIdentityDeck/CredentialClaimCard.tsx`
+
+2. **Core Functionalities**:
+
+   * Credential template dropdown (e.g., “ID Card”, “Voting Credential”)
+   * Credential issuance button linked to:
+
+     * Prior `DIDClaimCard.tsx` DID validation
+     * `BiometricProofCard.tsx` biometric verification
+   * On issuance:
+
+     * Simulate ZKP hash injection
+     * Show pulsing ring animation (green)
+     * Trigger TTS: “Credential issued”
+   * Disabled “Export Credential” button (greyed, no action)
+   * Render status label for issuance state (pending / verified / failed)
+
+3. **Performance Targets**:
+
+   * Render: <125ms
+   * Validation: <100ms
+   * Full flow cycle: <200ms
+   * TTS latency: <40ms
+
+4. **TTS Behavior**:
+
+   * Mount: “Credential issuance panel ready”
+   * On success: “Credential issued”
+   * Manual initiation only (no autoplay)
+   * Cancel overlapping speech on state changes
+
+5. **UI + ARIA + Mobile**:
+
+   * TruthUnveiled Dark Mode styling
+   * Live ARIA regions for credential status
+   * 48px+ tap targets
+   * Responsive layout under 460px
+   * All fields keyboard-navigable
+
+6. **Validation Triggers**:
+
+   * Simulate 5 valid and 2 invalid credential attempts
+   * Cross-deck ZKP sync with Decks #6–#12 (mock only)
+   * Inject and render ZKP hash upon success
+   * Pushback system: flag if >10% issuance mismatch (include toggle to simulate)
+
+---
+
+📦 Claude, implement **CredentialClaimCard.tsx** to spec above and pause once build completes.
+🧪 GROK will audit the build post-confirmation.
+🧠 Commander Mark is observing.
+📍 JASMY is active and protocol compliant.
+
+📡 Forward to Claude for execution.

@@ -1,0 +1,65 @@
+🧠 **TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Final Build Directive — CivicLegacySummitCard.tsx (Deck #20, Module #4)**
+**Timestamp: 1:11 AM EDT | Thursday, July 17, 2025**
+
+---
+
+✅ **BUILD AUTHORIZATION GRANTED — FINAL MODULE INITIATION**
+Commander Mark has authorized implementation of **Module #4: `CivicLegacySummitCard.tsx`** to complete Deck #20: **CivicLegacyDeck**.
+
+---
+
+### 📍 Implementation Instructions:
+
+📁 **Path**: `/client/src/components/decks/CivicLegacyDeck/CivicLegacySummitCard.tsx`
+🧩 **Purpose**: Converge contributions, testimonies, and index findings into a final civic summit call-to-action and preservation capsule.
+
+---
+
+### 🔧 Required Features:
+
+1. 🏛️ **Summit Archive Rollup**
+
+   * Unified capsule summarizing key verified contributions + testimonies (titles, contributors, lifecycle)
+   * ZKP summary chain viewer with hash → DID → timestamp validation
+
+2. 🗳️ **Community Voice Display**
+
+   * Rotating carousel or testimonial reel featuring 5 selected quotes with name, emotion tag, and source (Vault or Testimony)
+
+3. 📦 **Preservation Capsule Upload**
+
+   * Mock upload form for preservation batch (title, filetype, source links, civic use tag)
+
+4. 🧠 **TTS Announcements**
+
+   * "Legacy summit interface ready" on mount, "Preservation capsule submitted" on interaction
+
+5. 📊 **Metrics Panel**
+
+   * Total archived, total verified, total contributors, % unverifiable, verification score (target: 85%+)
+
+6. 🛑 **Pushback Monitoring**
+
+   * ≥30% unverifiable preservation files trigger alert; simulate 33.3% fail scenario
+
+7. 🔐 **Security Compliance**
+
+   * ZKP proof chain for all summit-archived data
+   * DID attribution traceability for each item
+
+8. 📱 **Mobile UX Requirements**
+
+   * Stable <460px layout, ≥48px touch targets
+   * Scrollable summary and preservation interface
+
+---
+
+### 🛑 DO NOT PROCEED TO EXPORT UNTIL GROK ISSUES FINAL LOCK-IN
+
+📡 Claude: Begin build now. Update `index.ts` and `identity-demo.tsx`. Pause after build.
+📦 JASMY: Awaiting GROK’s QA envelope request and post-build verdict.
+👁️ Commander Mark: Observing
+
+📡 Proceed. Timestamp logged at **1:11 AM EDT | July 17, 2025**.

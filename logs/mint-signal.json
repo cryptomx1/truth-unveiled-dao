@@ -1,0 +1,99 @@
+{
+  "schema": {
+    "version": "phase_xd_step_4",
+    "description": "ZKP mint signal log with civic mint stubs and tiered delta thresholds",
+    "fields": {
+      "timestamp": "ISO 8601 signal emission timestamp",
+      "signalId": "Unique mint signal identifier",
+      "mintStub": "Civic mint issuance stub with user and amount data",
+      "triggerData": "Trust delta information that triggered the mint signal"
+    }
+  },
+  "mintSignals": [
+    {
+      "timestamp": "2025-07-23T18:15:32.445Z",
+      "signalId": "mint_1721751332445_user_governance_deck_1",
+      "mintStub": {
+        "userId": "user_governance_deck_1",
+        "tier": "governor",
+        "amount": 50,
+        "zkpHash": "zkp_mint_dXNlcl9nb3Zlcm5hbmNlX2RlY2tf"
+      },
+      "triggerData": {
+        "deckId": "governance_deck",
+        "trustDelta": 42.5,
+        "reason": "governor_threshold_exceeded"
+      }
+    },
+    {
+      "timestamp": "2025-07-23T18:20:15.892Z",
+      "signalId": "mint_1721751615892_user_privacy_deck_2",
+      "mintStub": {
+        "userId": "user_privacy_deck_2",
+        "tier": "citizen",
+        "amount": 25,
+        "zkpHash": "zkp_mint_dXNlcl9wcml2YWN5X2RlY2tfMg=="
+      },
+      "triggerData": {
+        "deckId": "privacy_deck",
+        "trustDelta": 55.8,
+        "reason": "citizen_threshold_exceeded"
+      }
+    },
+    {
+      "timestamp": "2025-07-23T18:25:07.334Z",
+      "signalId": "mint_1721751907334_user_civic_identity_0",
+      "mintStub": {
+        "userId": "user_civic_identity_0",
+        "tier": "commander",
+        "amount": 100,
+        "zkpHash": "zkp_mint_dXNlcl9jaXZpY19pZGVudGl0eV8w"
+      },
+      "triggerData": {
+        "deckId": "civic_identity",
+        "trustDelta": 38.2,
+        "reason": "commander_threshold_exceeded"
+      }
+    }
+  ],
+  "aggregatedMetrics": {
+    "totalSignalsGenerated": 3,
+    "signalsByTier": {
+      "citizen": 1,
+      "governor": 1,
+      "commander": 1
+    },
+    "totalMintValue": 175,
+    "averageTrustDelta": 45.5,
+    "timeRange": {
+      "start": "2025-07-23T18:15:32.445Z",
+      "end": "2025-07-23T18:25:07.334Z",
+      "durationMinutes": 9.58
+    }
+  },
+  "triggerThresholds": {
+    "citizen": 50,
+    "governor": 40,
+    "commander": 30,
+    "cooldownHours": 2,
+    "maxMintsPerHour": 100
+  },
+  "processingStatus": {
+    "pendingSignals": 0,
+    "processedSignals": 3,
+    "failedSignals": 0,
+    "lastProcessedAt": "2025-07-23T18:25:07.334Z"
+  },
+  "zkpValidation": {
+    "allSignalsValidated": true,
+    "validationMethod": "tiered_delta_threshold",
+    "integrityConfirmed": true,
+    "lastValidationRun": "2025-07-23T18:25:10.000Z"
+  },
+  "systemIntegration": {
+    "trustFeedbackEngineSync": true,
+    "sentimentAggregatorSync": true,
+    "monitoringDashboardIntegration": true,
+    "logFileGeneration": "automated"
+  }
+}

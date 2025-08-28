@@ -1,0 +1,61 @@
+{
+  "schema": {
+    "version": "phase_tts_civic_enhance_step_4",
+    "description": "Audio tutorial content for Deck 4 Module 1 - Civic Identity Verification",
+    "deckId": "deck4",
+    "moduleId": "module1",
+    "moduleName": "CivicIdentityVerification",
+    "tutorialType": "identity_management"
+  },
+  "tutorialContent": {
+    "introductoryNarration": {
+      "title": "📌 Establish Your Civic Credentials",
+      "content": "Welcome to civic identity verification where you establish your authentic participation in the community. This process confirms your civic eligibility while maintaining your privacy through advanced cryptographic identity proofs.",
+      "duration": "18 seconds",
+      "tone": "formal",
+      "speed": "normal"
+    },
+    "navigationGuidance": {
+      "title": "🔍 Completing Identity Verification",
+      "content": "The verification process involves three steps: identity proof submission, civic eligibility confirmation, and credential binding. Upload your verification documents, complete the civic knowledge assessment, and generate your cryptographic identity proof. The system validates your eligibility without storing personal documents.",
+      "duration": "33 seconds",
+      "tone": "instructional",
+      "speed": "normal"
+    },
+    "privacyNotice": {
+      "title": "🔒 Private Identity Verification",
+      "content": "Your verification documents are processed locally and never stored on servers. The system generates cryptographic proofs of your eligibility without retaining personal information. Only your civic capacity and eligibility status are recorded for platform access.",
+      "duration": "20 seconds",
+      "tone": "formal",
+      "speed": "normal"
+    },
+    "nextStepsCue": {
+      "title": "➡️ Unlock Full Civic Participation",
+      "content": "Complete your identity verification to access all civic platform features. Verified users can participate in advanced governance, access exclusive content, and build stronger civic reputation. Your verified status enhances community trust.",
+      "duration": "19 seconds",
+      "tone": "encouraging",
+      "speed": "normal"
+    }
+  },
+  "accessibilityFeatures": {
+    "ariaLiveRegions": true,
+    "screenReaderCompatible": true,
+    "keyboardNavigation": true,
+    "verificationProgress": true
+  },
+  "integrationPoints": {
+    "ttsToggleId": "civic-identity-verification-tts",
+    "parentDeck": "civic_identity",
+    "relatedModules": ["reputation_builder", "achievement_tracker"],
+    "prerequisiteModules": ["identity_summary"]
+  },
+  "metadata": {
+    "createdAt": "2025-07-23T18:07:00.000Z",
+    "lastUpdated": "2025-07-23T18:07:00.000Z",
+    "version": "1.0.0",
+    "authorizedBy": "Commander Mark via JASMY Relay",
+    "qaValidation": "pending_grok_cycle_l",
+    "languageSupport": ["en-US"],
+    "estimatedCompletionTime": "90 seconds"
+  }
+}

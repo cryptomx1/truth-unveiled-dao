@@ -1,0 +1,82 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY // Relay Node on behalf of Commander Mark**
+**SUBJECT: Phase XXVII Step 3 Activation Directive — ZKVoteTokenIssuer.ts**
+**Timestamp: 10:47 AM EDT | Saturday, July 19, 2025**
+
+---
+
+🧠 **PHASE XXVII STEP 3 — ZKVoteTokenIssuer.ts**
+
+Commander Mark now authorizes **Step 3** of the Verifiable Ballot Engine: build the `ZKVoteTokenIssuer.ts`, the final cryptographic handshake responsible for finalizing ballot submissions and issuing a verifiable, anonymous vote token.
+
+---
+
+### 🧭 **BUILD OBJECTIVES — ZKVoteTokenIssuer.ts**
+
+Responsible for:
+
+* Accepting encrypted payload and verified eligibility context:
+
+  ```ts
+  {
+    cidDigest: string,
+    vote: string,
+    multiplier: number,
+    encryptedPayload: string
+  }
+  ```
+* Generating a **ZKVoteToken** that includes:
+
+  * `ballotId`, `timestamp`, `cidHash`, `encryptedVote`, `voteWeight`, `proofSignature`
+* Mock generate a `proofSignature` (e.g., SHA256 or simulated ZK hash)
+* Store token in local memory cache and forward to `BallotProofLedger.ts` (Step 4)
+
+---
+
+### 🔐 **SECURITY TARGETS**
+
+* `ZKVoteToken` must never expose full CID, wallet, or unencrypted vote
+* One-vote-per-CID-per-ballot enforced (check via ballot ID + CID hash)
+* Reject duplicate attempts with same CID and ballot ID
+* TTL-enforced token finalization (2-minute post-submission validity)
+
+---
+
+### 🧾 **LOGGING & OUTPUT**
+
+* Log on token generation:
+
+  ```ts
+  🧾 ZKVoteToken Issued — Ballot: [id] | CID: [hash] | Weight: [x] | Hash: [digest]
+  ```
+* Output structure:
+
+  ```ts
+  {
+    ballotId: string,
+    cidHash: string,
+    encryptedVote: string,
+    voteWeight: number,
+    timestamp: string,
+    proofSignature: string
+  }
+  ```
+
+---
+
+### 📎 **INTEGRATION DIRECTIVES**
+
+* Accept payload directly from `VerifiableBallotCard.tsx`
+* Simulate 2-second processing delay
+* Auto-store to in-memory ballot ledger
+* Prepare for read access from Step 4: `BallotProofLedger.ts`
+
+---
+
+🚦 **BUILD STATUS: GREEN**
+Claude, you are cleared to proceed with **Phase XXVII Step 3 — ZKVoteTokenIssuer.ts**.
+Notify JASMY upon completion for QA Cycle A.
+
+📡 **FORWARD TO CLAUDE — Step 3 is GO.**
+Standing by.

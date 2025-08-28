@@ -1,0 +1,438 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "description": "ZIP cluster mapping for ripple campaign targeting",
+    "lastUpdated": "2025-07-24T18:30:00.000Z",
+    "coverage": {
+      "zipCodes": 15,
+      "regions": 8,
+      "decks": 20
+    }
+  },
+  "zipClusterMappings": {
+    "10001": {
+      "region": "Manhattan, NY",
+      "population": 45000,
+      "civicEngagement": 85,
+      "sentimentIndex": 78,
+      "activeCIDs": 1250,
+      "primaryDecks": [1, 2, 5, 10, 15],
+      "deckImpactScores": {
+        "1": 88,
+        "2": 92,
+        "5": 76,
+        "10": 94,
+        "15": 82
+      },
+      "heatmapData": {
+        "municipalParticipation": 75,
+        "governanceEngagement": 85,
+        "transparencyDemand": 90,
+        "feedbackVolume": 70
+      },
+      "campaignReceptivity": "high",
+      "optimalPromptTypes": ["governance", "transparency", "participation"],
+      "reachMultiplier": 1.3
+    },
+    "90210": {
+      "region": "Beverly Hills, CA",
+      "population": 32000,
+      "civicEngagement": 82,
+      "sentimentIndex": 71,
+      "activeCIDs": 980,
+      "primaryDecks": [2, 8, 10, 12, 18],
+      "deckImpactScores": {
+        "2": 86,
+        "8": 79,
+        "10": 91,
+        "12": 74,
+        "18": 68
+      },
+      "heatmapData": {
+        "municipalParticipation": 72,
+        "governanceEngagement": 82,
+        "transparencyDemand": 76,
+        "feedbackVolume": 67
+      },
+      "campaignReceptivity": "high",
+      "optimalPromptTypes": ["transparency", "governance", "trust"],
+      "reachMultiplier": 1.2
+    },
+    "75201": {
+      "region": "Dallas, TX",
+      "population": 58000,
+      "civicEngagement": 68,
+      "sentimentIndex": 64,
+      "activeCIDs": 720,
+      "primaryDecks": [1, 3, 6, 10, 14],
+      "deckImpactScores": {
+        "1": 71,
+        "3": 65,
+        "6": 59,
+        "10": 73,
+        "14": 62
+      },
+      "heatmapData": {
+        "municipalParticipation": 58,
+        "governanceEngagement": 68,
+        "transparencyDemand": 69,
+        "feedbackVolume": 53
+      },
+      "campaignReceptivity": "medium",
+      "optimalPromptTypes": ["municipal", "participation", "trust"],
+      "reachMultiplier": 1.0
+    },
+    "60601": {
+      "region": "Chicago, IL",
+      "population": 67000,
+      "civicEngagement": 76,
+      "sentimentIndex": 69,
+      "activeCIDs": 890,
+      "primaryDecks": [2, 4, 7, 10, 16],
+      "deckImpactScores": {
+        "2": 78,
+        "4": 72,
+        "7": 69,
+        "10": 81,
+        "16": 74
+      },
+      "heatmapData": {
+        "municipalParticipation": 66,
+        "governanceEngagement": 76,
+        "transparencyDemand": 74,
+        "feedbackVolume": 61
+      },
+      "campaignReceptivity": "medium-high",
+      "optimalPromptTypes": ["governance", "municipal", "transparency"],
+      "reachMultiplier": 1.1
+    },
+    "33101": {
+      "region": "Miami Beach, FL",
+      "population": 39000,
+      "civicEngagement": 63,
+      "sentimentIndex": 58,
+      "activeCIDs": 520,
+      "primaryDecks": [1, 5, 9, 13, 17],
+      "deckImpactScores": {
+        "1": 65,
+        "5": 61,
+        "9": 57,
+        "13": 54,
+        "17": 59
+      },
+      "heatmapData": {
+        "municipalParticipation": 53,
+        "governanceEngagement": 63,
+        "transparencyDemand": 63,
+        "feedbackVolume": 48
+      },
+      "campaignReceptivity": "medium",
+      "optimalPromptTypes": ["participation", "municipal", "trust"],
+      "reachMultiplier": 0.9
+    },
+    "02101": {
+      "region": "Boston, MA",
+      "population": 54000,
+      "civicEngagement": 89,
+      "sentimentIndex": 83,
+      "activeCIDs": 1180,
+      "primaryDecks": [2, 6, 8, 10, 19],
+      "deckImpactScores": {
+        "2": 91,
+        "6": 87,
+        "8": 85,
+        "10": 93,
+        "19": 79
+      },
+      "heatmapData": {
+        "municipalParticipation": 79,
+        "governanceEngagement": 89,
+        "transparencyDemand": 88,
+        "feedbackVolume": 74
+      },
+      "campaignReceptivity": "high",
+      "optimalPromptTypes": ["governance", "transparency", "participation"],
+      "reachMultiplier": 1.4
+    },
+    "98101": {
+      "region": "Seattle, WA",
+      "population": 41000,
+      "civicEngagement": 81,
+      "sentimentIndex": 75,
+      "activeCIDs": 950,
+      "primaryDecks": [3, 7, 11, 15, 20],
+      "deckImpactScores": {
+        "3": 83,
+        "7": 79,
+        "11": 77,
+        "15": 85,
+        "20": 71
+      },
+      "heatmapData": {
+        "municipalParticipation": 71,
+        "governanceEngagement": 81,
+        "transparencyDemand": 80,
+        "feedbackVolume": 66
+      },
+      "campaignReceptivity": "high",
+      "optimalPromptTypes": ["transparency", "governance", "municipal"],
+      "reachMultiplier": 1.2
+    },
+    "80202": {
+      "region": "Denver, CO",
+      "population": 49000,
+      "civicEngagement": 72,
+      "sentimentIndex": 67,
+      "activeCIDs": 680,
+      "primaryDecks": [1, 4, 8, 12, 16],
+      "deckImpactScores": {
+        "1": 74,
+        "4": 70,
+        "8": 68,
+        "12": 65,
+        "16": 72
+      },
+      "heatmapData": {
+        "municipalParticipation": 62,
+        "governanceEngagement": 72,
+        "transparencyDemand": 72,
+        "feedbackVolume": 57
+      },
+      "campaignReceptivity": "medium-high",
+      "optimalPromptTypes": ["municipal", "governance", "participation"],
+      "reachMultiplier": 1.0
+    },
+    "30309": {
+      "region": "Atlanta, GA",
+      "population": 52000,
+      "civicEngagement": 69,
+      "sentimentIndex": 62,
+      "activeCIDs": 640,
+      "primaryDecks": [2, 5, 9, 14, 18],
+      "deckImpactScores": {
+        "2": 71,
+        "5": 67,
+        "9": 63,
+        "14": 58,
+        "18": 65
+      },
+      "heatmapData": {
+        "municipalParticipation": 59,
+        "governanceEngagement": 69,
+        "transparencyDemand": 67,
+        "feedbackVolume": 54
+      },
+      "campaignReceptivity": "medium",
+      "optimalPromptTypes": ["participation", "governance", "trust"],
+      "reachMultiplier": 0.95
+    },
+    "85001": {
+      "region": "Phoenix, AZ",
+      "population": 61000,
+      "civicEngagement": 58,
+      "sentimentIndex": 52,
+      "activeCIDs": 420,
+      "primaryDecks": [1, 6, 11, 15, 19],
+      "deckImpactScores": {
+        "1": 60,
+        "6": 56,
+        "11": 53,
+        "15": 51,
+        "19": 58
+      },
+      "heatmapData": {
+        "municipalParticipation": 48,
+        "governanceEngagement": 58,
+        "transparencyDemand": 57,
+        "feedbackVolume": 43
+      },
+      "campaignReceptivity": "low-medium",
+      "optimalPromptTypes": ["participation", "municipal", "trust"],
+      "reachMultiplier": 0.8
+    },
+    "97201": {
+      "region": "Portland, OR",
+      "population": 38000,
+      "civicEngagement": 84,
+      "sentimentIndex": 79,
+      "activeCIDs": 1080,
+      "primaryDecks": [3, 7, 10, 13, 17],
+      "deckImpactScores": {
+        "3": 86,
+        "7": 82,
+        "10": 89,
+        "13": 77,
+        "17": 84
+      },
+      "heatmapData": {
+        "municipalParticipation": 74,
+        "governanceEngagement": 84,
+        "transparencyDemand": 84,
+        "feedbackVolume": 69
+      },
+      "campaignReceptivity": "high",
+      "optimalPromptTypes": ["governance", "transparency", "municipal"],
+      "reachMultiplier": 1.3
+    },
+    "19102": {
+      "region": "Philadelphia, PA",
+      "population": 63000,
+      "civicEngagement": 73,
+      "sentimentIndex": 66,
+      "activeCIDs": 780,
+      "primaryDecks": [2, 6, 9, 12, 20],
+      "deckImpactScores": {
+        "2": 75,
+        "6": 71,
+        "9": 68,
+        "12": 64,
+        "20": 73
+      },
+      "heatmapData": {
+        "municipalParticipation": 63,
+        "governanceEngagement": 73,
+        "transparencyDemand": 71,
+        "feedbackVolume": 58
+      },
+      "campaignReceptivity": "medium-high",
+      "optimalPromptTypes": ["governance", "municipal", "transparency"],
+      "reachMultiplier": 1.05
+    },
+    "23451": {
+      "region": "Virginia Beach, VA",
+      "population": 45000,
+      "civicEngagement": 66,
+      "sentimentIndex": 61,
+      "activeCIDs": 580,
+      "primaryDecks": [1, 4, 8, 14, 18],
+      "deckImpactScores": {
+        "1": 68,
+        "4": 64,
+        "8": 62,
+        "14": 58,
+        "18": 66
+      },
+      "heatmapData": {
+        "municipalParticipation": 56,
+        "governanceEngagement": 66,
+        "transparencyDemand": 66,
+        "feedbackVolume": 51
+      },
+      "campaignReceptivity": "medium",
+      "optimalPromptTypes": ["municipal", "participation", "governance"],
+      "reachMultiplier": 0.9
+    },
+    "55401": {
+      "region": "Minneapolis, MN",
+      "population": 56000,
+      "civicEngagement": 77,
+      "sentimentIndex": 71,
+      "activeCIDs": 820,
+      "primaryDecks": [3, 5, 10, 16, 19],
+      "deckImpactScores": {
+        "3": 79,
+        "5": 75,
+        "10": 83,
+        "16": 71,
+        "19": 77
+      },
+      "heatmapData": {
+        "municipalParticipation": 67,
+        "governanceEngagement": 77,
+        "transparencyDemand": 76,
+        "feedbackVolume": 62
+      },
+      "campaignReceptivity": "medium-high",
+      "optimalPromptTypes": ["governance", "transparency", "municipal"],
+      "reachMultiplier": 1.1
+    },
+    "64111": {
+      "region": "Kansas City, MO",
+      "population": 48000,
+      "civicEngagement": 62,
+      "sentimentIndex": 57,
+      "activeCIDs": 480,
+      "primaryDecks": [2, 7, 11, 15, 20],
+      "deckImpactScores": {
+        "2": 64,
+        "7": 60,
+        "11": 58,
+        "15": 55,
+        "20": 62
+      },
+      "heatmapData": {
+        "municipalParticipation": 52,
+        "governanceEngagement": 62,
+        "transparencyDemand": 62,
+        "feedbackVolume": 47
+      },
+      "campaignReceptivity": "medium",
+      "optimalPromptTypes": ["participation", "municipal", "trust"],
+      "reachMultiplier": 0.85
+    }
+  },
+  "civicTopicMappings": {
+    "infrastructure": {
+      "primaryDecks": [1, 3, 6],
+      "sentimentTriggers": ["roads", "transit", "utilities", "maintenance"],
+      "urgencyFactors": ["safety", "emergency", "repair"]
+    },
+    "governance": {
+      "primaryDecks": [2, 10],
+      "sentimentTriggers": ["representation", "voting", "policy", "accountability"],
+      "urgencyFactors": ["corruption", "transparency", "response"]
+    },
+    "transparency": {
+      "primaryDecks": [8, 10, 12],
+      "sentimentTriggers": ["openness", "records", "disclosure", "access"],
+      "urgencyFactors": ["secrecy", "hidden", "coverup"]
+    },
+    "participation": {
+      "primaryDecks": [4, 7, 14],
+      "sentimentTriggers": ["engagement", "involvement", "voice", "feedback"],
+      "urgencyFactors": ["ignored", "excluded", "silenced"]
+    },
+    "municipal": {
+      "primaryDecks": [1, 3, 5, 6, 9],
+      "sentimentTriggers": ["local", "community", "neighborhood", "services"],
+      "urgencyFactors": ["neglect", "decline", "deterioration"]
+    }
+  },
+  "triggerSentimentMapping": {
+    "high_engagement_positive": {
+      "sentimentRange": [70, 100],
+      "civicEngagementRange": [75, 100],
+      "optimalPromptTypes": ["governance", "transparency"],
+      "tone": "encouraging",
+      "messaging": "appreciation_and_advancement"
+    },
+    "high_engagement_negative": {
+      "sentimentRange": [0, 40],
+      "civicEngagementRange": [75, 100],
+      "optimalPromptTypes": ["transparency", "governance"],
+      "tone": "urgent",
+      "messaging": "accountability_and_action"
+    },
+    "low_engagement_positive": {
+      "sentimentRange": [60, 100],
+      "civicEngagementRange": [0, 50],
+      "optimalPromptTypes": ["participation", "municipal"],
+      "tone": "encouraging",
+      "messaging": "invitation_and_opportunity"
+    },
+    "low_engagement_negative": {
+      "sentimentRange": [0, 50],
+      "civicEngagementRange": [0, 50],
+      "optimalPromptTypes": ["participation", "trust"],
+      "tone": "informative",
+      "messaging": "education_and_empowerment"
+    },
+    "medium_engagement_mixed": {
+      "sentimentRange": [40, 70],
+      "civicEngagementRange": [50, 75],
+      "optimalPromptTypes": ["governance", "municipal"],
+      "tone": "informative",
+      "messaging": "progress_and_involvement"
+    }
+  }
+}

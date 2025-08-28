@@ -1,0 +1,52 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Directive — CivicQuizCard.tsx (Deck #3 EducationDeck // Module #2)**
+**Timestamp: 3:39 PM EDT | Monday, July 15, 2025**
+
+---
+
+✅ **BUILD AUTHORIZATION GRANTED — MODULE #2: EDUCATION DECK**
+
+Claude, you are now authorized to implement **`CivicQuizCard.tsx`** for Deck #3: EducationDeck. Build must align with GROK’s QA envelope.
+
+---
+
+### 🛠️ SPECIFICATION SNAPSHOT
+
+| Category                  | Directive                                                                    |
+| ------------------------- | ---------------------------------------------------------------------------- |
+| 📋 **Quiz Functionality** | 3 shuffled multiple-choice questions, tap-to-select, lock after answer       |
+| 🧠 **Feedback Logic**     | Show correct answer + short civic explanation (≤120 chars)                   |
+| 🔊 **TTS Support**        | On mount: “Test your civic insight.” After answer: “Correct.” / “Try again.” |
+| ♿ **Accessibility**       | Full ARIA form input labeling, `aria-live` feedback, NVDA tab flow           |
+| 🎨 **Visual Layout**      | TruthUnveiled Dark Palette, `max-w-sm`, `p-4`, `gap-4`, bold active state    |
+| 📶 **Progress Bar**       | `w-full bg-slate-700` with `bg-blue-500` fill, rounded corners               |
+| 🔐 **ZKP Placeholder**    | Hidden badge w/ lock icon + tooltip: “Certification available in Deck #6”    |
+| 📱 **Mobile UX**          | Tap targets ≥48px, no overflow, tested at <460px                             |
+| ⏱️ **Performance**        | Render <125ms, selection response <50ms                                      |
+
+---
+
+### 📁 FILES TO CREATE:
+
+* Component: `/client/src/components/decks/EducationDeck/CivicQuizCard.tsx`
+* Export: `/client/src/components/decks/EducationDeck/index.ts`
+
+---
+
+### ⏱️ DELIVERY EXPECTATION:
+
+* Completion target: **3:59 PM EDT** (20 minutes)
+* Return with:
+
+  * ✅ Component render + interaction test
+  * ✅ Quiz logic report (shuffle, lock, feedback)
+  * ✅ TTS + ARIA scan results
+  * ✅ Visual confirmation of correct/incorrect cues
+  * ✅ Performance benchmark summary
+
+🛑 Proceed with only this module.
+👁️ Commander Mark is observing.
+🧠 GROK will reverify upon delivery.
+
+**Begin build, Claude.** 🟢

@@ -1,0 +1,94 @@
+🧠 Acknowledged. Deck #1 (WalletOverviewDeck) reset is complete. All prior assumptions and builds are now deprecated.
+
+✅ IdentitySummaryCard QA spec from GROK is ready and verified.
+
+Next step: I will now generate a precise build directive for Claude based on the approved QA spec. Stand by… 🟢
+
+
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of GROK and Commander Mark**
+**SUBJECT: Build Directive — IdentitySummaryCard.tsx (Deck #1: WalletOverviewDeck)**
+**Timestamp: 04:56 PM EDT | Monday, July 14, 2025**
+
+---
+
+✅ **Authorization Granted**
+You are cleared to begin building `IdentitySummaryCard.tsx` under the full reset protocol for Deck #1.
+
+---
+
+### 🧱 COMPONENT SPECIFICATION: IdentitySummaryCard.tsx
+
+| Property              | Requirement                                                  |
+| --------------------- | ------------------------------------------------------------ |
+| File Location         | `/frontend/decks/WalletOverviewDeck/IdentitySummaryCard.tsx` |
+| Language/Framework    | React + TypeScript + Tailwind CSS                            |
+| Max Width             | `max-w-[460px]` mobile-first layout                          |
+| Theme                 | TruthUnveiled dark gradient                                  |
+| ARIA Compliance       | Screen reader roles, labels, tab index                       |
+| Render Latency Target | `<125ms`                                                     |
+
+---
+
+### 🔍 FUNCTIONAL REQUIREMENTS
+
+1. **DID and Wallet Address Block**
+
+   * Mock DID: `did:tu:0xA1B2C3D4E5F6G7H8`
+   * Wallet: `0xFEEDBEEF1234567890`
+   * Show both with copy buttons (Clipboard API)
+   * Fallback: Button alerts if Clipboard unsupported
+
+2. **Civic Verification Badge**
+
+   * Label: `Verified` or `Unverified` (mock boolean toggle)
+   * Color: Green if verified, Gray if unverified
+
+3. **Referral Code (TruthUnveiled.io)**
+
+   * Mock Code: `TU-9XQ4Z2`
+   * Show in QR Code + Copy-to-Clipboard
+   * Tooltip: “Copied!” on copy success
+   * QR Code Library: Use `qrcode.react` or pure JS fallback
+
+4. **ZKP Placeholder**
+
+   * Below DID block: `ZKP Hash: [placeholder string]`
+   * No functional logic required, style as secure output block
+
+5. **Jasmy TTS Integration**
+
+   * On Component Mount: Trigger TTS
+   * Text: “Your decentralized identity is secure and synced.”
+   * Use `window.speechSynthesis` with SSML fallback for Safari
+
+---
+
+### 🧠 ADDITIONAL CONSTRAINTS
+
+* Do not use any global state
+* Do not connect to any live backend
+* Ensure all features work offline with mock data
+* Use Tailwind CSS for spacing, color, layout
+* Use semantic HTML
+* Maintain isolation — no external imports beyond what’s required
+* No biometric logic (reserved for Deck #10)
+
+---
+
+### 🎯 OBJECTIVE
+
+You are to implement the `IdentitySummaryCard.tsx` component *only*.
+Do not proceed beyond this component until GROK completes QA and JASMY issues next directive.
+
+---
+
+🛑 Commander Mark is observing
+🧠 GROK has approved the QA spec
+⏸️ You are under strict relay protocol — stop after this build and await further instruction.
+
+Please acknowledge completion with a component report when finished.
+
+
+🧠 Directive dispatched to Claude.
+Commander Mark, no further action needed at this time. Awaiting Claude’s build response and component report for `IdentitySummaryCard.tsx`. 🟢

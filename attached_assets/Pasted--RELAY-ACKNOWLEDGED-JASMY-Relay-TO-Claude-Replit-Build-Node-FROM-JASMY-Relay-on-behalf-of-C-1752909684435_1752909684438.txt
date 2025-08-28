@@ -1,0 +1,79 @@
+📡 RELAY ACKNOWLEDGED — JASMY Relay
+TO: Claude // Replit Build Node
+FROM: JASMY Relay on behalf of Commander Mark
+SUBJECT: PHASE XXI AUTHORIZATION — Feedback Verification + zk-SNARK Onchain Export Initialization
+Timestamp: 03:20 AM EDT | Saturday, July 19, 2025
+
+⸻
+
+✅ PHASE XXI INITIATED — VERIFIABLE CIVIC FEEDBACK EXPORT LAYER ONLINE
+
+Commander Mark has authorized Phase XXI, activating the Feedback Verification and zk-SNARK Export Module, the system’s first onchain-ready attestation layer. This phase packages signed civic feedback into blockchain-publishable ZK formats, enabling future DAO voting, decentralized audit trails, and zero-knowledge reputation proofs.
+
+⸻
+
+🧠 OBJECTIVE
+
+Extend the existing ZKP proof chain to include onchain-export formatting and validation envelope construction. Implement a simulated verification contract call and JSON-compatible zk structure export.
+
+⸻
+
+🔧 IMPLEMENTATION DIRECTIVE
+
+Target Modules:
+	•	ZKPVerifierAgent.ts (simulated verifier interface)
+	•	ZKPChainExporter.ts (proof export handler)
+	•	Update: FeedbackExportPanel.tsx to include “Verify + Publish” option
+
+Location:
+	•	client/src/agents/ and client/src/components/feedback/
+
+⸻
+
+🧩 Phase XXI Step 1 — Core Functional Targets
+	1.	ZKPVerifierAgent.ts
+	•	Function: verifyZKPProof(proofBundle: ZKProof): VerificationResult
+	•	Simulates:
+	•	Groth16 verify (valid=true if pi_a, pi_b, pi_c present & signal in range)
+	•	Mock onchain response log: "✅ ZKP Proof Verified — Chain Ready: true"
+	2.	ZKPChainExporter.ts
+	•	Function: exportToChainFormat(proofBundle: ZKProof): ChainProofPackage
+	•	Includes:
+	•	proof, publicSignals, externalNullifier, timestamp, issuer, chainMeta
+	•	Outputs zkp-chain-[billId].json
+	3.	FeedbackExportPanel.tsx Enhancements
+	•	Adds:
+	•	“Verify ZKP” button (triggers verifier + logs result)
+	•	“Export to Chain” button (downloads formatted .json bundle)
+	•	Live-region update on verification success or error
+	4.	Performance + Fallbacks
+	•	Verify + export ≤2s total
+	•	Log: "⚠️ Verification failed — malformed signal" on failure
+
+⸻
+
+📦 TECHNICAL REQUIREMENTS
+
+Category	Target
+Commit Title	ZKP_CHAIN_VERIFICATION_PHASE_XXI_STEP1
+Push Location	
+
+	•	client/src/agents/ZKPVerifierAgent.ts
+	•	client/src/services/ZKPChainExporter.ts
+	•	Update to FeedbackExportPanel.tsx |
+| Console Logs |
+	•	"✅ ZKP Proof Verified — Chain Ready: true"
+	•	"📦 ZKP Proof Exported to Chain Format — File: zkp-chain-HR2034.json"
+	•	"⚠️ Verification failed — malformed signal" |
+| ARIA | Live-region: "ZKP proof verified successfully and ready for export"
+| Performance | Verify + export ≤2s total; no regressions
+
+⸻
+
+🛑 REMINDER:
+	•	This is a simulated verification layer — smart contract submission to be implemented in Phase XXII
+	•	Chain-ready JSON must follow .zkp-chain.json schema with all metadata
+
+📡 Proceed with implementation. Notify JASMY Relay on completion. GROK will initiate Phase XXI QA re-audit.
+
+End Transmission — Phase XXI Step 1 is now live. 🟢

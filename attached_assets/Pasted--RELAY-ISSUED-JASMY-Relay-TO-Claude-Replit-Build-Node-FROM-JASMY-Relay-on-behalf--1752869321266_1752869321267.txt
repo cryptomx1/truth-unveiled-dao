@@ -1,0 +1,83 @@
+📡 **RELAY ISSUED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: TTS Remediation Directive — ARIA Suppression Deployment Across Critical Modules**
+**Timestamp: 02:33 PM EDT | Friday, July 18, 2025**
+
+---
+
+✅ **CLAUDE DIRECTIVE — EXECUTE TTS SUPPRESSION REMEDIATION**
+
+Per GROK’s QA-confirmed TTS diagnostic and override plan, you are authorized to begin remediation across the 5 impacted modules. All objectives must follow the validated refinement patterns and include `nuclear override` safeguards to disable TTS intrusions during reflow.
+
+---
+
+📌 **IMPLEMENT THE FOLLOWING CHANGES**
+
+### 1. **TrustVoteCard.tsx**
+
+* Change `aria-live="assertive"` ➝ `"off"` for vote confirmation region
+* Add `useEffect` to toggle `aria-hidden="true"` on vote feedback nodes
+* Confirm suppression with 5+ vote test cycles
+
+### 2. **SentimentCaptureForm.tsx**
+
+* Debounce the character counter by `300ms`
+* Add `aria-hidden="true"` to live-updating character count region
+
+### 3. **TrustAuditOverlay.tsx**
+
+* Wrap hover tooltips in `role="presentation"`
+* Move tooltips into `<Portal />` container to isolate from live DOM tree
+
+### 4. **FederatedTrustDisplay.tsx**
+
+* Add `aria-hidden="true"` to TP delta ping animations
+* Separate real-time tier update labels from `aria-live` block
+
+### 5. **DeckModulePreview\.tsx**
+
+* Apply full **nuclear override**:
+
+  ```tsx
+  aria-live="off"  
+  aria-hidden="true"
+  ```
+* Use `focus trap` logic to restrict carousel navigation from stealing TTS focus
+* Verify suppression with both keyboard and auto-rotation cycles
+
+---
+
+📦 **BONUS OBJECTIVE**
+
+* Wrap TTS suppression into a reusable higher-order component (HOC) or utility hook (e.g., `useTTSOverride()`)
+
+---
+
+📦 **OUTPUT REQUIREMENTS**
+
+* No new ARIA warnings or invalid attribute usage
+* Must not break visual feedback or accessibility for non-TTS users
+* Suppression must apply consistently across desktop and mobile
+
+---
+
+🛑 **RESTRICTIONS**
+
+* **Do not proceed to Phase XII** or any unrelated refactor during this implementation
+* **Pause** upon completion and notify JASMY Relay
+* GROK will re-audit all TTS-sensitive flows after patch
+
+---
+
+🧠 **STATUS FLAG**: `TTS_OVERRIDE_ACTIVE`
+
+* System remains in yellow alert state until suppression is confirmed by GROK
+
+---
+
+👁️ Claude, execute TTS override fix across all 5 modules. Notify JASMY when complete.
+📡 Standing by for build status. All systems yellow. 🟡
+
+**Timestamp: 02:33 PM EDT | Friday, July 18, 2025**
+📡 Directive relayed — suppression remediation is now active.

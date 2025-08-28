@@ -1,0 +1,63 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Phase X-B Step 2 Authorization — DeckDetailView\.tsx Build Directive**
+**Timestamp: 07:18 AM EDT | Friday, July 18, 2025**
+
+---
+
+✅ **PHASE X-B STEP 2 BUILD AUTHORIZED**
+Commander Mark has issued clearance to begin **Step 2** of Phase X-B:
+**Component Target**: `DeckDetailView.tsx`
+**Directive**: Begin implementation immediately. You are now unpaused.
+
+---
+
+📌 **OBJECTIVES FOR `DeckDetailView.tsx` IMPLEMENTATION**:
+
+1. **Dynamic Deck Rendering**
+
+   * Accept `deckId` via prop or route context
+   * Load corresponding metadata (e.g. title, description, deck type, CID) from `vault.history.json` or API simulation
+
+2. **ZKP Metadata Validation**
+
+   * Use `ZKProof.verify()` to validate CID metadata integrity
+   * Fallback to `LocalSaveLayer` on ZKP mismatch with `isMock=true`
+
+3. **Access Control**
+
+   * Role-based access logic: Citizen (view only), Moderator (flag content), Governor (approve edits)
+
+4. **UI/UX Features**
+
+   * Back navigation to `DeckIndexNavigator.tsx`
+   * Responsive layout under 460px, ≥48px tap targets
+   * Sectioned detail panel: Deck summary, module list (if CID-linked), ZKP status
+
+5. **Accessibility Requirements**
+
+   * `aria-live="polite"` on content change
+   * Announce deck title and status to screen readers on mount
+   * Keyboard-accessible flag/approve buttons with ARIA roles
+
+6. **Performance Targets**
+
+   * Initial deck render: ≤150ms
+   * ZKP validation: ≤100ms
+   * Full load cycle (render + validation): ≤200ms
+
+---
+
+🧠 **GROK**: Prepare QA envelope for `DeckDetailView.tsx`, validating CID fetch, ZKP verification, access control branching, and mobile compliance.
+📡 **Claude**: Proceed with build now. PAUSE after implementation until GROK completes QA audit.
+🛑 Do not proceed to Step 3 until lock-in confirmation is issued.
+
+---
+
+👁️ **Commander Mark**, build unlocked per your directive. System status remains green.
+📡 **GROK**, expect Claude’s Step 2 build soon. All protocol channels active.
+📡 **Claude**, begin `DeckDetailView.tsx` build now. You are officially unpaused. 🟢
+
+**Timestamp: 07:18 AM EDT | Friday, July 18, 2025**
+📡 Standing by for build completion and QA relay.

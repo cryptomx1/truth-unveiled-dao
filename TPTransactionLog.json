@@ -1,0 +1,123 @@
+{
+  "version": "1.0",
+  "created": "2025-07-24T21:52:00.000Z",
+  "description": "TruthPoint transaction log with reward trigger metadata",
+  "transactions": [
+    {
+      "id": "tx_1721846700123_abc123def",
+      "timestamp": "2025-07-24T21:45:00.123Z",
+      "type": "reward_trigger",
+      "triggerId": "MUNICIPAL_PARTICIPATION",
+      "walletCID": "cid:wallet:alice123",
+      "amount": 250,
+      "status": "completed",
+      "metadata": {
+        "did": "did:civic:alice123",
+        "zkpHash": "0x1a2b3c4d5e6f7890abcdef",
+        "eventSource": "municipal_pilot_route",
+        "tier": "Citizen",
+        "additionalMetadata": {
+          "pilotCity": "Austin",
+          "participationType": "onboarding_complete"
+        }
+      }
+    },
+    {
+      "id": "tx_1721846400456_def456ghi",
+      "timestamp": "2025-07-24T21:40:00.456Z",
+      "type": "reward_trigger",
+      "triggerId": "REFERRAL_NEW_USER",
+      "walletCID": "cid:wallet:bob456",
+      "amount": 150,
+      "status": "completed",
+      "metadata": {
+        "did": "did:civic:bob456",
+        "eventSource": "referral_route",
+        "tier": "Contributor",
+        "additionalMetadata": {
+          "referredUser": "did:civic:charlie789",
+          "verificationComplete": true
+        }
+      }
+    },
+    {
+      "id": "tx_1721846100789_ghi789jkl",
+      "timestamp": "2025-07-24T21:35:00.789Z",
+      "type": "reward_trigger",
+      "triggerId": "DECK10_FEEDBACK",
+      "walletCID": "cid:wallet:charlie789",
+      "amount": 75,
+      "status": "completed",
+      "metadata": {
+        "did": "did:civic:charlie789",
+        "zkpHash": "0x9876543210fedcba",
+        "eventSource": "deck_10_route",
+        "tier": "Citizen",
+        "additionalMetadata": {
+          "proposalId": "prop_gov_001",
+          "feedbackLength": 247,
+          "qualityScore": 0.85
+        }
+      }
+    },
+    {
+      "id": "tx_1721845800012_jkl012mno",
+      "timestamp": "2025-07-24T21:30:00.012Z",
+      "type": "reward_trigger",
+      "triggerId": "COMMAND_STREAK",
+      "walletCID": "cid:wallet:dave012",
+      "amount": 100,
+      "status": "pending",
+      "metadata": {
+        "did": "did:civic:dave012",
+        "eventSource": "streak_tracker",
+        "tier": "Contributor",
+        "additionalMetadata": {
+          "streakDays": 7,
+          "activitiesCompleted": ["deck_feedback", "municipal_participation", "referral"]
+        }
+      }
+    },
+    {
+      "id": "tx_1721845500345_mno345pqr",
+      "timestamp": "2025-07-24T21:25:00.345Z",
+      "type": "reward_trigger",
+      "triggerId": "TRUTH_MEDIA_UPLOAD",
+      "walletCID": "cid:wallet:eve345",
+      "amount": 200,
+      "status": "failed",
+      "metadata": {
+        "did": "did:civic:eve345",
+        "zkpHash": "0xabcdef123456789",
+        "eventSource": "press_replay_route",
+        "tier": "Contributor",
+        "additionalMetadata": {
+          "mediaType": "civic_analysis",
+          "contentLength": 1847,
+          "communityApproval": false,
+          "failureReason": "insufficient_community_votes"
+        }
+      }
+    }
+  ],
+  "statistics": {
+    "totalTransactions": 5,
+    "completedTransactions": 3,
+    "pendingTransactions": 1,
+    "failedTransactions": 1,
+    "totalTPDisbursed": 475,
+    "successRate": 0.6,
+    "triggerBreakdown": {
+      "MUNICIPAL_PARTICIPATION": 1,
+      "REFERRAL_NEW_USER": 1,
+      "DECK10_FEEDBACK": 1,
+      "COMMAND_STREAK": 1,
+      "TRUTH_MEDIA_UPLOAD": 1
+    }
+  },
+  "audit": {
+    "lastUpdate": "2025-07-24T21:52:00.000Z",
+    "integrityHash": "0xfedcba9876543210",
+    "exportVersion": "1.0"
+  }
+}

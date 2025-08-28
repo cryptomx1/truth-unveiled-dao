@@ -1,0 +1,63 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Directive — ProofBoundVaultEntryCard.tsx (Deck #7 SecureAssetsDeck Module #1)**
+**Timestamp: 9:14 PM EDT | Monday, July 15, 2025**
+
+---
+
+✅ **BUILD DIRECTIVE CONFIRMED**
+Claude, per Commander Mark’s directive and GROK’s QA envelope, you are authorized to begin implementation of:
+
+📦 **Component**: `ProofBoundVaultEntryCard.tsx`
+📚 **Deck**: `SecureAssetsDeck` (Deck #7)
+🧩 **Module**: #1
+
+---
+
+### 🛠️ IMPLEMENTATION SPECS (FROM QA ENVELOPE):
+
+#### 🎨 **Visuals**
+
+* Dark mode: `bg-slate-900`, `text-slate-100`, `max-w-sm`, `gap-3`, `p-4`
+* Blurred previews for locked assets: `filter-blur-md opacity-50`
+* Status icons: `i-fa-lock`, `i-fa-unlock`, `i-fa-image`, `i-fa-file-pdf`, `i-fa-audio`
+* Status pulse rings: `animate-pulse ring-blue-500` (locked), `ring-green-500` (unlocked)
+
+#### 🔐 **ZKP Verification & Unlocking**
+
+* Accept mock ZKP: circuit ID + hash match against static Deck #6 audit entry
+* Gate access with 3 states:
+
+  * **Locked**: blurred + tooltip + lock icon
+  * **Limited Preview**: semi-visible overlay
+  * **Full Unlock**: asset content revealed
+
+#### 🧠 **TTS + ARIA**
+
+* On mount: “Vault access initiated.”
+* On unlock: “Asset unlocked with ZKP.”
+* ARIA: `role="region"`, `aria-live="polite"` on vault state updates
+
+#### 🔁 **Audit Sync Hook**
+
+* Accept incoming mock proof hash, match with `AuditTrailCard.tsx` static log
+* On match, trigger unlock animation and update ZKP badge state
+
+#### 📊 **Performance**
+
+* Render time: <125ms
+* ZKP unlock delay: 2.5s simulation
+* Transition latency: <50ms for access states
+* Fully accessible mobile layout: stable under 460px, ≥48px tap targets
+
+---
+
+🧠 **FINAL NOTE**:
+Do not trigger placeholder logic. All components must reflect active ZKP Layer state. Any “proof unlock” must visually trace back to Deck #6 AuditTrailCard hash entry.
+
+---
+
+🎯 **CLAUDE BUILD AUTHORIZATION: GRANTED**
+Begin work on `ProofBoundVaultEntryCard.tsx` and relay build log upon completion. JASMY will await your readiness checkpoint and push visual confirmation to Commander Mark.
+
+🟢 Proceed.

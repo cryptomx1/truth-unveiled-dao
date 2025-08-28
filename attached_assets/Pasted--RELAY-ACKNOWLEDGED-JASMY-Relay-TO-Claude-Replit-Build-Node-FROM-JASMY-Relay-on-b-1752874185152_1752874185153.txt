@@ -1,0 +1,99 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: PHASE X-F STEP 3 AUTHORIZATION — DeckSuggestionIntelligence.tsx Directive**
+**Timestamp: 06:47 PM EDT | Friday, July 18, 2025**
+
+---
+
+✅ **PHASE X-F STEP 3 INITIATED — BY ORDER OF COMMANDER MARK**
+Claude, Commander Mark has authorized the activation of **Phase X-F Step 3**, which introduces the **Deck Suggestion Intelligence Layer** — a modular component responsible for translating context (mission, language, streak, tier) into actionable deck recommendations with confidence indicators and ZKP-aware visibility cues.
+
+---
+
+### 🧠 OBJECTIVE
+
+Create `DeckSuggestionIntelligence.tsx` — a utility logic engine (non-visual component) that analyzes onboarding inputs and CivicCompass outputs to produce ranked deck suggestions and explainable routing metadata.
+
+---
+
+### 🔧 IMPLEMENTATION DIRECTIVE
+
+**Component**: `DeckSuggestionIntelligence.tsx`
+**Location**: `client/src/components/phase/`
+
+---
+
+#### 🔍 Core Features to Implement:
+
+1. **Deck Scoring Algorithm**
+
+   * Inputs:
+
+     * mission: `"representation" | "voice" | "data"`
+     * lang: `"en" | "es" | "fr"`
+     * streakDays: number
+     * tier: `"citizen" | "moderator" | "governor"`
+   * Output:
+
+     * Ranked array of deck suggestions with:
+
+       * deckId
+       * deckTitle
+       * score (0–100)
+       * reason
+
+2. **Confidence Explanation Engine**
+
+   * Generates `reason` strings for each suggested deck based on:
+
+     * Mission match
+     * Language preference
+     * Historical streak
+     * Tier access
+   * Example: `"Matched mission: voice. Language ES boosts Feedback Deck. Access confirmed."`
+
+3. **Tier-Gated Filtering**
+
+   * Strip out decks user cannot access based on ZKP tier
+   * Return fallback suggestion if no high-ranking deck passes access check
+
+4. **Mock Output Simulation**
+
+   * Export function `getDeckSuggestions(input: DeckSuggestionInput): DeckSuggestion[]`
+   * Console log top 3 suggestions on init
+   * Ensure output includes at least:
+
+     * Deck #1, #10, #13 (always present for citizen tier)
+     * Deck #8, #9 (only if tier ≥ moderator)
+
+5. **Integration-Ready Design**
+
+   * Output is plug-and-play compatible with `CivicCompass.tsx` and future visualizers
+   * Use TypeScript interfaces `DeckSuggestionInput`, `DeckSuggestion`, `DeckMetadata`
+
+---
+
+### 📦 TECHNICAL REQUIREMENTS
+
+| Category      | Target                                        |
+| ------------- | --------------------------------------------- |
+| Commit Title  | `DECK_SUGGESTION_INTELLIGENCE_PHASE_XF_STEP3` |
+| Push Location | `client/src/components/phase/`                |
+| Console Logs  |                                               |
+
+* `"🧠 Deck Suggestion Engine Initialized"`
+* `"📊 Top Suggestions → Deck #10: 92, Deck #13: 86, Deck #1: 73"`
+* `"🧠 Explanation: Matched mission ‘voice’, ES lang boost, 5-day streak bonus"` |
+  \| File Type | Utility logic only — no visual UI |
+  \| Performance | Scoring + explanation engine init ≤200ms |
+  \| Fallback | Always return at least one public-access deck |
+
+---
+
+🛑 **REMINDER:**
+Do not render UI. This is a logic-only module used by mission onboarding and CivicCompass routing infrastructure.
+
+📡 Proceed with implementation. Notify JASMY Relay upon completion. GROK will initiate QA re-audit.
+
+**End Transmission — Step 3 is now live.**

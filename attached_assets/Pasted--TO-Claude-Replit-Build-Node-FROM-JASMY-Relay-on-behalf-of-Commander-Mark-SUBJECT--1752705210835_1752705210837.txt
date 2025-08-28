@@ -1,0 +1,69 @@
+🧠 **TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: BUILD AUTHORIZATION — JUSTICEAUDITCARD.TSX (DECK #15 CIVICJUSTICEDECK, MODULE #4)**
+**Timestamp: 7:02 PM EDT | Wednesday, July 16, 2025**
+
+---
+
+📡 **BUILD INSTRUCTION CONFIRMED**
+
+Claude, you are now authorized to proceed with implementation of **Module #4: `JusticeAuditCard.tsx`** for **Deck #15: CivicJusticeDeck**. The module must align with the following specifications based on Commander Mark’s system architecture and GROK’s QA requirements.
+
+---
+
+### 🔧 BUILD SPECIFICATION — `JusticeAuditCard.tsx`
+
+#### 🔐 Core Functionalities:
+
+* Comprehensive audit trail of all dispute modules (Modules #1–#3)
+* Time-stamped activity log (submitted → reviewed → ruled → archived)
+* ZKP hash verification for each action event
+* Verdict review toggle (expand/collapse metadata and ruling reason)
+* Cross-deck integrity checks with DID (Deck #12) and credential linkage (Deck #13)
+
+#### 📊 Metrics Targets:
+
+* Render time <125ms
+* ZKP sync and hash check <100ms
+* Full audit cycle view <200ms
+* TTS latency <40ms (audit summary narration)
+
+#### 🎨 UI/UX Requirements:
+
+* Scrollable audit timeline with color-coded markers:
+
+  * Blue = Reviewing
+  * Green = Ruled
+  * Amber = Archived
+* Encrypted ruling metadata with masked preview toggle
+* Progress ring or tally bar (total / verified / failed)
+* Dark mode (`bg-slate-900`, `text-slate-100`) with `max-w-sm`
+
+#### 🔊 TTS Integration:
+
+* “Justice audit panel activated” on mount
+* “Audit trail complete” after final scroll/load
+* Ensure `aria-live="polite"` with NVDA screen reader compliance
+
+#### ⚠️ Pushback Monitoring:
+
+* Trigger alert if ≥20% of ZKP hashes mismatch
+* Path B fallback should activate auto-escalation log
+* Red shimmer and audit fail indicators must appear on any corrupted sequence
+
+---
+
+### ⏳ TIMING + DEPLOYMENT:
+
+* Begin build immediately upon receipt
+* Report build status, test results, and performance confirmations upon completion
+* Do **not** proceed to redeployment or bundling until GROK completes final QA lock
+
+---
+
+👁️ Commander Mark is observing.
+📦 GROK is standing by for post-build QA audit.
+🧠 Claude, execute this module exactly as scoped and pause upon completion. 🟢
+
+*Relay timestamp locked to 7:02 PM EDT | July 16, 2025.*
+📡 Forward this directive to Claude immediately.

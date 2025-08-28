@@ -1,0 +1,88 @@
+📡 RELAY ACKNOWLEDGED — JASMY Relay
+TO: Claude // Replit Build Node
+FROM: JASMY Relay on behalf of Commander Mark
+SUBJECT: PHASE XVIII AUTHORIZATION — ZIP-Based Civic Feedback Engine Initialization
+Timestamp: 02:44 AM EDT | Saturday, July 19, 2025
+
+⸻
+
+✅ PHASE XVIII INITIATED — CONSTITUENT FEEDBACK CHANNELS ONLINE
+
+Commander Mark has authorized Phase XVIII, activating the ZIP-Based Civic Feedback Engine — the platform’s first direct democracy interface for live legislation. Citizens will now be able to register support, dissent, or abstain on current bills by ZIP code, with ZKP-compatible feedback tagging, streak tracking, and mission integration.
+
+⸻
+
+💬 OBJECTIVE
+
+Deploy FeedbackZoneEngine.tsx and route bill-level feedback to the active ZIP/district context from GovMapEngine.tsx + LegiFeedService.ts.
+
+⸻
+
+🔧 IMPLEMENTATION DIRECTIVE
+
+Primary Module:
+	•	FeedbackZoneEngine.tsx
+	•	Location: client/src/components/feedback/
+
+⸻
+
+🧩 Phase XVIII Step 1: Feature Targets
+	1.	ZIP-Tied Feedback Card
+	•	FeedbackContext input:
+
+{
+  zip: "20852",
+  district: "8B",
+  billId: "HR2034",
+  title: "Civic Data Privacy Act",
+  sponsor: "Rep. Lin",
+  status: "Introduced"
+}
+
+
+	•	Feedback options:
+	•	👍 Support
+	•	👎 Oppose
+	•	🤷 Abstain
+	•	Each triggers telemetry + ZKP placeholder stamp
+
+	2.	ZKP Tag Simulation
+	•	On feedback:
+	•	Log: "🔐 Feedback recorded — Bill: HR2034, Vote: Support, Tier: Citizen"
+	3.	Integration with GovMap
+	•	After district selection + bill display:
+	•	Render FeedbackZoneEngine beneath bill metadata
+	•	All votes recorded to in-memory feedback stream (mock)
+	4.	Feedback Streak + Trust Pulse
+	•	Show:
+	•	“You’ve submitted 3/5 votes this month”
+	•	“Current Trust Index: 81%”
+	5.	ARIA & Mobile
+	•	Feedback options must be:
+	•	role=button, aria-label, tabIndex=0
+	•	Screen reader compatible
+	•	Layout responsive under 460px
+
+⸻
+
+📦 TECHNICAL REQUIREMENTS
+
+Category	Target
+Commit Title	ZIP_FEEDBACK_ENGINE_PHASE_XVIII_STEP1
+Push Location	client/src/components/feedback/
+Console Logs	
+
+	•	"🔐 Feedback recorded — Bill: [billId], Vote: [Support|Oppose|Abstain], Tier: [Citizen]"
+	•	"📊 Feedback Summary — Votes This Month: 3/5, Trust Index: 81%" |
+| Performance | Input click → record <100ms |
+| ARIA | Buttons labeled per option, live-region summary updates
+
+⸻
+
+🛑 REMINDER:
+	•	No persistence yet — all feedback simulated in local memory
+	•	ZKP tags are console only for this step — actual chain signing in future Phase XIX
+
+📡 Proceed with implementation. Notify JASMY Relay upon completion. GROK will initiate Phase XVIII QA re-audit.
+
+End Transmission — Phase XVIII is now live. 🟢

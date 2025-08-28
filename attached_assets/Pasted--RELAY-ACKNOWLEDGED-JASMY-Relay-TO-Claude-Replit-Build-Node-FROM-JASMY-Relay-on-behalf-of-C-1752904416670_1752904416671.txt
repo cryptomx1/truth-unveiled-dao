@@ -1,0 +1,87 @@
+📡 RELAY ACKNOWLEDGED — JASMY Relay
+TO: Claude // Replit Build Node
+FROM: JASMY Relay on behalf of Commander Mark
+SUBJECT: PHASE ZERO AUTHORIZATION — CivicCommandCenter.tsx Dashboard Shell Deployment
+Timestamp: 02:01 AM EDT | Saturday, July 19, 2025
+
+⸻
+
+✅ PHASE ZERO INITIATED — TRUTH UNVEILED DASHBOARD LAUNCH SHELL ONLINE
+
+Commander Mark has authorized Phase Zero, the launch of CivicCommandCenter.tsx, which will serve as the unified shell interface to house:
+	•	🧭 Onboarding
+	•	🗺️ GovMap
+	•	🧠 Civic Memory
+	•	📬 Notifications
+	•	📜 Legislative Tracking
+	•	📣 Sentiment Feedback
+	•	🔐 Trust Zone / Vault Access
+	•	📊 Streaks, Tiers, Missions
+
+This is the mission-ready frame for future TruthUnveiled public or affiliate launch.
+
+⸻
+
+🧠 OBJECTIVE
+
+Deploy a responsive, modular launch shell (CivicCommandCenter.tsx) that dynamically loads core modules and routes the user based on session tier, mission, or ZIP location.
+
+⸻
+
+🔧 IMPLEMENTATION DIRECTIVE
+
+Primary Component:
+	•	CivicCommandCenter.tsx
+	•	Location: client/src/command/
+
+⸻
+
+🧩 Core Features to Implement
+	1.	Module View Loader
+	•	Load shell slots:
+	•	Hero Banner (WelcomeCard)
+	•	Trust Snapshot
+	•	GovMap Panel
+	•	Pulse + Notification Stream
+	•	Deck Suggestions
+	•	Mission Summary
+	•	Civic Memory Timeline
+	2.	Session-Aware Routing
+	•	Pull from UserSessionEngine:
+	•	tier, lang, mission, lastView, zip
+	•	Console log: "🧭 CommandCenter View Loaded for Tier: Citizen, ZIP: 20852"
+	3.	Top-Level Accessibility
+	•	ARIA regions for each section
+	•	Skip links and landmark navigation
+	4.	Module Injection Interface
+	•	All major components loaded as props or lazy-loaded
+	•	Example: CommandDeckPanel, GovMapShell, MemoryPanel, etc.
+	5.	Mobile Design
+	•	460px max viewport
+	•	Fixed top nav or quick-jump buttons
+	•	Support “Back to Top” and re-navigation from any view
+
+⸻
+
+📦 TECHNICAL REQUIREMENTS
+
+Category	Target
+Commit Title	CIVIC_COMMAND_CENTER_PHASE_ZERO_STEP1
+Push Location	client/src/command/
+Console Logs	
+
+	•	"🧭 CommandCenter View Loaded for Tier: [tier], ZIP: [zip]"
+	•	"🛠️ Module Injected: [Component]" |
+| ARIA | All modules must have role=region, aria-label, and live status where relevant |
+| Routing | Internal only — module-level toggling; no page transitions yet |
+| Performance | Initial shell load <300ms, module switch <150ms |
+
+⸻
+
+🛑 REMINDER:
+	•	No routing libraries activated in this step
+	•	Shell must dynamically accommodate all completed civic modules to date
+
+📡 Proceed with implementation. Notify JASMY Relay on completion. GROK will initiate Phase Zero QA re-audit.
+
+End Transmission — Phase Zero Step 1 is now live. 🟢

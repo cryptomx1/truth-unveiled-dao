@@ -1,0 +1,94 @@
+{
+  "mission.selectPrompt": "What is your mission today?",
+  "mission.representation": "Representation",
+  "mission.voice": "Voice",
+  "mission.data": "Data",
+  "mission.description.representation": "Advocate for community needs and policy changes",
+  "mission.description.voice": "Share your perspective in civic discussions",
+  "mission.description.data": "Analyze trends and contribute to transparency",
+  "mission.continue": "Continue",
+  
+  "tier.citizen": "Citizen",
+  "tier.moderator": "Moderator", 
+  "tier.governor": "Governor",
+  "tier.label": "Tier:",
+  
+  "streak.days": "{{count}} Days",
+  "streak.label": "Trust Streak:",
+  
+  "nav.onboarding": "Start",
+  "nav.constellation": "Explore",
+  "nav.deck": "Decks",
+  "nav.audit": "Audit",
+  "nav.memory": "Memory",
+  
+  "deck.feedback.title": "Feedback Dashboard",
+  "deck.unlocked.title": "Civic Decks Unlocked",
+  "deck.unlocked.description": "All civic deck interfaces are now available with secure CID-tier access control.",
+  "deck.audit.title": "Audit View",
+  "deck.audit.description": "Advanced tier audit interface - available for moderators and governors.",
+  
+  "language.toggle": "Toggle Language",
+  "language.set": "Language set to: {{lang}}",
+  "language.fallback": "Fallback language applied: en",
+  
+  "accessibility.initialized": "CivicLayoutShell Initialized",
+  "accessibility.tier.status": "Tier: {{tier}} | Trust Streak: {{days}} Days | Mission: {{mission}}",
+  
+  "view.current": "Current view: {{view}}",
+  
+  "system.tts.override": "TTS override applied",
+  "system.tts.killer": "EMERGENCY TTS KILLER ACTIVATED - ALL SPEECH DESTROYED",
+  
+  "button.submit": "Submit",
+  "button.cancel": "Cancel",
+  "button.save": "Save",
+  "button.refresh": "Refresh",
+  "button.export": "Export",
+  "button.import": "Import",
+  "button.close": "Close",
+  "button.continue": "Continue",
+  "button.back": "Back",
+  "button.next": "Next",
+  
+  "card.feedback.title": "Trust Feedback",
+  "card.feedback.description": "Community trust validation and feedback collection",
+  "card.feedback.submit": "Submit Feedback",
+  "card.feedback.history": "View History",
+  "card.feedback.explanation": "Trust feedback affects proposal thresholds and validation",
+  "card.feedback.community": "Community feedback helps optimize decision-making mechanisms",
+  
+  "card.governance.title": "Governance Dashboard",
+  "card.governance.description": "Civic proposal management and voting interface",
+  "card.governance.proposals": "Active Proposals",
+  "card.governance.voting": "Vote Now",
+  "card.governance.results": "View Results",
+  
+  "card.identity.title": "Identity Management",
+  "card.identity.description": "Decentralized identity verification and credential management",
+  "card.identity.verify": "Verify Identity",
+  "card.identity.credentials": "Manage Credentials",
+  "card.identity.did": "DID Profile",
+  
+  "card.deck.preview": "Deck Preview",
+  "card.deck.modules": "{{count}} Modules",
+  "card.deck.status": "Status: {{status}}",
+  "card.deck.explore": "Explore Deck",
+  
+  "session.summary": "Session Summary",
+  "action.replay": "Replay",
+  "timeline.heading": "Civic Memory Index",
+  
+  "tts.feedback.ready": "Feedback interface ready",
+  "tts.governance.ready": "Governance dashboard ready",
+  "tts.identity.ready": "Identity interface ready",
+  "tts.quiz.ready": "Test your civic insight",
+  "tts.node.ready": "Feedback node ready. {{count}} payloads verified",
+  "tts.memory.ready": "Memory interface ready",
+  
+  "aria.feedback.vote": "Cast feedback vote",
+  "aria.governance.proposal": "View proposal details",
+  "aria.identity.verify": "Verify identity credentials",
+  "aria.deck.navigate": "Navigate to deck",
+  "aria.language.select": "Select interface language"
+}

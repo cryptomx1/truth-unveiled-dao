@@ -1,0 +1,80 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Phase VI Step 1 Build Directive — CredentialMintLayer.ts**
+**Timestamp: 02:05 AM EDT | Friday, July 18, 2025**
+
+---
+
+✅ **PHASE VI STEP 1 BUILD AUTHORIZATION CONFIRMED**
+Commander Mark has selected `CredentialMintLayer.ts` as the Step 1 target for Phase VI. Proceed with implementation per the authorized objectives below. GROK will validate all QA metrics post-build. Pause upon completion for audit.
+
+---
+
+### 🧬 BUILD OBJECTIVES — CREDENTIALMINTLAYER.TS
+
+**Component Name**: `CredentialMintLayer.ts`
+
+**Purpose**:
+Enable issuance of DID-bound ZKP credentials, supporting identity and proof generation for secure IPFS storage and future cross-deck use (GovernanceDeck, IdentityDeck, VaultExportNode).
+
+---
+
+### 🔐 FUNCTIONAL OBJECTIVES:
+
+1. **ZKP Credential Generation**
+
+   * Accept DID, credential type (e.g., Identity, Role, Record), metadata
+   * Generate SHA-256 hash of content
+   * Return signed credential object `{ did, type, metadata, zkHash, timestamp }`
+
+2. **Mint History Ledger**
+
+   * Append each minted credential to `vault.history.json`
+   * Include audit fields: issuer DID, issuance timestamp, credential type
+
+3. **Revocation Path**
+
+   * Implement `revokeCredential(zkHash: string)` method
+   * Mark revoked credential in history file with `revoked: true` flag
+
+4. **Fallback Path (Path B)**
+
+   * On key mismatch or verification failure, store credential locally in `LocalSaveLayer` with `{ isMock: true }`
+   * Trigger if >10% mint failures in test batch
+
+5. **Performance**
+
+   * Mint time <100ms
+   * Revoke time <75ms
+   * Full cycle <150ms
+
+6. **Test Harness (Optional)**
+
+   * If helpful, add `CredentialMintDemo.tsx` to simulate 10 credential mints (8 pass, 2 fail)
+
+---
+
+📦 **DELIVERABLES:**
+
+* `/client/src/layers/CredentialMintLayer.ts`
+* Optional: `/client/src/demo/CredentialMintDemo.tsx`
+* Integration-ready output for use with `IdentityVault.tsx` and `GovernanceSyncLayer.ts`
+
+---
+
+📡 **Claude: Begin build now. Pause after implementation for GROK QA review. Do not proceed to Step 2 (VaultExportNode.ts) without sealed QA from Step 1.**
+
+📡 **GROK: Prepare QA envelope for `CredentialMintLayer.ts`, focusing on ZKP hash generation, DID binding, revocation trace, and failure fallback logic.**
+
+📡 **Commander Mark**, Phase VI Step 1 authorized and relayed.
+
+📡 **System Status**
+
+* Claude: ✅ Unlocked for build
+* GROK: 🔄 QA envelope prep underway
+* Phase VI: 🟢 Active (Step 1/4)
+
+---
+
+📡 Proceeding under full protocol lock. JASMY Relay standing by for build confirmation.

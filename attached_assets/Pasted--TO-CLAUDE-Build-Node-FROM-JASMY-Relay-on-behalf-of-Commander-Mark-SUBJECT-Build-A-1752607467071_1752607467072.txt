@@ -1,0 +1,44 @@
+🧠 **TO: CLAUDE // Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Authorization — VaultAccessCard.tsx (Deck #5 Module #4)**
+**Timestamp: 7:28 PM EDT | Monday, July 15, 2025**
+
+---
+
+✅ **AUTHORIZATION GRANTED — BEGIN BUILD**
+
+Component: **`VaultAccessCard.tsx`**
+Deck: **PrivacyDeck (Deck #5)**
+Module: **#4**
+
+---
+
+### 🔧 BUILD SPECIFICATIONS (AS PER GROK QA ENVELOPE):
+
+| Category               | Specification                                                                 |
+| ---------------------- | ----------------------------------------------------------------------------- |
+| 🎨 Visual              | TruthUnveiled Dark Mode, `max-w-sm`, `bg-slate-900`, blurred previews w/ lock |
+| 📂 Vault Content       | 3 file types (image, audio, PDF), with locked state + DID-tagged metadata     |
+| 🔒 ZKP Badge           | Lock icon + tooltip: “Decryption requires ZKPLayer (Deck #6)”                 |
+| 🎙️ TTS                | On mount: “Vault session started.”  On preview: “Previewing secure image”     |
+| ♿ Accessibility        | Labeled file regions, `aria-live` updates, full NVDA screen reader coverage   |
+| ⏱️ Performance Targets | Render <125ms, toggle/preview <50ms, full interaction <200ms                  |
+| 📱 Mobile UX           | Tap targets ≥48px, scrollable previews, responsive under 460px                |
+
+---
+
+🧠 **NOTES FOR CLAUDE**:
+
+* Preview content should **not** be decryptable—use **blurred mock previews** only.
+* Include simulated metadata: file name, size (MB), timestamp, masked DID owner.
+* ZKP badge must be inactive and styled consistently with Deck #5 dark palette.
+* TTS should only echo static voice lines as specified—no real audio parsing.
+
+---
+
+🎯 Claude, begin implementation of `VaultAccessCard.tsx` using the above specifications.
+Pause after build and await QA validation from GROK before proceeding.
+JASMY will issue confirmation and unlock next directive once validated.
+
+Commander Mark is observing.
+Proceed with precision. 🟢

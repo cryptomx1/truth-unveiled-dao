@@ -1,0 +1,98 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: PHASE X-H STEP 2 AUTHORIZATION — UnifiedNavBarExtension.tsx Directive**
+**Timestamp: 08:03 PM EDT | Friday, July 18, 2025**
+
+---
+
+✅ **PHASE X-H STEP 2 AUTHORIZED — DYNAMIC NAVIGATION ACTIVATION**
+
+Commander Mark has authorized **Phase X-H Step 2** — deployment of the dynamic, session-aware navigation bar that anchors the unified civic app shell and governs all view transitions within the mobile viewport.
+
+---
+
+### 🧭 OBJECTIVE
+
+Implement `UnifiedNavBarExtension.tsx` — the persistent, bottom-mounted navigation controller with:
+
+* Active view highlighting
+* ZKP tier-based tab visibility
+* Real-time context awareness for mission routing and layout state sync
+
+---
+
+### 🔧 IMPLEMENTATION DIRECTIVE
+
+**Component**: `UnifiedNavBarExtension.tsx`
+**Location**: `client/src/components/layout/`
+
+---
+
+#### 🧩 Core Features to Implement:
+
+1. **Nav Button Structure**
+
+   * 3 primary views:
+
+     * 🧭 Mission (`onboarding`)
+     * 🌌 Explorer (`constellation`)
+     * 📚 Decks (`deck`)
+   * Each has:
+
+     * icon, label, `aria-current="true"` on active
+     * `role="tab"`, wrapped in `role="tablist"`
+
+2. **Active View Highlighting**
+
+   * Visually style current tab as selected
+   * `console.log("🧭 Navigation: Switched to [View]")` on click
+
+3. **Tier-Based Tab Visibility (ZKP Filter)**
+
+   * If tier = `citizen` → all tabs visible
+   * If tier = `moderator` or `governor` → unlock additional placeholder tab (e.g., 🗳️ Audit)
+   * Use `useZKPTier()` (mock) for logic
+
+4. **Mobile Interaction & Focus Management**
+
+   * Bottom-fixed bar
+   * Responsive at ≤460px
+   * Keyboard and screen reader accessible:
+
+     * `Enter/Space` activates tab
+     * `aria-label` on each button
+
+5. **Context Sync + Injection**
+
+   * Reads from and updates `currentView` in `CivicLayoutShell.tsx`
+   * Injected via props or context
+
+---
+
+### 📦 TECHNICAL REQUIREMENTS
+
+| Category      | Target                                    |
+| ------------- | ----------------------------------------- |
+| Commit Title  | `UNIFIED_NAVBAR_EXTENSION_PHASE_XH_STEP2` |
+| Push Location | `client/src/components/layout/`           |
+| Console Logs  |                                           |
+
+* `"🧭 Navigation: Switched to Mission"`
+* `"🌌 Navigation: Switched to Explorer"`
+* `"📚 Navigation: Switched to Deck View"` |
+  \| ARIA Compliance | `role=tablist`, `role=tab`, `aria-current`, `aria-label` |
+  \| UX Timing | Tab switch ≤100ms, layout repaint ≤300ms |
+  \| ZKP Tier Sim | Default to `"citizen"`; mock `"moderator"` variant accepted |
+
+---
+
+🛑 **REMINDER:**
+
+* This is the final component before Phase X-I session memory
+* Keep it modular — nav should not hardwire route logic
+* All interactions must log but not trigger full page reloads
+
+📡 Proceed with implementation. Notify JASMY Relay upon completion. GROK will begin QA re-audit.
+
+**End Transmission — Step 2 is now live.**

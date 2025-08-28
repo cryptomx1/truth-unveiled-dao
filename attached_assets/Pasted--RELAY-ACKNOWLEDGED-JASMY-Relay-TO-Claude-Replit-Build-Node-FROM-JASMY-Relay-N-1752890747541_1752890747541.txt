@@ -1,0 +1,75 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY // Relay Node on behalf of Commander Mark**
+**SUBJECT: Phase XIV Activation Directive — Civic Trust Pulse Deployment**
+**Timestamp: 10:34 PM EDT | Friday, July 18, 2025**
+
+---
+
+🧭 **PHASE XIV — CIVIC TRUST PULSE DEPLOYMENT**
+Commander Mark now authorizes **Phase XIV**, the deployment of the **Civic Trust Pulse System**, building upon the ZKP-backed feedback infrastructure of Phase XIII to create **real-time, anonymized trust heatmaps**, **cross-user pulse synthesis**, and **deck-tier volatility indicators**.
+
+This pulse layer will deliver civic transparency to users by surfacing live trust dynamics, visual feedback waves, and contextual impact signals across decks and modules.
+
+---
+
+### 🧠 **PHASE XIV MODULE OBJECTIVES**
+
+#### 1. `TrustPulseWidget.tsx`
+
+* Real-time indicator in deck headers
+* Displays current pulse as:
+
+  * 🟢 “Aligned” (trust > 70%)
+  * 🟡 “Mixed” (trust 30–70%)
+  * 🔴 “Unstable” (trust < 30%)
+* Hover/click reveals feedback streak graph (24h / 7d / 30d)
+
+#### 2. `PulseAggregationEngine.ts`
+
+* Aggregates feedbackVault entries across users (simulated multi-user mode)
+* Computes trust sentiment vector and volatility index per deck
+
+#### 3. `DeckVolatilityOverlay.tsx`
+
+* Gradient bar overlay for decks showing pulse strength + volatility
+* Tooltip on hover: "Trust Flux: +12.3% / -8.1% | 24h"
+
+#### 4. `CivicPulseAPI.ts` (simulated)
+
+* Fetches synthetic trust data from mock multi-user system
+* Supports endpoints: `/pulse/:deckId`, `/volatility/:deckId`, `/trend/:deckId/:period`
+
+#### 5. `PulseNarrationNode.ts`
+
+* Periodically announces pulse status changes using ARIA live regions
+* Example: “Trust Pulse on Deck #12: CivicIdentity now stable”
+
+---
+
+### 🧪 **QA TARGETS POST-BUILD**
+
+| Component              | Expected Behavior                                              |
+| ---------------------- | -------------------------------------------------------------- |
+| TrustPulseWidget       | Deck-level pulse state, streak graph toggle, hover interaction |
+| PulseAggregationEngine | Accurate pulse aggregation from simulated feedback data        |
+| DeckVolatilityOverlay  | Visual overlay gradient matches trust flux index               |
+| CivicPulseAPI          | Endpoint calls resolve mock data correctly                     |
+| PulseNarrationNode     | ARIA live narrations on pulse status change                    |
+
+---
+
+📎 **Integration Notes**
+
+* TrustPulseWidget must appear in **Decks #1, #3, #9, #12**
+* Simulated API must include at least 5 users’ feedback data (mock)
+* Streak graphs must use SVG or Canvas for performance
+* Narration interval = every 60 seconds or on change ≥ ±10%
+
+---
+
+🚦 **BUILD STATUS: GREEN**
+Claude, you are cleared to initiate **Phase XIV: Civic Trust Pulse Deployment** now.
+Build all five modules and notify JASMY when complete for QA Cycle A.
+
+📡 **FORWARD TO CLAUDE** — JASMY Relay standing by.

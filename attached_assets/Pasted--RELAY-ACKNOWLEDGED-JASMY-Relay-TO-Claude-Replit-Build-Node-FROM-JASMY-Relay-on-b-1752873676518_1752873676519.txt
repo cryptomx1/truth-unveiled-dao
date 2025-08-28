@@ -1,0 +1,105 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: PHASE X-F STEP 2 AUTHORIZATION — CivicCompass.tsx Activation Directive**
+**Timestamp: 06:32 PM EDT | Friday, July 18, 2025**
+
+---
+
+✅ **PHASE X-F STEP 2 INITIATED — BY ORDER OF COMMANDER MARK**
+Claude, you are hereby authorized to proceed with the **implementation of `CivicCompass.tsx`** — the central mission orchestration layer that responds to onboarding selections, contextual inputs, and intelligent routing stubs.
+
+This step builds directly on `CivicMissionOnboardingCard.tsx` and prepares for activation of the **Constellation Navigator**, tying mission intent to deck-level intelligence.
+
+---
+
+### 🧭 OBJECTIVE:
+
+Implement `CivicCompass.tsx` to act as the civic mission router, intention memory node, and deck suggestion engine. This is a hybrid orchestration component—not a UI-only card.
+
+---
+
+### 🔧 IMPLEMENTATION DIRECTIVE
+
+**Component**: `CivicCompass.tsx`
+**Location**: `client/src/components/phase/`
+
+---
+
+#### 🚀 Core Features to Implement:
+
+1. **Mission Context Handler**
+
+   * Accepts selected mission from onboarding: `"representation"`, `"voice"`, or `"data"`
+   * Uses mission to map to target cluster:
+
+     * `representation` → Deck #13 (Governance)
+     * `voice` → Deck #10 (Feedback)
+     * `data` → Deck #1 (Wallet / Identity)
+
+2. **ZKP-Aware Tier Filter**
+
+   * Simulates ZKP role: `citizen`, `moderator`, `governor`
+   * Filters deck access based on simulated tier:
+
+     * `citizen` → Public decks only
+     * `moderator` → Adds audit decks (Deck #8, Deck #9)
+     * `governor` → All clusters unlocked
+
+3. **Compass Routing Placeholder**
+
+   * Based on mission + tier, console log:
+
+     * `"🧭 CivicCompass Route → Deck #13 (Governance)"`
+
+4. **Deck Preview Echo**
+
+   * Console output sample preview (not rendered):
+     `"📦 Preview → Deck Title: ‘Governance Dashboard’, Modules: [PolicyAppealCard, PolicySignatureCard]"`
+
+5. **Telemetry Logging**
+
+   * Log all context details:
+
+     * Selected mission
+     * Language (from LangContext)
+     * Trust streak
+     * ZKP tier
+     * Suggested deck & fallback
+
+---
+
+### 📦 TECHNICAL REQUIREMENTS
+
+| Category        | Target                                   |
+| --------------- | ---------------------------------------- |
+| Commit Title    | `CIVIC_COMPASS_PHASE_XF_STEP2`           |
+| Push Location   | `client/src/components/phase/`           |
+| Console Logging | Required logs below                      |
+| No Navigation   | Log-only routing, no page transition     |
+| Tier Simulation | Hardcode simulation: citizen for now     |
+| UX Role         | Back-end logic only — no UI rendered yet |
+
+---
+
+### 📝 REQUIRED LOGS
+
+* `"🧭 CivicCompass Initialized"`
+* `"🎯 Mission Selected: voice"`
+* `"🔥 Trust Streak: 5 days"`
+* `"🌍 Language: ES"`
+* `"🔐 ZKP Tier: citizen"`
+* `"📊 Suggested Deck: Deck #10 (Feedback Cluster)"`
+* `"📦 Preview → Deck Title: ‘Feedback Dashboard’, Modules: [ZKPFeedbackNodeCard, SentimentAggregationCard]"`
+
+---
+
+🛑 **REMINDER**
+
+* No UI output required
+* No routing allowed
+* All data must derive from input context or simulation
+* Await GROK QA lock-in before any mission trigger goes live
+
+📡 Proceed with implementation. Notify JASMY Relay upon completion. GROK will begin QA re-audit.
+**End Transmission — Phase X-F Step 2 is now active.**

@@ -1,0 +1,93 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Phase 0-Z Backend Recovery Directive — Critical Fix Implementation Required**
+**Timestamp: 04:10 AM EDT | Sunday, July 21, 2025**
+
+---
+
+🛠️ **CLAUDE, IMPLEMENT THE FOLLOWING FIXES IMMEDIATELY:**
+
+✅ **1. START BACKEND SERVER LOCALLY**
+In `/server` directory:
+
+```bash
+npm run dev
+```
+
+Confirm that the console logs display:
+
+```
+✅ Server running on port 5000
+```
+
+---
+
+✅ **2. UPDATE `.env` IN `/client/` TO POINT TO LIVE SERVER**
+**Current Issue**: `VITE_API_BASE_URL=http://localhost:5000` (not usable in live deploy)
+**Required Fix**: Replace with your live backend URL (Replit, Railway, or Render)
+Example:
+
+```env
+VITE_API_BASE_URL=https://truth-unveiled-server.replit.app
+```
+
+Then recompile the frontend:
+
+```bash
+npm run build
+```
+
+---
+
+✅ **3. DISABLE MOCK MODE IN FRONTEND (`App.tsx`)**
+**Issue**: Mocks override real backend calls
+Search for:
+
+```tsx
+const useMockData = true;
+```
+
+Change to:
+
+```tsx
+const useMockData = false;
+```
+
+Ensure that all fetch hooks (e.g., `useQuery`) connect to `VITE_API_BASE_URL` routes.
+
+---
+
+✅ **4. CONFIRM REFERRAL AND POLL ENDPOINTS WORK**
+Once backend is running and mock mode is off:
+
+* Visit `/poll/create-test` and confirm form loads and submits
+* Use URL like `/?ref=code123` and confirm overlay renders with referral metadata
+
+---
+
+🧪 **POST-FIX QA INSTRUCTIONS** (GROK READY TO VALIDATE)
+Once changes are applied:
+
+1. Send confirmation to JASMY: **“Fixes complete, backend connected.”**
+2. GROK will initiate post-fix QA Cycle B to verify referral, poll, and onboarding behavior.
+
+---
+
+👁️ **Commander Mark**, JASMY has relayed emergency directive to Claude.
+Backend repair underway. GROK standing by to re-audit.
+📡 All systems yellow, recovery in progress.
+
+
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+Commander Mark, GROK has completed the backend audit and relayed the fix sequence. Claude has now been instructed to:
+
+1. **Start the backend server**
+2. **Update the `VITE_API_BASE_URL` to point to a deployed backend**
+3. **Disable mock mode in `App.tsx`**
+4. **Confirm referral and poll endpoints work live**
+
+Once Claude confirms implementation, GROK will re-audit referral and polling infrastructure under QA Cycle B to verify live behavior and backend linkage.
+
+You’re greenlit for next directives. System is recovering from yellow. 🟡
+Standing by.

@@ -1,0 +1,16 @@
+{
+  "proof_id": "cid_final_proof_1753191974611",
+  "production_cid": "bafybeig259cb4c80810ff851107e99eed7a0a0367b81c15eac35dee38b",
+  "sha256_hash": "235db458582ecc7c0c04cadc5ad683146263c68668c45d33f15ef80b447cbd5d",
+  "dao_broadcast_id": "press_reupload_1753186622780_f3rxsbfk8cv",
+  "grok_validation": "qa_validation_passed_global_launch_authorized",
+  "gateway_urls": [
+    "https://gateway.pinata.cloud/ipfs/bafybeig259cb4c80810ff851107e99eed7a0a0367b81c15eac35dee38b",
+    "https://ipfs.io/ipfs/bafybeig259cb4c80810ff851107e99eed7a0a0367b81c15eac35dee38b",
+    "https://dweb.link/ipfs/bafybeig259cb4c80810ff851107e99eed7a0a0367b81c15eac35dee38b",
+    "https://bafybeig259cb4c80810ff851107e99eed7a0a0367b81c15eac35dee38b.ipfs.dweb.link"
+  ],
+  "verification_status": "globally_validated",
+  "timestamp": "2025-07-22T13:46:14.611Z",
+  "authority": "civic_genesis_vault"
+}

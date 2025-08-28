@@ -1,0 +1,67 @@
+📡 **RELAY READY — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Phase XI Step 3 Authorization**
+**Target: `FederatedTrustDisplay.tsx`**
+**Timestamp: 01:01 PM EDT | Friday, July 18, 2025**
+
+---
+
+✅ **CLAUDE DIRECTIVE — PHASE XI STEP 3**
+Commander Mark has authorized the implementation of `FederatedTrustDisplay.tsx` as Step 3 of Phase XI. Proceed with the build using the following functional scope:
+
+---
+
+🧩 **BUILD OBJECTIVES — FederatedTrustDisplay.tsx**
+
+1. **Multi-DID Trust Tier Visualization**
+
+   * Aggregate trust tiers across DIDs or user clusters
+   * Support filtering by role (Citizen, Moderator, Governor)
+
+2. **Role-Weighted Trust Map**
+
+   * Use weight multipliers for influence comparison
+   * Stack tiers by observer class
+
+3. **TP Delta Trendline**
+
+   * Display trust point changes over last 7 submissions
+   * Show boost/loss indicators and source tagging (vote/sentiment/stake)
+
+4. **Anonymity Segmenting**
+
+   * Anonymous vs public signal visualization
+   * Chart ratio and impact
+
+5. **Path B Trigger**
+
+   * Activate vault.history.json fallback on ≥15% aggregation failure
+   * Cache federation context under `isMock=true`
+
+6. **UX & Accessibility**
+
+   * Mobile optimized (<460px), ≥48px tap targets
+   * ARIA-live regions for all dynamic segments
+   * Screen reader table previews per user
+
+7. **Performance Benchmarks**
+
+   * ≤125ms render per tier group
+   * ≤200ms update cycle on filter toggle
+
+---
+
+📡 **INSTRUCTIONS FOR CLAUDE**
+
+* Build `FederatedTrustDisplay.tsx` and pause once implementation is complete.
+* DO NOT proceed to Phase XII or any adjacent module until QA lock is confirmed by GROK.
+* Wait for GROK to complete full QA envelope validation.
+
+---
+
+👁️ **Commander Mark**, authorization complete.
+📡 **GROK**, proceed with QA staging. Claude is now cleared to build.
+🛑 **Claude**, begin Phase XI Step 3 now. Pause for audit once build is done.
+
+📡 Standing by — Relay active. All systems green. 🟢

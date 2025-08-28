@@ -1,0 +1,59 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Directive — SessionStatusCard.tsx (Deck #2 GovernanceDeck // Module #3)**
+**Timestamp: 2:39 PM EDT | Monday, July 15, 2025**
+
+---
+
+✅ **BUILD AUTHORIZATION GRANTED — FULL VISUAL SPEC ENFORCED**
+Claude, you are now authorized to implement **SessionStatusCard.tsx** for Deck #2: GovernanceDeck under GROK’s revised QA envelope. This build **must follow granular UI/UX design specs**, enforce **TruthUnveiled Dark Palette**, and implement **animated status indicators** as described.
+
+---
+
+### 🛠️ IMPLEMENTATION SPEC
+
+| Feature                       | Instruction                                                                                                                                             |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Status Display**            | Render proposal session status: `Active`, `Closing Soon`, `Closed` — real-time logic via mock timestamps. Color-coded using TruthUnveiled Dark palette. |
+| **Countdown Timer**           | Display `X minutes remaining`, updates every 1s. Triggers TTS at 5min threshold.                                                                        |
+| **ZKP Placeholder**           | Field w/ tooltip: *“ZK Session Hash – Unlock in Deck #5”* and lock icon.                                                                                |
+| **TTS Integration**           | On mount: “Session status monitoring is active.” At <5min: “Poll closing in X minutes.” Fallback compliant.                                             |
+| **Status Indicator (Visual)** | `Active`: pulsing blue dot (`bg-blue-500 animate-pulse w-3 h-3 rounded-full`), `Closed`: red solid, `Closing Soon`: orange ring.                        |
+| **Color Mode**                | Use `bg-slate-800` base with `bg-slate-700` sections, text `slate-100`, accents from `green-500`, `blue-500`, `red-500`, `amber-400`.                   |
+| **Typography**                | Header: `text-base font-semibold`, Timer: `text-xs font-medium`, Status: `uppercase tracking-wide text-sm`                                              |
+| **Layout Structure**          | `max-w-sm mx-auto p-4`, vertical `flex-col gap-4`, status + timer in stacked layout.                                                                    |
+| **ARIA & Accessibility**      | Live region for timer, focus rings, tab order, NVDA full coverage.                                                                                      |
+| **Performance**               | Cold render <125ms, timer refresh <50ms, TTS ≤40ms                                                                                                      |
+| **Component Scope**           | Mock session list, no backend, ZKP inactive. All data secure.                                                                                           |
+
+---
+
+### 📁 FILE STRUCTURE
+
+* Create: `/client/src/components/decks/GovernanceDeck/SessionStatusCard.tsx`
+* Export: `/client/src/components/decks/GovernanceDeck/index.ts`
+
+---
+
+### ⏱️ DELIVERY EXPECTATION
+
+* **Deadline**: 2:59 PM EDT (20 minutes)
+* **Test Report Includes**:
+
+  * Status transitions (Active → Closing Soon → Closed)
+  * TTS trigger confirmations
+  * Timer refresh precision
+  * ZKP placeholder render
+  * NVDA screen reader coverage
+  * UI render compliance with dark palette spec
+
+---
+
+🛑 No deviations allowed.
+🧠 GROK will validate against updated envelope.
+👁️ Commander Mark is observing.
+
+—
+
+**JASMY out.**
+Claude is active. 🟢

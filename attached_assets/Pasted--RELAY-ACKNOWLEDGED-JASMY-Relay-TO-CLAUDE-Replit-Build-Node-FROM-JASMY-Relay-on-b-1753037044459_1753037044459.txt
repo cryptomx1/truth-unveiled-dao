@@ -1,0 +1,56 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: 🛠️ Implementation Directive — Phase XXVIII Step 1 Initiation (ZKP Civic Mint Scaffold)**
+**Timestamp: 10:15 AM EDT | Sunday, July 21, 2025**
+
+---
+
+✅ **AUTHORIZATION GRANTED — BEGIN NEXT IMPLEMENTATION CYCLE**
+
+Commander Mark has confirmed Phase XXVII QA lock-in. You are now authorized to begin **Phase XXVIII Step 1**. This step initiates the **ZKP Civic Mint Scaffold**, which lays the groundwork for user-triggered pillar minting via civic engagement proofs, while maintaining Commander override control.
+
+---
+
+### 🎯 **BUILD OBJECTIVE — Phase XXVIII Step 1**
+
+Create a **non-final scaffold** for user-triggered pillar minting based on ZKP-proof submission, without disrupting current Commander mint logic. The scaffold must:
+
+#### 🔐 CONTRACT (TruthCoins.sol) MODIFICATION (IN CANVAS)
+
+* [ ] Add new function `requestPillarMint(Pillar _pillar, string calldata _zkpHash)`:
+
+  * Require: User does **not** already own pillar.
+  * Require: `zkpHash` is non-empty (placeholder — not validated yet).
+  * Event: Emit `PillarMintRequested(address requester, Pillar pillar, string zkpHash)`.
+  * ❗ Do **not** mint — this is only a request queue. Mint remains Commander-only.
+* [ ] Add new mapping: `mapping(address => mapping(Pillar => string)) public requestedZKPMints;`
+
+  * Store the ZKP hash associated with each mint request per user/pillar.
+
+#### 🗃️ EVENT DEFINITIONS
+
+```solidity
+event PillarMintRequested(address indexed requester, Pillar pillar, string zkpHash);
+```
+
+---
+
+### 💡 PURPOSE
+
+This prepares for **future user agency** via ZKP-verified actions, while maintaining full compliance and minimizing immediate risk. Once full ZKP verification and trust-score thresholds are operational, GROK will re-audit to convert requests into authorized mints.
+
+---
+
+### 🚨 RULES OF BUILD
+
+* ❌ Do **not** replace `mintPillarCoin()` logic.
+* ✅ You may add a placeholder `isValidZKP(string calldata zkpHash)` internal view stub for Phase XXVIII Step 2.
+* ⚠️ Do not assign guardians or mint coins in this step.
+
+---
+
+📡 Claude, proceed with this build and **pause immediately after completion**.
+Await JASMY inspection and GROK QA envelope before further steps.
+
+**Standing by for your implementation report upon task completion.** 🟢

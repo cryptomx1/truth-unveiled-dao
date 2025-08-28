@@ -1,0 +1,80 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: PHASE X-F INITIATION AUTHORIZED — CivicMissionOnboardingCard.tsx Directive (Step 1)**
+**Timestamp: 06:17 PM EDT | Friday, July 18, 2025**
+
+---
+
+✅ **MISSION BRANCH SELECTED: PHASE X-F — INTEGRATED ONBOARDING INTELLIGENCE**
+Commander Mark has officially authorized transition to Phase X-F, Step 1. Claude, you are instructed to begin the **Civic Mission Onboarding Intelligence** implementation — activating the first intelligent entrypoint for citizens based on streak history, preferred language, and deck engagement metrics.
+
+---
+
+### 🧭 OBJECTIVE:
+
+Create `CivicMissionOnboardingCard.tsx` — a smart onboarding interface that personalizes a citizen's first civic interaction using language, trust streak, and intent prompts.
+
+---
+
+### 🔧 IMPLEMENTATION DIRECTIVE
+
+**Component**: `CivicMissionOnboardingCard.tsx`
+**Location**: `client/src/components/phase/`
+
+---
+
+#### ✨ Core Features to Implement:
+
+1. **Multilingual Prompt Personalization**
+
+   * Uses `LangContext.tsx` from Phase X-E
+   * Civic welcome text + prompt: *“What is your mission today?”* rendered in EN/ES/FR
+   * Dynamic ARIA label generation for language-specific screen reader intros
+
+2. **Trust Streak Sync**
+
+   * If `streakDays >= 3`, inject: *“Welcome back, your civic momentum is strong.”*
+   * If `streakDays < 3`, show onboarding encouragement: *“Let’s begin your civic journey.”*
+
+3. **Deck Suggestion Intelligence**
+
+   * Uses lightweight rule-based logic:
+
+     * If `lang === 'es' && streakDays >= 5` → suggest Governance Cluster
+     * If `lang === 'fr' && streakDays == 1` → suggest Identity Cluster
+     * Else → suggest Polling Deck (Deck 20)
+
+4. **User Mission Selector**
+
+   * Dropdown or segmented control:
+
+     * “Understand Representation”
+     * “Make My Voice Heard”
+     * “Secure My Civic Data”
+   * On selection, triggers navigation placeholder (`console.log(“Selected mission: [X]”)`)
+
+5. **Animated Entry UX**
+
+   * Fade-in or slide-in welcome with voice-over-ready heading
+   * Respect `aria-live="polite"` in intro region (ARIA harmony enforced)
+
+---
+
+### 📦 TECHNICAL REQUIREMENTS
+
+| Category        | Target                                                                                    |
+| --------------- | ----------------------------------------------------------------------------------------- |
+| Commit Title    | `CIVIC_MISSION_ONBOARDING_CARD_PHASE_XF_STEP1`                                            |
+| Push Location   | `client/src/components/phase/`                                                            |
+| Console Logging | `"🧭 Mission Selector Initialized"`, `"🌍 Lang set to: ES"`, `"🔥 Trust streak = 4 days"` |
+| ARIA Compliance | All screen reader regions harmonized with Accessibility Engine                            |
+| UX Time         | Fade-in ≤200ms, interaction latency <50ms                                                 |
+| TTS Prep        | Wrap intro in isolated TTS region (`aria-live="polite"`), queue-ready                     |
+
+---
+
+🛑 **DO NOT** activate real navigation logic — use placeholders for mission routing until Phase X-F Step 2.
+📡 Proceed with implementation, Claude. Pause after build and notify JASMY Relay. GROK will begin QA re-audit on confirmation.
+
+**End Transmission — Phase X-F is now live.**

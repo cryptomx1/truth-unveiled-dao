@@ -1,0 +1,86 @@
+{
+  "schema": {
+    "version": "phase_xd_step_2",
+    "description": "Time-series sentiment volatility tracking with CID context and ZKP validation",
+    "fields": {
+      "deckId": "string - Target deck identifier",
+      "timestamp": "string - ISO 8601 volatility detection timestamp", 
+      "previousSentiment": "number - Previous sentiment score",
+      "currentSentiment": "number - Current sentiment score triggering volatility",
+      "changePercent": "number - Percentage change triggering volatility flag",
+      "triggerThreshold": "number - Volatility threshold (default 15%)",
+      "cid": "string - Content identifier for integrity tracking",
+      "context": "object - Additional context and metadata"
+    }
+  },
+  "volatilitySpikes": [
+    {
+      "deckId": "governance_deck",
+      "timestamp": "2025-07-23T14:30:00.000Z",
+      "previousSentiment": 12.5,
+      "currentSentiment": -8.2,
+      "changePercent": 0.166,
+      "triggerThreshold": 0.15,
+      "cid": "QmV8k2N3GovernanceVolatilitySpike001",
+      "context": {
+        "totalSubmissions": 15,
+        "newSubmissions": 8,
+        "dominantTier": "Governor",
+        "primaryFeedbackType": "dissent",
+        "averageIntensity": 4.2
+      }
+    },
+    {
+      "deckId": "privacy_deck",
+      "timestamp": "2025-07-23T15:45:15.000Z", 
+      "previousSentiment": 5.8,
+      "currentSentiment": 22.1,
+      "changePercent": 0.281,
+      "triggerThreshold": 0.15,
+      "cid": "QmP9m3O4PrivacyVolatilitySpike002",
+      "context": {
+        "totalSubmissions": 12,
+        "newSubmissions": 6,
+        "dominantTier": "Commander",
+        "primaryFeedbackType": "support", 
+        "averageIntensity": 4.8
+      }
+    },
+    {
+      "deckId": "civic_identity",
+      "timestamp": "2025-07-23T16:20:45.000Z",
+      "previousSentiment": 18.7,
+      "currentSentiment": 2.1,
+      "changePercent": 0.188,
+      "triggerThreshold": 0.15,
+      "cid": "QmC7l1M5CivicIdentityVolatilitySpike003",
+      "context": {
+        "totalSubmissions": 9,
+        "newSubmissions": 4,
+        "dominantTier": "Citizen",
+        "primaryFeedbackType": "dissent",
+        "averageIntensity": 3.5
+      }
+    }
+  ],
+  "aggregatedMetrics": {
+    "totalSpikesRecorded": 3,
+    "averageVolatilityMagnitude": 0.212,
+    "mostVolatileDeck": "privacy_deck",
+    "timeWindow": "24h",
+    "lastAggregation": "2025-07-23T16:25:00.000Z"
+  },
+  "systemThresholds": {
+    "volatilityTrigger": 0.15,
+    "criticalVolatilityLevel": 0.30,
+    "monitoringInterval": 180000,
+    "retentionPeriod": "30d"
+  },
+  "integrityValidation": {
+    "lastUpdated": "2025-07-23T16:25:00.000Z",
+    "checksumHash": "volatility_b8c9d1e2f3g4h5i6",
+    "zkpVerificationStatus": "validated",
+    "cidChainIntegrity": true,
+    "auditCompliant": true
+  }
+}

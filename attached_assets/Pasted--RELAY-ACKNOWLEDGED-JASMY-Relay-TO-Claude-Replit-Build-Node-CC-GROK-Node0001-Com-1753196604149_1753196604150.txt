@@ -1,0 +1,94 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**CC: GROK Node0001, Commander Mark**
+**FROM: JASMY Relay System**
+**SUBJECT: PHASE X-FINANCE STEP 3 — BUILD SPECIFICATION FOR REWARD TRIGGER MATRIX**
+**Timestamp: 04:52 PM EDT | Wednesday, July 24, 2025**
+
+---
+
+✅ **DIRECTIVE RECEIVED: PHASE X-FINANCE STEP 3 INITIATED**
+Commander Mark has authorized activation of the **Reward Trigger Matrix**, completing the TruthPoint lifecycle from allocation → utility → **automated civic recognition**.
+
+Below is the full build specification for implementation. Proceed immediately and pause for GROK QA upon completion.
+
+---
+
+### 🛠️ MODULES TO BUILD
+
+#### 1. `RewardTriggerMatrix.ts`
+
+* A static registry of civic triggers (e.g., "Attend Municipal Pilot", "Refer a Citizen", "Complete Deck #10 Feedback")
+* Includes:
+  • `triggerId: string`
+  • `actionType: "pilot" | "referral" | "streak" | "feedback"`
+  • `TPReward: number`
+  • `conditions: ZKP | DID | tier >= Citizen`
+  • `description: string`
+
+#### 2. `RewardTriggerAgent.ts`
+
+* Autonomous observer that listens for civic trigger events emitted from routes like:
+  `/municipal/pilot`, `/deck/10`, `/press/replay`, `/referral`
+* Validates conditions using ZKP stubs or tier check
+* Emits `RewardTriggered` event and writes to TPTransactionLog.json
+
+#### 3. `RewardExportLog.json`
+
+* Immutable, human-readable export of all triggered rewards
+* Includes:
+  • `timestamp`
+  • `triggerId`
+  • `walletCID`
+  • `TPReward`
+  • `validated: boolean`
+
+#### 4. `/wallet/rewards` Route
+
+* User interface to view:
+  • Recently earned TruthPoint rewards
+  • Status of pending triggers
+  • Actionable rewards (e.g., "Claim TP for Municipal Participation")
+* Includes `RewardStatusCard.tsx` component with ARIA narration
+
+---
+
+### ⚙️ SYSTEM INTEGRATIONS
+
+* **TreasuryEngine.ts**: Reward disbursements drawn from correct tranche (e.g., 25B Marketing)
+* **TPTransactionLog.json**: Append-only log with ISO timestamp
+* **TPVaultVerifier.ts**: Sync earned balance after trigger
+* **AgentInitializer.ts**: Register `RewardTriggerAgent`
+
+---
+
+### 📏 TECHNICAL REQUIREMENTS
+
+| Target                  | Specification                                              |
+| ----------------------- | ---------------------------------------------------------- |
+| CID & Tier Verification | All trigger events gated by `DID` + `tier >= Citizen`      |
+| ZKP Stub Integration    | Hash-based validation for actions (Phase XXVIII readiness) |
+| ARIA Compliance         | Narration for `/wallet/rewards`                            |
+| Performance             | <200ms route load, <250ms trigger process                  |
+| Ledger Integrity        | ISO timestamps, no corruption on log append                |
+
+---
+
+🔄 **BUILD ORDER**
+
+1. Implement `RewardTriggerMatrix.ts` and seed 5 sample triggers:
+
+   * `MUNICIPAL_PARTICIPATION`, `REFERRAL_NEW_USER`, `DECK10_FEEDBACK`, `COMMAND_STREAK`, `TRUTH_MEDIA_UPLOAD`
+2. Build `RewardTriggerAgent.ts` and register with `AgentInitializer.ts`
+3. Enhance `TPTransactionLog.json` with reward trigger metadata
+4. Create `/wallet/rewards` route and `RewardStatusCard.tsx` interface
+5. Generate `RewardExportLog.json` for DAO audit
+6. Pause for GROK QA Cycle C
+
+---
+
+📡 **CLAUDE**, commence build for Phase X-FINANCE Step 3. Await GROK QA lock after implementation.
+🧠 **GROK**, QA envelope has been staged for post-build audit. Ready to validate CID sync, reward disbursement integrity, and agent logic.
+
+**Commander Mark**, system green. Executing TruthPoint Reward Trigger Matrix.
+Standing by for execution report. 🟢

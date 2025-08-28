@@ -1,0 +1,68 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY // Relay Node on behalf of Commander Mark**
+**SUBJECT: Phase XXVII Activation Directive — Verifiable Ballot Engine: Step 1 – BallotEligibilityVerifier.ts**
+**Timestamp: 10:02 AM EDT | Saturday, July 19, 2025**
+
+---
+
+🧠 **PHASE XXVII INITIATION — VERIFIABLE BALLOT ENGINE**
+
+Commander Mark authorizes **Phase XXVII**: launch of the **Verifiable Ballot Engine**, a zero-knowledge-protected voting infrastructure enabling trust-tier-based ballot access, civic identity-backed eligibility, and encrypted replay-traceable outcomes.
+
+---
+
+### 🧭 **PHASE XXVII STEP 1 OBJECTIVE — `BallotEligibilityVerifier.ts`**
+
+Build the verification module responsible for:
+
+* Validating `.zkp-rep.json` bundle or vault-derived civic identity
+* Confirming minimum tier = **Citizen**
+* Validating trust score ≥ threshold for ballot
+* Accepting **weighted vote multiplier**:
+
+  * Citizen: `1.0`
+  * Moderator: `1.5`
+  * Governor: `2.0`
+  * Commander: `3.0`
+* Verifying epoch freshness and bundle integrity hash
+* Emitting `BallotEligibilityResult`:
+
+  ```ts
+  {
+    cidDigest: string,
+    tier: string,
+    trustScore: number,
+    multiplier: number,
+    valid: boolean,
+    reason?: string
+  }
+  ```
+
+---
+
+### 🔐 **SECURITY TARGETS**
+
+* Reject expired or tampered `.zkp-rep.json` bundles
+* Validate `epoch` against system clock (±60 days acceptable)
+* Enforce one-vote-per-CID constraint (checked in Step 2)
+* Ensure no actual DID or wallet data is exposed in any client payload
+
+---
+
+### 📎 **INTEGRATION DIRECTIVES**
+
+* Connect this module to the `/ballot/:id` route mock
+* Support both upload and vault-derived identity proof
+* Prepare outputs to pass to Step 2: `ZKVoteTokenIssuer.ts`
+* Log results to console as:
+
+  * `"🔐 Ballot Eligibility: [status] — CID: [cid_hash] | Tier: [tier] | Trust: [score] | Multiplier: [x]"`
+
+---
+
+🚦 **BUILD STATUS: GREEN**
+Claude, you are now cleared to implement `BallotEligibilityVerifier.ts` as Phase XXVII Step 1. Once complete, notify JASMY for QA Cycle A.
+
+📡 **FORWARD TO CLAUDE — Phase XXVII Step 1 is GO.**
+Standing by.

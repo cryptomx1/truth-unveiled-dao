@@ -1,0 +1,90 @@
+📡 **RELAY ISSUED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: TTS Remediation Implementation Directive — ARIA Mutation Conflict Patch Deployment**
+**Timestamp: 02:33 PM EDT | Friday, July 18, 2025**
+
+---
+
+✅ **CLAUDE DIRECTIVE — TTS OVERRIDE IMPLEMENTATION INITIATED**
+
+Commander Mark has authorized the immediate application of the TTS suppression patch plan across all Phase X-D and XI modules as outlined in the GROK-validated QA envelope `TTS_OVERRIDE_REMEDIATION_PLAN.md`.
+
+---
+
+📌 **IMPLEMENT THE FOLLOWING PATCHES IN A SINGLE PASS**
+
+### 🔒 1. **TrustVoteCard.tsx**
+
+* Change `aria-live="assertive"` to `aria-live="off"` in vote confirmation block
+* Wrap confirmation in `aria-hidden="true"`
+* Add `useEffect(() => { return () => enforceAriaOff(); })` with nuclear override
+
+### 🔒 2. **SentimentCaptureForm.tsx**
+
+* Debounce character counter updates (300ms)
+* Add `aria-hidden="true"` to counter span
+* Ensure TTS suppression on each keystroke in comment field
+
+### 🔒 3. **TrustAuditOverlay.tsx**
+
+* Move graph tooltips out of ARIA flow using `role="presentation"`
+* Render them in a `ReactDOM.createPortal()` to avoid screen reader regions
+
+### 🔒 4. **FederatedTrustDisplay.tsx**
+
+* Detach tier delta pings and animations from ARIA tree using `aria-hidden="true"`
+* Wrap dynamic TP delta changes in `<div aria-hidden="true">...</div>`
+
+### 🔒 5. **DeckModulePreview\.tsx**
+
+* Disable TTS for rotating carousel by applying `aria-live="off"`
+* Wrap carousel in `div aria-hidden="true"`
+* Add `focusTrap` logic to prevent automatic focus-stealing behavior
+
+---
+
+🧬 **NUCLEAR OVERRIDE SNIPPET (GLOBAL ENFORCER)**
+
+```tsx
+useEffect(() => {
+  const nuke = () => {
+    const liveRegions = document.querySelectorAll('[aria-live], [role="alert"]');
+    liveRegions.forEach(node => node.setAttribute('aria-live', 'off'));
+  };
+  nuke();
+  return () => nuke(); // cleanup on unmount
+}, []);
+```
+
+Apply this inside any component still triggering unexpected TTS fallback.
+
+---
+
+📦 **TARGET FILES TO PATCH**
+
+* `/client/src/components/phase/TrustVoteCard.tsx`
+* `/SentimentCaptureForm.tsx`
+* `/TrustAuditOverlay.tsx`
+* `/FederatedTrustDisplay.tsx`
+* `/DeckModulePreview.tsx`
+
+---
+
+🛑 **WARNING**: Do not adjust `aria-live="polite"` regions in core vault or accessibility components unless explicitly approved. The patch targets TTS **saturation zones**, not universal ARIA functionality.
+
+---
+
+📌 **AFTER IMPLEMENTATION**
+
+* Pause and notify JASMY Relay for GROK re-audit
+* Do not proceed to any other phase or visual adjustment without validation
+* Ensure TTS suppression success rate ≥90% in simulation tests
+
+---
+
+👁️ Claude, execute TTS override patch as instructed and pause for GROK re-audit.
+📡 Standing by for implementation confirmation. All systems yellow. 🟡
+
+**Timestamp: 02:33 PM EDT | Friday, July 18, 2025**
+📡 Directive officially relayed. Proceed with suppression implementation.

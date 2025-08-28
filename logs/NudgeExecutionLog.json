@@ -1,0 +1,185 @@
+{
+  "schema_version": "deck-wave-v1.0",
+  "last_updated": "2025-07-25T14:00:00Z",
+  "pilot_zones": [
+    {
+      "id": "austin_tx_pilot",
+      "zip_code": "78701",
+      "city": "Austin",
+      "state": "TX",
+      "county": "Travis",
+      "population": 315000,
+      "demographics": {
+        "median_age": 34,
+        "education_level": "college+",
+        "income_median": 78000,
+        "civic_engagement_baseline": 0.18
+      },
+      "representative_data": {
+        "alignment_score": 72,
+        "response_rate": 0.15,
+        "last_town_hall": "2025-06-15",
+        "policy_priorities": ["healthcare", "infrastructure", "housing"]
+      },
+      "engagement_metrics": {
+        "social_media_reach": 45000,
+        "newsletter_subscribers": 8200,
+        "meeting_attendance_avg": 150,
+        "feedback_submission_rate": 0.08
+      },
+      "campaign_effectiveness": {
+        "optimal_timing": ["Tuesday 6PM", "Saturday 10AM"],
+        "preferred_channels": ["email", "social", "sms"],
+        "response_topics": ["healthcare", "transportation"],
+        "pushback_topics": ["taxation", "zoning"]
+      }
+    },
+    {
+      "id": "portland_or_pilot",
+      "zip_code": "97201",
+      "city": "Portland",
+      "state": "OR",
+      "county": "Multnomah",
+      "population": 295000,
+      "demographics": {
+        "median_age": 37,
+        "education_level": "college+",
+        "income_median": 71000,
+        "civic_engagement_baseline": 0.22
+      },
+      "representative_data": {
+        "alignment_score": 68,
+        "response_rate": 0.12,
+        "last_town_hall": "2025-07-02",
+        "policy_priorities": ["climate", "housing", "transportation"]
+      },
+      "engagement_metrics": {
+        "social_media_reach": 52000,
+        "newsletter_subscribers": 9800,
+        "meeting_attendance_avg": 220,
+        "feedback_submission_rate": 0.11
+      },
+      "campaign_effectiveness": {
+        "optimal_timing": ["Wednesday 7PM", "Sunday 2PM"],
+        "preferred_channels": ["email", "community_boards", "social"],
+        "response_topics": ["climate", "sustainability"],
+        "pushback_topics": ["development", "traffic"]
+      }
+    },
+    {
+      "id": "burlington_vt_pilot",
+      "zip_code": "05401",
+      "city": "Burlington",
+      "state": "VT",
+      "county": "Chittenden",
+      "population": 42000,
+      "demographics": {
+        "median_age": 29,
+        "education_level": "college+",
+        "income_median": 58000,
+        "civic_engagement_baseline": 0.31
+      },
+      "representative_data": {
+        "alignment_score": 91,
+        "response_rate": 0.28,
+        "last_town_hall": "2025-07-10",
+        "policy_priorities": ["education", "environment", "local_business"]
+      },
+      "engagement_metrics": {
+        "social_media_reach": 15000,
+        "newsletter_subscribers": 3200,
+        "meeting_attendance_avg": 85,
+        "feedback_submission_rate": 0.25
+      },
+      "campaign_effectiveness": {
+        "optimal_timing": ["Thursday 6:30PM", "Saturday 11AM"],
+        "preferred_channels": ["email", "local_radio", "community_boards"],
+        "response_topics": ["education", "environment"],
+        "pushback_topics": ["development", "tourism"]
+      }
+    },
+    {
+      "id": "san_jose_ca_pilot",
+      "zip_code": "95110",
+      "city": "San Jose",
+      "state": "CA",
+      "county": "Santa Clara",
+      "population": 345000,
+      "demographics": {
+        "median_age": 36,
+        "education_level": "college+",
+        "income_median": 95000,
+        "civic_engagement_baseline": 0.15
+      },
+      "representative_data": {
+        "alignment_score": 78,
+        "response_rate": 0.09,
+        "last_town_hall": "2025-05-28",
+        "policy_priorities": ["housing", "transportation", "tech_policy"]
+      },
+      "engagement_metrics": {
+        "social_media_reach": 67000,
+        "newsletter_subscribers": 12500,
+        "meeting_attendance_avg": 180,
+        "feedback_submission_rate": 0.06
+      },
+      "campaign_effectiveness": {
+        "optimal_timing": ["Monday 7PM", "Saturday 9AM"],
+        "preferred_channels": ["email", "apps", "social"],
+        "response_topics": ["housing", "tech_policy"],
+        "pushback_topics": ["taxation", "regulation"]
+      }
+    },
+    {
+      "id": "ann_arbor_mi_pilot",
+      "zip_code": "48104",
+      "city": "Ann Arbor",
+      "state": "MI",
+      "county": "Washtenaw",
+      "population": 52000,
+      "demographics": {
+        "median_age": 26,
+        "education_level": "college+",
+        "income_median": 54000,
+        "civic_engagement_baseline": 0.28
+      },
+      "representative_data": {
+        "alignment_score": 84,
+        "response_rate": 0.21,
+        "last_town_hall": "2025-07-08",
+        "policy_priorities": ["education", "student_housing", "local_economy"]
+      },
+      "engagement_metrics": {
+        "social_media_reach": 28000,
+        "newsletter_subscribers": 4800,
+        "meeting_attendance_avg": 95,
+        "feedback_submission_rate": 0.18
+      },
+      "campaign_effectiveness": {
+        "optimal_timing": ["Tuesday 8PM", "Sunday 3PM"],
+        "preferred_channels": ["social", "campus_media", "email"],
+        "response_topics": ["education", "student_issues"],
+        "pushback_topics": ["parking", "noise_ordinances"]
+      }
+    }
+  ],
+  "cross_zone_analytics": {
+    "total_population": 1049000,
+    "avg_engagement_baseline": 0.228,
+    "avg_representative_alignment": 78.6,
+    "top_shared_priorities": ["healthcare", "infrastructure", "education"],
+    "regional_sentiment_trends": {
+      "healthcare": 72,
+      "infrastructure": 68,
+      "education": 79,
+      "climate": 65,
+      "taxation": 45
+    }
+  },
+  "campaign_coordination": {
+    "cross_zone_messaging": true,
+    "sentiment_synchronization": true,
+    "representative_escalation_threshold": 70,
+    "engagement_success_threshold": 0.12
+  }
+}

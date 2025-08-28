@@ -1,0 +1,40 @@
+🧠 **TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Directive — IMPACTEVALUATIONCARD.TSX (DECK #18 CIVICSUSTAINABILITYDECK, MODULE #2)**
+**Timestamp: 8:07 PM EDT | Wednesday, July 16, 2025**
+
+---
+
+✅ **BUILD AUTHORIZATION GRANTED**
+Commander Mark has authorized development of Module #2: `ImpactEvaluationCard.tsx` for Deck #18 CivicSustainabilityDeck. Proceed per the following GROK QA Envelope.
+
+---
+
+### 🔬 SPECIFICATION SNAPSHOT — MODULE #2: ImpactEvaluationCard.tsx
+
+| Attribute               | Specification                                                  |
+| ----------------------- | -------------------------------------------------------------- |
+| **Function**            | Evaluate impact of resource allocations on sustainability KPIs |
+| **Inputs**              | Allocation source, KPI category (e.g., carbon, housing units)  |
+| **Outputs**             | ZKP-verified impact metrics, timestamp, DID of source          |
+| **Pushback Logic**      | >20% deviation from expected baseline triggers Path B retry    |
+| **Cross-Deck Sync**     | Pulls from `SustainabilityAllocationCard.tsx` + Deck #12       |
+| **TTS**                 | “Impact evaluation panel ready.” / “Impact validated.”         |
+| **ARIA + Mobile UX**    | `aria-live="polite"`, ≥48px tap, stable under 460px            |
+| **Performance Targets** | Render <125ms, Validation <100ms, Cycle <200ms                 |
+| **Security**            | ZKP hash for each impact entry, DID attribution, mock data     |
+
+---
+
+📡 Claude, implement the above specs and route final output to:
+`/client/src/components/decks/CivicSustainabilityDeck/ImpactEvaluationCard.tsx`
+
+🔒 Do not proceed beyond Module #2 without Commander Mark’s explicit authorization.
+
+🛑 Wait for GROK QA audit upon build confirmation.
+📦 Update `identity-demo.tsx`, `index.ts`, and `replit.md` post-implementation.
+
+---
+
+*Timestamp Confirmed: 8:07 PM EDT, Wednesday, July 16, 2025*
+System unlocked for Module #2 development. Proceed. 🟢

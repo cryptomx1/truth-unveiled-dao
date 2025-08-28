@@ -1,0 +1,51 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: CLAUDE // Replit Build Node**
+**FROM: JASMY // Relay Node on behalf of Commander Mark**
+**SUBJECT: Phase XXXII Step 2 Directive — TruthGenesisBadge.ts Implementation**
+**Timestamp: 6:47 PM EDT | Saturday, July 19, 2025**
+
+---
+
+✅ **AUTHORIZATION CONFIRMED**
+Commander Mark has authorized **Phase XXXII Step 2**, initiating the build of `TruthGenesisBadge.ts`.
+
+---
+
+🧠 **IMPLEMENTATION DIRECTIVE — TRUTHGENESISBADGE.TS**
+
+**Objective**: Create the commemorative identity and privilege badge system tied to successful fusion of all 8 civic pillar TruthCoins. This module acts as a symbolic and access-control layer once `mintGenesis()` succeeds in `TruthFusionEngine.ts`.
+
+### 🔧 Required Specifications
+
+| Component                  | Description                                                                                    |
+| -------------------------- | ---------------------------------------------------------------------------------------------- |
+| `TruthGenesisBadge.ts`     | Civic badge module for Genesis Coin recipients                                                 |
+| `grantGenesisPrivileges()` | Grants Commander access, vault rep boost, and badge metadata                                   |
+| `renderGenesisBadge()`     | Returns UI/ARIA-compatible badge preview for frontend                                          |
+| `getGenesisStats()`        | Returns fusion timestamp, originating CID, rep level, TP earned                                |
+| `verifyGenesisOwner()`     | Confirms whether a CID has successfully minted the Genesis Coin                                |
+| `generateLegacyHash()`     | Creates a ZK-compatible proof hash for memorialization across forks                            |
+| Integration Targets        | Pulls state from: `TruthFusionEngine`, `ProofVaultCore`, `CIDTierMap`, `TruthCoinsIntegration` |
+
+---
+
+📦 **Frontend Considerations**
+
+* Provide exportable `.genesis-badge.json` for DAO legacy transfer
+* Include ARIA-compliant narration string: *"🏛️ Genesis Fusion Complete — Civic Legacy Sealed"*
+
+---
+
+🛡️ **Compliance Requirements**
+
+* No personal data; CID hash only
+* Vault-based integrity check enforced
+* Genesis fusion timestamp must be included in audit logs
+
+---
+
+📡 **CLAUDE**, please proceed with implementation of `TruthGenesisBadge.ts` and pause once complete. GROK will issue QA envelope upon delivery.
+
+📡 System stable. Directive relayed. All systems green. 🟢
+**Timestamp: 6:47 PM EDT | Saturday, July 19, 2025**
+📡 End of transmission.

@@ -1,0 +1,61 @@
+{
+  "schema": {
+    "version": "phase_tts_civic_enhance_step_4",
+    "description": "Audio tutorial content for Deck 1 Module 1 - Identity Summary Card",
+    "deckId": "deck1",
+    "moduleId": "module1",
+    "moduleName": "IdentitySummaryCard",
+    "tutorialType": "civic_engagement_guidance"
+  },
+  "tutorialContent": {
+    "introductoryNarration": {
+      "title": "📌 Welcome to Your Civic Identity Summary",
+      "content": "Welcome to your civic identity overview. This module displays your current civic engagement status, including your tier level, trust contributions, and guardian assignments. Your identity summary serves as the foundation for all civic platform interactions.",
+      "duration": "15 seconds",
+      "tone": "encouraging",
+      "speed": "normal"
+    },
+    "navigationGuidance": {
+      "title": "🔍 Navigating Your Identity Dashboard",
+      "content": "Your identity card shows four key areas: your current civic tier in the top section, your trust contribution score on the left, active guardian assignments in the center, and recent civic activities on the right. Use the action buttons below to claim rewards, update preferences, or view detailed metrics.",
+      "duration": "22 seconds",
+      "tone": "informative",
+      "speed": "normal"
+    },
+    "privacyNotice": {
+      "title": "🔒 Privacy Protection Active",
+      "content": "Your civic identity is protected using advanced privacy technology. Personal identifiers are encrypted and never shared publicly. Only your civic contributions and engagement metrics are visible to maintain transparency while preserving your privacy.",
+      "duration": "18 seconds",
+      "tone": "formal",
+      "speed": "normal"
+    },
+    "nextStepsCue": {
+      "title": "➡️ Ready for Civic Engagement",
+      "content": "You're now ready to explore other civic modules. Consider visiting the governance deck to participate in community decisions, or check the treasury section to claim earned rewards. Your civic journey begins here.",
+      "duration": "16 seconds",
+      "tone": "encouraging",
+      "speed": "normal"
+    }
+  },
+  "accessibilityFeatures": {
+    "ariaLiveRegions": true,
+    "screenReaderCompatible": true,
+    "keyboardNavigation": true,
+    "highContrastSupport": true
+  },
+  "integrationPoints": {
+    "ttsToggleId": "identity-summary-tts",
+    "parentDeck": "wallet_overview",
+    "relatedModules": ["treasury_balance", "civic_achievements"],
+    "prerequisiteModules": []
+  },
+  "metadata": {
+    "createdAt": "2025-07-23T18:07:00.000Z",
+    "lastUpdated": "2025-07-23T18:07:00.000Z",
+    "version": "1.0.0",
+    "authorizedBy": "Commander Mark via JASMY Relay",
+    "qaValidation": "pending_grok_cycle_l",
+    "languageSupport": ["en-US"],
+    "estimatedCompletionTime": "71 seconds"
+  }
+}

@@ -1,0 +1,91 @@
+📡 RELAY ACKNOWLEDGED — JASMY Relay
+TO: Claude // Replit Build Node
+FROM: JASMY Relay on behalf of Commander Mark
+SUBJECT: PHASE XVI STEP 2 AUTHORIZATION — Live Legislative Sync + ZIP-Based Policy Alignment Directive
+Timestamp: 01:16 AM EDT | Saturday, July 19, 2025
+
+⸻
+
+✅ PHASE XVI STEP 2 INITIATED — REAL-TIME GOVERNANCE DATA LINKAGE ONLINE
+
+Commander Mark has authorized Phase XVI Step 2, activating the live legislative synchronization layer and ZIP-code-based civic alignment system. This step connects constituent geography to real-time bill tracking, enabling personalized feedback zones and transparent governance overlays.
+
+⸻
+
+🗳️ OBJECTIVE
+
+Implement the LegiSyncAgent.ts logic module and integrate ZIP-district mapping hooks into GovMapEngine.tsx.
+
+⸻
+
+🔧 IMPLEMENTATION DIRECTIVE
+
+Primary Component:
+	•	LegiSyncAgent.ts
+	•	Location: client/src/agents/
+
+Secondary Hook Injection:
+	•	Extend GovMapEngine.tsx to use ZIP-linked legislative data simulation
+
+⸻
+
+🧩 Core Features to Implement
+	1.	ZIP-District Mapping Module
+	•	Hardcode mock ZIP → District ID links:
+
+{
+  "20852": "8B",
+  "20001": "3C",
+  "22102": "5A"
+}
+
+
+	2.	LegiSyncAgent.ts — Mock Live Bill Tracker
+	•	Exports function: getBillsByDistrict(districtId: string)
+	•	Returns array of 2–3 mock bills:
+
+[
+  { title: "HB203 - Civic Data Privacy Act", status: "In Committee", sponsor: "Rep. Lin" },
+  { title: "SB108 - Voter Registration Modernization", status: "Active", sponsor: "Sen. Ruiz" }
+]
+
+
+	3.	Integration with GovMapEngine
+	•	On district click:
+	•	Fetch mock bills from LegiSyncAgent.ts
+	•	Log output:
+	•	"📜 Bills in District 8B:"
+	•	"• HB203 - Civic Data Privacy Act (In Committee)"
+	4.	Telemetry + ARIA
+	•	Output logs for each bill
+	•	ARIA live region: "aria-live=polite" reads number of active bills aloud
+	5.	Mobile Scaling + Performance
+	•	Fetch/render latency <200ms
+	•	No impact on frame rate during zoom or interaction
+
+⸻
+
+📦 TECHNICAL REQUIREMENTS
+
+Category	Target
+Commit Title	LEGISYNC_AGENT_PHASE_XVI_STEP2
+Push Location	
+
+	•	client/src/agents/LegiSyncAgent.ts
+	•	client/src/components/geo/GovMapEngine.tsx |
+| Console Logs |
+	•	"📜 Bills in District 8B:"
+	•	"• HB203 - Civic Data Privacy Act (In Committee)"
+	•	"📨 ZIP 20852 routed to District 8B" |
+| ARIA | aria-live=polite for bill digest narration |
+| Performance | Fetch + render ≤200ms; 0% CPU regression |
+
+⸻
+
+🛑 REMINDER:
+	•	This step uses mock data only — no real-time API pull
+	•	Phase XVII (LegiScan Integration) will activate full data feeds and constituent push alerts
+
+📡 Proceed with implementation. Notify JASMY Relay upon completion. GROK will initiate QA re-audit.
+
+End Transmission — Phase XVI Step 2 is now live. 🟢

@@ -1,0 +1,63 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Build Directive — WalletSyncCard (Deck #1 WalletOverviewDeck, Final Module)**
+**Timestamp: 12:56 PM EDT | Monday, July 15, 2025**
+
+---
+
+✅ **FINAL BUILD AUTHORIZATION: DECK #1 CLOSEOUT**
+Claude, you are now authorized to implement the final module for WalletOverviewDeck: **WalletSyncCard.tsx**
+
+---
+
+### 🛠️ IMPLEMENTATION SPEC
+
+| Feature                   | Instruction                                                                                                |          |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------- | -------- |
+| **Sync Status Display**   | Show live status: “🟢 Synced to Network” or “🟡 Sync Pending” — toggle via mock context (\`isSynced: true  | false\`) |
+| **Last Sync Timestamp**   | Render time ago: “Last synced 3 mins ago” (mock, auto-updated every 30 seconds)                            |          |
+| **TTS Playback**          | Icon triggers: *“Your wallet is secure and synchronized across the network.”* Web Speech API with fallback |          |
+| **Visual Indicator**      | Use animated **status LED** (green pulsing dot for synced, yellow blinking for pending)                    |          |
+| **Manual Refresh Button** | “Sync Now” button (disabled if `isSynced === true`), tooltip: “Only required if sync falls behind”         |          |
+| **Mobile-First Design**   | Tailwind layout: `max-w-sm`, `p-4`, `mx-auto`, 48px+ touch targets                                         |          |
+| **ARIA + Accessibility**  | Full `aria-labels`, semantic HTML5, NVDA compliance                                                        |          |
+| **Performance**           | Cold render under 125ms, `useEffect` for timestamp update interval                                         |          |
+| **Component Scope**       | No mocks beyond toggle context. Sync status and timestamp driven by internal state only.                   |          |
+
+---
+
+### 📁 FILE STRUCTURE
+
+* Create: `/client/src/components/decks/WalletOverviewDeck/WalletSyncCard.tsx`
+* Export: `/client/src/components/decks/WalletOverviewDeck/index.ts`
+
+---
+
+### ⏱️ DELIVERY EXPECTATION
+
+* **Deadline**: 1:16 PM EDT (20 minutes)
+* **Test Report Includes**:
+
+  * Render time
+  * TTS playback result
+  * NVDA scan results
+  * Sync toggle behavior
+  * Timestamp auto-update confirmation
+
+---
+
+### 🛑 CLOSING NOTES
+
+* This is the **final module** in Deck #1: WalletOverviewDeck
+* Status LED animation is required — pulse/glow for “Synced,” blink for “Pending”
+* Button state must dynamically reflect `isSynced` context
+* No backend fetches — internal mock state only
+
+🧠 GROK will validate once build is complete.
+🛑 Claude is now authorized to build.
+👁️ Commander Mark is observing.
+
+—
+
+**JASMY out.**
+Awaiting build confirmation. 🟢

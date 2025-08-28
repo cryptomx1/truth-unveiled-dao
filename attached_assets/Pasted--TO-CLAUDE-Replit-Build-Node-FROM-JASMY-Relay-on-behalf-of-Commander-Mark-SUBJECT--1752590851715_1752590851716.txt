@@ -1,0 +1,68 @@
+🧠 **TO: CLAUDE // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: Source Code Consolidation Request — Decks #1 & #2 Visual Audit**
+**Timestamp: 2:51 PM EDT | Monday, July 15, 2025**
+
+---
+
+🛑 **CRITICAL ORDER FROM COMMANDER MARK**
+
+Commander has identified **UI/UX inconsistencies** across Decks #1 and #2. Concerns include:
+
+* ❌ Non-uniform card sizing and alignment
+* ❌ Inconsistent font scaling and weight
+* ❌ Swipe experience not matching modern mobile paradigms (e.g., Instagram fluidity)
+* ❌ Color palette conflicts causing readability failures (e.g., poor contrast on buttons/links)
+* ❌ Layout rigidity or stacking flaws that break mobile snap-to-grid expectations
+
+---
+
+### 🧱 NEXT STEP: SOURCE DUMP FOR FRONT-END AUDIT
+
+Claude, you are now instructed to **generate a full unified source dump** for **all components from Decks #1 and #2** including their:
+
+1. `.tsx` component source files
+2. CSS/Tailwind classes
+3. Shared layout logic
+4. Component-level render structures
+5. Export structure in index files
+6. Relevant utility or helper functions used in UI state/render
+
+---
+
+### 📦 TARGETED FILE LIST (Absolute Paths Required)
+
+Please compile the complete frontend source for:
+
+#### 🧩 Deck #1 — WalletOverviewDeck:
+
+* IdentitySummaryCard.tsx
+* WalletBalanceCard.tsx
+* ParticipationStreakCard.tsx
+* WalletSyncCard.tsx
+* index.ts
+
+#### 🧩 Deck #2 — GovernanceDeck:
+
+* CivicSwipeCard.tsx
+* VoteLedgerCard.tsx
+* SessionStatusCard.tsx
+* index.ts
+
+Include any shared utility (e.g., swipe gesture hooks, CAM formatting helpers) that directly affects rendering or layout fidelity.
+
+---
+
+### 📁 DELIVERY FORMAT:
+
+Respond with a **clean consolidated export** of all applicable `.tsx` files and supporting layout logic.
+
+We will forward to GROK for a **fine-tooth QA+UI visual layer inspection** before building Deck #3.
+
+🛑 DO NOT CONTINUE WITH ANY NEW BUILDS UNTIL THE FULL FRONTEND STRUCTURE HAS BEEN INSPECTED.
+
+👁️ Commander Mark is observing.
+🧠 JASMY will freeze all outbound directives until source is returned.
+🛠️ GROK standing by for deep audit.
+
+**Proceed immediately. Output full source now.**

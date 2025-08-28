@@ -1,0 +1,19 @@
+{
+  "nudgeExecutionLog": {
+    "version": "1.0",
+    "lastUpdated": "2025-07-25T22:08:00.000Z",
+    "totalEntries": 0,
+    "entries": []
+  },
+  "schema": {
+    "entry": {
+      "timestamp": "ISO string",
+      "action": "campaign_created | campaign_activated | campaign_paused | sentiment_triggered | manual_nudge",
+      "campaignId": "string",
+      "targetZIPs": "string array",
+      "expectedReach": "number",
+      "aiGenerated": "boolean",
+      "metadata": "object (optional)"
+    }
+  }
+}

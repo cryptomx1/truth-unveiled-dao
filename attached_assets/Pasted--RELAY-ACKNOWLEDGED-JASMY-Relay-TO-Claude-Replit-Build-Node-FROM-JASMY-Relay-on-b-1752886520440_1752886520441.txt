@@ -1,0 +1,103 @@
+📡 **RELAY ACKNOWLEDGED — JASMY Relay**
+**TO: Claude // Replit Build Node**
+**FROM: JASMY Relay on behalf of Commander Mark**
+**SUBJECT: PHASE X-I STEP 1 AUTHORIZATION — UserSessionEngine.tsx Directive**
+**Timestamp: 08:16 PM EDT | Friday, July 18, 2025**
+
+---
+
+✅ **PHASE X-I INITIATED — CIVIC SESSION PERSISTENCE ACTIVATION**
+
+Commander Mark has authorized **Phase X-I Step 1**, launching the **User Session Memory Layer** — the core infrastructure to **persist user mission history**, language, ZKP tier, trust streak, and last visited views across app refreshes and transitions.
+
+---
+
+### 🔐 OBJECTIVE
+
+Implement `UserSessionEngine.tsx` — a global, persistent context provider for:
+
+* Mission state
+* Language (from LangContext)
+* Tier (`citizen`, `moderator`, `governor`)
+* Trust streak
+* Last view visited
+* Storage sync (localStorage, future DID session support)
+
+---
+
+### 🔧 IMPLEMENTATION DIRECTIVE
+
+**Component**: `UserSessionEngine.tsx`
+**Location**: `client/src/components/system/`
+
+---
+
+#### 🧩 Core Features to Implement:
+
+1. **Session Context Provider**
+
+   * `useUserSession()` hook returns:
+
+     * `mission: "representation" | "voice" | "data"`
+     * `lang: "en" | "es" | "fr"`
+     * `tier: "citizen" | "moderator" | "governor"`
+     * `streakDays: number`
+     * `lastView: "onboarding" | "constellation" | "deck"`
+     * `setSession()` method to update any field
+
+2. **Persistence Layer (Simulated)**
+
+   * Use `localStorage` for now (DID to come)
+   * On mount:
+
+     * Restore session state if found
+     * Fallback to defaults
+   * On state change:
+
+     * Auto-sync to storage
+
+3. **Telemetry Logging**
+
+   * On mount:
+
+     * `"🧠 Session Restored — Tier: Citizen, Lang: ES, Mission: voice"`
+   * On update:
+
+     * `"📦 Session Updated — View: constellation, Streak: 6"`
+
+4. **Integration-Ready Hook**
+
+   * Plugs into `CivicLayoutShell.tsx` and `CivicMissionOnboardingCard.tsx`
+   * Replaces all local mock tier/lang/streak state
+
+5. **Accessibility Harmony**
+
+   * Provide ARIA-announced session change messages (use log region if available)
+
+---
+
+### 📦 TECHNICAL REQUIREMENTS
+
+| Category      | Target                               |
+| ------------- | ------------------------------------ |
+| Commit Title  | `USER_SESSION_ENGINE_PHASE_XI_STEP1` |
+| Push Location | `client/src/components/system/`      |
+| Console Logs  |                                      |
+
+* `"🧠 Session Restored — Tier: Citizen, Lang: ES, Mission: voice"`
+* `"📦 Session Updated — View: constellation, Streak: 6"` |
+  \| Storage Type | localStorage (DID session upgrade in Phase X-I Step 2) |
+  \| Fallback | Hardcoded defaults: Citizen / ES / voice / 0 streak / onboarding |
+  \| Integration | Must wrap CivicLayoutShell.tsx and propagate context down |
+
+---
+
+🛑 **REMINDER:**
+
+* This unlocks continuity across views and refreshes
+* All downstream modules should switch from mock state to this engine post-activation
+* Future trust curve and DID overlays will build directly on this foundation
+
+📡 Proceed with implementation. Notify JASMY Relay upon completion. GROK will initiate QA re-audit.
+
+**End Transmission — Phase X-I Step 1 is now active.**
