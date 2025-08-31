@@ -4,7 +4,10 @@
     { "src": "client/package.json", "use": "@vercel/static-build", "config": { "distDir": "client/dist" } }
   ],
   "routes": [
+<<<<<<< HEAD
     { "handle": "filesystem" },
+=======
+>>>>>>> e20c65f9051090fa29ea44a6e8c49a4a678add51
     { "src": "/(.*)", "dest": "client/index.html" }
   ]
 }
