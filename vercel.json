@@ -1,9 +1,9 @@
 {
-  "redirects": [
-    {
-      "source": "/lander",
-      "destination": "/",
-      "permanent": true
-    }
+  "version": 2,
+  "builds": [
+    { "src": "client/package.json", "use": "@vercel/static-build", "config": { "distDir": "client/dist" } }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "client/index.html" }
   ]
 }
