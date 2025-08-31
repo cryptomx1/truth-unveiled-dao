@@ -8,14 +8,12 @@
     "esModuleInterop": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "baseUrl": ".",
     "paths": {
-      "@shared/*": ["client/src/shared/*"],
-      "@shared/federation/*": ["client/src/shared/federation/*"],
-      "@shared/locale/*": ["client/src/shared/locale/*"]
+      "@/*": ["./src/*"],
+      "@shared/*": ["./src/shared/*"]
     },
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "jsx": "react-jsx"
   },
-  "include": ["client", "server"]
+  "include": ["src", "vite.config.ts"]
 }
-

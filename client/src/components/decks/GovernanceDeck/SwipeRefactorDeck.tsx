@@ -75,6 +75,24 @@ export const SwipeRefactorDeck: React.FC<SwipeRefactorDeckProps> = ({ className 
     }
   }, []);
 
+  // Shareable URL handling
+useEffect(() => {
+  const onPop = () => {
+    const id = new URLSearchParams(window.location.search).get('card');
+    const idx = id ? CARDS.findIndex(c => c.id === id) : 0;
+    if (idx >= 0) setCurrentCard(idx);
+  };
+  window.addEventListener('popstate', onPop);
+  return () => window.removeEventListener('popstate', onPop);
+}, []);
+
+useEffect(() => {
+  const url = new URL(window.location.href);
+  url.searchParams.set('card', CARDS[currentCard].id);
+  // Use replaceState to avoid flooding history while swiping
+  window.history.replaceState({}, '', url);
+}, [currentCard]);
+
   // TTS Integration with proper cancellation
   const speakMessage = (message: string, force = false) => {
     // TTS DISABLED - User requested to stop looping
