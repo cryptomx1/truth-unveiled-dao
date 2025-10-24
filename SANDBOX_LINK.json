@@ -1,0 +1,9 @@
+{
+  "phase": "XXXIV - Developer Sandbox Linker",
+  "repository": "cryptomx1/truth-unveiled-dao",
+  "branch": "phase-xxxiii-merge",
+  "sandbox_root": "~/sandbox/truth-unveiled",
+  "linked_modules": ["core", "platform", "decks", "settlements"],
+  "linked_by": "Commander Mark (cryptomx1)",
+  "notes": "Sandbox linked to merged Platform–DAO environment for live development testing."
+}
