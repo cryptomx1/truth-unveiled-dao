@@ -1,0 +1,11 @@
+{
+  "phase": "XXXIII - Platform-DAO Integration Merge",
+  "source_repo": "truth-unveiled-platform",
+  "target_repo": "truth-unveiled-dao",
+  "preserved_history": true,
+  "decks_total": 85,
+  "modules_total": "auto-detected",
+  "merged_at": "2025-10-24T18:33:15Z",
+  "merged_by": "Commander Mark (cryptomx1)",
+  "notes": "Platform UI imported under /platform/, DAO engine and decks retained."
+}
